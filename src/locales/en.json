@@ -1,0 +1,648 @@
+{
+  "app": {
+    "title": "Minar",
+    "tagline": "One island. Four lessons. One goal."
+  },
+  "lang": {
+    "en": "EN",
+    "hi": "हि",
+    "te": "తె",
+    "label": "Language"
+  },
+  "pillars": {
+    "plan": {
+      "name": "Bangle Bazaar",
+      "hook": "Needs, wants, and a plan for every ₹.",
+      "game": "Festival Showdown",
+      "topic": "Plan & Budget"
+    },
+    "save": {
+      "name": "Café Meherban",
+      "hook": "Two bad weeks are coming. Ready?",
+      "game": "Pocket Panic",
+      "topic": "Save & Manage"
+    },
+    "invest": {
+      "name": "The Pearl Exchange",
+      "hook": "Risk, time, and a little magic called compounding.",
+      "game": "Deal Board",
+      "topic": "Understand Investing"
+    },
+    "safe": {
+      "name": "Helpline Kiosk",
+      "hook": "Spot the scam before it spots you.",
+      "game": "Case Files",
+      "topic": "Stay Financially Safe"
+    }
+  },
+  "world": {
+    "bangles": "BANGLES",
+    "chai": "IRANI CHAI",
+    "pearls": "PEARLS",
+    "recharge": "RECHARGE",
+    "offer": "OFFER!",
+    "flowers": "FLOWERS",
+    "charminar": "CHARMINAR"
+  },
+  "hud": {
+    "goal": "Goal",
+    "saved": "saved",
+    "of": "of",
+    "lite": "Lite mode",
+    "liteOn": "Lite: on",
+    "liteOff": "Lite: off",
+    "replay": "Replay story",
+    "language": "Language",
+    "persona": "You",
+    "startHere": "Start here",
+    "enter": "Enter",
+    "walkHint": "Use the joystick, arrow keys, or tap to walk. Step up to a place to go in.",
+    "keysHint": "Arrow keys / WASD to walk · Enter to go in",
+    "completed": "Done",
+    "illustrative": "Illustrative amounts. Not real offers or advice.",
+    "settings": "Settings",
+    "classCode": "Class code",
+    "resetProgress": "Reset progress",
+    "resetConfirm": "Erase all progress on this device?",
+    "resetYes": "Yes, reset",
+    "resetNo": "Keep it",
+    "rollNo": "Roll number"
+  },
+  "personas": {
+    "school": {
+      "name": "School student",
+      "blurb": "Class 12. Saving for coaching and exam fees.",
+      "goalFor": "Coaching and exam fees"
+    },
+    "college": {
+      "name": "College student",
+      "blurb": "First year done. Tuition and hostel are next.",
+      "goalFor": "Tuition and hostel fees"
+    },
+    "earner": {
+      "name": "First-generation earner",
+      "blurb": "First job. Family counts on you. Saving for a skills course.",
+      "goalFor": "Skills course fee"
+    },
+    "startsWith": "Starts with"
+  },
+  "story": {
+    "b1": {
+      "title": "One year. One goal.",
+      "caption": "Hyderabad, early morning. A quiet island, and a long way to go."
+    },
+    "b2": {
+      "title": "Who is heading out?",
+      "caption": "Pick the person you will be this year.",
+      "look": "Look",
+      "girl": "Girl",
+      "boy": "Boy",
+      "festival": "Your family's festival"
+    },
+    "b3": {
+      "title": "Nani's flower stall",
+      "caption": "She places a small cloth bundle in your hands.",
+      "quote": "This is what we could save. The rest is up to you.",
+      "sign": "Nani"
+    },
+    "b4": {
+      "title": "The goal",
+      "caption": "Your fee is due in 12 months. Let's earn the rest.",
+      "receipt": "FEE RECEIPT",
+      "amount": "Amount due",
+      "deadline": "Due in 12 months",
+      "paid": "Paid so far",
+      "stamp": "DUE"
+    },
+    "step": "Scene {{n}} of 6",
+    "rotate": "Turn your phone upright to play the story.",
+    "b5": {
+      "title": "The bazaar opens",
+      "caption": "Four doors. Four lessons. All yours.",
+      "ask": "Where will you go first?"
+    },
+    "places": {
+      "title": "Four places, four skills",
+      "caption": "Each place on the island teaches one skill. Visit all four."
+    },
+    "win": {
+      "title": "Light the flags",
+      "caption": "Finish a place and its flag turns gold, and the goal bar fills. Finish all four and the gate to Chapter 2 opens."
+    },
+    "happy": {
+      "title": "Stay happy",
+      "caption": "A short break keeps your Happy Index up, so lessons count in full. Tap a place to walk there, drag to look around, pinch to zoom."
+    },
+    "stepOf": "Step {{n}} of {{total}}"
+  },
+  "buttons": {
+    "start": "Start",
+    "skip": "Skip",
+    "next": "Next",
+    "back": "Back",
+    "go": "Let's go!",
+    "replay": "Replay story",
+    "backToCharminar": "Back to the island",
+    "markComplete": "Mark as complete",
+    "lite": "Lite mode",
+    "rewind": "Rewind"
+  },
+  "play": {
+    "chapter": "Chapter {{n}}",
+    "comingSoon": "Coming soon",
+    "comingSoonBody": "This lane of the bazaar opens soon. For now, the lamp on the minaret can be lit with the button below.",
+    "done": "Lamp lit! Head back to the Charminar.",
+    "goalBar": "Goal bar",
+    "rewindNote": "Rewind is coming: every mistake can be retried, no penalty."
+  },
+  "recap": {
+    "heading": "Recap",
+    "sampleTitle": "Opportunity cost",
+    "sampleBody": "Every time you pick one thing, you give up another. Naming that trade-off makes the next choice easier.",
+    "skills": "Skills you practised"
+  },
+  "celebrate": {
+    "title": "Goal reached",
+    "body": "The gate to Chapter 2 is open. Well done.",
+    "again": "Continue",
+    "enter": "Step through the gate",
+    "nani": "Shabash!"
+  },
+  "dashboard": {
+    "title": "Goal reached",
+    "body": "You made it. The gate to Chapter 2 is open."
+  },
+  "lang_notice": "Language",
+  "island": {
+    "dock": "Arrival dock",
+    "plaza": "Charminar plaza",
+    "gate": "Chapter 2 gate",
+    "gateLocked": "The gate opens when all four lessons are done.",
+    "cardMeta": "About {{minutes}} min · {{state}}",
+    "cardBest": "Best result: {{percent}}%",
+    "spot": "Take a short break"
+  },
+  "host": {
+    "exit": "Exit",
+    "exitConfirm": "Leave this game? Progress inside the game may not be saved.",
+    "exitYes": "Leave",
+    "exitNo": "Keep playing",
+    "play": "Play",
+    "loading": "Loading the game…",
+    "errorTitle": "This game could not run",
+    "errorBody": "Something went wrong. Your progress so far is safe.",
+    "errorBack": "Back",
+    "banner": "Made-up numbers. Real life is different.",
+    "newSeed": "New seed (dev)",
+    "placeholder": {
+      "label": "Placeholder game",
+      "seed": "Seed",
+      "great": "Great run",
+      "ok": "OK run",
+      "poor": "Poor run",
+      "quit": "Quit"
+    }
+  },
+  "result": {
+    "cleared": "Cleared",
+    "notCleared": "Not cleared yet",
+    "state": "State",
+    "partial": "{{percent}}% of the way",
+    "improved": "Better than before",
+    "quality": "How well you did",
+    "goal": "Goal meter",
+    "happy": "Happy Index",
+    "before": "Before",
+    "after": "After",
+    "skills": "Skills you practised",
+    "noSkills": "No skills reported.",
+    "lessons": "What you learned",
+    "noLessons": "No lessons yet.",
+    "continue": "Continue",
+    "next": "Next: {{name}}",
+    "replay": "Replay",
+    "back": "Back",
+    "progressLink": "See your progress",
+    "noChange": "No change",
+    "details": "What you practised and learned",
+    "whyBright": "You finished happy, so the lamp shines bright and this place added the full amount.",
+    "whyDim": "The lamp is a little dim because you were tired. Rest, then play again to brighten it and add more.",
+    "whyTired": "Playing wears you out a little. A chai or some rest in the Happy panel brings it back.",
+    "whyKeep": "Keep going. Each place adds to your money."
+  },
+  "state": {
+    "notStarted": "Not started",
+    "partial": "In progress",
+    "bright": "Full",
+    "dim": "Dim",
+    "flicker": "Faint"
+  },
+  "skills": {
+    "planning": "Planning",
+    "prioritising": "Needs before wants",
+    "saving": "Saving",
+    "riskSense": "Risk sense",
+    "patience": "Patience",
+    "scamSense": "Scam sense"
+  },
+  "progress": {
+    "title": "Your progress",
+    "back": "Back",
+    "goalLabel": "Goal meter",
+    "goalValue": "{{saved}} of {{target}}",
+    "summary": {
+      "none": "No pillars finished yet",
+      "allBright": "All {{total}} pillars complete and shining",
+      "lit": "{{lit}} of {{total}} pillars complete",
+      "litDim": "{{lit}} of {{total}} complete, {{dim}} dim",
+      "litFaint": "{{lit}} of {{total}} complete, {{flicker}} faint",
+      "litDimFaint": "{{lit}} of {{total}} complete, {{dim}} dim, {{flicker}} faint"
+    },
+    "partial": "{{percent}}% of the way",
+    "details": "Details",
+    "hideDetails": "Hide details",
+    "quality": "Best result",
+    "attempts": "Times played",
+    "lessons": "Lessons seen",
+    "skills": "Skills practised",
+    "none": "None yet",
+    "action": {
+      "start": "Play",
+      "continue": "Continue",
+      "replay": "Replay",
+      "brighten": "Replay to brighten"
+    },
+    "penalty": {
+      "title": "Some pillars count for less",
+      "body": "Your Happy Index was low when you finished {{count}} of your pillars, so {{amount}} is held back.",
+      "how": "To recover: take a short break with a life moment, then replay a pillar to brighten it. A replay can only make a pillar better."
+    }
+  },
+  "happy": {
+    "title": "Happy Index",
+    "band": {
+      "glowing": "Glowing",
+      "ok": "OK",
+      "tired": "Tired"
+    },
+    "tiredNote": "You have finished {{count}} games in a row without a break. A short break looks after you and lifts your Happy Index.",
+    "toast": {
+      "title": "Your Happy Index is getting low",
+      "body": "A pillar finished while Happy is low counts for less. Take a short break, then replay to brighten it.",
+      "dismiss": "Got it"
+    }
+  },
+  "moments": {
+    "title": "Look after yourself",
+    "open": "Look after yourself",
+    "close": "Close",
+    "cost": "Costs {{amount}}",
+    "free": "Free",
+    "gain": "+{{gain}} Happy right now",
+    "gainFaded": "Little effect now: it fades when repeated",
+    "used": "Used {{count}} time(s)",
+    "cannotAfford": "Not enough saved yet",
+    "choose": "Choose",
+    "chai": {
+      "name": "A chai with friends",
+      "description": "A quick catch-up over a hot drink."
+    },
+    "festivalTreat": {
+      "name": "A festival treat",
+      "description": "Something special to celebrate with."
+    },
+    "restAtHome": {
+      "name": "Rest at home",
+      "description": "An evening to rest and recharge."
+    }
+  },
+  "balance": {
+    "title": "You and your future",
+    "earned": "Earned toward your goal",
+    "spent": "Spent on yourself",
+    "why": "Finishing pillars fills your goal meter. Looking after yourself keeps your Happy Index up, so your pillars count fully. You need both.",
+    "next": {
+      "none": "Finish a pillar to start filling your goal meter.",
+      "allWork": "Try a short break: a life moment lifts your Happy Index.",
+      "balanced": "Keep this rhythm: finish a pillar, then take a short break.",
+      "selfHeavy": "Your goal meter is falling behind: finish a pillar to catch up."
+    }
+  },
+  "wire": {
+    "title": "Wireframe index (dev)",
+    "intro": "Every wireframe screen and component. Use the DEV panel to change Happy and clear pillars and watch them update.",
+    "screens": "Screens",
+    "legacy": "legacy overworld",
+    "live": "Live components"
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Welcome to Minar",
+      "body": "Select a language to continue."
+    },
+    "problem": {
+      "title": "The Goal",
+      "body": "Your fee is due in 12 months. Let's earn the rest."
+    },
+    "persona": {
+      "title": "Who are you?",
+      "body": "Choose your player."
+    },
+    "festival": {
+      "title": "Your Festival",
+      "body": "Choose a festival to celebrate."
+    },
+    "avatar": {
+      "title": "Your Avatar",
+      "body": "Choose how you look."
+    },
+    "skills": {
+      "title": "Four Pillars",
+      "body": "Learn these four skills."
+    },
+    "win": {
+      "title": "How to win",
+      "body": "Finish a pillar, earn its badge, fill the goal meter. Finish all four and you've earned your fee."
+    },
+    "happy": {
+      "title": "Stay Happy",
+      "body": "Money isn't everything. Look after yourself, or your badges count for less."
+    },
+    "controls": {
+      "title": "How to move",
+      "text": "Drag to walk, tap to enter."
+    },
+    "skip": "Skip",
+    "next": "Next",
+    "back": "Back"
+  },
+  "hub": {
+    "title": "Minar Hub",
+    "lookAfterYourself": "Look after yourself",
+    "teaches": "Teaches:",
+    "time": "Time:",
+    "minutes": "mins",
+    "bestQuality": "Best Score:",
+    "cta": {
+      "start": "Play",
+      "continue": "Continue",
+      "replay": "Replay",
+      "brighten": "Replay to brighten",
+      "back": "Back"
+    },
+    "plan": {
+      "tagline": "Count down to your festival",
+      "teaches": "Planning and budgeting"
+    },
+    "save": {
+      "tagline": "Two bad weeks",
+      "teaches": "Saving and managing"
+    },
+    "invest": {
+      "tagline": "Deal Board",
+      "teaches": "Understanding investing"
+    },
+    "safe": {
+      "tagline": "Case Files",
+      "teaches": "Staying safe from scams"
+    }
+  },
+  "coach": {
+    "header": "Tips",
+    "dismissAll": "Dismiss All",
+    "goal": {
+      "title": "Your Goal",
+      "body": "Each finished place fills the goal bar. All four open the gate to Chapter 2."
+    },
+    "happy": {
+      "title": "Stay Happy",
+      "body": "Keep your index up."
+    },
+    "progress": {
+      "title": "Progress",
+      "body": "Check how you're doing."
+    },
+    "hub": {
+      "title": "The Hub",
+      "body": "Choose a pillar to play."
+    }
+  },
+  "avatars": {
+    "male": "Boy",
+    "female": "Girl"
+  },
+  "festivals": {
+    "diwali": "Diwali",
+    "eid": "Eid",
+    "bonalu": "Bonalu",
+    "sankranti": "Sankranti",
+    "christmas": "Christmas"
+  },
+  "summary": {
+    "title": "Your summary",
+    "closing": {
+      "allBright": "All four places are bright. Keep taking breaks.",
+      "someDim": "Some places are dim. Replay them to brighten them.",
+      "keepGoing": "Finish all four places to open the gate."
+    },
+    "lessons": "Lessons seen: {{n}}",
+    "brighten": "Worth replaying: {{names}}",
+    "share": "Download share card",
+    "shareTitle": "My Minar goal"
+  },
+  "home": {
+    "tagline": "Learn money, one lane at a time.",
+    "new": "New game",
+    "load": "Load game",
+    "noSaves": "No saved games yet.",
+    "play": "Play",
+    "rename": "Rename",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "start": "Start",
+    "saved": "Saved games",
+    "menu": "Home",
+    "nameLabel": "Your name",
+    "defaultName": "Game {{n}}",
+    "firstName": "My game",
+    "places": "{{n}} of 4 places",
+    "deleteConfirm": "Delete \"{{name}}\"? This cannot be undone.",
+    "deleteYes": "Yes, delete",
+    "title": "Minar",
+    "share": "Share progress",
+    "shareTitle": "Share my progress",
+    "shareBody": "Send this code to your teacher or NGO facilitator so they can see how the class is doing.",
+    "shareWhat": "It shares your progress, skills, Happy score, language, class code and roll number. It never shares your name or alias.",
+    "shareCopy": "Copy code",
+    "shareCopied": "Copied",
+    "shareSend": "Send",
+    "shareDownload": "Save as file",
+    "shareClose": "Close",
+    "facilitator": "For teachers and NGOs",
+    "facilitatorSub": "Minar Insights: see how your class is learning, report cards and lesson slides.",
+    "shareYourCode": "Your student code: {{id}}. Tell your teacher if they ask which one is you.",
+    "shareToTeacher": "Send to my teacher",
+    "shareSending": "Sending…",
+    "shareSent": "Sent. Your teacher can see it now.",
+    "shareErrClass": "That class code was not found. Check it with your teacher.",
+    "shareErrSoon": "Already sent a moment ago. Try again in a few minutes.",
+    "shareErrOffline": "No internet right now. Copy the code or save it as a file instead.",
+    "shareErrOther": "Could not send. Copy the code instead.",
+    "shareNeedCode": "Type your class code first.",
+    "shareRollMissing": "Add your roll number so your teacher knows this is you.",
+    "nameHint": "Stays on this phone. It is never sent to anyone.",
+    "nameRequired": "Type your name.",
+    "rollRequired": "Type your school roll number (up to 4 digits).",
+    "classOptional": "Class code (optional)",
+    "classHint": "From your teacher. You can add it later in your profile.",
+    "classChecking": "Checking the class code…",
+    "classFound": "Class: {{name}}",
+    "classNotFound": "No class has this code. Check it with your teacher, or leave it empty for now.",
+    "classOffline": "Could not check the code right now. You can still start."
+  },
+  "kit": {
+    "bar": {
+      "profile": "Your profile",
+      "money": "Your money",
+      "happy": "How happy you are"
+    },
+    "sheet": {
+      "close": "Close"
+    },
+    "money": {
+      "title": "Your money",
+      "saved": "Saved so far",
+      "reached": "You reached your goal!",
+      "toGo": "{{x}} still to go",
+      "from": "Where your money comes from",
+      "earned": "{{x}} added",
+      "notYet": "Not finished yet",
+      "upTo": "up to {{x}}",
+      "spent": "You spent {{x}} on looking after yourself.",
+      "spentHint": "Chai and treats cost a little and lift your Happy.",
+      "how": "How does my money grow?",
+      "h1": "Each of the four places is worth a quarter of the way to your goal.",
+      "h2": "Finish a place and its lamp lights. How bright it is depends on how happy you are at that moment.",
+      "h3": "Play a place again to brighten its lamp and add the rest.",
+      "start": "You started with {{x}} from your family.",
+      "lamp": {
+        "bright": "Bright lamp (Happy 60 or more): the full amount",
+        "dim": "Dim lamp (Happy 35 to 59): three quarters",
+        "flicker": "Flickering lamp (Happy below 35): half"
+      }
+    },
+    "happy": {
+      "title": "How happy you are",
+      "scale": "Lamps shine bright at 60 or more, dim from 35, and flicker below that.",
+      "tired": "You have played {{count}} games in a row. A short break will help.",
+      "moments": "Look after yourself",
+      "cost": "{{x}} from your savings",
+      "free": "Free",
+      "gain": "+{{n}} Happy",
+      "moves": "What moves your Happy",
+      "up": "Goes up",
+      "down": "Goes down",
+      "u1": "Chai with friends, a festival treat, rest at home.",
+      "u2": "Treats you chose in games, helping a friend, a balanced month.",
+      "d1": "Finishing a game. It tires you out a little.",
+      "d2": "Saying no to every treat for a long time, or falling for a scam.",
+      "w1": "A place finished while you are happy adds more money.",
+      "w2": "That is why looking after yourself is part of the plan."
+    },
+    "profile": {
+      "title": "Your profile",
+      "saveName": "Saved game",
+      "goalFor": "Saving for",
+      "lit": "{{n}} of 4 lamps lit",
+      "played": "{{n}} games played",
+      "places": "Your four places",
+      "skills": "What you are getting good at",
+      "skillNone": "Play to grow this",
+      "rewards": "Rewards",
+      "diamonds": "{{n}} diamonds",
+      "shield": "Shield pieces: {{n}} of 3",
+      "share": "Share my progress with my teacher",
+      "teacher": "My teacher",
+      "teacherNone": "You are not in a class yet. Type the class code your teacher gave you.",
+      "join": "Join class",
+      "classLine": "Class {{code}}",
+      "rollLine": "Roll {{roll}}",
+      "shareNow": "Share progress with my teacher",
+      "sending": "Sending…",
+      "sent": "Sent to your teacher {{when}}.",
+      "notSent": "Not sent yet.",
+      "autoShare": "Send my progress after every game",
+      "autoHint": "Your teacher sees it straight away. Only your roll number and game results are sent, never your name.",
+      "otherWays": "Other ways to share (code or file)",
+      "needRoll": "Add your roll number in Settings first."
+    },
+    "settings": {
+      "title": "Settings",
+      "light": "Light mode",
+      "lightHint": "Less animation. Good for older phones.",
+      "classHint": "Ask your teacher. Leave it empty if you do not have one.",
+      "story": "Watch Ammamma's story again",
+      "menu": "Main menu",
+      "menuHint": "Your game is saved first.",
+      "reset": "Start this game over",
+      "resetHint": "Erases this game's progress on this device.",
+      "resetAsk": "Erase this game's progress?",
+      "resetYes": "Yes, erase it",
+      "resetNo": "Keep it",
+      "about": "Minar. All amounts are made up, for practice.",
+      "rollHint": "Your school roll number (up to 4 digits). It lets your teacher see your progress. Your name is never sent."
+    }
+  },
+  "welcome": {
+    "begin": "Begin your story",
+    "hello1": "Come, beta. Let me tell you about four minars.",
+    "hello2": "A little, always. That is how it starts.",
+    "hello3": "Your goal is waiting for you."
+  },
+  "tale": {
+    "ammamma": "Ammamma",
+    "skip": "Skip story",
+    "s1": {
+      "line": "Good morning, beta. You are up early today.",
+      "cap": "Hyderabad, before sunrise. Ammamma sweeps the steps by the Charminar, the way she has for forty years."
+    },
+    "s2": {
+      "friday": "Every Friday",
+      "line": "I never earned much. But every Friday, one coin in the gullak. A little, always.",
+      "cap": "Her clay gullak was never empty. That is how it starts."
+    },
+    "s3": {
+      "line": "Four minars hold up this city. Four places hold up your year.",
+      "cap": "Plan & Budget at Bangle Bazaar. Save & Manage at Café Meherban. Understand Investing at The Pearl Exchange. Stay Financially Safe at the Helpline Kiosk."
+    },
+    "s4": {
+      "line": "Now tell me, beta. Who is heading out into the world this year?",
+      "cap": "Pick the person you will be this year."
+    },
+    "s5": {
+      "line": "This is what we could save. The rest is up to you.",
+      "cap": "She places a small cloth bundle in your hands."
+    },
+    "s6": {
+      "line": "Your fee is due in a year. I will be watching from the dock.",
+      "cap": "Let's earn the rest, one place at a time."
+    },
+    "s7": {
+      "line": "Look after yourself, beta. A tired minar leans. Take your chai, rest, laugh with friends.",
+      "cap": "When you are happy, your lamps shine bright and every place adds more.",
+      "bright": "Bright",
+      "brightHint": "Happy 60 or more: the full amount",
+      "dim": "Dim",
+      "dimHint": "Happy 35 to 59: three quarters",
+      "flicker": "Faint",
+      "flickerHint": "Happy below 35: half"
+    },
+    "s8": {
+      "line": "Light all four lamps, beta, and the gate to Chapter 2 opens. I will be waiting on the other side.",
+      "cap": "Finish all four places and a golden gate opens on the island. That is only the end of Chapter 1.",
+      "gate": "Chapter 2"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "wage": 900,
+  "mustHaves": 250,
+  "goal": 1800,
+  "seasonWeeks": 8,
+  "lastBonusWeek": 14,
+  "savingShares": [0, 10, 20, 30],
+  "moveStep": 50,
+  "lostCash": { "pct": 30, "min": 30, "max": 150 },
+  "windfall": 100,
+  "lateFee": 30,
+  "breakJar": { "step": 50, "min": 50 },
+  "quickCash": { "step": 100, "min": 100, "repayMultiplier": 1.5, "instalments": 2 },
+  "variedWages": [700, 800, 900, 900, 1000, 1000, 1000],
+  "defaultPace": 250,
+  "minPace": 50,
+  "waitListDropChance": 0.7,
+  "packedLunchStep": 5,
+  "treats": [
+    { "day": 1, "id": "chai", "price": 10, "food": true },
+    { "day": 2, "id": "snack", "price": 15, "food": true },
+    { "day": 3, "id": "topup", "price": 20, "food": false },
+    { "day": 4, "id": "gamepack", "price": 25, "food": false },
+    { "day": 5, "id": "colddrink", "price": 20, "food": true },
+    { "day": 6, "id": "samosa", "price": 15, "food": true }
+  ]
+}

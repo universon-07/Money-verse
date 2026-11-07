@@ -1,0 +1,15 @@
+[
+  { "id": "hall", "vendor": "daamfix", "cat": "venue", "ladder": [10000], "terms": { "W1": 0.5, "W3": 0.5 }, "e1": 1000 },
+  { "id": "mini", "vendor": "chacha", "cat": "sound", "ladder": [4400, 4100, 3900, 3800], "terms": { "W1": 0.2, "FD": 0.8 }, "late": { "FD": 1.0 }, "latePct": 0.05, "cap": 400, "goal": "G3" },
+  { "id": "big", "vendor": "chacha", "cat": "sound", "ladder": [6600, 6300, 6100, 6000], "terms": { "W1": 0.2, "FD": 0.8 }, "late": { "FD": 1.0 }, "latePct": 0.05, "cap": 600, "addon": 1200, "addonAt": "FD", "goal": "G3" },
+  { "id": "basic", "vendor": "sasta", "cat": "sound", "ladder": [5500, 5350, 5200, 5050], "terms": { "W1": 1.0 }, "cap": 500, "addon": 3000, "addonAt": "W1", "goal": "G3" },
+  { "id": "reliable", "vendor": "daamfix", "cat": "sound", "ladder": [8000], "terms": { "W1": 0.5, "W3": 0.5 }, "cap": 600, "goal": "G3" },
+  { "id": "lights", "vendor": "daamfix", "cat": "lights", "ladder": [3000], "terms": { "W1": 0.5, "W3": 0.5 }, "good": true, "goal": "G3" },
+  { "id": "lightsC", "vendor": "chacha", "cat": "lights", "ladder": [3300, 3100, 2950, 2850], "terms": { "W1": 0.2, "FD": 0.8 }, "late": { "FD": 1.0 }, "latePct": 0.05, "good": true, "goal": "G3" },
+  { "id": "plates", "vendor": "chacha", "cat": "food", "ladder": [33, 31, 30, 29], "terms": { "W1": 0.2, "FD": 0.8 }, "late": { "FD": 1.0 }, "latePct": 0.05, "unit": true, "goal": "G2" },
+  { "id": "kids", "vendor": "chacha", "cat": "kids", "ladder": [3300, 3100, 2950, 2850], "terms": { "W1": 0.2, "FD": 0.8 }, "late": { "FD": 1.0 }, "latePct": 0.05, "goal": "G1" },
+  { "id": "safety", "vendor": "daamfix", "cat": "safety", "ladder": [2000], "terms": { "W1": 0.5, "W3": 0.5 }, "goal": "G5" },
+  { "id": "p1", "vendor": "chacha", "cat": "promo", "ladder": [1000], "terms": { "W1": 1.0 }, "crowd": 380, "goal": "G5" },
+  { "id": "p2", "vendor": "daamfix", "cat": "promo", "ladder": [3000], "terms": { "W1": 0.5, "W3": 0.5 }, "crowd": 440, "goal": "G5" },
+  { "id": "combo", "vendor": "mega", "cat": "combo", "ladder": [14000, 13600], "terms": { "W1": 0.6, "W3": 0.4 }, "cap": 600, "good": true, "safety": true, "goal": "G3" }
+]

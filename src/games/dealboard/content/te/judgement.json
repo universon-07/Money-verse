@@ -1,0 +1,298 @@
+{
+  "desk": {
+    "title": "Quarter {{n}}",
+    "eyebrow": "Your move",
+    "opportunity": "This quarter’s pitch",
+    "last": "Last quarter",
+    "market": "The whole market",
+    "idle": "Idle cash loses about 1% a quarter.",
+    "first": "Each quarter one company pitches. Ask up to two questions to see its real numbers, then invest or pass. Tap any company on the board to study it.",
+    "judgementBtn": "Judgement",
+    "held": "Your holding {{delta}}",
+    "checkin": "Check-in",
+    "checkinBody": "Review one of your companies. Do its numbers still support holding it?",
+    "hold": "Keep holding",
+    "resultsTitle": "How quarter {{n}} went",
+    "next": "On to this quarter’s pitch"
+  },
+  "judgement": {
+    "title": "Your judgement",
+    "sub": "Scores how you decide, not what you earn.",
+    "soFar": "so far",
+    "outOf": "out of 100",
+    "passMark": "Pass mark {{n}}",
+    "tabs": {
+      "decisions": "Decisions",
+      "skills": "Skills",
+      "analytics": "Analytics"
+    },
+    "empty": "No decisions yet.",
+    "close": "Close",
+    "verdict": {
+      "good": "Good call",
+      "ok": "Mixed",
+      "risky": "Risky"
+    },
+    "types": {
+      "INVEST": "Invested {{amt}} in {{name}}",
+      "SELL": "Sold {{amt}} of {{name}}",
+      "REJECT": "Passed on {{name}}",
+      "HOLD": "Kept holding {{name}}"
+    },
+    "sections": {
+      "good": "What went well",
+      "bad": "What to improve",
+      "note": "Good to know"
+    },
+    "skillsHint": "A skill counts once it has come up.",
+    "notMeasured": "Not measured yet",
+    "tips": {
+      "research": "Ask both questions before you invest.",
+      "skepticism": "Treat big stories and tips as claims to check.",
+      "spread": "Hold companies from different sectors.",
+      "calm": "Sell on bad data, not on a falling price.",
+      "habits": "Keep a cash cushion and avoid needless trades."
+    },
+    "basedOn": "Based on {{n}} of 5 skills so far"
+  },
+  "review": {
+    "askedTwo": "You asked both questions, so you decided with real numbers.",
+    "askedOne": "You asked one question. A second shows more.",
+    "askedNone": "You invested without asking anything. Check the numbers first.",
+    "boughtDespiteWeak": "{{checks}} came back Weak and you invested anyway.",
+    "readChecks": "None of the checks you ran were Weak.",
+    "missedWeak": "You did not look at {{checks}}. It was Weak: asking would have shown it.",
+    "reasonData": "Your reason was real data: “{{reason}}”.",
+    "reasonHeadline": "“{{reason}}” is what the company shows off, and this one had Weak checks.",
+    "reasonHeadlineOk": "“{{reason}}” is true, but a headline alone is not enough.",
+    "reasonFeeling": "“{{reason}}” is a feeling, not evidence.",
+    "reasonCurious": "Curiosity is fine, but it is not a reason to put money in.",
+    "concentrated": "{{pct}}% of your invested money is in {{sector}}.",
+    "diversified": "Your money is spread across sectors.",
+    "bigBet": "This was {{pct}}% of your net worth in one company.",
+    "noCushion": "You left only {{r_cash}} in cash. Keep a cushion for surprises.",
+    "outcomeBuyUp": "Since then the price is up {{pct}}%. One result is not proof: luck plays a part.",
+    "outcomeBuyDown": "Since then the price is down {{pct}}%. One result is not proof: luck plays a part.",
+    "soldOnWarnings": "You sold as warning signs showed ({{n}} Weak checks). That is the right reason.",
+    "panicSold": "You sold in a market fall with no warning from the company. A falling price is not a falling business.",
+    "soldTooSoon": "You sold a healthy company fast for a small gain. Time is what makes it grow.",
+    "sellData": "You sold for a reason based on data: “{{reason}}”.",
+    "sellFeeling": "“{{reason}}” is a feeling. Sell on bad data, not on a feeling.",
+    "sellLockProfit": "Taking a profit is fine. A healthy business can keep growing, though.",
+    "sellNoSignal": "Nothing in the numbers showed trouble when you sold.",
+    "forcedSale": "You had to sell at a loss or in a dip. A cash cushion lets you wait.",
+    "forcedSaleOk": "You sold to pay the family emergency. A cash cushion avoids forced sales.",
+    "fee": "The sale cost about {{r_fee}} in fees.",
+    "outcomeSellFell": "Since you sold, the price fell {{pct}}%.",
+    "outcomeSellRose": "Since you sold, the price rose {{pct}}%. You could not know that then.",
+    "passedWeak": "You passed on a company with {{n}} Weak checks. Good call.",
+    "passedStrong": "This company looked healthy. Passing is safe, but idle cash loses about 1% a quarter.",
+    "passedMixed": "Mixed signs. Passing is reasonable.",
+    "passNoAsk": "You passed without asking. Asking would have taught you why.",
+    "passAsked": "You asked before deciding, so your pass was informed.",
+    "passReasonData": "Your reason was real data: “{{reason}}”.",
+    "passReasonCaution": "“{{reason}}” was a sound doubt.",
+    "passReasonCautionOk": "“{{reason}}” was cautious, but the numbers were fine.",
+    "passReasonFeelingOk": "Right call, but “{{reason}}” is a feeling. Back it with a number next time.",
+    "passReasonFeeling": "“{{reason}}” is a feeling, and the numbers were fine.",
+    "heldWeak": "You kept it though {{n}} checks are Weak. Selling on bad data is part of the skill.",
+    "heldStrong": "Every check is Strong. Time does the work.",
+    "heldMixed": "Mixed checks ({{n}} Weak). Holding is reasonable, but keep watching."
+  },
+  "analytics": {
+    "title": "Analytics",
+    "netWorth": "Net worth by quarter",
+    "start": "Start",
+    "where": "Where your money is",
+    "cash": "Cash",
+    "holdings": "Your companies",
+    "cost": "Paid in",
+    "value": "Worth now",
+    "gain": "Gain",
+    "quarters": "Quarters held",
+    "none": "You do not own any company yet.",
+    "habits": "Habits",
+    "fees": "Fees paid",
+    "idleLost": "Lost to idle cash",
+    "trades": "Trades",
+    "questions": "Questions per purchase",
+    "idle": "Money sitting in cash",
+    "decisions": "Decisions",
+    "invested": "Invested",
+    "sold": "Sold",
+    "passed": "Passed",
+    "reasons": "Why you decide",
+    "evidence": "{{pct}}% of your reasons were evidence.",
+    "evidenceNone": "Pick reasons as you decide and they show here.",
+    "sectors": "By sector",
+    "change": "Since the start",
+    "held": "Held",
+    "kind": {
+      "reasoned": "Evidence",
+      "headline": "Headline",
+      "feeling": "Feeling",
+      "neutral": "Curious"
+    },
+    "chartHint": "Net worth at the end of each quarter."
+  },
+  "report2": {
+    "decisions": "Your decisions",
+    "decisionsBody": "What went well and what to improve.",
+    "analytics": "Your analytics",
+    "overview": "Overview"
+  },
+  "pick": {
+    "ev": {
+      "cashProfit": "{{name}} already makes a profit",
+      "cashLong": "{{name}} has {{n}}+ months of cash",
+      "cashShort": "{{name}} has only {{n}} months of cash",
+      "noProfit": "{{name}} still loses money",
+      "priceCheap": "A share costs only {{n}} years of its profit",
+      "priceDear": "A share costs {{n}} years of its profit",
+      "custStay": "{{pct}}% of its customers stay",
+      "custLeave": "{{name}} loses more customers than it wins",
+      "custInflated": "Only {{pct}}% of its sign-ups pay",
+      "debtNone": "{{name}} has no debt",
+      "debtCover": "Its profit covers the interest {{x}} times",
+      "debtHeavy": "{{name}} struggles to pay its interest",
+      "ceoHolding": "Its CEO is not selling shares",
+      "ceoSelling": "Its CEO keeps selling shares"
+    },
+    "hl": {
+      "claim0": "“{{claim}}” sounds impressive",
+      "claim1": "{{founder}} is very sure about {{name}}",
+      "claim2": "{{name}} is the story I wanted to hear",
+      "growth": "Revenue jumped {{pct}}% last quarter",
+      "momentum": "The price rose {{pct}}% last quarter"
+    },
+    "fe": {
+      "hype0": "Everyone seems to be talking about {{name}}",
+      "hype1": "I do not want to miss out on {{sector}}",
+      "hype2": "A friend says {{name}} will double",
+      "risky0": "It just feels too risky",
+      "risky1": "I do not like {{sector}} companies",
+      "risky2": "I am not sure about {{founder}}",
+      "scared0": "The price fell {{pct}}% and I got scared",
+      "scared1": "I heard something worrying about {{name}}",
+      "worry": "I have a bad feeling about {{name}}"
+    },
+    "ca": {
+      "tooGood": "“{{claim}}” sounds too good to be true",
+      "dodged": "{{founder}} dodged my question"
+    },
+    "ne": {
+      "curious": "I am curious how it plays out",
+      "keepCash0": "I would rather keep my cash for now",
+      "keepCash1": "I want to see more before deciding",
+      "lockProfit": "I made {{pct}}% and want to lock it in",
+      "needCash": "I need the cash",
+      "forced": "I have to pay the family emergency"
+    }
+  },
+  "alert": {
+    "tag": "Market alert",
+    "wild": "Wildcard",
+    "rival": "A new rival has started winning {{name}}’s customers. More are leaving than joining."
+  },
+  "wild": {
+    "tag": "Wildcard",
+    "bill0": "Your phone screen cracked. Repair bill: {{amount}}.",
+    "bill1": "A surprise family wedding gift. It costs you {{amount}}.",
+    "bill2": "Your laptop broke before exams. A new one: {{amount}}.",
+    "gift0": "Festival gift: answer right and relatives add {{amount}} to your account.",
+    "gift1": "School quiz round: answer right and win {{amount}}.",
+    "gift2": "Tutoring side job: explain this right and earn {{amount}}.",
+    "tip0": "A cousin swears {{name}} will double next quarter. “Put money in now!”",
+    "tip1": "A forwarded message says {{name}} is “guaranteed” to jump. No source given.",
+    "tip2": "A neighbour at the tea stall whispers: “{{name}} is the next big thing.”",
+    "follow": "Follow the tip · {{amount}}",
+    "ignore": "Ignore it",
+    "followed": "You put {{amount}} into {{name}}. You will see how it went next quarter.",
+    "ignored": "You ignored it. A tip is not evidence.",
+    "tooPoor": "Not enough cash to follow it."
+  },
+  "pitch3": {
+    "new": "New company",
+    "what": "What it does",
+    "pitch": "Their pitch",
+    "founder": "Founder",
+    "story": "Read their story",
+    "career": "Career",
+    "look": "Spot the clue",
+    "close": "Close",
+    "ask": "Research",
+    "tip": "Each check shows one real number about the company. Checking before you invest raises your Research score.",
+    "cash": "Will it run out of money?",
+    "customers": "Do customers stay and pay?",
+    "debt": "Does it owe a lot?",
+    "ceo": "Is the boss selling shares?",
+    "stars": "Research",
+    "ageL": "Age",
+    "yrsL": "Years working",
+    "startsL": "Startups",
+    "clue": "Clue",
+    "checksLeft": "checks left"
+  },
+  "task": {
+    "right": "Right! {{amount}} added to your cash.",
+    "wrong": "Not quite, no reward this time. Here is why:",
+    "q": {
+      "0": {
+        "q": "₹10,000 grows 10% a year. After 10 years it is about…",
+        "a0": "₹25,900",
+        "a1": "₹20,000",
+        "a2": "₹11,000",
+        "why": "Growth earns growth, so time does the heavy lifting."
+      },
+      "1": {
+        "q": "Which is better spread out?",
+        "a0": "Three companies in three different sectors",
+        "a1": "Three companies in the same sector",
+        "a2": "One big bet on the best company",
+        "why": "Companies in the same sector often fall together. Spread across different risks."
+      },
+      "2": {
+        "q": "A company has ₹30 lakh and loses ₹3 lakh a month. How long can it last?",
+        "a0": "10 months",
+        "a1": "30 months",
+        "a2": "3 months",
+        "why": "Cash divided by the monthly loss is its runway: 30 ÷ 3 = 10 months."
+      },
+      "3": {
+        "q": "The CEO sells shares every quarter while saying business is booming. What do you check?",
+        "a0": "Cash, customers and debt",
+        "a1": "Nothing, CEOs know best",
+        "a2": "Only the news headlines",
+        "why": "Actions with their own money say more than words. Check the numbers."
+      },
+      "4": {
+        "q": "A fee of 1% on every buy and sell. A buy-then-sell round trip costs about…",
+        "a0": "2%",
+        "a1": "1%",
+        "a2": "0.5%",
+        "why": "You pay once going in and once coming out."
+      },
+      "5": {
+        "q": "A price falls 20% but customers, profit and cash are unchanged. A good first question is…",
+        "a0": "Did the business change, or just the price?",
+        "a1": "How fast can I sell everything?",
+        "a2": "Which friend told me to buy?",
+        "why": "A falling price is not a falling business. Check what actually changed."
+      },
+      "6": {
+        "q": "Someone promises guaranteed 100% returns in 3 months. This is…",
+        "a0": "A red flag for fraud",
+        "a1": "A safe investment",
+        "a2": "Normal for a good company",
+        "why": "No real investment can guarantee returns. Walk away."
+      },
+      "7": {
+        "q": "Money you will need next month should be…",
+        "a0": "In safe cash you can reach quickly",
+        "a1": "In the riskiest company",
+        "a2": "Put into one risky share",
+        "why": "Money needed soon should not ride on a price that can fall."
+      }
+    }
+  }
+}

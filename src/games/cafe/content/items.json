@@ -1,0 +1,148 @@
+{
+  "income": 600,
+  "goal": 250,
+  "coin": 10,
+  "fizzStart": {
+    "fun": 25,
+    "friends": 35
+  },
+  "releaseFactor": 1.5,
+  "bigNightCost": 60,
+  "bigNightCarryCost": 100,
+  "quickCash": {
+    "50": 70,
+    "100": 135,
+    "150": 200
+  },
+  "window": [
+    {
+      "id": "gamepack",
+      "price": 50,
+      "kind": "fizz",
+      "bottle": "fun",
+      "pull": 40,
+      "category": "fun"
+    },
+    {
+      "id": "jacket",
+      "price": 200,
+      "kind": "ignorable",
+      "category": "shopping"
+    },
+    {
+      "id": "match",
+      "price": 100,
+      "kind": "fizz",
+      "bottle": "friends",
+      "pull": 40,
+      "category": "fun",
+      "soldOut": true
+    },
+    {
+      "id": "cover",
+      "price": 40,
+      "kind": "sensible",
+      "category": "phone"
+    }
+  ],
+  "waves": [
+    [
+      "gamepack"
+    ],
+    [
+      "match",
+      "jacket"
+    ],
+    [
+      "cover"
+    ]
+  ],
+  "trolley": [
+    {
+      "id": "chai",
+      "price": 10
+    },
+    {
+      "id": "samosa",
+      "price": 20
+    },
+    {
+      "id": "cold",
+      "price": 20,
+      "bottle": "fun",
+      "pull": 15
+    },
+    {
+      "id": "tiffin",
+      "price": 30,
+      "bottle": "fun",
+      "pull": 15
+    },
+    {
+      "id": "biscuit",
+      "price": 10
+    },
+    {
+      "id": "ice",
+      "price": 30,
+      "bottle": "fun",
+      "pull": 15
+    }
+  ],
+  "bills": [
+    {
+      "id": "auto",
+      "day": 3,
+      "amount": 20
+    },
+    {
+      "id": "data",
+      "day": 9,
+      "amount": 30
+    },
+    {
+      "id": "lunch",
+      "day": 20,
+      "amount": 30
+    }
+  ],
+  "surprises": [
+    {
+      "id": 1,
+      "bill": 150,
+      "coverBill": 100
+    },
+    {
+      "id": 2,
+      "bill": 120
+    },
+    {
+      "id": 3,
+      "bill": 200
+    },
+    {
+      "id": 4,
+      "bill": 160
+    },
+    {
+      "id": 5,
+      "bill": 180,
+      "testFirst": true
+    }
+  ],
+  "extras": [
+    {
+      "id": 6,
+      "bill": 60
+    },
+    {
+      "id": 7,
+      "bill": 70
+    },
+    {
+      "id": 8,
+      "bill": 90
+    }
+  ],
+  "extraChance": 0.4
+}

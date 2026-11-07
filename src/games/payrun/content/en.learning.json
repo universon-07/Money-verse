@@ -1,0 +1,150 @@
+{
+  "concepts": { "1": "Track it", "2": "Small spends add up", "3": "Pay yourself first", "4": "Emergency fund", "5": "Plan for surprises", "6": "Wait before you buy", "7": "Goals and trade-offs", "8": "The cost of borrowing", "9": "Lending to friends" },
+  "itemNames": { "T1": "sneakers", "T2": "game skin", "T3": "phone case", "T4": "night out", "T5": "headphones", "T6": "phone plan add-on", "T7": "cinema night", "T8": "jacket", "T9": "cover and earphones set", "T10": "festival shirt" },
+  "predict": {
+    "label": "Quick guess",
+    "note": "A wrong guess costs nothing. It just helps you learn.",
+    "go": "Lock in my guess",
+    "q": {
+      "1": "How much will you have left at the end of the week, pocket plus jar?",
+      "2": "How much will you spend on small treats this week?",
+      "3": "By how much will your jar grow this week?",
+      "4": "When the big bill comes on Day 5, where will the money come from?",
+      "5": "How many surprise bills will hit this week?",
+      "6": "If you buy all three things on offer, your goal is pushed back by about:",
+      "7": "You borrow ₹200 and repay ₹300. The extra ₹100 is:",
+      "8": "Of the two friends who ask this week, how many will repay in time?"
+    },
+    "opts": {
+      "1": { "low": "Under ₹150", "mid": "₹150 to ₹350", "high": "Over ₹350" },
+      "2": { "low": "Under ₹60", "mid": "₹60 to ₹100", "high": "Over ₹100" },
+      "3": { "low": "Under ₹200", "mid": "₹200 to ₹400", "high": "Over ₹400" },
+      "4": { "pocket": "My pocket", "jar": "My jar", "borrow": "Borrowing or paying late" },
+      "5": { "none": "None", "one": "One", "many": "Two or more" },
+      "6": { "1": "About 1 week", "2": "About 2 weeks", "3": "3 weeks or more" },
+      "7": { "10": "10% of what you borrowed", "25": "25% of what you borrowed", "50": "50% of what you borrowed" },
+      "8": { "both": "Both", "one": "One", "neither": "Neither" }
+    }
+  },
+  "biggest": {
+    "q": "Tap the biggest place your money went.",
+    "note": "Saved isn't an option here, because this is about spending.",
+    "retry": "Not quite. Look at the bar again and try once more.",
+    "right": "Yes. {{group}} was the biggest place.",
+    "revealed": "It was {{group}}. Seeing it makes it easier to change."
+  },
+  "nameit": {
+    "title": "Name it",
+    "predicted": "You predicted {{guess}}. It was {{truth}}.",
+    "right": "Right on! You predicted {{guess}}.",
+    "more": "Learn more",
+    "less": "Hide",
+    "terms": "Also called: {{terms}}",
+    "parts": { "idea": "The idea", "example": "Worked example", "real": "In real life", "ask": "Ask yourself", "rule": "Rule of thumb" },
+    "go": "Got it"
+  },
+  "lesson": {
+    "L1": { "close": "You guessed about {{guess}} left and had {{actual}}. Close.", "far": "You guessed about {{guess}} left and had {{actual}}. Most people guess wrong on week one." },
+    "L2": { "any": "{{n}} treats cost you {{x}} this week. At this pace that is {{y}} a month." },
+    "L3": { "share": "You set aside {{s}} before spending anything. Your jar grew {{g}}.", "none": "You saved {{m}} from what was left. A 20% share would have put {{x}} away before any spending." },
+    "L4": {
+      "jar": "A {{bill}} bill hit on Day 5. Your jar covered {{x}} of it, with no loan.",
+      "borrowed": "A {{bill}} bill hit on Day 5. You had {{p}} on you, so you borrowed {{q}}.",
+      "late": "A {{bill}} bill hit on Day 5. You had {{p}} on you, so you paid late.",
+      "pocket": "A {{bill}} bill hit on Day 5 and your pocket covered it. That cash was exposed: {{lost}} slipped out on Day 4."
+    },
+    "L5": { "any": "{{n}} surprise bills hit this week, {{x}} in all. Your surprises have averaged {{a}} a week." },
+    "L6": { "any": "This week {{n}} offers came with a pressure trick. You bought {{b}} of them." },
+    "L7": { "bought": "The {{item}} cost {{p}}, which is {{k}} of progress towards your goal.", "passed": "You passed on {{t}} of wants. That is {{k}} closer to your goal." },
+    "L8": {
+      "quickcash": "You borrowed {{a}} and repay {{r}}. The extra {{e}} is {{pct}}%.",
+      "jar": "You used the jar. Quick Cash would have cost {{e}} extra.",
+      "late": "You paid late. It cost {{fee}} and came out of next week's pay.",
+      "pocket": "You had the cash, so you did not borrow. Borrowing ₹200 here would cost {{e}} extra."
+    },
+    "L9": {
+      "notRepaid": "₹200 you lent has not come back.",
+      "repaid": "The {{x}} you lent came back.",
+      "smallBack": "You lent ₹50 and it came back. A smaller amount hurts less.",
+      "smallNot": "You lent ₹50 and it has not come back. A smaller amount hurts less.",
+      "no": "You said no kindly and kept {{x}}."
+    },
+    "idea": {
+      "1": "Most people guess their spending wrong, and the surprise is usually in small, repeated things. Writing it down turns a feeling into a number you can change.",
+      "2": "Small spends feel harmless one at a time, which is why they repeat. Added up, they can match a bigger purchase. The point is not to give up treats; it is to see the total and decide if it is worth it.",
+      "3": "Saving works best when it happens first, before spending. Money already set aside cannot be spent on impulse or lost from your pocket. Making it automatic means you do not have to decide every time.",
+      "4": "Things go wrong. An emergency fund is money kept apart only for surprises, safe and easy to reach. Cash in your pocket is exposed. A cushion does not stop bad things; it stops them becoming a debt.",
+      "5": "A surprise is a cost you did not choose, but it is not rare. Unexpected costs arrive regularly, so treat them as a normal cost, not bad luck. Planned costs you can see coming; surprises you prepare for with a cushion.",
+      "6": "Impulse buys are driven by the moment: a sale, a friend's new thing, a good mood. The feeling often fades. Putting an item on a list and coming back separates the urge from the decision.",
+      "7": "Every rupee can be spent only once. Spending on one thing means not spending on something else, including your goal. That hidden alternative is called opportunity cost. A price in weeks of saving makes it visible.",
+      "8": "A loan gives money now in exchange for paying back more later. The extra is the cost of borrowing. ₹100 on ₹200 over about two weeks is 50%. Before borrowing, find the total you will repay and compare other ways to cover the need.",
+      "9": "Lending to friends mixes money and relationships, and not every loan is repaid. A friend's history is a clue. Saying no kindly is allowed, and a smaller amount is a middle path."
+    },
+    "rule": {
+      "1": "What you track, you can change.", "2": "Count the small stuff.", "3": "Pay yourself first.", "4": "Keep a cushion apart from spending money.", "5": "Expect the unexpected.",
+      "6": "Wait before you buy.", "7": "Price it in goal-weeks, not just rupees.", "8": "Ask what a loan costs, and what else you could do.", "9": "Lend only what you could afford to lose."
+    },
+    "terms": {
+      "1": "tracking, budgeting, take-home pay", "2": "small leaks, recurring costs", "3": "saving habit, automatic saving, paying yourself first", "4": "emergency fund, liquidity", "5": "contingency, irregular costs, planned vs unplanned",
+      "6": "impulse buying, cooling-off period, false urgency", "7": "opportunity cost, trade-off, goal setting", "8": "interest, cost of credit, total repayment", "9": "personal lending, risk"
+    }
+  },
+  "apply": {
+    "title": "Try it in a new situation",
+    "check": "Check my answer",
+    "pick": "Pick one",
+    "right": "Right.",
+    "hint": "Not quite. Think about this: {{hint}}",
+    "retry": "Try once more",
+    "revealed": "The answer was {{answer}}.",
+    "go": "Continue",
+    "q": {
+      "1": { "q": "Karan earns ₹800 a week and says he never has anything left. What is the best first step?", "A": "Earn more", "B": "Write down where each rupee went for one week", "C": "Stop spending completely", "why": "You can only change what you can see, so tracking comes first." },
+      "2": { "q": "Vikram says: \"₹10 doesn't matter.\" What is the best reply?", "A": "He is right, small amounts never matter", "B": "Count how often he spends it in a week and multiply", "C": "Never spend ₹10 on anything", "why": "Counting turns a small spend into a weekly and monthly total he can decide about." },
+      "3": { "q": "Neha's pocket money comes on the 1st and is gone by the 10th, every month. Which change is most likely to help?", "A": "Move a fixed amount to a savings pot on the 1st", "B": "Try harder to remember to save", "C": "Wait for more pocket money", "why": "Money set aside first can't be spent, and she doesn't have to decide each time." },
+      "4": { "q": "A ₹500 repair bill arrives. Rina has ₹600 set apart for emergencies. Karthik has nothing set apart. What is the main difference?", "A": "Rina can pay without borrowing", "B": "Karthik will not pay", "C": "There is no difference", "why": "A cushion doesn't stop the bill. It stops it becoming a debt." },
+      "5": { "q": "Pooja's monthly plan covers rent, food and travel but nothing for surprises. What is most likely?", "A": "Nothing will happen", "B": "A surprise forces her to borrow or skip something", "C": "She will earn more", "why": "Surprises arrive regularly, so a plan with no room for them bends when one hits." },
+      "6": { "q": "Tara sees headphones at \"50% off, was ₹600\" for ₹300. She was not planning to buy any. If she buys them, she:", "A": "saves ₹300", "B": "spends ₹300 she had not planned", "C": "saves ₹600", "why": "A discount on something you weren't going to buy is still spending." },
+      "7": { "q": "Ishaan can afford either ₹900 shoes or a ₹2,000 course fee, but not both. Which question helps most?", "A": "Which costs less?", "B": "What else could this money do, and which matters more to me?", "C": "Which one do friends want?", "why": "Naming what the money could do instead makes the trade-off visible." },
+      "8": { "q": "Before borrowing to pay a bill, which question helps most?", "A": "How fast can I get the money?", "B": "What is the total I will repay, and could savings cover it?", "C": "Who else has borrowed?", "why": "The total you repay is the real cost, and savings might avoid it." },
+      "9": { "q": "Arun lent ₹300 and it was not repaid. What could he do next time?", "A": "Lend an amount he can afford to lose and agree a date", "B": "Never talk to friends about money", "C": "Lend more so they repay sooner", "why": "A smaller amount he can afford to lose protects both the money and the friendship." }
+    }
+  },
+  "notebook": {
+    "title": "My Money Notebook",
+    "page": "{{concept}} · week {{n}}",
+    "rule": "Rule of thumb",
+    "happened": "What happened to me",
+    "words": "In my words",
+    "wordsAsk": "Pick the one that fits you best. There is no wrong answer.",
+    "home": "Try it at home",
+    "homeNote": "Optional, and under 10 minutes. You never need to share private details.",
+    "save": "Save to my notebook",
+    "open": "My notebook",
+    "close": "Close",
+    "empty": "Your pages appear here after each week.",
+    "pages": "{{n}} of 9 pages",
+    "sentences": {
+      "1": ["I did not know where my money was going.", "I thought I knew, and I was wrong.", "I knew, and now I can prove it."],
+      "2": ["Little things add up faster than I thought.", "I will count the small stuff from now on.", "Some treats are worth it to me. I just want to choose them."],
+      "3": ["Saving first is easier than saving what is left.", "I want a share to move automatically.", "I need to try this for longer to see."],
+      "4": ["A cushion makes a bad day smaller.", "I want money set apart for surprises.", "I did not realise how exposed my cash was."],
+      "5": ["Surprises are normal, not just bad luck.", "I want to plan for them.", "I can see which costs I can and cannot predict."],
+      "6": ["Waiting makes me want fewer things.", "Offers that rush me are a warning sign.", "Sometimes I still want it after waiting, and that is fine."],
+      "7": ["I want to think in goal-weeks.", "Every purchase has something it replaces.", "A purchase can be worth it if I choose it knowing the cost."],
+      "8": ["Borrowing costs more than it looks.", "I would look at the total I repay first.", "I would check what else could cover it."],
+      "9": ["I can say no kindly.", "A smaller amount is a good middle path.", "I will only lend what I can afford to lose."]
+    },
+    "tasks": {
+      "1": "For three days, write down every rupee you spend. At the end, find the biggest group.",
+      "2": "Count how many small things you buy in a week (tea, snacks, recharge, games). Multiply by four. Is the number a surprise?",
+      "3": "Ask someone at home whether they set money aside before spending or from what is left. Which do they find easier?",
+      "4": "Ask yourself: if a ₹500 bill came tomorrow, where would the money come from? Is any money kept apart for that?",
+      "5": "Make two lists: costs you can see coming this month, and costs that surprised you last month.",
+      "6": "The next time you want something you did not plan, write it down and wait three days. Do you still want it?",
+      "7": "Choose one thing you want. Find its price. Divide by what you could save in a week. How many weeks is it?",
+      "8": "Write three questions you would ask before borrowing anything. Never share bank details, PINs or passwords with anyone.",
+      "9": "Think of a time someone asked you for money. Practise one kind way to say no, and one way to lend a smaller amount."
+    }
+  }
+}

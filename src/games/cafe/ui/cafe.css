@@ -1,0 +1,347 @@
+/* Pocket Panic: café stage + panel. Warm, calm to look at; stepped motion; every effect off under reduced motion / Lite. */
+.cafe { position: absolute; inset: 0; background: #22180F; color: #3A2A24; overflow: hidden; }
+
+/* picture + subtitle dock live in one box. Quiet screens: picture big on top. Busy screens: the box glides to side by side
+   (wide screens) or the picture shrinks to a strip (phones), so the choices never need scrolling. */
+.cafe { display: flex; flex-direction: column; background: #1E150E; }
+.cafe-main { --sw: 100%; --sh: min(56.25vw, 44%); --dl: 0%; --dt: var(--sh); --dw: 100%; --dh: calc(100% - var(--sh)); position: relative; flex: 1 1 0; min-height: 0; overflow: hidden; }
+.cafe-main[data-busy] { --sh: min(40vw, 26%); }
+.cafe-stage, .cafe-dock { position: absolute; transition: left .6s cubic-bezier(.4, 0, .2, 1), top .6s cubic-bezier(.4, 0, .2, 1), width .6s cubic-bezier(.4, 0, .2, 1), height .6s cubic-bezier(.4, 0, .2, 1); }
+.cafe-stage { left: 0; top: 0; width: var(--sw); height: var(--sh); container-type: size; background: #1E150E; }
+.cafe-svg { position: absolute; inset: 0; margin: auto; display: block; width: min(100cqw, calc(100cqh * 16 / 9)); height: auto; border-radius: 12px; }
+.cafe-dock { left: var(--dl); top: var(--dt); width: var(--dw); height: var(--dh); z-index: 10; display: flex; flex-direction: column; }
+.cafe-dock-inner { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 14px 14px max(10px, env(safe-area-inset-bottom)); background: #FBF3DE; border-top: 3px solid #3A2A24; box-shadow: 0 -6px 18px rgba(0, 0, 0, .35); }
+@media (min-width: 760px), (orientation: landscape) and (min-width: 560px) {
+  .cafe-main, .cafe-main[data-busy] { --sw: 58%; --sh: 100%; --dl: 58%; --dt: 0%; --dw: 42%; --dh: 100%; }
+  .cafe-dock-inner { padding: 18px 20px 12px; border-top: none; border-left: 3px solid #3A2A24; box-shadow: -6px 0 18px rgba(0, 0, 0, .35); }
+}
+
+/* top bar: above the picture, not over it */
+.cafe-hud { order: -1; flex: none; z-index: 20; display: flex; flex-direction: column; gap: 6px; padding: max(8px, env(safe-area-inset-top)) 10px 8px; background: #2A1D12; }
+.cafe-hud-row { display: flex; align-items: center; gap: 8px; }
+.cafe-month { flex: 1; min-width: 0; color: #FBF0D2; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
+.cafe-month-bar { position: relative; height: 8px; margin-top: 3px; border-radius: 4px; background: rgba(251, 240, 210, .25); border: 1.5px solid #FBF0D2; }
+.cafe-month-fill { position: absolute; inset: 0 auto 0 0; border-radius: 3px; background: #E8B04A; transition: width .6s ease; }
+.cafe-month-mark { position: absolute; top: -4px; width: 2px; height: 14px; background: #FBF0D2; z-index: 1; }
+.cafe-jars { display: flex; gap: 6px; flex-wrap: wrap; }
+.cafe-jarchip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px 3px 5px; border-radius: 999px; background: rgba(251, 240, 210, .94); border: 1.5px solid #3A2A24; font-size: 12.5px; font-weight: 800; transition: transform .25s, box-shadow .25s; }
+.cafe-jarchip small { font-weight: 700; opacity: .65; font-size: 10.5px; text-transform: uppercase; letter-spacing: .04em; }
+.cafe-jarchip.is-hot { transform: scale(1.08); box-shadow: 0 0 0 3px #FFE9A8; }
+.cafe-jarchip.is-dim { opacity: .55; }
+
+.cafe-foot { margin: 8px 0 0; font-size: 10.5px; color: #3A2A24; opacity: .55; text-align: center; }
+
+/* ---- captions and buttons ---- */
+.cafe-say { position: relative; display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 2px solid #3A2A24; border-radius: 14px; background: #FFFDF5; box-shadow: 0 3px 0 rgba(58, 42, 36, .25); animation: cafe-rise .25s ease both; cursor: pointer; }
+.cafe-say-face { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 2px solid #3A2A24; object-fit: cover; object-position: top; background: #F2DFB0; }
+.cafe-say-body { min-width: 0; flex: 1; }
+.cafe-say-name { display: inline-block; margin-bottom: 2px; padding: 1px 9px; border-radius: 999px; background: #C8604A; color: #FFF7E6; font-size: 11.5px; font-weight: 800; letter-spacing: .04em; }
+.cafe-say.is-teja .cafe-say-name { background: #2F6F73; }
+.cafe-say.is-yusuf .cafe-say-name { background: #3F7A3A; }
+.cafe-say.is-you .cafe-say-name { background: #5A4AA0; }
+.cafe-say.is-you { flex-direction: row-reverse; text-align: right; background: #F1EEFB; }
+.cafe-say-text { margin: 0; font-size: 16.5px; font-weight: 600; line-height: 1.4; min-height: 1.4em; }
+.cafe-say-more { position: absolute; right: 10px; bottom: 6px; font-size: 11px; opacity: .6; animation: cafe-blink 1s steps(2) infinite; }
+.cafe-say.is-scene { background: transparent; border: none; box-shadow: none; padding: 4px 2px; justify-content: center; text-align: center; }
+.cafe-say.is-scene .cafe-say-text { font-style: italic; font-weight: 500; color: #6B5A50; }
+.cafe-say.is-note { background: #FFF7E3; transform: rotate(-1deg); }
+.cafe-say.is-note .cafe-say-text { font-family: 'Kalam', 'Noto Sans', cursive; font-weight: 500; }
+@keyframes cafe-blink { 50% { opacity: 0 } }
+.cafe-ghost { background: transparent !important; box-shadow: none !important; border-color: transparent !important; color: #3A2A24 !important; text-decoration: underline; }
+.cafe .ink-btn { min-height: 44px; font-size: 14.5px; padding: 0 14px; }
+.cafe .ink-btn:disabled { opacity: .45; cursor: not-allowed; }
+
+.cafe-choice { min-height: 48px; padding: 9px 12px; border: 1.5px solid #3A2A24; border-radius: 8px; background: #FBF0D2; font-weight: 600; font-size: 14.5px; cursor: pointer; box-shadow: 0 2px 0 rgba(58, 42, 36, .35); }
+.cafe-choice.is-on { background: #F2D59A; border-width: 2.5px; border-color: #C8604A; }
+.cafe-choice:disabled { opacity: .45; cursor: not-allowed; }
+.cafe-goal { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 6px; border: 1.5px solid #3A2A24; border-radius: 10px; background: #FBF0D2; cursor: pointer; }
+.cafe-goal.is-on { background: #F2D59A; border: 2.5px solid #C8604A; }
+
+/* ---- the source picker ---- */
+.cafe-src { display: flex; align-items: center; gap: 8px; padding: 7px 9px; border: 1.5px solid #3A2A24; border-radius: 8px; background: #FBF5E6; }
+.cafe-src.is-on { background: #F6E7C3; }
+.cafe-src.is-save { background: #F5D9C9; }
+.cafe-step { width: 36px; height: 36px; border: 1.5px solid #3A2A24; border-radius: 8px; background: #FBF0D2; font-size: 18px; font-weight: 800; cursor: pointer; }
+.cafe-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; width: 100%; max-width: 120px; }
+.cafe-steps .cafe-step { width: 100%; }
+.cafe-step.is-wide { grid-column: 1 / -1; height: 30px; font-size: 13px; }
+.cafe-step:disabled { opacity: .35; cursor: not-allowed; }
+.cafe-meter { height: 8px; border: 1.5px solid #3A2A24; border-radius: 4px; background: #EFE6D2; overflow: hidden; }
+.cafe-meter > span { display: block; height: 100%; background: #C97B4A; transition: width .3s steps(4); }
+.cafe-meter.is-steam > span { background: #BFD3D9; transition: none; }
+.cafe-note-card { padding: 7px 10px; border: 1.5px dashed #3A2A24; border-radius: 8px; background: #EFE6D2; font-size: 13px; font-weight: 600; }
+
+/* ---- payday ---- */
+.cafe-pile { padding: 8px; border: 1.5px dashed #3A2A24; border-radius: 10px; background: #F6F1E6; cursor: grab; touch-action: none; user-select: none; }
+.cafe-coin { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; border: 1.3px solid #3A2A24; background: #D9A84E; font-size: 10px; font-weight: 900; color: #3A2A24; }
+.cafe-coin.is-drag { position: fixed; z-index: 70; width: 28px; height: 28px; font-size: 14px; pointer-events: none; }
+.cafe-jar { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; border: 1.5px solid #3A2A24; border-radius: 10px; background: #FBF0D2; text-align: center; }
+.cafe-jar.is-save { background: #F6E1D2; }
+.cafe-jar.is-emergency { background: #E3E7EA; }
+
+/* ---- bills, offers, trolley ---- */
+.cafe-bill { position: relative; align-self: center; min-width: 210px; padding: 12px 18px; border: 1.5px solid #3A2A24; background: repeating-linear-gradient(#FFFDF6 0 22px, #EEE5CF 22px 23px); text-align: center; box-shadow: 0 3px 0 rgba(58, 42, 36, .3); animation: cafe-slidein .4s steps(5) both; }
+.cafe-bill.is-rain { background: #F4EEE0; }
+.cafe-bill-stamp { position: absolute; right: -10px; top: -10px; padding: 2px 8px; border: 2.5px solid #C8604A; color: #C8604A; font-weight: 900; letter-spacing: .12em; transform: rotate(10deg); background: rgba(251, 240, 210, .9); font-size: 13px; }
+.cafe-bill-stamp.is-wide { position: static; display: inline-block; margin-top: 6px; transform: rotate(-3deg); }
+.cafe-offer { padding: 10px; border: 1.5px solid #3A2A24; border-radius: 10px; background: #FBF5E6; animation: cafe-rise .32s steps(4) both; }
+.cafe-kind { display: inline-block; margin-top: 3px; padding: 1px 6px; border: 1px solid #3A2A24; border-radius: 999px; font-size: 10.5px; font-weight: 700; }
+.cafe-kind.is-fizz { background: #F7D7B4; }
+.cafe-kind.is-ignorable { background: #EFE6D2; }
+.cafe-kind.is-sensible { background: #D6E8E1; }
+.cafe-ledger-page { padding: 10px 12px; border: 1.5px solid #3A2A24; border-radius: 6px; background: repeating-linear-gradient(#FFFDF6 0 24px, #EEE5CF 24px 25px); font-size: 14px; }
+.cafe-lane { display: flex; align-items: flex-end; gap: 8px; padding: 6px 2px 10px; border-bottom: 3px solid #8A5A3C; overflow: hidden; }
+.cafe-tray { display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 84px; padding: 6px; border: 1.5px solid #3A2A24; border-radius: 8px; background: #FBF0D2; opacity: .55; transform: scale(.88); transform-origin: bottom; }
+.cafe-tray.is-front { opacity: 1; transform: none; border-width: 2.5px; animation: cafe-roll-in .35s steps(5) both; }
+.cafe-tag { min-height: 36px; padding: 0 10px; border: 1.5px solid #3A2A24; border-radius: 999px; background: #FBF0D2; font-size: 12.5px; font-weight: 700; cursor: pointer; }
+.cafe-tag.is-on { background: #3A2A24; color: #FBF0D2; }
+
+/* ---- big night ---- */
+.cafe-ghosts { position: relative; display: flex; justify-content: center; gap: 14px; padding: 6px 0 2px; font-size: 26px; }
+.cafe-ghost-icon { opacity: .4; filter: grayscale(.4); animation: cafe-ghost 2.4s steps(8) infinite; }
+.cafe-marble { position: absolute; right: 18%; bottom: 0; width: 12px; height: 12px; border-radius: 50%; border: 1.3px solid #3A2A24; background: #BFE3F0; animation: cafe-marble-roll .9s steps(6) both; }
+
+/* ---- rain and quick cash ---- */
+.cafe-phone { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid #3A2A24; border-radius: 16px; background: #24323A; color: #FBF0D2; }
+.cafe-phone .cafe-caption { color: #3A2A24; }
+.cafe-fine { padding: 8px 10px; border-radius: 8px; background: #FBF0D2; color: #3A2A24; font-size: 13.5px; animation: cafe-flip .4s steps(5) both; }
+
+/* ---- tally ---- */
+.cafe-stamp { align-self: center; padding: 4px 16px; border: 3.5px solid #2F6F4F; color: #2F6F4F; font-weight: 900; font-size: 22px; letter-spacing: .12em; transform: rotate(-6deg); animation: cafe-stamp .45s steps(4) both; }
+.cafe-stamp.is-notyet { border-color: #8C8590; color: #6E6A72; }
+.cafe-report-row { display: flex; justify-content: space-between; gap: 10px; padding: 3px 0; border-bottom: 1px dashed rgba(58, 42, 36, .25); }
+.cafe-card { padding: 10px 12px; border: 1.5px solid #3A2A24; border-radius: 8px; background: #FBF5E6; font-size: 14px; line-height: 1.45; }
+.cafe-chit { align-self: center; max-width: 320px; padding: 12px 14px; border: 1.5px solid #3A2A24; background: #FFF7E3; transform: rotate(-2deg); box-shadow: 0 3px 0 rgba(58, 42, 36, .3); }
+.cafe-chit.is-kept { transform: rotate(-2deg) translateY(-6px); opacity: .7; transition: all .3s steps(3); }
+.cafe-hand { font-family: 'Kalam', 'Noto Sans', cursive; color: #8A3E2E; font-size: 14px; }
+.cafe-petals { position: relative; height: 0; }
+.cafe-petals span { position: absolute; top: -40px; width: 10px; height: 7px; border-radius: 80% 0 80% 0; background: #E8862F; border: 1px solid #3A2A24; animation: cafe-petal 3s steps(15) infinite; }
+
+/* ---- overlays ---- */
+.cafe-card-overlay { position: absolute; inset: 0; z-index: 60; display: grid; place-items: center; background: rgba(36, 50, 58, .45); animation: cafe-wipe 1.5s steps(6) both; }
+.cafe-titlecard { padding: 16px 26px; border: 3px double #3A2A24; border-radius: 8px; background: #FBF0D2; text-align: center; box-shadow: 0 0 0 6px #FBF0D2, 0 0 0 7.5px #3A2A24; }
+.cafe-titlecard.is-inline { align-self: center; animation: cafe-rise .4s steps(4) both; }
+.cafe-sheet { position: absolute; inset: 0; z-index: 65; display: grid; place-items: center; background: rgba(36, 50, 58, .55); padding: 12px; }
+.cafe-ledger { width: min(94vw, 520px); max-height: 82vh; overflow-y: auto; padding: 14px; border: 1.5px solid #3A2A24; border-radius: 8px; background: repeating-linear-gradient(#FFFDF6 0 26px, #EEE5CF 26px 27px); }
+.cafe-ledger-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding: 3px 0; font-size: 14px; border-bottom: 1px dashed rgba(58, 42, 36, .2); }
+
+/* ---- stepped animations ---- */
+@keyframes cafe-rise { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+@keyframes cafe-slidein { from { opacity: 0; transform: translateX(30px) rotate(4deg) } to { opacity: 1; transform: rotate(-1deg) } }
+@keyframes cafe-roll-in { from { transform: translateX(40px) } to { transform: none } }
+@keyframes cafe-ghost { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-4px) } }
+@keyframes cafe-marble-roll { from { transform: translateX(-120px) } to { transform: none } }
+@keyframes cafe-flip { from { transform: rotateY(90deg) } to { transform: none } }
+@keyframes cafe-stamp { 0% { transform: rotate(-6deg) scale(2.4); opacity: 0 } 100% { transform: rotate(-6deg) scale(1); opacity: 1 } }
+@keyframes cafe-petal { 0% { transform: translate(0, 0) rotate(0); opacity: 0 } 15% { opacity: 1 } 100% { transform: translate(40px, 260px) rotate(320deg); opacity: 0 } }
+@keyframes cafe-wipe { 0% { clip-path: circle(0% at 50% 50%) } 25%, 80% { clip-path: circle(80% at 50% 50%) } 100% { clip-path: circle(0% at 50% 50%) } }
+@keyframes cafe-bubble { 0% { transform: translateY(0); opacity: .9 } 100% { transform: translateY(-14px); opacity: 0 } }
+@keyframes cafe-rattle { 0%, 100% { transform: translateX(0) } 25% { transform: translateX(-1px) } 75% { transform: translateX(1px) } }
+@keyframes cafe-drift { 0%, 100% { transform: translateX(0) } 50% { transform: translateX(-3px) } }
+@keyframes cafe-rainfall { from { transform: translateY(-10px) } to { transform: translateY(10px) } }
+@keyframes cafe-pop { 0% { transform: scale(.6); opacity: 0 } 70% { transform: scale(1.06) } 100% { transform: none; opacity: 1 } }
+@keyframes cafe-flashk { 0%, 100% { opacity: 0 } 20%, 40% { opacity: .6 } }
+@keyframes cafe-steamk { 0% { transform: translateY(0); opacity: .9 } 100% { transform: translateY(-6px); opacity: .3 } }
+@keyframes cafe-slidek { 0% { transform: translate(0, 0) } 100% { transform: translate(-24px, 40px) rotate(-40deg) } }
+@keyframes cafe-platek { from { transform: translateY(-40px); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes cafe-rollk { from { transform: translateX(-60px) } to { transform: none } }
+@keyframes cafe-bob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-2px) } }
+@keyframes cafe-sway { 0%, 100% { transform: rotate(-6deg) } 50% { transform: rotate(6deg) } }
+.cafe-bubble { animation: cafe-bubble 1.6s steps(6) infinite; transform-box: fill-box; }
+.cafe-rattle { animation: cafe-rattle .5s steps(2) infinite; transform-box: fill-box; }
+.cafe-drift { animation: cafe-drift 4s steps(8) infinite; }
+.cafe-rain { animation: cafe-rainfall .5s steps(3) infinite; }
+.cafe-pop { animation: cafe-pop .45s steps(5) both; transform-box: fill-box; transform-origin: center bottom; }
+.cafe-flash { animation: cafe-flashk 1.4s steps(4) both; }
+.cafe-steam { animation: cafe-steamk 1.2s steps(4) infinite; transform-box: fill-box; }
+.cafe-slide { animation: cafe-slidek 1s steps(6) forwards; transform-box: fill-box; }
+.cafe-plate { animation: cafe-platek .4s steps(4) both; transform-box: fill-box; }
+.cafe-roll { animation: cafe-rollk .6s steps(6) both; }
+.cafe-breathe { animation: cafe-bob 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom; }
+.cafe .anim-sway { animation: cafe-sway 1.6s steps(6) infinite; }
+.cafe[data-slow='true'] * { animation-duration: 2.2s !important; }
+
+html[data-lite='true'] .cafe *, .cafe .is-lite * { animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .cafe * { animation: none !important; transition: none !important; }
+}
+
+.cafe-payrow { position: sticky; bottom: -12px; margin: 4px -4px 0; padding: 8px 4px 4px; background: linear-gradient(transparent, #FBF3DE 22%); }
+
+.cafe-icon { flex: none; border-radius: 14px; box-shadow: 0 2px 0 rgba(58, 42, 36, .35); object-fit: cover; }
+.cafe-ghost-icon .cafe-icon { border-radius: 9px; }
+.cafe-tray .cafe-icon { border-radius: 12px; }
+
+.cafe-selfie { width: 100%; max-height: 22svh; object-fit: cover; border: 2px solid #3A2A24; border-radius: 12px; box-shadow: 0 3px 0 rgba(58, 42, 36, .3); }
+.cafe-phone .cafe-say, .cafe-phone .cafe-choice { color: #3A2A24; }
+.cafe-phone .cafe-choice { min-height: 48px; }
+
+.cafe-say { background: #FFFDF5 url(/art/cafe/parchment.webp) center / cover; }
+.cafe-say.is-you { background-color: #F1EEFB; background-blend-mode: multiply; }
+.cafe-ledger { background: url(/art/cafe/ledger.webp) center / 100% 100% no-repeat; border: none; border-radius: 0; padding: 56px 48px 40px 70px; width: min(94vw, 460px); max-height: 86vh; aspect-ratio: 626 / 751; box-sizing: border-box; }
+.cafe-ledger-line { border-bottom: none; }
+
+@keyframes cafe-rainfall2 { from { transform: translateY(-20px) } to { transform: translateY(20px) } }
+.cafe-rain { animation: cafe-rainfall2 .6s linear infinite !important; }
+
+/* ---- coins and the little scene animations ---- */
+.cafe-coin { width: 22px; height: 22px; object-fit: contain; background: none; border: none; border-radius: 0; filter: drop-shadow(0 1px 0 rgba(58, 42, 36, .5)); }
+.cafe-coin.is-drag { position: fixed; z-index: 70; width: 34px; height: 34px; pointer-events: none; }
+.cafe-flycoin { position: fixed; z-index: 80; width: 22px; height: 22px; pointer-events: none; animation: cafe-fly .52s cubic-bezier(.3, .6, .4, 1) both; }
+@keyframes cafe-fly { 0% { transform: translate(0, 0) scale(1) rotateY(0) } 55% { transform: translate(calc(var(--dx) * .55), calc(var(--dy) * .55 - 46px)) scale(1.25) rotateY(180deg) } 100% { transform: translate(var(--dx), var(--dy)) scale(.7) rotateY(360deg); opacity: .15 } }
+.cafe-jarimg { height: 44px; width: auto; max-width: 56px; object-fit: contain; }
+.cafe-jar.is-pop .cafe-jarimg { animation: cafe-clinkk .35s ease; }
+@keyframes cafe-clinkk { 0%, 100% { transform: none } 30% { transform: scale(1.18) rotate(-6deg) } 60% { transform: scale(1.1) rotate(5deg) } }
+.cafe-clink { animation: cafe-clinkk .4s ease; transform-box: fill-box; transform-origin: center bottom; }
+.cafe-drop { animation: cafe-dropk .55s cubic-bezier(.5, 0, 1, .6) both; }
+@keyframes cafe-dropk { from { transform: translateY(-14px); opacity: 1 } to { transform: translateY(34px); opacity: 0 } }
+.cafe-spin { animation: cafe-spink 2.2s linear infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes cafe-spink { 0% { transform: scaleX(1) } 25% { transform: scaleX(.1) } 50% { transform: scaleX(-1) } 75% { transform: scaleX(.1) } 100% { transform: scaleX(1) } }
+.cafe-fall { animation: cafe-fallk .5s cubic-bezier(.5, 0, 1, .7) both; }
+@keyframes cafe-fallk { from { transform: translateY(-60px) rotate(-30deg) } to { transform: none } }
+.cafe-swap { animation: cafe-swapk .3s ease both; transform-box: fill-box; transform-origin: center bottom; }
+@keyframes cafe-swapk { from { opacity: 0; transform: translateY(4px) scale(.97) } to { opacity: 1; transform: none } }
+.cafe-bob { animation: cafe-bob 1.6s ease-in-out infinite; transform-box: fill-box; }
+.cafe-say.is-note { background-image: url(/art/cafe/scroll.webp); background-size: 100% 100%; }
+
+/* ---- pressure and mood gauges ---- */
+.cafe-gauges { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.cafe-gauge { display: flex; align-items: center; gap: 5px; flex: 1 1 108px; min-width: 0; padding: 3px 8px 3px 4px; border-radius: 12px; background: rgba(251, 240, 210, .94); border: 1.5px solid #3A2A24; transition: box-shadow .25s, transform .25s; }
+.cafe-gauge.is-hot { box-shadow: 0 0 0 3px #FFE9A8; transform: scale(1.04); }
+.cafe-gauge-bottle { height: 34px; width: auto; flex: none; }
+.cafe-gauge-bottle.is-fizzing { animation: cafe-rattle .5s steps(2) infinite; }
+.cafe-gauge-face { flex: none; width: 28px; text-align: center; font-size: 22px; line-height: 1; }
+.cafe-gauge-label { display: flex; justify-content: space-between; gap: 6px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; color: #3A2A24; }
+.cafe-gauge-label span { font-weight: 700; text-transform: none; opacity: .7; letter-spacing: 0; }
+.cafe-gauge-bar { display: flex; gap: 2px; height: 8px; margin-top: 2px; }
+.cafe-gauge-bar i { flex: 1; border-radius: 2px; background: rgba(58, 42, 36, .18); transition: background .3s; }
+.cafe-gauge-bar i.on { background: #E8B04A; }
+.cafe-gauge-bar i.on.s2 { background: #E8862F; }
+.cafe-gauge-bar i.on.s3, .cafe-gauge-bar i.on.s4 { background: #D8503A; }
+.cafe-gauge-bar.is-mood { display: block; border-radius: 4px; background: rgba(58, 42, 36, .18); overflow: hidden; }
+.cafe-gauge-bar.is-mood b { display: block; height: 100%; background: linear-gradient(90deg, #E86C4A, #F0C14B 50%, #6BBF6A); background-size: 300px 100%; transition: width .5s ease; }
+.cafe-gauge-help { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid #3A2A24; background: #FBF0D2; font-weight: 900; font-size: 15px; cursor: pointer; }
+.cafe-gauge-label span { white-space: nowrap; font-size: 10.5px; }
+.cafe-gauge { flex: 1 1 84px; }
+.cafe-gauge-help { margin-left: auto; }
+.cafe-gauges { flex-wrap: nowrap; }
+@media (max-width: 520px) { .cafe-gauges { flex-wrap: wrap; } .cafe-gauge { flex-basis: 30%; } .cafe-gauge-help { position: absolute; right: 12px; bottom: 6px; } .cafe-hud { position: relative; } }
+@media (max-width: 520px) { .cafe-gauges { flex-wrap: nowrap; padding-right: 0; } .cafe-gauge { flex: 1 1 0; } .cafe-gauge-help { position: static; margin-left: 0; width: 28px; height: 28px; } .cafe-gauge-bottle { height: 30px; } .cafe-gauge-label { font-size: 10px; } .cafe-gauge-label span { display: none; } }
+
+/* ---- bottles that demand attention ---- */
+.cafe-tipover { animation: cafe-tip .9s cubic-bezier(.5, 0, .9, .6) forwards; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes cafe-tip { 0% { transform: rotate(14deg) } 35% { transform: rotate(40deg) translate(6px, 0) } 100% { transform: translate(22px, 66px) rotate(96deg) } }
+.cafe-marble-roll { animation: cafe-marblek 1.2s .8s cubic-bezier(.3, .6, .4, 1) both; }
+@keyframes cafe-marblek { from { transform: translateX(-16px); opacity: 0 } to { transform: none; opacity: 1 } }
+.cafe-shiver { animation: cafe-shiverk .22s linear infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes cafe-shiverk { 0%, 100% { transform: translateX(-1px) rotate(-1.5deg) } 50% { transform: translateX(1px) rotate(1.5deg) } }
+.cafe-sway { animation: cafe-swayk 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes cafe-swayk { 0%, 100% { transform: rotate(-1.5deg) } 50% { transform: rotate(2deg) } }
+.cafe-alertring { opacity: .55; animation: cafe-ringk 1.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.cafe-alertring.is-hot { opacity: .95; animation-duration: .7s; }
+@keyframes cafe-ringk { 0%, 100% { transform: scale(.92); opacity: .25 } 50% { transform: scale(1.12); opacity: .95 } }
+.cafe-bang { animation: cafe-bangk .6s ease-in-out infinite; transform-box: fill-box; }
+@keyframes cafe-bangk { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-3px) } }
+.cafe-gauge.is-alert { border-color: #D8503A; animation: cafe-alertk .8s ease-in-out infinite; }
+@keyframes cafe-alertk { 0%, 100% { box-shadow: 0 0 0 0 rgba(216, 80, 58, .0) } 50% { box-shadow: 0 0 0 4px rgba(216, 80, 58, .55) } }
+.cafe-gauge-bottle { transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.3, 1.4, .5, 1); }
+
+/* ---- the intro (Meet) ---- */
+.cafe-meet-row { display: flex; align-items: flex-end; justify-content: center; gap: 14px; min-height: 120px; }
+.cafe-meet-bottle { position: relative; width: 78px; height: 118px; }
+.cafe-meet-bottle img { position: absolute; inset: 0; margin: auto; height: 100%; width: auto; opacity: 0; transform: scale(.8); transition: opacity .35s, transform .5s cubic-bezier(.3, 1.4, .5, 1); }
+.cafe-meet-bottle img.is-on { opacity: 1; transform: scale(1); }
+.cafe-meet-word { align-self: center; font-weight: 800; font-size: 18px; min-width: 84px; }
+.cafe-meet-mood { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 70%; }
+.cafe-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(58, 42, 36, .25); display: inline-block; }
+.cafe-dot.on { background: #C8604A; }
+
+/* ---- Ammamma's letter, full screen ---- */
+.cafe-letter { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, rgba(40, 28, 16, .72), rgba(20, 12, 6, .94)); animation: cafe-fadein .5s ease both; padding: 16px; }
+@keyframes cafe-fadein { from { opacity: 0 } to { opacity: 1 } }
+.cafe-env-big { display: flex; flex-direction: column; align-items: center; gap: 14px; background: none; border: none; cursor: pointer; animation: cafe-envin .8s cubic-bezier(.3, 1.3, .5, 1) both; }
+@keyframes cafe-envin { from { transform: translateY(40px) scale(.5) rotate(-6deg); opacity: 0 } to { transform: none; opacity: 1 } }
+.cafe-env-svg { width: min(78vw, 460px); height: auto; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .5)); }
+.cafe-letter-tap { color: #FBF0D2; font-weight: 800; letter-spacing: .08em; animation: cafe-blink 1.2s ease-in-out infinite; }
+.cafe-env-open { position: relative; width: min(94vw, 640px); height: min(92svh, 760px); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 10px; }
+.cafe-env-svg.is-front { position: relative; z-index: 3; width: min(60vw, 300px); margin-bottom: 0; animation: cafe-envdrop .9s ease 2.2s forwards; }
+@keyframes cafe-envdrop { to { transform: translateY(40px) scale(.85); opacity: 0 } }
+.cafe-flap { transform-box: fill-box; transform-origin: 50% 0%; animation: cafe-flapk .7s ease-in-out .1s both; }
+@keyframes cafe-flapk { from { transform: scaleY(1) } to { transform: scaleY(-1) } }
+.cafe-sheet-wrap { position: absolute; left: 0; right: 0; top: 0; bottom: 70px; display: grid; place-items: center; perspective: 1100px; }
+.cafe-sheet-paper { position: relative; width: min(94vw, 600px); aspect-ratio: 1444 / 854; transform-origin: 50% 100%; animation: cafe-unfold2 2s cubic-bezier(.25, .8, .3, 1) .5s both; }
+@keyframes cafe-unfold2 {
+  0% { transform: translateY(46%) scale(.34, .12) rotateX(60deg); opacity: 0 }
+  30% { transform: translateY(18%) scale(.4, .3) rotateX(30deg); opacity: 1 }
+  62% { transform: translateY(-4%) scale(.6, .75) rotateX(10deg) }
+  100% { transform: none }
+}
+.cafe-paper-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; filter: drop-shadow(0 14px 22px rgba(0, 0, 0, .5)); }
+.cafe-paper-text { position: absolute; inset: 14% 9% 12% 9%; display: flex; flex-direction: column; gap: 3%; }
+.cafe-line { margin: 0; font-size: clamp(16px, 3.4vw, 26px); line-height: 1.35; color: #5B3A2A; opacity: 0; animation: cafe-line .7s ease forwards; }
+.cafe-line.is-sign { margin-top: auto; text-align: right; font-weight: 700; }
+.cafe-notes { position: absolute; left: 0; right: 0; top: 100%; height: 40px; }
+.cafe-notes i { position: absolute; top: 4px; font-style: normal; font-weight: 900; font-size: 14px; width: 30px; height: 20px; display: grid; place-items: center; background: #8CC07A; border: 1.5px solid #3A2A24; border-radius: 3px; opacity: 0; animation: cafe-noteup .7s ease forwards; }
+.cafe-letter-take { position: relative; z-index: 2; margin-bottom: 8px; opacity: 0; animation: cafe-fadein .5s ease 4.4s forwards; }
+.cafe-envslide { animation: cafe-envslidek 1s cubic-bezier(.4, .1, .3, 1) both; }
+@keyframes cafe-envslidek { from { transform: translate(98px, -4px) } 50% { transform: translate(46px, -18px) } to { transform: none } }
+
+/* ---- stars: the stakes ---- */
+.cafe-star { color: rgba(58, 42, 36, .3); font-size: 13px; margin-right: 3px; }
+.cafe-star.on { color: #E8A21F; text-shadow: 0 0 6px rgba(232, 162, 31, .7); }
+.cafe-stake { display: flex; align-items: center; gap: 8px; margin-top: 6px; padding: 5px 10px; border-radius: 10px; background: rgba(251, 240, 210, .12); color: #FBF0D2; font-size: 12.5px; font-weight: 700; }
+.cafe-stake b { color: #F3B531; letter-spacing: 2px; font-size: 14px; }
+.cafe-stake.is-risk { background: #D8503A; color: #fff; animation: cafe-alertk .8s ease-in-out infinite; }
+.cafe-stake.is-risk b { color: #fff; }
+.cafe-stamp.is-perfect { border-color: #C8860A; color: #C8860A; font-size: 24px; background: linear-gradient(135deg, #FFF3C4, #F6D774); box-shadow: 0 0 0 3px #FFF3C4, 0 0 18px rgba(232, 162, 31, .8); }
+@keyframes cafe-line { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+@keyframes cafe-noteup { from { opacity: 0; transform: translateY(20px) rotate(0) } to { opacity: 1; transform: translateY(-4px) rotate(-6deg) } }
+.cafe-stake b em { font-style: normal; opacity: .3; }
+
+/* ---- cloud chip, mood face, letter from behind the counter ---- */
+.cafe-moodface { display: inline-block; flex: none; overflow: hidden; position: relative; }
+.cafe-moodpng { width: auto; flex: none; object-fit: contain; animation: cafe-fadein .3s ease both; }
+.cafe-moodface img { position: absolute; left: -55%; top: -2%; width: 210%; max-width: none; animation: cafe-fadein .3s ease both; }
+.cafe-cloudchip small { opacity: .85; }
+.cafe-cloudhl { animation: cafe-cloudhl 1.1s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes cafe-cloudhl { 0%, 100% { transform: scale(1); opacity: .96 } 50% { transform: scale(1.07); opacity: 1 } }
+.cafe-meet-cloud { height: 110px; width: auto; animation: cafe-swapk .4s ease both; }
+.cafe-sheet-paper { transform-origin: 92% 100%; animation: cafe-behind 1.5s cubic-bezier(.25, .85, .3, 1) .15s both; }
+@keyframes cafe-behind {
+  0% { transform: translate(38%, 46%) scale(.18) rotate(8deg); opacity: 0 }
+  25% { opacity: 1 }
+  100% { transform: none }
+}
+.cafe-letter-take { animation-delay: 3.7s !important; }
+
+/* ---- phones play in landscape ---- */
+.cafe-rotate { display: none; }
+@media (orientation: portrait) and (max-width: 700px) {
+  .cafe-rotate { position: fixed; inset: 0; z-index: 200; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; text-align: center; background: #1E150E; color: #FBF0D2; }
+  .cafe-rotate-icon { width: 92px; height: 92px; animation: cafe-turn 2.4s ease-in-out infinite; }
+}
+@keyframes cafe-turn { 0%, 25% { transform: rotate(0) } 55%, 100% { transform: rotate(-90deg) } }
+/* short landscape screens: squeeze the top bar so the picture and the dialogue keep their room */
+@media (max-height: 520px) and (orientation: landscape) {
+  .cafe-hud { padding: 4px 8px; gap: 3px; flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .cafe-hud-row { flex: 1 1 60%; gap: 6px; }
+  .cafe-hud-row .ink-chip { padding: 2px 8px; }
+  .cafe-jars, .cafe-gauges { gap: 4px; flex-wrap: nowrap; }
+  .cafe-jarchip { padding: 1px 7px 1px 4px; font-size: 11px; }
+  .cafe-jarchip small { display: none; }
+  .cafe-gauge { padding: 1px 6px 1px 3px; flex: 1 1 0; }
+  .cafe-gauge-bottle { height: 24px; }
+  .cafe-gauge-label { font-size: 9.5px; }
+  .cafe-gauge-label span:not(.cafe-star) { display: none; }
+  .cafe-gauge-bar { height: 5px; }
+  .cafe-gauge-help { width: 22px; height: 22px; font-size: 12px; }
+  .cafe-stake { display: none; }
+  .cafe-main, .cafe-main[data-busy] { --sw: 56%; --dl: 56%; --dw: 44%; }
+  .cafe-dock-inner { padding: 8px 12px 6px !important; }
+  .cafe-say { padding: 6px 8px; gap: 7px; }
+  .cafe-say-face { width: 36px; height: 36px; }
+  .cafe-say-text { font-size: 14px; }
+  .cafe-foot { display: none; }
+  .cafe .ink-btn { min-height: 38px; font-size: 13.5px; }
+  .cafe-offer, .cafe-card, .cafe-src { padding: 6px 8px; }
+}

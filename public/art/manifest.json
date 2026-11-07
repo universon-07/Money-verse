@@ -1,0 +1,377 @@
+{
+ "story-flowers": {
+  "w": 1100,
+  "h": 724,
+  "src": "Vibrant Indian Flower Stall Cutout.png"
+ },
+ "receipt": {
+  "w": 800,
+  "h": 736,
+  "src": "Vintage Watercolour Receipt with Ribbon.png"
+ },
+ "island-bg": {
+  "w": 1344,
+  "h": 1142,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Waterfall Bazaar Island Diorama.png"
+ },
+ "island-terrain": {
+  "w": 1342,
+  "h": 1139,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Floating Island Fantasy Game Map.png"
+ },
+ "monument": {
+  "w": 1185,
+  "h": 1184,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Ornate Sandstone Mosque Pavilion.png"
+ },
+ "shop-plan": {
+  "w": 900,
+  "h": 534,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Watercolour Bazaar of Colourful Bangles.png"
+ },
+ "shop-invest": {
+  "w": 900,
+  "h": 740,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Isometric Jewel Bazaar Diorama.png"
+ },
+ "shop-save": {
+  "w": 900,
+  "h": 597,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Mediterranean Tea Terrace Caf\u00e9.png"
+ },
+ "shop-safe": {
+  "w": 900,
+  "h": 900,
+  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Isometric Teal Phone Kiosk.png"
+ },
+ "gate-closed": {
+  "w": 800,
+  "h": 805,
+  "src": "Twin Fantasy Gates_ Closed and Open.png"
+ },
+ "gate-open": {
+  "w": 800,
+  "h": 806,
+  "src": "Twin Fantasy Gates_ Closed and Open.png"
+ },
+ "npc-bangle-stand": {
+  "w": 136,
+  "h": 322,
+  "src": "South Asian Market NPC Sprite Sheet.png"
+ },
+ "npc-bangle-sit": {
+  "w": 208,
+  "h": 135,
+  "src": "South Asian Market NPC Sprite Sheet.png"
+ },
+ "npc-chai-stand": {
+  "w": 121,
+  "h": 317,
+  "src": "South Asian Market NPC Sprite Sheet.png"
+ },
+ "npc-chai-sit": {
+  "w": 165,
+  "h": 300,
+  "src": "South Asian Market NPC Sprite Sheet.png"
+ },
+ "npc-pearl-stand": {
+  "w": 137,
+  "h": 317,
+  "src": "South Asian Market NPC Sprite Sheet.png"
+ },
+ "npc-pearl-sit": {
+  "w": 196,
+  "h": 217,
+  "src": "South Asian Market NPC Sprite Sheet.png"
+ },
+ "deco-tree-0": {
+  "w": 520,
+  "h": 435,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-rock-0": {
+  "w": 520,
+  "h": 373,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-rock-1": {
+  "w": 427,
+  "h": 464,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-rock-2": {
+  "w": 414,
+  "h": 247,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-rock-3": {
+  "w": 520,
+  "h": 179,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-bush-0": {
+  "w": 317,
+  "h": 251,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-prop-0": {
+  "w": 435,
+  "h": 636,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-1": {
+  "w": 204,
+  "h": 603,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-2": {
+  "w": 200,
+  "h": 646,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-3": {
+  "w": 520,
+  "h": 212,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-4": {
+  "w": 318,
+  "h": 265,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-5": {
+  "w": 386,
+  "h": 290,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-dock-0": {
+  "w": 760,
+  "h": 460,
+  "src": "Lantern-Lit Dock and Rowboat.png"
+ },
+ "npc-kiosk-stand": {
+  "w": 148,
+  "h": 392,
+  "src": "Kiosk Guy and Nani Character Sheet.png"
+ },
+ "npc-kiosk-phone": {
+  "w": 185,
+  "h": 373,
+  "src": "Kiosk Guy and Nani Character Sheet.png"
+ },
+ "npc-nani-stand": {
+  "w": 155,
+  "h": 295,
+  "src": "Kiosk Guy and Nani Character Sheet.png"
+ },
+ "npc-nani-wave": {
+  "w": 203,
+  "h": 287,
+  "src": "Kiosk Guy and Nani Character Sheet.png"
+ },
+ "deco-tree-1": {
+  "w": 391,
+  "h": 592,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-tree-2": {
+  "w": 481,
+  "h": 521,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-tree-3": {
+  "w": 342,
+  "h": 386,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-tree-4": {
+  "w": 259,
+  "h": 379,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-tree-5": {
+  "w": 362,
+  "h": 400,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-tree-6": {
+  "w": 291,
+  "h": 264,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-tree-7": {
+  "w": 212,
+  "h": 374,
+  "src": "Fantasy Tree Asset Sheet.png"
+ },
+ "deco-rock-4": {
+  "w": 419,
+  "h": 241,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-rock-5": {
+  "w": 520,
+  "h": 305,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-rock-6": {
+  "w": 520,
+  "h": 264,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-rock-7": {
+  "w": 367,
+  "h": 326,
+  "src": "Fantasy Rock Clusters with Moss and Flowers.png"
+ },
+ "deco-bush-1": {
+  "w": 288,
+  "h": 234,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-2": {
+  "w": 284,
+  "h": 245,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-3": {
+  "w": 271,
+  "h": 230,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-4": {
+  "w": 315,
+  "h": 245,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-5": {
+  "w": 285,
+  "h": 197,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-6": {
+  "w": 292,
+  "h": 216,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-7": {
+  "w": 291,
+  "h": 218,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-8": {
+  "w": 234,
+  "h": 293,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-9": {
+  "w": 179,
+  "h": 224,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-10": {
+  "w": 201,
+  "h": 277,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-11": {
+  "w": 340,
+  "h": 209,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-12": {
+  "w": 304,
+  "h": 207,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-13": {
+  "w": 330,
+  "h": 206,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-14": {
+  "w": 398,
+  "h": 297,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-15": {
+  "w": 351,
+  "h": 289,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-16": {
+  "w": 289,
+  "h": 288,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-17": {
+  "w": 272,
+  "h": 334,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-bush-18": {
+  "w": 264,
+  "h": 372,
+  "src": "Whimsical Garden Asset Spritesheet.png"
+ },
+ "deco-prop-6": {
+  "w": 520,
+  "h": 329,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-7": {
+  "w": 520,
+  "h": 254,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "deco-prop-8": {
+  "w": 241,
+  "h": 381,
+  "src": "Ornate Garden Street Prop Collection.png"
+ },
+ "flag-open": {
+  "w": 545,
+  "h": 857,
+  "src": "Three Fantasy Flag Markers.png"
+ },
+ "flag-done": {
+  "w": 546,
+  "h": 857,
+  "src": "Three Fantasy Flag Markers.png"
+ },
+ "flag-locked": {
+  "w": 539,
+  "h": 858,
+  "src": "Three Fantasy Flag Markers.png"
+ },
+ "garland-lights-0": {
+  "w": 900,
+  "h": 131,
+  "src": "Watercolour Festive Light Garlands.png"
+ },
+ "garland-lights-1": {
+  "w": 900,
+  "h": 242,
+  "src": "Watercolour Festive Light Garlands.png"
+ },
+ "garland-lights-2": {
+  "w": 750,
+  "h": 362,
+  "src": "Watercolour Festive Light Garlands.png"
+ },
+ "garland-bunting-0": {
+  "w": 900,
+  "h": 131,
+  "src": "Watercolour Bunting Garland Collection.png"
+ },
+ "garland-bunting-1": {
+  "w": 900,
+  "h": 224,
+  "src": "Watercolour Bunting Garland Collection.png"
+ },
+ "garland-bunting-2": {
+  "w": 891,
+  "h": 420,
+  "src": "Watercolour Bunting Garland Collection.png"
+ }
+}

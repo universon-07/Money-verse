@@ -1,0 +1,23 @@
+{
+  "startCash": 20000,
+  "permits": 2000,
+  "eventBase": 6000,
+  "eventPerVisitor": 8,
+  "noPromoCrowd": 300,
+  "stageCost": 5000,
+  "stageCrowdMult": 1.10,
+  "sunnyAdvance": 2000,
+  "sunnyReturn": 1200,
+  "sunnyUnrecorded": 800,
+  "sunnyBillCapacity": 100,
+  "rushPlate": 45,
+  "extensionFee": 0.05,
+  "unpaidFee": 0.10,
+  "actions": 10,
+  "plateMin": 300,
+  "plateMax": 600,
+  "plateStep": 10,
+  "avoidableScale": 4000,
+  "survivedGoal": 7,
+  "extendVendors": ["chacha", "aunty", "sasta", "mega"]
+}

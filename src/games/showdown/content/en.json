@@ -1,0 +1,671 @@
+{
+  "title": "Festival Showdown",
+  "guardrail": "Made-up numbers. Real life is different.",
+  "exit": "Back to Charminar",
+  "back": "Back",
+  "next": "Next",
+  "dates": {
+    "TODAY": "Today",
+    "W1": "Week 1",
+    "W2": "Week 2",
+    "W3": "Week 3",
+    "FD": "Festival Day"
+  },
+  "cast": {
+    "shobha": "Shobha aunty",
+    "arjun": "Arjun",
+    "ayesha": "Ayesha",
+    "sunny": "Sunny",
+    "rao": "Rao uncle"
+  },
+  "start": {
+    "eyebrow": "Plan & Budget",
+    "tagline": "Be the treasurer. ₹50,000 on paper. What will really arrive?",
+    "go": "Start",
+    "resume": "Continue my game",
+    "again": "Start a new game",
+    "how": {
+      "1": "You are the treasurer of a colony festival with ₹50,000 to plan.",
+      "2": "Pick what to buy, and when to pay for it.",
+      "3": "Then see if the money lasts, in ten possible festivals."
+    }
+  },
+  "brief": {
+    "l1": "Welcome, treasurer! The colony festival needs ₹50,000.",
+    "l2": "Let's see where that money really comes from.",
+    "lanes": {
+      "confirmed": {
+        "name": "Confirmed",
+        "note": "In the bank today"
+      },
+      "sponsor": {
+        "name": "Promised: sponsor",
+        "note": "Promised by Week 2"
+      },
+      "donation": {
+        "name": "Maybe: Rao uncle",
+        "note": "A donation, maybe in Week 2"
+      },
+      "event": {
+        "name": "Event day",
+        "note": "Tickets and stalls, only on the day"
+      }
+    },
+    "dates": "Five money dates",
+    "what": "What does this mean?",
+    "whatText": "Confirmed money is in hand and can pay a bill today. Promised money is only a promise until it arrives.",
+    "go": "Let's plan"
+  },
+  "goals": {
+    "title": "Pick 3 goals, in order",
+    "sub": "Rank 1 matters most. Money spent on one goal can make another wait.",
+    "G1": {
+      "name": "Kids' fun",
+      "need": "A kids' corner, open all day"
+    },
+    "G2": {
+      "name": "Everyone eats",
+      "need": "A plate for every visitor"
+    },
+    "G3": {
+      "name": "Lights and sound",
+      "need": "Good lights, and sound that reaches the whole crowd"
+    },
+    "G5": {
+      "name": "Packed and safe",
+      "need": "At least 420 visitors, and a safety pack"
+    },
+    "rank": "Rank {{n}}",
+    "pick": "Tap {{n}} more",
+    "up": "Move up",
+    "down": "Move down",
+    "remove": "Remove",
+    "go": "Lock my goals"
+  },
+  "p1": {
+    "label": "Quick guess",
+    "q": "Buying these same six things again this year, the bill will be…",
+    "opts": {
+      "same": "About the same",
+      "5": "About 5% more",
+      "12": "About 12% more",
+      "25": "About 25% more"
+    },
+    "note": "Your answer is revealed at the end. A wrong guess costs nothing.",
+    "go": "Lock in my guess",
+    "intro": "Last year's festival bill",
+    "rows": {
+      "hall": "Hall",
+      "sound": "Sound",
+      "lights": "Lights",
+      "plates": "Plates",
+      "kids": "Kids' corner",
+      "posters": "Posters"
+    },
+    "total": "Total last year"
+  },
+  "market": {
+    "title": "The market",
+    "actions": "Actions left: {{n}} of {{max}}",
+    "actionsNote": "Haggling, paying later and reading fine print each cost 1 action.",
+    "vendors": {
+      "daamfix": {
+        "name": "Daam Fix",
+        "tag": "Fixed price. Never haggles."
+      },
+      "chacha": {
+        "name": "Chacha",
+        "tag": "Friendly. Pays later, for a fee."
+      },
+      "sasta": {
+        "name": "Sasta Corner",
+        "tag": "Cheap. Cash upfront."
+      },
+      "mega": {
+        "name": "Mega Sale",
+        "tag": "Big bundles. Big signs."
+      }
+    },
+    "signed": "In your plan",
+    "none": "Nothing signed yet.",
+    "hall": "Hall (already signed)",
+    "lines": "Your money, date by date",
+    "check": "Check the plan",
+    "open": "Open",
+    "how": {
+      "1": "Pick one offer for each job on the list. The goals you ranked tell you which jobs matter most.",
+      "2": "Compare them: the price, and the dates you have to pay.",
+      "3": "Then check the plan. It shows if you will have enough money on every date."
+    },
+    "list": "Your festival shopping list",
+    "needs": {
+      "kids": {
+        "name": "Kids' corner",
+        "why": "For your goal: kids' fun"
+      },
+      "plates": {
+        "name": "Food plates",
+        "why": "For your goal: food for everyone"
+      },
+      "sound": {
+        "name": "Sound system",
+        "why": "Needed for lights and sound"
+      },
+      "lights": {
+        "name": "Lights",
+        "why": "Needed for lights and sound"
+      },
+      "safety": {
+        "name": "Safety pack and posters",
+        "why": "For your goal: packed and safe"
+      },
+      "combo": {
+        "name": "Bundle deal",
+        "why": "Sound, lights and safety in one. Replaces those three."
+      }
+    },
+    "goalRank": "Your goal #{{n}}",
+    "choose": "Choose",
+    "each": " each",
+    "totalIs": "Total: {{total}}",
+    "totalHidden": "Total: not shown. Read the fine print.",
+    "perPlateNote": "Price is for each plate. You choose how many.",
+    "sofar": "{{n}} of {{of}} jobs covered. Total so far"
+  },
+  "items": {
+    "hall": {
+      "name": "Hall",
+      "desc": "Fixed cost, whatever the crowd"
+    },
+    "mini": {
+      "name": "Mini sound",
+      "desc": "Sound for 400 people"
+    },
+    "big": {
+      "name": "Big sound",
+      "desc": "Sound for 600 people. A technician is required."
+    },
+    "basic": {
+      "name": "Basic sound",
+      "desc": "Sound for 500 people"
+    },
+    "reliable": {
+      "name": "Reliable sound",
+      "desc": "Sound for 600 people, with a backup"
+    },
+    "lights": {
+      "name": "Good lights",
+      "desc": "Lights for the whole ground"
+    },
+    "lightsC": {
+      "name": "Good lights",
+      "desc": "Lights for the whole ground"
+    },
+    "plates": {
+      "name": "Plates",
+      "desc": "Food per plate. Pick how many."
+    },
+    "kids": {
+      "name": "Kids' corner",
+      "desc": "Games and a play area"
+    },
+    "safety": {
+      "name": "Safety pack",
+      "desc": "First aid and crowd stewards"
+    },
+    "p1": {
+      "name": "Posters",
+      "desc": "Crowd of about 380 (no promo: 300)"
+    },
+    "p2": {
+      "name": "Posters and radio",
+      "desc": "Crowd of about 440 (no promo: 300)"
+    },
+    "combo": {
+      "name": "Combo",
+      "desc": "Big sound, good lights and a safety pack"
+    }
+  },
+  "sheet": {
+    "price": "Price now",
+    "terms": "You pay",
+    "termsLine": "{{pct}}% in {{when}}",
+    "haggle": "Haggle · 1 action",
+    "haggleTo": "Haggle · 1 action · next {{price}}",
+    "best": "Best price reached",
+    "daamfix": "No haggling here.",
+    "payLater": "Pay it all on Festival Day, +5% · 1 action",
+    "payLaterOn": "All on Festival Day, +5%",
+    "read": "Read the fine print · 1 action",
+    "fine": "Fine print: a required add-on of {{amount}}, billed {{when}}.",
+    "unread": "Total: the price above, plus anything in the fine print.",
+    "totalIs": "Total with required extras: {{total}}",
+    "extra": "Required extra: {{amount}}, billed {{when}}",
+    "qty": "How many plates?",
+    "qtyNote": "Unused plates are still paid. Too few means rush plates on the day.",
+    "was": "Was {{was}}",
+    "ends": "Offer ends in 1 hour!",
+    "sign": "Sign · {{price}}",
+    "signPlates": "Sign · {{price}} a plate",
+    "notNow": "Not now",
+    "drop": "Take it out of the plan",
+    "noActions": "No actions left",
+    "blocked": {
+      "sameKind": "You already signed one of these. Take it out of the plan to swap.",
+      "combo": "The Combo already includes sound, lights and a safety pack."
+    },
+    "toast": "Signed. Fine print: required add-on {{amount}}. Total {{total}}.",
+    "arjunBig": "Go big! More sound, more crowd.",
+    "arjunCombo": "Everything in one deal. Sign it now!",
+    "ayeshaBasic": "Read what is not in the price.",
+    "ayeshaGeneral": "Check when each payment is due.",
+    "perPlate": "a plate",
+    "haggleHelp": "Haggling: ask the seller for a lower price. It can work, but it uses up an action.",
+    "payLaterHelp": "Pay later: you hold on to your cash for now and pay at the end, but the seller adds 5%.",
+    "readHelp": "Fine print: extra costs the seller does not put in the big price. Reading it shows the real total."
+  },
+  "ask": {
+    "P2": {
+      "q": "Which costs less in total: Basic sound or Reliable sound?",
+      "opts": {
+        "basic": "Basic sound",
+        "reliable": "Reliable sound",
+        "unsure": "Not sure"
+      }
+    },
+    "P4": {
+      "q": "Which costs less: the Combo, or the same three things bought one by one?",
+      "opts": {
+        "combo": "The Combo",
+        "parts": "The same things one by one",
+        "unsure": "Not sure"
+      }
+    },
+    "P3": {
+      "q": "If the sponsor pays a week late, can we still pay the Week 3 bills?",
+      "opts": {
+        "yes": "Yes",
+        "no": "No",
+        "unsure": "Not sure"
+      }
+    },
+    "label": "Quick guess",
+    "go": "Lock in my guess"
+  },
+  "lines": {
+    "title": "Will your money last?",
+    "intro": "You start with ₹20,000 in the festival fund. On each date, the bills you signed are paid out of it. The bar shows how much money is still in the fund after that date's bills.",
+    "sure": "{{money}} still in fund",
+    "shortBy": "{{money}} missing",
+    "short": "Not enough",
+    "promised": "Could be {{money}} if every promise arrives",
+    "keySure": "Money you are sure of (your ₹20,000 minus bills)",
+    "keyPromised": "Plus promised money (sponsor, donation, ticket sales). It may not come.",
+    "verdictOk": "Spare money for surprises: {{money}}",
+    "explainOk": "Spare money is what is left over when it is tightest ({{when}}), counting only sure money. Surprise bills of ₹500 to ₹2,000 will come out of it. The more you keep, the safer you are.",
+    "verdictShort": "On {{when}} you would be {{money}} short",
+    "explainShort": "You would not have enough sure money to pay that date's bills. Take something out, pick a cheaper offer, or pay later.",
+    "note": "Bills counted are the ones you signed, plus permits. Surprise bills are not counted yet. On Festival Day we also count the event money you expect.",
+    "date": "Date",
+    "ok": "OK",
+    "cushion": "Spare money: {{money}}",
+    "cushionNote": "",
+    "optimistic": "If every promise arrives",
+    "cautious": "Only what's certain",
+    "fd": "",
+    "bills": "bills {{money}}"
+  },
+  "check": {
+    "title": "Plan check",
+    "due": "Bills due by date",
+    "permits": "Permits (cannot be cancelled)",
+    "none": "Nothing due.",
+    "lock": "Lock plan",
+    "lockNote": "After this, the plan is frozen. The dates play out.",
+    "needAnswer": "Answer the guess to lock the plan.",
+    "back": "Back to the market"
+  },
+  "date": {
+    "n": "Money date {{n}} of 5",
+    "in": "Money in",
+    "out": "Money out",
+    "balance": "Balance",
+    "nothingIn": "Nothing arrives.",
+    "nothingOut": "Nothing due.",
+    "next": "Next date",
+    "toFestival": "See the festival",
+    "needChoice": "Make your choice to go on.",
+    "ins": {
+      "donation": "Rao uncle's donation",
+      "sponsor": "Sponsor's payment",
+      "event": "Event money ({{crowd}} visitors)",
+      "sunny": "Sunny gave back"
+    },
+    "outs": {
+      "permits": "Permits",
+      "electrical": "Electrical repair (surprise)",
+      "rush": "Rush plates",
+      "stage": "Bigger stage",
+      "sunnycash": "Cash to Sunny",
+      "speakers": "Speakers, against a bill"
+    },
+    "cards": {
+      "W1": "Permits are due, and the first payments go out.",
+      "W2": "Rao uncle's donation has arrived.",
+      "W2none": "Rao uncle's donation did not come.",
+      "W2bill": "Surprise! An electrical fault. The repair is a bill.",
+      "W3": "The second hall payment is due.",
+      "FDsponsor": "The sponsor's money arrives this morning.",
+      "FDcrowd": "{{crowd}} visitors came.",
+      "FDrush": "You ordered {{plates}} plates. {{n}} rush plates cost {{cost}} extra.",
+      "FDowed": "{{money}} stayed unpaid. It is recorded as owed."
+    },
+    "cast": {
+      "rao": "As promised, here it is.",
+      "sunny": "Trust me. I know a guy.",
+      "ayesha": "I note down every payment.",
+      "shobha": "The big day. Let's count the crowd."
+    },
+    "e2": {
+      "title": "A bigger stage?",
+      "body": "The donation is in. A bigger stage costs ₹5,000.",
+      "hold": "Hold it as cash",
+      "stage": "Spend ₹5,000 on a bigger stage",
+      "note": "A bigger stage draws about 10% more visitors. More visitors need more plates.",
+      "noCash": "Not enough cash for this.",
+      "doneHold": "You held the cash.",
+      "doneStage": "You bought the bigger stage."
+    },
+    "e4": {
+      "title": "Sunny's offer",
+      "body": "Sunny can buy speakers if you give him ₹2,000 now.",
+      "refuse": "No, thanks",
+      "cash": "Give ₹2,000 in cash",
+      "bill": "Pay ₹2,000 against a bill",
+      "noCash": "Not enough cash for this.",
+      "doneRefuse": "You said no, thanks.",
+      "doneCash": "You gave Sunny ₹2,000 in cash.",
+      "doneBill": "You paid ₹2,000 against a bill."
+    },
+    "lessonLabel": "Lesson"
+  },
+  "short": {
+    "title": "The bills are more than the cash",
+    "line": "Due {{due}}. In hand {{cash}}. Short by {{need}}.",
+    "pick": "Choose what happens to each bill. Nothing is marked as better.",
+    "dueNow": "Due now {{money}}",
+    "extend": "Extend to Festival Day · +5% ({{fee}})",
+    "daamfix": "Daam Fix does not extend.",
+    "fd": "A bill can't move past Festival Day.",
+    "cancel": "Cancel it",
+    "lose": "You lose the {{paid}} already paid.",
+    "loseNone": "Nothing has been paid yet.",
+    "risk": "Goal at risk: {{goal}} (rank {{rank}})",
+    "owe": "Leave {{money}} unpaid",
+    "owedNote": "On Festival Day an unpaid bill is recorded as owed, with a 10% fee."
+  },
+  "festival": {
+    "title": "Festival Day!",
+    "goalsTitle": "Your goals",
+    "met": "Goal met",
+    "missed": "Goal missed",
+    "layers": {
+      "hall": "The hall is ready.",
+      "lightsOn": "The lights are glowing.",
+      "lightsOff": "No good lights. The ground is dim.",
+      "soundOn": "Sound reaches {{cap}} people.",
+      "soundOff": "No sound.",
+      "stage": "You built a bigger stage.",
+      "foodOn": "{{plates}} plates are ready.",
+      "foodOff": "No food stall.",
+      "kidsOn": "The kids' corner is open.",
+      "kidsOff": "No kids' corner.",
+      "bannerOn": "Posters brought the crowd.",
+      "bannerOff": "No posters. Word of mouth only.",
+      "safetyOn": "The safety pack is ready.",
+      "safetyOff": "No safety pack.",
+      "crowd": "{{crowd}} visitors came."
+    },
+    "why": {
+      "G1none": "There was no kids' corner in the plan.",
+      "G1cancelled": "The kids' corner was cancelled.",
+      "G2none": "There was no food order.",
+      "G2cancelled": "The plates were cancelled.",
+      "G3light": "There were no good lights.",
+      "G3sound": "There was no sound.",
+      "G3cap": "The sound reaches {{cap}} people. {{crowd}} came.",
+      "G5crowd": "Only {{crowd}} came. The goal needed 420.",
+      "G5safety": "There was no safety pack.",
+      "ok": "All set."
+    },
+    "notice": {
+      "title": "Colony notice board",
+      "sub": "Every bill and every payment, as the colony reads it.",
+      "received": "Money received",
+      "paid": "Money paid",
+      "left": "Left in the festival fund",
+      "start": "Cash at the start",
+      "unrecorded": "UNRECORDED",
+      "unrecordedLine": "Cash to Sunny: {{given}} paid, {{back}} came back, {{lost}} has no bill and no record.",
+      "extended": "Extended to Festival Day, +5%: {{item}}",
+      "cancelled": "Cancelled in {{when}}: {{item}}. The {{paid}} already paid was lost.",
+      "owed": "Still owed: {{money}}. A 10% fee counts against the books.",
+      "shobha": "The colony reads this notice. Every bill is on it."
+    },
+    "go": "Test the plan in ten futures"
+  },
+  "futures": {
+    "title": "Ten possible festivals",
+    "sub": "Same plan, ten different luck. Light each diya to see how your plan does when the sponsor, the crowd and the repairs change.",
+    "held": "Held",
+    "broke": "Broke on {{when}}",
+    "played": "your festival",
+    "count": "Your money lasted in {{k}} of 10 festivals.",
+    "first": "It first broke on {{when}}: {{bill}}.",
+    "none": "It never broke.",
+    "row": "Sponsor {{sponsor}} {{at}} · crowd ×{{crowd}} · repair ×{{elec}}{{donation}}",
+    "noDonation": " · no donation",
+    "at": {
+      "W2": "in Week 2",
+      "W3": "in Week 3",
+      "FD": "on Festival Day"
+    },
+    "autopilot": "In every festival the same rules decide: extend the biggest bills, then cancel what serves your lowest goals.",
+    "go": "See my report",
+    "money": "Money held",
+    "moneyShort": "Money ran out: {{when}}",
+    "goalsMet": "Goals met: {{k}} of {{n}}",
+    "goalsCount": "You met all your goals in {{g}} of 10.",
+    "goalsWarn": "Money lasting is not enough. A festival that skips what people came for is not a success.",
+    "light": "Light the diyas",
+    "lighting": "Lighting…",
+    "lit": "Done. Your money lasted in {{k}} of 10. You met all goals in {{g}} of 10.",
+    "keyLit": "Lit: money held, goals met",
+    "keyDim": "Dim: money held, a goal missed",
+    "keyOut": "Out: money ran out",
+    "sponsorChip": "Sponsor {{sponsor}} {{at}}",
+    "repair": "Repairs ×{{n}}",
+    "donation": "Rao uncle gives",
+    "noDonationChip": "No donation",
+    "crowd": {
+      "big": "Big crowd",
+      "normal": "Normal crowd",
+      "small": "Small crowd"
+    },
+    "lightFirst": "Light the diyas first to see how this one went.",
+    "weak": "Show me the weak spot ({{id}})"
+  },
+  "concepts": {
+    "C1": "Cash flow",
+    "C2": "Priorities",
+    "C3": "Fixed and variable costs",
+    "C4": "Total cost",
+    "C5": "Stress test",
+    "C7": "Sales traps"
+  },
+  "lesson": {
+    "learnMore": "Learn more",
+    "less": "Hide",
+    "rule": "Rule",
+    "parts": {
+      "what": "What happened",
+      "idea": "The idea",
+      "example": "Worked example",
+      "real": "In real life",
+      "ask": "Ask yourself"
+    },
+    "L1": {
+      "what": "In {{when}} you needed {{due}} and had {{cash}}. The sponsor came after the deadline.",
+      "ok": "Every bill was paid from cash you had in hand, on its date.",
+      "idea": "Money you expect is not money you have. A bill is paid from cash in hand on its date.",
+      "rule": "Count only money in hand.",
+      "more": {
+        "what": "Money you expect can arrive later than the bill that needs it. Week 3 is where that gap shows.",
+        "idea": "A promise is not cash. Bills are due on a date, whoever still owes you.",
+        "example": "A club is promised ₹10,000 on the 20th, but its ₹6,000 tent is due on the 15th. It has ₹2,000 on the 15th, so it cannot pay in full.",
+        "real": "Shops and suppliers usually want payment on the due date. Planners list when money really arrives, not just how much.",
+        "ask": "Which of my expected amounts is only a promise? What is due before it arrives?"
+      }
+    },
+    "L2": {
+      "what": "{{item}} was cancelled, so {{goal}} was not met.",
+      "ok": "Nothing was cancelled. Each goal had money for its job.",
+      "idea": "Every rupee has one job. Funding one goal makes another wait.",
+      "rule": "Rank first, spend second.",
+      "more": {
+        "what": "When cash ran short, something had to go, and the goal it served went with it. Ranking your goals decided what was protected.",
+        "idea": "Money can only do one job at a time. Choosing a goal first makes the trade-off visible before the pressure comes.",
+        "example": "Sana has ₹3,000. Lights and sound cost ₹3,000 and the kids' corner costs ₹3,000. Buying one means the other waits.",
+        "real": "Families and clubs rank needs before a tight month. It is easier to choose calmly than in a rush.",
+        "ask": "Which goal matters most to me? What am I giving up for it?"
+      }
+    },
+    "L3": {
+      "what": "The crowd was {{crowd}}; you ordered {{plates}}; {{n}} rush plates cost ₹45 each.",
+      "extra": "The crowd was {{crowd}}; you ordered {{plates}}; {{n}} unused plates were still paid.",
+      "none": "The crowd was {{crowd}} and there was no food order.",
+      "idea": "The hall cost the same for any crowd. Food grows with every visitor.",
+      "rule": "Know which costs move with the crowd.",
+      "more": {
+        "what": "Food grows with every visitor, but the hall costs the same either way. The crowd decided how many plates you needed.",
+        "idea": "Fixed costs stay the same however many people come. Variable costs rise and fall with the crowd.",
+        "example": "A stall pays ₹500 rent and ₹10 per snack. For 20 snacks it costs ₹700; for 40 snacks it costs ₹900. The rent never moved.",
+        "real": "Rent and permits are fixed. Ingredients and packaging are variable.",
+        "ask": "Which of my costs change with the number of people? Which stay the same?"
+      }
+    },
+    "L4": {
+      "what": "The Basic set showed {{quote}}. With required extras it cost {{total}}.",
+      "skip": "The Basic set showed {{quote}}. With required extras it would have cost {{total}}.",
+      "idea": "The quote is where the price starts. Add what is required, then compare totals.",
+      "rule": "Compare totals, not quotes.",
+      "more": {
+        "what": "The quote on the sign was not what the set really cost. A required extra was in the fine print.",
+        "idea": "A quote is only where the price starts. Required extras change the real price, so compare totals.",
+        "example": "Set A is ₹5,000 with everything included. Set B is ₹3,500 plus a ₹2,000 required fee. Set A is cheaper.",
+        "real": "Delivery, setup and service charges can be added later. Ask what is required before you compare.",
+        "ask": "What else do I have to pay to use this? What is the total?"
+      }
+    },
+    "L5": {
+      "what": "Your plan held in {{k}} of 10 possible festivals. It first broke on {{when}}: {{bill}}.",
+      "all": "Your plan held in all 10 possible festivals.",
+      "idea": "One late payment can break a plan that looked fine. Spare money should be sized by risks you can name.",
+      "rule": "Name the risks, then size your spare money.",
+      "more": {
+        "what": "Your plan was replayed in ten different festivals. The ones that broke show where the plan was thin.",
+        "idea": "A late sponsor, a smaller crowd or a bigger repair bill can break a plan that looked fine. Spare money sized for risks you can name is a stress test passed in advance.",
+        "example": "A stall plan fails in 4 of 10 imagined cases, all on the same date. Moving one payment off that date fixes it.",
+        "real": "Planners ask \"what if the money is late?\" before it happens. They keep spare money for the risks they can name.",
+        "ask": "What could go wrong on my tightest date? How much spare money would cover it?"
+      }
+    },
+    "L7": {
+      "what": "The Combo said \"Was {{was}}\". The same three things cost {{parts}} at Daam Fix.",
+      "idea": "A high \"was\" price, a bundle and a countdown make a price look small.",
+      "rule": "Find the normal price first.",
+      "more": {
+        "what": "The Combo looked like a bargain next to a made-up higher price. The same parts at Daam Fix cost less.",
+        "idea": "A high \"was\" price, a bundle and a countdown make a price look small. They make you decide before you check.",
+        "example": "A jacket says \"Was ₹4,000, now ₹2,000, ends today\". The shop next door sells it for ₹1,800 every day.",
+        "real": "Sales work best on things you had not planned to buy. Look up the normal price before the deal ends.",
+        "ask": "What is the normal price? Would I buy this if it had no countdown?"
+      }
+    }
+  },
+  "report": {
+    "title": "Treasurer's report",
+    "score": "Score",
+    "outOf": "out of 100",
+    "parts": {
+      "goals": "Goals",
+      "onTime": "On time",
+      "resilience": "Resilience",
+      "smart": "Cost smartness"
+    },
+    "stars": {
+      "goals": "Goals: all three met",
+      "onTime": "On time: no late bills",
+      "resilient": "Resilient: held in 7 of 10",
+      "cleanBooks": "Clean books: every rupee on record"
+    },
+    "titles": {
+      "rookie": "Rookie Treasurer",
+      "careful": "Careful Planner",
+      "steady": "Steady Hand",
+      "master": "Master Treasurer"
+    },
+    "concepts": "What you showed",
+    "levels": {
+      "got": "Got it",
+      "getting": "Getting there",
+      "not": "Not yet"
+    },
+    "guesses": "Your guesses",
+    "guess": "You guessed {{guess}}. It was {{truth}}.",
+    "guessRight": "Right on! You guessed {{guess}}.",
+    "guessNone": "Not asked this time.",
+    "guessUnsure": "You were not sure. It was {{truth}}.",
+    "p1": "This year the same list costs ₹43,500 against ₹38,900 last year: about 11.8% more. Prices tend to rise from year to year.",
+    "pnames": {
+      "P1": "The price of the list",
+      "P2": "Basic or Reliable sound",
+      "P3": "Paying the Week 3 bills",
+      "P4": "Combo or the parts"
+    },
+    "pans": {
+      "P1": {
+        "same": "about the same",
+        "5": "about 5% more",
+        "12": "about 12% more",
+        "25": "about 25% more"
+      },
+      "P2": {
+        "basic": "Basic sound",
+        "reliable": "Reliable sound",
+        "unsure": "not sure"
+      },
+      "P3": {
+        "yes": "yes",
+        "no": "no",
+        "unsure": "not sure"
+      },
+      "P4": {
+        "combo": "the Combo",
+        "parts": "the same things one by one",
+        "unsure": "not sure"
+      }
+    },
+    "lessons": "Cards to keep",
+    "lit": "The Plan & Budget minaret is lit!",
+    "notLit": "Not lit yet. Play again with a new plan.",
+    "replay": "Play again",
+    "done": "Back to Charminar",
+    "cardTitle": "Lesson",
+    "code": "Game code: {{code}}. It has no name in it. Tell your teacher if they ask."
+  },
+  "flow": {
+    "start": "In the festival fund before",
+    "end": "In the festival fund now"
+  }
+}

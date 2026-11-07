@@ -1,0 +1,195 @@
+@import "tailwindcss";
+@import "@fontsource/dm-serif-display/400.css";
+@import "@fontsource/rozha-one/400.css";
+@import "@fontsource/noto-sans/500.css";
+@import "@fontsource/noto-sans/700.css";
+@import "@fontsource/noto-sans/800.css";
+@import "@fontsource/noto-sans-devanagari/500.css";
+@import "@fontsource/noto-sans-devanagari/700.css";
+@import "@fontsource/noto-sans-devanagari/800.css";
+@import "@fontsource/noto-sans-telugu/500.css";
+@import "@fontsource/noto-sans-telugu/700.css";
+@import "@fontsource/noto-sans-telugu/800.css";
+
+/* ---- Design tokens (see DESIGN.md): muted, never neon ---- */
+@theme {
+  --color-paper: #F8EBCB;
+  --color-water: #92C9D3;
+  --color-water-deep: #6EB7C9;
+  --color-stone: #F2DFB0;
+  --color-terracotta: #D8683A;
+  --color-ochre: #E8AB3A;
+  --color-sage: #86B35F;
+  --color-green: #4E9050;
+  --color-granite: #8E7C98;
+  --color-coral: #D9573F;
+  --color-gold: #D9A520;
+  --color-ink: #3a2a24;
+  --font-display: "DM Serif Display", "Rozha One", "Noto Sans Devanagari", "Noto Sans Telugu", Georgia, serif;
+  --font-body: "Noto Sans", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif;
+}
+
+:root { color-scheme: light; --ink: #3a2a24; --lang-scale: 1; }
+html[lang="hi"] { --lang-scale: .95; }
+html[lang="te"] { --lang-scale: .92; }
+html, body, #root { height: 100%; margin: 0; background: #92C9D3; }
+body {
+  font-family: var(--font-body); font-weight: 500; color: var(--ink);
+  overflow: hidden; overscroll-behavior: none; -webkit-tap-highlight-color: transparent;
+  user-select: none; -webkit-user-select: none;
+}
+html[lang="hi"] .font-display { font-family: "Rozha One", "Noto Sans Devanagari", serif; }
+html[lang="te"] .font-display { font-family: "Noto Sans Telugu", sans-serif; font-weight: 800; line-height: 1.3; }
+html[lang="hi"] *, html[lang="te"] * { letter-spacing: normal !important; }
+.lang-fit { zoom: var(--lang-scale); }
+
+/* ---- calm paper UI: thin ink outline, small radius, soft flat shadow ---- */
+.paper {
+  background: #FBF0D2; border: 1.5px solid var(--ink); border-radius: 8px;
+  box-shadow: 0 2px 0 rgba(58,42,36,.35), 0 8px 18px rgba(58,42,36,.16);
+}
+.ink-chip {
+  background: #FBF0D2; border: 1.5px solid var(--ink); border-radius: 999px; color: var(--ink);
+  box-shadow: 0 2px 0 rgba(58,42,36,.3);
+}
+.ink-btn {
+  min-height: 44px; min-width: 44px; padding: 0 18px; cursor: pointer;
+  font-family: var(--font-body); font-weight: 700; font-size: 15px; color: #fbf6ea;
+  background: var(--color-terracotta); border: 1.5px solid var(--ink); border-radius: 8px;
+  box-shadow: 0 2px 0 rgba(58,42,36,.45); transition: transform .12s, box-shadow .12s;
+}
+.ink-btn:hover { transform: translateY(-1px); }
+.ink-btn:active { transform: translateY(1px); box-shadow: none; }
+.ink-btn.cream { background: #FBF0D2; color: var(--ink); }
+.ink-btn.pink { background: var(--color-terracotta); }
+.ink-btn:disabled { opacity: .4; cursor: default; transform: none; }
+button:focus-visible { outline: 3px solid var(--color-coral); outline-offset: 3px; }
+
+/* ---- map ---- */
+.island-hit:focus-visible { outline: none; }
+.island-ring {
+  position: absolute; inset: 14px; border-radius: 50%; border: 3px solid rgba(255,250,235,.95);
+  box-shadow: 0 0 0 2px rgba(58,42,36,.55), 0 0 22px rgba(255,236,170,.85); transition: opacity .18s;
+}
+.island-label {
+  position: absolute; white-space: nowrap; pointer-events: none; padding: 6px 14px;
+  font-family: var(--font-display); font-size: 22px; color: var(--ink);
+  background: #FBF0D2; border: 1.5px solid var(--ink); border-radius: 6px; transform-origin: 50% 100%;
+}
+@keyframes ring-pulse { 0%,100% { opacity: .15; transform: scale(.9) } 50% { opacity: .9; transform: scale(1.12) } }
+@keyframes flag { 0%,100% { transform: skewY(0) } 50% { transform: skewY(4deg) } }
+@keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+@keyframes twinkle { 0%,100% { opacity: .75 } 50% { opacity: .25 } }
+@keyframes steam { 0% { transform: translateY(0); opacity: .85 } 100% { transform: translateY(-18px); opacity: 0 } }
+@keyframes petal { 0% { transform: translate(0,-40px) rotate(0); opacity: 0 } 15% { opacity: .9 } 100% { transform: translate(260px, 1500px) rotate(540deg); opacity: 0 } }
+.idle.ring { animation: ring-pulse 2.2s steps(11) infinite; transform-origin: 22px 142px; }
+.idle.flag { animation: flag 1.6s steps(8) infinite; }
+.idle.bob { animation: bob 2.4s steps(10) infinite; }
+.idle.twinkle { animation: twinkle 3s steps(6) infinite; }
+.idle.steam { animation: steam 2.2s steps(8) infinite; }
+.petal {
+  position: absolute; top: 0; width: 22px; height: 14px; border-radius: 80% 0 80% 0; background: #E8862F;
+  border: 1.2px solid var(--ink); animation: petal 11s linear infinite; opacity: 0;
+}
+@keyframes fade-in { from { opacity: 0 } to { opacity: 1 } }
+.fade-in { animation: fade-in .45s ease both; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+.rise { animation: rise .5s ease both; }
+
+html[data-lite="true"] .grain { display: none !important; }
+html[data-lite="true"] .idle, html[data-lite="true"] .petal { animation: none !important; }
+@media (prefers-reduced-motion: reduce) { .idle, .petal, .fade-in, .rise { animation: none !important; } }
+
+@keyframes hero-bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+@keyframes hero-breathe { 0%,100% { transform: scale(1,1) } 50% { transform: scale(1.012,.988) } }
+.hero-walk { animation: hero-bob .28s steps(3) infinite; transform-origin: 50% 100%; }
+.hero-idle { animation: hero-breathe 1.6s steps(4) infinite; transform-origin: 50% 100%; }
+html[data-lite="true"] .hero-idle { animation: none; }
+
+.gate-glow { background: radial-gradient(ellipse at 50% 70%, rgba(255,226,140,.75), rgba(255,226,140,0) 68%); animation: twinkle 3s steps(6) infinite; }
+html[data-lite="true"] .gate-glow { animation: none; }
+
+@keyframes flagwave { 0%,100% { transform: skewX(0) } 50% { transform: skewX(1.6deg) } }
+.idle.flagwave { animation: flagwave 2s steps(8) infinite; }
+
+@keyframes float-island { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-14px) } }
+.idle.float-island { animation: float-island 5s steps(25) infinite; }
+
+/* painted shopkeepers: a lively stepped float (bob + sway + breathing); faster and bigger when the player is at the stall */
+@keyframes npc-float { 0% { transform: translateY(0) rotate(-1.5deg) scale(1,1) } 25% { transform: translateY(-9px) rotate(0) scale(.985,1.02) } 50% { transform: translateY(-16px) rotate(1.5deg) scale(1,1) } 75% { transform: translateY(-9px) rotate(0) scale(1.015,.985) } 100% { transform: translateY(0) rotate(-1.5deg) scale(1,1) } }
+@keyframes npc-float-fast { 0%,100% { transform: translateY(0) rotate(-2.5deg) } 25% { transform: translateY(-14px) rotate(0) } 50% { transform: translateY(-22px) rotate(2.5deg) } 75% { transform: translateY(-14px) rotate(0) } }
+@keyframes squash-pop { 0% { transform: scale(1,1) } 25% { transform: scale(1.18,.8) } 50% { transform: scale(.9,1.2) } 75% { transform: scale(1.06,.95) } 100% { transform: scale(1,1) } }
+.anim-float { animation: npc-float 2.2s steps(14) infinite; transform-origin: 50% 100%; }
+.anim-float-fast { animation: npc-float-fast 1.1s steps(10) infinite; transform-origin: 50% 100%; }
+.anim-squash { animation: squash-pop .5s steps(8) 1; transform-origin: 50% 100%; }
+html[data-lite="true"] .anim-float, html[data-lite="true"] .anim-float-fast { animation: none; }
+@media (prefers-reduced-motion: reduce) { .anim-float, .anim-float-fast, .anim-squash { animation: none; } }
+
+/* diya flames (Festival Showdown): a small stepped flicker */
+@keyframes flame-flicker { 0%,100% { transform: scale(1,1) } 33% { transform: scale(.92,1.08) } 66% { transform: scale(1.06,.94) } }
+.flame { animation: flame-flicker .9s steps(6) infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@media (prefers-reduced-motion: reduce) { .flame { animation: none; } }
+html[data-lite="true"] .flame { animation: none; }
+
+/* shell wireframe tokens (see src/art/palette.ts); main's island palette above wins on shared names */
+@theme {
+  --color-marigold: #f28c28;
+  --color-mustard: #e8b04a;
+  --color-jasmine: #fff3d6;
+  --color-sky: #5bb5d6;
+  --color-teal: #2f6f73;
+  --color-pink: #e5457a;
+  --color-dusk: #1e2a44;
+  --color-maroon: #7a2a22;
+  --color-stone-shade: #d9a86a;
+  --color-peach: #f2a56b;
+  --color-cobble: #d49a62;
+  --color-cobble-dark: #b97a48;
+  --color-glove: #fff3d6;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-ink-soft: #3a231f;
+  --color-paper-tan: #f2d9a8;
+  --color-track: #e9d3a6;
+  --color-skin: #f9c97a;
+  --color-slate: #4b5a63;
+  --color-stone-grey: #d9d3c6;
+  --color-coin-light: #f0c24a;
+  --color-lamp-lit: #ffd25a;
+  --color-lamp-unlit: #8c7b6e;
+  --color-lamp-ray: #ffe9a0;
+  --color-lamp-stone-light: #a39284;
+  --color-lamp-stone-dark: #6e5e52;
+  --color-lamp-glow: #ffc94a;
+  --color-glow-pale: #ffe696;
+  --color-glow-yellow: #ffe178;
+  --color-glow-amber: #ffc85a;
+  --color-sky-cream: #ffe3a8;
+  --color-sky-orange: #f9a94c;
+  --color-sun-glow: #fff1b0;
+  --color-ground-tan: #c98b58;
+  --color-night-sky: #2a2a5e;
+  --color-dawn-purple: #7c4a8e;
+  --color-dawn-pink: #f28c9a;
+  --color-dawn-gold: #ffc36b;
+  --color-hill-purple: #6a4a7a;
+  --color-rose-light: #f26ba0;
+  --color-rose-bright: #ff8fb8;
+  --color-marigold-light: #f5a623;
+  --color-marigold-deep: #e8742a;
+  --color-cream-white: #fff8e1;
+  --color-cream-pale: #fff0c4;
+  --color-cream: #f7e6b8;
+  --color-rule-line: #f3e1b4;
+  --color-sand-line: #c9a867;
+  --color-yellow: #f4c430;
+  --color-gold-dark: #b98a14;
+  --color-wood: #8a4f2b;
+  --color-night-wall-end: #3b1f26;
+  --color-floor-dark: #3b2a26;
+}
+:root {
+  --surface: var(--color-paper); --surface-ink: var(--color-ink); --accent: var(--color-pink); --success: var(--color-sage); --warning: var(--color-marigold); --danger: var(--color-coral);
+  --joy-bright: var(--color-lamp-lit); --joy-dim: #b8923a; --joy-flicker: var(--color-lamp-unlit);
+  --z-scene: 30; --z-hud: 40; --z-overlay: 50; --z-modal: 60; --z-film: 90; --z-transition: 100;
+}

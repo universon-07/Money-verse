@@ -1,0 +1,35 @@
+[
+  { "id": "T1", "kind": "want", "price": 400, "returnPrice": 400, "listable": true, "hook": "everyone" },
+  { "id": "T2", "kind": "want", "price": 150, "returnPrice": 150, "listable": true, "hook": "today" },
+  { "id": "T3", "kind": "want", "price": 250, "returnPrice": 250, "listable": true, "hook": "status" },
+  { "id": "T4", "kind": "want", "price": 300, "returnPrice": null, "listable": false, "hook": "everyone" },
+  { "id": "T5", "kind": "want", "price": 300, "returnPrice": 600, "listable": true, "hook": "sale" },
+  { "id": "T6", "kind": "want", "price": 200, "returnPrice": 200, "listable": true, "hook": "upgrade" },
+  { "id": "T7", "kind": "want", "price": 250, "returnPrice": null, "listable": false, "hook": "everyone" },
+  { "id": "T8", "kind": "want", "price": 350, "returnPrice": 580, "listable": true, "hook": "sale" },
+  { "id": "T9", "kind": "want", "price": 180, "returnPrice": 180, "listable": true, "hook": "bundle" },
+  { "id": "T10", "kind": "want", "price": 300, "returnPrice": 300, "listable": true, "hook": "running-out" },
+
+  { "id": "S1", "kind": "surprise", "amount": 150, "big": false },
+  { "id": "S2", "kind": "surprise", "amount": 100, "big": false },
+  { "id": "S3", "kind": "surprise", "amount": 120, "big": false },
+  { "id": "S4", "kind": "surprise", "amount": 150, "big": false },
+  { "id": "S5", "kind": "surprise", "amount": 200, "big": false },
+  { "id": "S6", "kind": "surprise", "amount": 100, "big": false },
+  { "id": "S7", "kind": "surprise", "amount": 250, "big": true },
+  { "id": "S8", "kind": "surprise", "amount": 300, "big": true },
+
+  { "id": "P1", "kind": "planned", "amount": 120 },
+  { "id": "P2", "kind": "planned", "amount": 150 },
+  { "id": "P3", "kind": "planned", "amount": 200 },
+  { "id": "P4", "kind": "planned", "amount": 150 },
+  { "id": "P5", "kind": "planned", "amount": 100 },
+
+  { "id": "F1", "kind": "friend", "who": "arjun", "ask": 200, "repayChance": 0.85, "scriptedRepay": true },
+  { "id": "F2", "kind": "friend", "who": "sunny", "ask": 200, "repayChance": 0.55, "scriptedRepay": true },
+  { "id": "F3", "kind": "friend", "who": "classmate", "ask": 200, "repayChance": 0.25, "scriptedRepay": null },
+  { "id": "F4", "kind": "friend", "who": "ayesha", "ask": 200, "repayChance": 0.1, "scriptedRepay": false },
+
+  { "id": "L1", "kind": "lost" },
+  { "id": "G1", "kind": "windfall", "amount": 100 }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": "F1", "sponsorAt": "W2", "sponsor": 15000, "elec": 1.0, "crowd": 1.00, "donation": 5000 },
+  { "id": "F2", "sponsorAt": "FD", "sponsor": 15000, "elec": 1.0, "crowd": 1.18, "donation": 5000 },
+  { "id": "F3", "sponsorAt": "FD", "sponsor": 15000, "elec": 1.5, "crowd": 1.00, "donation": 0 },
+  { "id": "F4", "sponsorAt": "W3", "sponsor": 15000, "elec": 1.0, "crowd": 0.80, "donation": 5000 },
+  { "id": "F5", "sponsorAt": "FD", "sponsor": 10000, "elec": 1.0, "crowd": 1.18, "donation": 0 },
+  { "id": "F6", "sponsorAt": "FD", "sponsor": 15000, "elec": 2.0, "crowd": 1.30, "donation": 5000 },
+  { "id": "F7", "sponsorAt": "W2", "sponsor": 15000, "elec": 1.5, "crowd": 0.80, "donation": 0 },
+  { "id": "F8", "sponsorAt": "FD", "sponsor": 7500, "elec": 1.0, "crowd": 1.00, "donation": 5000 },
+  { "id": "F9", "sponsorAt": "FD", "sponsor": 15000, "elec": 1.0, "crowd": 1.30, "donation": 0 },
+  { "id": "F10", "sponsorAt": "W3", "sponsor": 15000, "elec": 0.5, "crowd": 1.18, "donation": 5000 }
+]

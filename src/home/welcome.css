@@ -1,0 +1,110 @@
+/* The Minar welcome picture. Bright dawn, one floating island, everything gently moving. All of it is decoration. */
+.wl-scene { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.wl-sky { position: absolute; inset: 0; background: linear-gradient(180deg, #7FC3D8 0%, #A9DAE0 30%, #F7E3B8 66%, #F9D6A0 100%); }
+.wl-sun { position: absolute; left: 50%; top: 14%; width: 38vmin; height: 38vmin; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, #FFF6C8 0%, #FFE08A 38%, rgba(255, 214, 120, 0) 70%); animation: wl-sunrise 3.2s ease-out both, wl-pulse 6s ease-in-out 3.2s infinite; }
+.wl-rays { position: absolute; left: 50%; top: 14%; width: 140vmax; height: 140vmax; transform: translate(-50%, -50%); background: repeating-conic-gradient(from 0deg, rgba(255, 238, 180, .22) 0 6deg, rgba(255, 238, 180, 0) 6deg 18deg); mask-image: radial-gradient(circle, #000 0, transparent 55%); -webkit-mask-image: radial-gradient(circle, #000 0, transparent 55%); animation: wl-spin 120s linear infinite; }
+@keyframes wl-sunrise { from { transform: translate(-50%, 40%) scale(.7); opacity: 0 } to { transform: translate(-50%, -50%) scale(1); opacity: 1 } }
+@keyframes wl-pulse { 0%, 100% { opacity: .9; transform: translate(-50%, -50%) scale(1) } 50% { opacity: 1; transform: translate(-50%, -50%) scale(1.06) } }
+@keyframes wl-spin { to { transform: translate(-50%, -50%) rotate(360deg) } }
+
+.wl-cloud { position: absolute; left: -30vw; height: 8vmin; width: 22vmin; opacity: .92; animation: wl-drift linear infinite; }
+.wl-cloud i { position: absolute; bottom: 0; border-radius: 50%; background: #FFFDF6; box-shadow: inset 0 -6px 0 rgba(150, 190, 205, .35); }
+.wl-cloud i:nth-child(1) { left: 0; width: 55%; height: 70%; }
+.wl-cloud i:nth-child(2) { left: 25%; width: 60%; height: 100%; }
+.wl-cloud i:nth-child(3) { left: 55%; width: 45%; height: 62%; }
+.wl-cloud.c0 { top: 10%; animation-duration: 90s; animation-delay: -30s; }
+.wl-cloud.c1 { top: 22%; transform: scale(1.4); animation-duration: 120s; animation-delay: -80s; opacity: .8; }
+.wl-cloud.c2 { top: 6%; transform: scale(.8); animation-duration: 75s; animation-delay: -5s; }
+.wl-cloud.c3 { top: 32%; transform: scale(1.1); animation-duration: 100s; animation-delay: -55s; opacity: .7; }
+.wl-cloud.c4 { top: 16%; transform: scale(.65); animation-duration: 68s; animation-delay: -45s; opacity: .85; }
+@keyframes wl-drift { from { left: -30vw } to { left: 120vw } }
+
+.wl-bird { position: absolute; width: 26px; height: 13px; animation: wl-fly linear infinite; }
+.wl-bird.b0 { top: 24%; animation-duration: 26s; animation-delay: -4s; }
+.wl-bird.b1 { top: 29%; width: 20px; animation-duration: 31s; animation-delay: -12s; }
+.wl-bird.b2 { top: 19%; width: 16px; animation-duration: 22s; animation-delay: -18s; }
+@keyframes wl-fly { from { left: -8vw; transform: translateY(0) } 25% { transform: translateY(-10px) } 50% { transform: translateY(6px) } 75% { transform: translateY(-8px) } to { left: 108vw; transform: translateY(0) } }
+
+/* the island */
+.wl-island { position: absolute; left: 50%; top: 33%; width: min(124vw, 120vh, 1000px); aspect-ratio: 1344 / 1142; transform: translateX(-50%); animation: wl-float 7s ease-in-out infinite, wl-arrive 1.4s cubic-bezier(.2, .9, .3, 1) both; }
+.wl-island-img { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 22px 22px rgba(58, 42, 36, .28)); }
+.wl-shadow { position: absolute; left: 12%; right: 12%; bottom: -7%; height: 7%; border-radius: 50%; background: radial-gradient(ellipse, rgba(58, 42, 36, .28), transparent 70%); }
+.wl-monument { position: absolute; left: 51.2%; top: 52.8%; width: 24.6%; transform: translate(-50%, -78%); filter: drop-shadow(0 8px 10px rgba(58, 42, 36, .3)); }
+.wl-glow { position: absolute; left: 51.2%; top: 38%; width: 18%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(255, 226, 130, .75), rgba(255, 226, 130, 0) 68%); animation: wl-pulse2 3.4s ease-in-out infinite; }
+@keyframes wl-float { 0%, 100% { translate: 0 0 } 50% { translate: 0 -14px } }
+@keyframes wl-arrive { from { opacity: 0; margin-top: 60px } to { opacity: 1; margin-top: 0 } }
+@keyframes wl-pulse2 { 0%, 100% { opacity: .55; scale: .9 } 50% { opacity: 1; scale: 1.12 } }
+
+.wl-place { position: absolute; width: 5.6%; transform: translate(-50%, -90%); }
+.wl-npc { width: 100%; display: block; animation: wl-bob 3.2s ease-in-out infinite; animation-delay: calc(var(--n) * -.8s); transform-origin: 50% 100%; }
+@keyframes wl-bob { 0%, 100% { translate: 0 0; rotate: -1.5deg } 50% { translate: 0 -7%; rotate: 1.5deg } }
+.wl-flag { position: absolute; right: -85%; bottom: 10%; width: 80%; aspect-ratio: 546 / 857; }
+.wl-flag img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.wl-flag .on { opacity: 0; animation: wl-light 12s ease-in-out infinite; animation-delay: calc(var(--n) * 1.6s); }
+.wl-flag .off { animation: wl-sway 3s ease-in-out infinite; transform-origin: 20% 100%; }
+.wl-spark { position: absolute; left: 50%; top: 30%; width: 220%; aspect-ratio: 1; transform: translate(-50%, -50%) scale(0); border-radius: 50%; background: radial-gradient(circle, rgba(255, 232, 140, .95), rgba(255, 232, 140, 0) 65%); animation: wl-burst 12s ease-out infinite; animation-delay: calc(var(--n) * 1.6s); }
+@keyframes wl-light { 0%, 4% { opacity: 0 } 8%, 82% { opacity: 1 } 90%, 100% { opacity: 0 } }
+@keyframes wl-burst { 0%, 3% { transform: translate(-50%, -50%) scale(0); opacity: 0 } 6% { transform: translate(-50%, -50%) scale(1); opacity: 1 } 16%, 100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0 } }
+@keyframes wl-sway { 0%, 100% { transform: skewX(0) } 50% { transform: skewX(3deg) } }
+
+.wl-ammamma { position: absolute; left: 21%; top: 84%; width: 6.5%; transform: translate(-50%, -100%); }
+.wl-ammamma img { width: 100%; display: block; animation: wl-bob 2.4s ease-in-out infinite; transform-origin: 50% 100%; }
+.wl-bubble { position: absolute; left: 10%; bottom: 112%; width: max-content; max-width: min(44vmin, 62vw); transform: translateX(0); padding: 8px 12px; border: 1.5px solid #3A2A24; border-radius: 14px; background: #FFF8E2; color: #3A2A24; font-size: clamp(12px, 3.1vmin, 16px); font-weight: 700; line-height: 1.3; box-shadow: 0 3px 0 rgba(58, 42, 36, .3); animation: wl-say .5s cubic-bezier(.3, 1.5, .5, 1) both; }
+.wl-bubble::after { content: ''; position: absolute; left: 14%; bottom: -8px; width: 12px; height: 12px; background: #FFF8E2; border-right: 1.5px solid #3A2A24; border-bottom: 1.5px solid #3A2A24; transform: rotate(45deg); }
+@keyframes wl-say { from { opacity: 0; transform: translateY(8px) scale(.85) } to { opacity: 1; transform: none } }
+
+/* bunting across the top and falling petals */
+.wl-bunting { position: absolute; top: -2vmin; left: -4vw; width: 108vw; height: clamp(46px, 12vmin, 120px); object-fit: fill; max-width: none; transform-origin: 50% 0; animation: wl-swing 5s ease-in-out infinite; }
+@keyframes wl-swing { 0%, 100% { transform: rotate(-.6deg) } 50% { transform: rotate(.6deg) } }
+.wl-petal { position: absolute; top: -4%; border-radius: 80% 0 80% 0; background: #E8862F; border: 1.2px solid #3A2A24; opacity: 0; animation: wl-fall linear infinite; }
+@keyframes wl-fall { 0% { transform: translate(0, -30px) rotate(0); opacity: 0 } 10% { opacity: .9 } 100% { transform: translate(120px, 110vh) rotate(540deg); opacity: 0 } }
+
+/* the title, built letter by letter */
+.wl-title { display: flex; justify-content: center; margin: 0; font-family: var(--font-display); line-height: .95; color: #3A2A24; font-size: clamp(54px, 15vmin, 120px); text-shadow: 0 4px 0 #FFF3D0, 0 8px 16px rgba(58, 42, 36, .2); }
+.wl-title span { display: inline-block; animation: wl-letter .7s cubic-bezier(.3, 1.6, .5, 1) both; animation-delay: calc(.5s + var(--i) * .09s); }
+.wl-title span:nth-child(odd) { color: #D9573F; }
+@keyframes wl-letter { from { opacity: 0; transform: translateY(40px) rotate(-8deg) scale(.7) } to { opacity: 1; transform: none } }
+.wl-tag { margin: 6px 0 0; text-align: center; font-weight: 800; font-size: clamp(14px, 2.6vmin, 19px); color: #4A3329; text-shadow: 0 1px 0 #FFF3D0; animation: wl-fade 1s ease 1.4s both; }
+@keyframes wl-fade { from { opacity: 0 } to { opacity: 1 } }
+
+/* layout of the foreground over the scene */
+.wl-fore { position: relative; z-index: 5; display: flex; flex-direction: column; min-height: 100%; padding: max(14px, env(safe-area-inset-top)) 16px 20px; }
+.wl-head { display: flex; flex-direction: column; align-items: center; margin-top: 9vh; }
+.wl-spacer { flex: 1; min-height: 34vh; }
+.wl-card { width: min(100%, 460px); margin: 0 auto; }
+@media (min-width: 900px) and (min-aspect-ratio: 5/4) {
+  .wl-island { left: 30%; top: 14%; width: min(64vw, 118vh, 980px); }
+  .wl-fore { flex-direction: row; align-items: center; justify-content: flex-end; padding-right: 6vw; gap: 4vw; }
+  .wl-head { position: absolute; top: 5vh; right: 6vw; left: 56%; margin: 0; }
+  .wl-spacer { display: none; }
+  .wl-card { margin: 14vh 0 0 0; width: min(100%, 440px); }
+}
+@media (orientation: landscape) and (max-height: 520px) {
+  .wl-island { left: 28%; top: 6%; width: min(56vw, 150vh); }
+  .wl-fore { flex-direction: row; align-items: center; justify-content: flex-end; padding-right: 4vw; gap: 3vw; }
+  .wl-head { position: absolute; top: 15vh; right: 4vw; left: 52%; margin: 0; }
+  .wl-title { font-size: clamp(40px, 13vh, 80px); }
+  .wl-spacer { display: none; }
+  .wl-card { margin: 26vh 0 0 0; width: min(100%, 380px); }
+}
+html[data-lite='true'] .wl-scene *, html[data-lite='true'] .wl-title span { animation: none !important; }
+html[data-lite='true'] .wl-title span, html[data-lite='true'] .wl-tag { opacity: 1; }
+html[data-lite='true'] .wl-flag .on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .wl-scene *, .wl-title span, .wl-tag { animation: none !important; opacity: 1; } }
+
+.wl-btn { position: relative; overflow: hidden; width: 100%; min-height: 64px; padding: 0 22px; border-radius: 14px; border: 2px solid #3A2A24; background: linear-gradient(#E9774F, #D9573F); color: #FFF7E6; font-family: var(--font-body); font-weight: 800; font-size: 20px; cursor: pointer; box-shadow: 0 4px 0 rgba(58, 42, 36, .5), 0 12px 24px rgba(58, 42, 36, .22); transition: transform .15s, box-shadow .15s; pointer-events: auto; }
+.wl-btn:hover { transform: translateY(-2px); }
+.wl-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(58, 42, 36, .5); }
+.wl-btn::after { content: ''; position: absolute; top: 0; bottom: 0; width: 40%; left: -60%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .45), transparent); animation: wl-shine 4.5s ease-in-out 2.4s infinite; }
+@keyframes wl-shine { 0%, 55% { left: -60% } 100% { left: 130% } }
+.wl-btn.cream { background: linear-gradient(#FFF8E2, #FBF0D2); color: #3A2A24; }
+.wl-btn.cream::after { display: none; }
+.wl-btn:disabled { opacity: .5; cursor: default; transform: none; }
+.wl-fore, .wl-fore * { pointer-events: auto; }
+.wl-head, .wl-head * { pointer-events: none; }
+@media (min-width: 900px) and (min-aspect-ratio: 5/4) { .wl-head { top: 16vh; } .wl-card { margin-top: 24vh; } }
+/* entry to Minar Insights, the teacher and NGO dashboard: a quiet pill opposite the language switch */
+.wl-ngo { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 14px 0 6px; border-radius: 999px; border: 1.5px solid #3A2A24; background: rgba(255, 248, 226, .92); color: #3A2A24; font-family: var(--font-body); font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 0 rgba(58, 42, 36, .35); transition: transform .15s, background .15s; pointer-events: auto; }
+.wl-ngo:hover { background: #FFF8E2; transform: translateY(-1px); }
+.wl-ngo img { width: 32px; height: 32px; object-fit: contain; }
+@media (max-width: 380px) { .wl-ngo span { max-width: 92px; line-height: 1.1; font-size: 12px; } }

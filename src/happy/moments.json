@@ -1,0 +1,5 @@
+[
+  { "id": "chai", "cost": 100, "joy": 8 },
+  { "id": "festivalTreat", "cost": 150, "joy": 10 },
+  { "id": "restAtHome", "cost": 0, "joy": 5 }
+]

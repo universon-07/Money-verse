@@ -1,0 +1,113 @@
+/*
+  Minar Insights: the facilitator dashboard. Everything is scoped under .mi so the game's own look is untouched.
+  A calm analytics look: neutral page, cards, burgundy for actions, navy for data. Light and dark themes (Profile > Appearance);
+  printouts and slides always use the light palette.
+*/
+@layer components {
+.mi {
+  --bg: #F5F3EF; --card: #FFFFFF; --soft: #F8F6F2; --line: #E7E2D8; --track: #EEEAE2; --ink: #1F2430; --muted: #6B6F7A;
+  --brand: #7A1F2B; --brand-dark: #62171F; --navy: #14213D; --tan: #C9A66B;
+  --building: #C2555A; --getting: #D6A23E; --strong: #2F6F5E; --warn: #9A6A12; --danger: #9B2C2C; --danger-line: #E9C7C7; --danger-soft: #FBF1F1;
+  --t-building: #F8E4E5; --t-building-ink: #8E2F34; --t-getting: #F7EDD6; --t-getting-ink: #7A5712; --t-strong: #DFEDE8; --t-strong-ink: #1F5446;
+  --t-brand: #F3E1E3; --t-brand-ink: #7A1F2B; --t-plain: #EFECE6; --t-plain-ink: #4A4E58;
+  --soft-building: #FBF0EF; --soft-getting: #FBF5E8; --soft-strong: #EEF5F2; --soft-brand: #FBF6F4;
+  --side: #EFECE6; --header: rgba(245, 243, 239, .92); --flag-empty: #C9C3B6; --avatar: #14213D; --avatar-off: #8A8F99;
+  --shadow: 0 1px 2px rgba(20, 33, 61, .04); --pop: 0 12px 32px rgba(20, 33, 61, .14);
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-weight: 400; color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color .2s, color .2s;
+}
+:root[data-mi-theme="dark"] .mi:not(.mi-print) {
+  --bg: #111419; --card: #1A1E26; --soft: #222733; --line: #2C323E; --track: #2A303B; --ink: #E8EAF0; --muted: #9AA1AE;
+  --brand: #B83A4E; --brand-dark: #9E2F42; --navy: #9DB7F0; --tan: #C9A66B;
+  --building: #E07A7F; --getting: #E3B45A; --strong: #4FB394; --warn: #E3B45A; --danger: #F08A8A; --danger-line: #5A2A2E; --danger-soft: #2C1B1E;
+  --t-building: #3A2226; --t-building-ink: #F4AEB2; --t-getting: #3A3020; --t-getting-ink: #EBC77F; --t-strong: #1B332C; --t-strong-ink: #8FD8BF;
+  --t-brand: #3B1F26; --t-brand-ink: #F2A9B4; --t-plain: #2A2F3A; --t-plain-ink: #C3C8D2;
+  --soft-building: #261B1E; --soft-getting: #28241A; --soft-strong: #18261F; --soft-brand: #251B1F;
+  --side: #15181E; --header: rgba(17, 20, 25, .88); --flag-empty: #4A5160; --avatar: #3D5A99; --avatar-off: #4A5160;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3); --pop: 0 12px 32px rgba(0, 0, 0, .45);
+  color-scheme: dark;
+}
+
+.mi * { box-sizing: border-box; }
+:where(.mi) :where(h1, h2, h3) { font-family: var(--font-body); color: var(--ink); margin: 0; letter-spacing: -0.01em; }
+.mi button { font-family: inherit; }
+
+.mi-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); }
+.mi-muted { color: var(--muted); }
+.mi-eyebrow { font-size: 12px; font-weight: 600; color: var(--muted); }
+
+.mi-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 16px;
+  font-size: 14px; font-weight: 600; border-radius: 10px; cursor: pointer; white-space: nowrap;
+  background: var(--brand); color: #fff; border: 1px solid var(--brand); transition: background .15s, border-color .15s;
+}
+.mi-btn:hover { background: var(--brand-dark); }
+.mi-btn.ghost { background: var(--card); color: var(--ink); border-color: var(--line); }
+.mi-btn.ghost:hover { background: var(--soft); }
+.mi-btn.quiet { background: transparent; color: var(--ink); border-color: transparent; padding: 0 10px; }
+.mi-btn.quiet:hover { background: var(--soft); }
+.mi-btn.danger { background: var(--card); color: var(--danger); border-color: var(--danger-line); }
+.mi-btn.danger:hover { background: var(--danger-soft); }
+.mi-btn:disabled { opacity: .45; cursor: not-allowed; }
+.mi-btn.sm { min-height: 32px; padding: 0 12px; font-size: 13px; border-radius: 8px; }
+
+.mi-input { font-weight: 400; height: 42px; width: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--card); padding: 0 12px; font-size: 15px; color: var(--ink); }
+.mi-input::placeholder { color: var(--muted); opacity: .8; }
+.mi textarea.mi-input { height: auto; padding: 10px 12px; }
+.mi-input:focus, .mi select:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px color-mix(in srgb, var(--navy) 18%, transparent); }
+.mi button:focus-visible, .mi a:focus-visible, .mi [tabindex]:focus-visible { outline: 3px solid color-mix(in srgb, var(--navy) 40%, transparent); outline-offset: 2px; }
+.mi select.mi-input { padding-right: 32px; }
+
+.mi-nav { display: flex; align-items: center; gap: 12px; width: 100%; height: 42px; padding: 0 12px; border: 0; border-radius: 10px; background: transparent; color: var(--ink); opacity: .82; font-size: 14.5px; font-weight: 500; cursor: pointer; text-align: left; }
+.mi-nav:hover { background: var(--soft); opacity: 1; }
+.mi-nav[aria-current="page"] { background: var(--card); color: var(--t-brand-ink); opacity: 1; font-weight: 650; box-shadow: var(--shadow); }
+
+/* phone: bottom tab bar */
+.mi-tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
+.mi-tabbar button { display: grid; justify-items: center; gap: 2px; padding: 8px 0 7px; border: 0; background: none; font-size: 11.5px; font-weight: 600; color: var(--muted); cursor: pointer; }
+.mi-tabbar button[aria-current="page"] { color: var(--t-brand-ink); }
+@media (min-width: 1024px) { .mi-tabbar { display: none; } }
+
+.mi-chip { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 2px 9px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+
+.mi-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.mi-table th { text-align: left; font-size: 12px; font-weight: 600; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.mi-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.mi-table tbody tr { cursor: pointer; }
+.mi-table tbody tr:hover { background: var(--soft); }
+
+.mi-menu { position: absolute; right: 0; top: calc(100% + 6px); z-index: 40; min-width: 260px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--pop); padding: 6px; }
+.mi-menu button { display: grid; width: 100%; text-align: left; gap: 1px; border: 0; background: none; border-radius: 8px; padding: 9px 10px; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--ink); }
+.mi-menu button:hover { background: var(--soft); }
+.mi-menu small { font-size: 12px; font-weight: 400; color: var(--muted); }
+
+.mi-seg { display: inline-flex; gap: 2px; padding: 3px; border-radius: 10px; background: var(--soft); border: 1px solid var(--line); }
+.mi-seg button { min-height: 30px; padding: 0 12px; border: 0; border-radius: 8px; background: transparent; color: var(--muted); font-size: 13px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.mi-seg button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: var(--shadow); }
+
+.mi-scrim { position: fixed; inset: 0; z-index: 50; background: rgba(10, 12, 16, .45); display: flex; justify-content: flex-end; }
+.mi-drawer { width: min(560px, 100%); height: 100%; overflow-y: auto; background: var(--bg); box-shadow: var(--pop); animation: mi-in .2s ease-out; }
+@keyframes mi-in { from { transform: translateX(24px); opacity: 0 } to { transform: none; opacity: 1 } }
+
+/* slides: 16:9, text sized in container units so one design scales from a thumbnail to a projector */
+.mi-slide { position: relative; width: 100%; aspect-ratio: 16 / 9; container-type: inline-size; border-radius: 12px; overflow: hidden; font-family: var(--font-body); }
+.mi-slide-pad { height: 100%; padding: 5.5cqw 6.5cqw; }
+.mi-deckstrip { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 190px); gap: 10px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x mandatory; }
+.mi-thumb { padding: 0; border: 1px solid var(--line); border-radius: 12px; background: none; cursor: pointer; scroll-snap-align: start; transition: transform .15s, box-shadow .15s; }
+.mi-thumb:hover { transform: translateY(-2px); box-shadow: var(--pop); }
+.mi-thumb .mi-slide { border-radius: 11px; }
+
+.mi-print { display: none; }
+@media print {
+  @page { margin: 14mm; }
+  /* the print area is portalled straight into <body>; everything else is left out of the printout */
+  html, body { height: auto !important; overflow: visible !important; background: #fff !important; }
+  body > *:not(.mi-print) { display: none !important; }
+  .mi-print { display: block !important; width: 100%; background: #fff; color: #1F2430; font-family: var(--font-body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .mi-page { break-after: page; }
+  .mi-page:last-child { break-after: auto; }
+  .mi-card { box-shadow: none !important; break-inside: avoid; }
+  .mi-print .mi-slide { border-radius: 0; break-inside: avoid; }
+}
+}

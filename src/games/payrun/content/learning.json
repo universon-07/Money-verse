@@ -1,0 +1,14 @@
+{
+  "concepts": { "1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6, 7], "7": [8], "8": [9] },
+  "predictions": {
+    "1": { "options": ["low", "mid", "high"], "bounds": [150, 350] },
+    "2": { "options": ["low", "mid", "high"], "bounds": [60, 100] },
+    "3": { "options": ["low", "mid", "high"], "bounds": [200, 400] },
+    "4": { "options": ["pocket", "jar", "borrow"], "nominal": true },
+    "5": { "options": ["none", "one", "many"] },
+    "6": { "options": ["1", "2", "3"] },
+    "7": { "options": ["10", "25", "50"] },
+    "8": { "options": ["both", "one", "neither"] }
+  },
+  "apply": { "1": "B", "2": "B", "3": "A", "4": "A", "5": "B", "6": "B", "7": "B", "8": "B", "9": "A" }
+}

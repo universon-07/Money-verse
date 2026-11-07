@@ -1,0 +1,65 @@
+{
+ "1": {
+  "idea": "Money rarely disappears in one big moment. It leaks out in small pieces, and we forget them because each feels too small to remember. Tracking means noting every spend for a short time, even roughly. The first time, people are often surprised, and that surprise is useful because it shows what to change. You do not have to stop enjoying things. You only need to see the total so you choose it instead of drifting into it.",
+  "example": "Meena thinks she spends ₹100 a week on snacks. She writes down each one for a week and finds ₹260. She picks the ones she would miss least and drops the rest.",
+  "real": "Many people note their spends for two weeks and sort them into needs, wants and savings.",
+  "ask": "What did I spend last week? What was the biggest group? Did it match my guess?",
+  "rule": "What you track, you can change."
+ },
+ "2": {
+  "idea": "A chai, a snack, a top-up, a game pack: each feels like nothing, which is why it is easy to repeat. Added up, small spends can match a real expense. Because they come in small pieces, people rarely count them. Seeing the total turns a vague feeling into a number you can act on. Cheaper habits, like bringing your own chai, reduce the leak without feeling like giving something up.",
+  "example": "₹90 of treats a week is ₹360 over four weeks and ₹4,680 over a year, if it stays the same. Halving it gives back ₹2,340 a year. These are made-up numbers for one student.",
+  "real": "Regular small payments, such as subscriptions, are the easiest to forget.",
+  "ask": "What small things do I buy every week? What is the monthly total? Which would I miss least?",
+  "rule": "Count the small stuff."
+ },
+ "3": {
+  "idea": "Most people plan to save whatever is left after spending, and most weeks nothing is left. Saving works better when it happens first: part of your pay moves into savings before you can spend it. The money is not lost; it is out of reach of impulse and small spends. Making it automatic removes the decision, and a decision you do not have to make cannot be put off. Even a small share, saved every time, adds up.",
+  "example": "Setting aside 20% of ₹900 each week is ₹180 a week and ₹1,440 over eight weeks. Saving \"what is left\" gave ₹60, ₹0, ₹120 and ₹40 in four weeks, about ₹55 a week.",
+  "real": "Many people arrange for a fixed amount to move into a separate savings pot on the day they are paid.",
+  "ask": "Is saving decided before I spend, or after? Could it happen automatically? What share is small enough to keep up?",
+  "rule": "Pay yourself first."
+ },
+ "4": {
+  "idea": "A phone cracks, a bill arrives, someone falls ill. An emergency fund is money set aside only for such surprises, kept safe and easy to reach. Money in your pocket is exposed to every slip and every temptation. Money set aside is protected, and if it can be reached quickly, it pays a surprise without borrowing. That is why the jar opens only for bills. A cushion does not stop bad things happening, but it stops them becoming a debt.",
+  "example": "Two students meet the same ₹250 bill. One has nothing set aside and borrows ₹300, repaying ₹450. The other breaks ₹250 from the jar: no extra cost, though the goal moves back ₹250.",
+  "real": "Many planners suggest keeping several months of essential costs in a safe, easy-to-reach place apart from everyday money. This game does not recommend an amount or a product.",
+  "ask": "If a ₹150 bill arrived today, where would the money come from? Is it separate from my spending money?",
+  "rule": "Keep a cushion apart from spending money."
+ },
+ "5": {
+  "idea": "A planned cost, like an exam fee, you can see coming. A surprise, like a puncture, you cannot. But surprises are not rare. Over a year they add up to a fairly predictable amount, so they are better treated as a normal cost than as bad luck. A plan that includes a cushion means a surprise makes you adjust, not panic or borrow. A simple way is to expect an average amount and set money aside for it each week.",
+  "example": "If surprises average ₹200 a week, ignoring them makes a plan wrong by ₹200 every week. Setting aside ₹100 a week builds ₹400 in a month, a cushion for the next surprise.",
+  "real": "Households often find that repairs, medical bills and fees add up to a predictable amount over a year.",
+  "ask": "What surprises did I have in the last three months? Is there room for them in my plan?",
+  "rule": "Expect the unexpected."
+ },
+ "6": {
+  "idea": "Impulse buys are driven by the moment: a sale, a friend's new thing, a good mood. The feeling often fades within hours or days. Putting an item on a list and coming back later separates the urge from the decision. If you still want it after waiting, buy it knowing you do. If not, you kept the money. Sales and \"today only\" labels work on the same instinct, creating urgency so you decide fast. A short pause is the simplest defence.",
+  "example": "Over four weeks a student lists four items worth ₹1,100 and still wants one that costs ₹300. Waiting saved ₹800.",
+  "real": "Some people use a rule such as sleeping on any non-essential purchase.",
+  "ask": "Will I still want this next week? Is the deadline real, or made to rush me?",
+  "rule": "Wait before you buy."
+ },
+ "7": {
+  "idea": "Every rupee can be spent only once. Spending it on one thing means not spending it on something else, including the goal you care about. That hidden alternative is called opportunity cost. A price in rupees hides it. A price in weeks of saving shows it. A purchase can still be worth it, and nobody is saying no to everything. The point is to choose it knowing what it costs.",
+  "example": "At ₹250 saved a week, ₹400 sneakers delay a ₹1,800 goal by about 1½ weeks. Two purchases like that delay it by about 3.",
+  "real": "Before buying, many people ask: what else could this money do, and how many hours of work is it?",
+  "ask": "What am I giving up for this? How many weeks does it set my goal back?",
+  "rule": "Price it in goal-weeks, not just rupees."
+ },
+ "8": {
+  "idea": "A loan gives you money now in exchange for paying back more later. The extra is the cost of borrowing, usually called interest or a fee. ₹100 on ₹200 over about two weeks is 50%, which is very expensive compared with what savings earn. Short, fast loans can cost far more than they seem because the extra is charged over a very short time. Before borrowing, spell out the total you will repay, compare it with other options, and ask whether the need can wait or be met another way.",
+  "example": "Borrow ₹200 and repay ₹300: the cost is ₹100. Break the jar for ₹200 instead: the cost is ₹0, though the goal moves back ₹200 and you have less cushion. Both choices have a price; the amounts differ.",
+  "real": "Lenders should state the total cost of a loan. Compare the total you will repay, not just the size of each instalment.",
+  "ask": "What is the total I will repay? What else could cover this? Can I really afford the repayments?",
+  "rule": "Ask what a loan costs, and what else you could do."
+ },
+ "9": {
+  "idea": "Lending to friends mixes money and relationships, and not every loan is repaid. A friend's history is a useful clue: someone who repaid before is a better bet than someone who has not repaid the last time. Saying no kindly is allowed, and lending a smaller amount is a middle path. A good test is: if this never came back, would I be okay? If not, the amount is too big. Clear terms, such as a repayment date, protect both of you.",
+  "example": "You lend ₹200 to a friend who did not repay last time. Lending ₹50 instead would have cost ₹150 less when it did not come back.",
+  "real": "Many people treat money lent to friends as a gift they can afford to lose, and agree a date.",
+  "ask": "Have they repaid before? Could I live with never seeing it again? Is a smaller amount enough?",
+  "rule": "Lend only what you could afford to lose."
+ }
+}
