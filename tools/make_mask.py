@@ -32,4 +32,3 @@ for rr in range(R):
     out.append(row)
 json.dump({'t': T, 'rows': out}, open('src/content/walkmask.json', 'w'))
 print(sum(r.count('1') for r in out), 'walkable cells of', C * R)
-Image.fromarray((walk * 255).astype(np.uint8)).save('C:/Users/maith/AppData/Local/Temp/claude/c--Users-maith-Downloads-meg26-van/68009b78-9fe6-4e64-8c18-7bdca8663c9c/scratchpad/mask.png')

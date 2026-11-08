@@ -3,7 +3,7 @@
 Run these from the project folder (the one that contains `package.json`), not the folder above it:
 
 ```bash
-cd /Users/shriyakansal/Desktop/IIIT/megathon/megathon_2k26/megathon26-sushi-aur-ek
+cd /path/to/Money-verse
 ```
 
 Nothing here costs any credits.
