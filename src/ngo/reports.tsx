@@ -33,7 +33,7 @@ const SHORT = { building: 'Building', getting: 'Getting there', strong: 'Strong'
 const PLACE_STATE = { n: 'Not started', p: 'In progress', c: 'Cleared' }
 const today = () => new Date().toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' })
 
-const DISCLAIMER = 'Minar is an educational game. All money in it is made up; it teaches how to think about money and never recommends a product or an investment. This card describes in-game choices, not a grade or a judgement of the student.'
+const DISCLAIMER = 'MONEY VERSE is an educational game. All money in it is made up; it teaches how to think about money and never recommends a product or an investment. This card describes in-game choices, not a grade or a judgement of the student.'
 
 /** a one-page report card for one student, shown in the drawer and printed (one per page when printing a whole class) */
 export function ReportCard({ d, ins }: { d: DeskView; ins: StudentInsight }) {
@@ -44,7 +44,7 @@ export function ReportCard({ d, ins }: { d: DeskView; ins: StudentInsight }) {
     <article className="mi-page grid gap-4 text-[14px]" style={{ color: C.ink }}>
       <header className="flex items-start justify-between gap-3 border-b pb-3" style={{ borderColor: C.line }}>
         <div>
-          <div className="mi-eyebrow">Minar · Student progress card</div>
+          <div className="mi-eyebrow">MONEY VERSE · Student progress card</div>
           <h1 className="mt-1 text-[22px] font-bold" style={{ color: C.navy }}>{d.nameOf(s.id)}</h1>
           <div className="mi-muted mt-0.5 text-[12.5px]">{d.cohort.name} · {d.subOf(s.id)} · last update {new Date(s.at).toLocaleDateString()}</div>
         </div>
@@ -130,7 +130,7 @@ export function ClassReport({ d }: { d: DeskView }) {
   return (
     <article className="grid gap-5 text-[13.5px]" style={{ color: C.ink }}>
       <header className="border-b pb-3" style={{ borderColor: C.line }}>
-        <div className="mi-eyebrow">Minar Insights · Class report</div>
+        <div className="mi-eyebrow">MONEY VERSE Insights · Class report</div>
         <h1 className="mt-1 text-[24px] font-bold" style={{ color: C.navy }}>{cohort.name}</h1>
         <div className="mi-muted text-[12.5px]">Class code {cohort.id} · {today()}</div>
       </header>

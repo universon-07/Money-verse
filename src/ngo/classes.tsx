@@ -114,7 +114,7 @@ export function Classes({ current, pick }: { current: Cohort | null; pick: (id: 
       <div className="grid content-start gap-4">
         <Card title="How students join">
           <ol className="m-0 grid gap-2 pl-5 text-[14px] leading-snug">
-            <li>Students open Minar on any phone. <b>No sign-up, no email, no phone number, no name.</b></li>
+            <li>Students open MONEY VERSE on any phone. <b>No sign-up, no email, no phone number, no name.</b></li>
             <li>In Settings they type your class code and their <b>roll number</b> (up to 4 digits).</li>
             <li>After playing, they tap <b>Share progress</b>{cloudEnabled ? ' then Send to my teacher. It arrives here.' : ' and send you the code.'}</li>
           </ol>
@@ -155,7 +155,7 @@ function ClassList({ cls }: { cls: Cohort }) {
     <Card title={`Class list: ${cls.name}`} sub="Roll numbers and names, so you know whose progress is whose. Students only ever send their roll number.">
       <div className="mb-3 flex items-start gap-2 rounded-xl p-3 text-[13px] leading-snug" style={{ background: 'var(--t-strong)', color: 'var(--t-strong-ink)' }}>
         <Icon d={ICONS.lock} size={16} />
-        <span><b>Stays on this device.</b> The class list is never uploaded to the Minar database, never included in CSV exports, and is deleted with the class. It only appears on screen and on report cards you print. On another device, paste it again.</span>
+        <span><b>Stays on this device.</b> The class list is never uploaded to the MONEY VERSE database, never included in CSV exports, and is deleted with the class. It only appears on screen and on report cards you print. On another device, paste it again.</span>
       </div>
       {editing ? (
         <>

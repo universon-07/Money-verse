@@ -56,7 +56,7 @@ export function Profile({ onSignOut, onSignIn, onExit, onDemo }: { onSignOut: ()
       <Card title="Your data">
         <Row label="Classes">{real.length}</Row>
         <Row label="Students who shared progress">{students}</Row>
-        <Row label="Stored in">{signedIn ? 'Minar database (Supabase, row-level security)' : 'This browser only'}</Row>
+        <Row label="Stored in">{signedIn ? 'MONEY VERSE database (Supabase, row-level security)' : 'This browser only'}</Row>
         {signedIn && (
           <Row label="Last synced">
             <span className="inline-flex items-center gap-2">

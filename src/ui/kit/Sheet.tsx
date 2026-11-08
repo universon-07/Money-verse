@@ -1,9 +1,9 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
-import './minar.css'
+import './moneyverse.css'
 
 /**
- * The one panel every "tap to see more" thing in Minar opens into: a bottom sheet on phones, a centred card on wide screens.
+ * The one panel every "tap to see more" thing in MONEY VERSE opens into: a bottom sheet on phones, a centred card on wide screens.
  * Backdrop click, the close button and Escape all close it. Focus goes to the panel when it opens.
  */
 export function Sheet({ open, onClose, title, art, children, tone = 'paper' }: { open: boolean; onClose: () => void; title: ReactNode; art?: ReactNode; children: ReactNode; tone?: 'paper' | 'gold' | 'sky' | 'rose' }) {

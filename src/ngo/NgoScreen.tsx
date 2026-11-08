@@ -65,7 +65,7 @@ function buildView(cohort: Cohort, labels: Record<string, string>, roster: Roste
 
 type Gate = 'checking' | 'signed-out' | 'ready'
 
-/** Minar Insights: the dashboard for teachers and NGOs. Signs in when a database is connected; otherwise runs on this device. */
+/** MONEY VERSE Insights: the dashboard for teachers and NGOs. Signs in when a database is connected; otherwise runs on this device. */
 export default function NgoScreen() {
   const nav = useNavigate()
   const { setMode, setUser, refresh, loadDemo } = useNgo()
@@ -204,7 +204,7 @@ function Desk({ onSignedOut }: { onSignedOut: () => void }) {
           ) : page === 'classes' ? (
             <Classes current={cohort} pick={(id) => { setPick(id); setPage('overview') }} />
           ) : !d ? (
-            <Card title="Welcome to Minar Insights" sub="See how each class is learning, who needs help, and what to teach next.">
+            <Card title="Welcome to MONEY VERSE Insights" sub="See how each class is learning, who needs help, and what to teach next.">
               <div className="flex flex-wrap gap-2">
                 <button type="button" className="mi-btn" onClick={() => setPage('classes')}>Create your first class</button>
                 <button type="button" className="mi-btn ghost" onClick={showDemo}>Show a demo class</button>
@@ -217,7 +217,7 @@ function Desk({ onSignedOut }: { onSignedOut: () => void }) {
               {page === 'teach' && <Teach d={d} skill={skill ?? firstSkill(d)} setSkill={setSkill} openStudent={setStudent} />}
             </>
           )}
-          <p className="mi-muted m-0 mt-2 text-center text-[12px] leading-snug">Educational only: every amount in Minar is made up, and nothing here recommends an investment. Student data is anonymous.</p>
+          <p className="mi-muted m-0 mt-2 text-center text-[12px] leading-snug">Educational only: every amount in MONEY VERSE is made up, and nothing here recommends an investment. Student data is anonymous.</p>
         </main>
       </div>
 

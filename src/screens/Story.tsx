@@ -5,7 +5,7 @@ import { animate, useMotionValue } from 'framer-motion'
 import { FESTIVALS, PERSONAS, PILLARS, inr, type PersonaId } from '../content/data'
 import { useGame } from '../store/game'
 import { LangSwitch } from '../components/Hud'
-import { MinarBar } from '../ui/kit/MinarBar'
+import { MoneyverseBar } from '../ui/kit/MoneyverseBar'
 import { useManifest } from '../art/ArtSlot'
 import { stepped } from '../lib/stepped'
 import { Backdrop, Beat, Say } from './story/parts'
@@ -295,7 +295,7 @@ export default function Story() {
       </div>
 
       {step >= 5 ? (
-        <MinarBar replay={false} hideProfile />
+        <MoneyverseBar replay={false} hideProfile />
       ) : (
         <div className="st-top"><LangSwitch /></div>
       )}

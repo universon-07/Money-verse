@@ -49,7 +49,7 @@ export function ShareProgress({ slot, onClose }: { slot: SlotMeta; onClose: () =
     const { submitProgress } = await import('./cloud')
     setSending(await submitProgress(code, shared))
   }
-  const send = () => { void navigator.share?.({ title: 'Minar', text }).catch(() => undefined) }
+  const send = () => { void navigator.share?.({ title: 'MONEY VERSE', text }).catch(() => undefined) }
 
   return (
     <div className="mt-3 rounded-xl border-[1.5px] p-3" style={{ borderColor: '#3A2A24', background: '#FFF7E3' }} role="dialog" aria-label={t('home.shareTitle')}>

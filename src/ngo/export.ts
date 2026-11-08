@@ -44,7 +44,7 @@ export async function downloadSvgPng(svg: SVGSVGElement, name: string, title: st
   const doc = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" font-family="Noto Sans, Segoe UI, system-ui, sans-serif">
     <rect width="100%" height="100%" fill="${bg}"/>
     <text x="${pad}" y="${pad + 14}" font-size="16" font-weight="700" fill="${ink}">${esc(title)}</text>
-    <text x="${W - pad}" y="${pad + 14}" font-size="11" fill="${muted}" text-anchor="end">Minar Insights · ${esc(new Date().toLocaleDateString())} · made-up in-game money</text>
+    <text x="${W - pad}" y="${pad + 14}" font-size="11" fill="${muted}" text-anchor="end">MONEY VERSE Insights · ${esc(new Date().toLocaleDateString())} · made-up in-game money</text>
     <g transform="translate(${pad} ${pad + head})"><svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${inner}</svg></g>
   </svg>`
   const img = new Image()

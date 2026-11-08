@@ -7,7 +7,7 @@ import { goHome } from '../home/Home'
 import { useHappyView } from '../features/happy/hooks'
 import { FaceGlyph } from '../ui/wire/icons'
 import { MomentsSheet } from '../ui/wire/MomentsSheet'
-import { MinarBar } from '../ui/kit/MinarBar'
+import { MoneyverseBar } from '../ui/kit/MoneyverseBar'
 
 export function Coin({ size = 24 }: { size?: number }) {
   return (
@@ -164,7 +164,7 @@ export function HappyChip() {
   )
 }
 
-/** the top bar on every shell screen: see src/ui/kit/MinarBar.tsx */
+/** the top bar on every shell screen: see src/ui/kit/MoneyverseBar.tsx */
 export function TopHud({ replay = true }: { replay?: boolean }) {
-  return <MinarBar replay={replay} />
+  return <MoneyverseBar replay={replay} />
 }

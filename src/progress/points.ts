@@ -1,7 +1,7 @@
 import type { HappyBand } from '../features/happy/view'
 
 /**
- * The one place that says how Minar's points look and how a play turns into stars, so every game, panel and result
+ * The one place that says how MONEY VERSE's points look and how a play turns into stars, so every game, panel and result
  * screen speaks the same language. Numbers that change money or Happy live in progress/config.ts and happy/config.ts.
  */
 

@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "Minar",
+    "title": "MONEY VERSE",
     "tagline": "One island. Four lessons. One goal."
   },
   "lang": {
@@ -337,7 +337,7 @@
   },
   "onboarding": {
     "welcome": {
-      "title": "Welcome to Minar",
+      "title": "Welcome to MONEY VERSE",
       "body": "Select a language to continue."
     },
     "problem": {
@@ -377,7 +377,7 @@
     "back": "Back"
   },
   "hub": {
-    "title": "Minar Hub",
+    "title": "MONEY VERSE Hub",
     "lookAfterYourself": "Look after yourself",
     "teaches": "Teaches:",
     "time": "Time:",
@@ -448,7 +448,7 @@
     "lessons": "Lessons seen: {{n}}",
     "brighten": "Worth replaying: {{names}}",
     "share": "Download share card",
-    "shareTitle": "My Minar goal"
+    "shareTitle": "MONEY VERSE goal"
   },
   "home": {
     "tagline": "Learn money, one lane at a time.",
@@ -470,7 +470,7 @@
     "places": "{{n}} of 4 places",
     "deleteConfirm": "Delete \"{{name}}\"? This cannot be undone.",
     "deleteYes": "Yes, delete",
-    "title": "Minar",
+    "title": "MONEY VERSE",
     "share": "Share progress",
     "shareTitle": "Share my progress",
     "shareBody": "Send this code to your teacher or NGO facilitator so they can see how the class is doing.",
@@ -481,7 +481,7 @@
     "shareDownload": "Save as file",
     "shareClose": "Close",
     "facilitator": "For teachers and NGOs",
-    "facilitatorSub": "Minar Insights: see how your class is learning, report cards and lesson slides.",
+    "facilitatorSub": "MONEY VERSE Insights: see how your class is learning, report cards and lesson slides.",
     "shareYourCode": "Your student code: {{id}}. Tell your teacher if they ask which one is you.",
     "shareToTeacher": "Send to my teacher",
     "shareSending": "Sending…",
@@ -591,7 +591,7 @@
       "resetAsk": "Erase this game's progress?",
       "resetYes": "Yes, erase it",
       "resetNo": "Keep it",
-      "about": "Minar. All amounts are made up, for practice.",
+      "about": "MONEY VERSE. All amounts are made up, for practice.",
       "rollHint": "Your school roll number (up to 4 digits). It lets your teacher see your progress. Your name is never sent."
     }
   },

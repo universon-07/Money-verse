@@ -13,7 +13,7 @@ export default defineConfig({
       // Pillar 4 ships its own public/sw.js and manifest; keep the shell's under other names so they never overwrite each other
       filename: 'app-sw.js',
       manifestFilename: 'app.webmanifest',
-      manifest: { name: 'Money Mohalla', short_name: 'Mohalla', start_url: '/', display: 'standalone', background_color: '#F8EBCB', theme_color: '#92C9D3' },
+      manifest: { name: 'MONEY VERSE', short_name: 'MONEY VERSE', start_url: '/', display: 'standalone', background_color: '#F8EBCB', theme_color: '#92C9D3' },
       workbox: { globPatterns: ['**/*.{js,css,html,webp,png,svg,json,woff2}'], maximumFileSizeToCacheInBytes: 5 * 1024 * 1024 },
     }),
   ],
