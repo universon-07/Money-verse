@@ -16,7 +16,7 @@ async function load(mem: Mem) {
 /** what the old game saved under 'money-mohalla-v1' (zustand persist, no version option => version 0) */
 const legacyPayload = (state: Record<string, unknown>) => JSON.stringify({ state, version: 0 })
 const oldSave = {
-  language: 'te',
+  language: 'en',
   persona: 'college',
   startAmount: 4000,
   goalAmount: 30000,
@@ -54,7 +54,7 @@ describe('normalizePersisted', () => {
   })
   it('recognises and upgrades the old v1 shape', () => {
     const p = normalizePersisted(oldSave, () => 'id')
-    expect(p.language).toBe('te')
+    expect(p.language).toBe('en')
     expect(p.pillars.plan.brightness).toBe('bright')
     expect(p.pillars.invest.status).toBe('complete')
   })
@@ -80,7 +80,7 @@ describe('store: migration from the old v1 save', () => {
   it('keeps the player progress, settings and goal bar', async () => {
     mem.setItem(LEGACY_STORE_KEY, legacyPayload(oldSave))
     const s = (await load(mem)).getState()
-    expect(s.language).toBe('te')
+    expect(s.language).toBe('en')
     expect(s.persona).toBe('college')
     expect(s.storySeen).toBe(true)
     expect(s.liteMode).toBe(true)
@@ -104,9 +104,9 @@ describe('store: migration from the old v1 save', () => {
   it('a v2 save wins over a leftover v1 save', async () => {
     mem.setItem(LEGACY_STORE_KEY, legacyPayload(oldSave))
     const store = await load(mem)
-    store.getState().setLanguage('hi')
+    store.getState().setLanguage('en')
     const again = (await load(mem)).getState()
-    expect(again.language).toBe('hi')
+    expect(again.language).toBe('en')
   })
   it('a v1 save with no completed pillars migrates cleanly', async () => {
     mem.setItem(LEGACY_STORE_KEY, legacyPayload({ ...oldSave, completedPillars: [], savedAmount: 4000 }))
@@ -135,8 +135,8 @@ describe('store: damaged saves never crash the app', () => {
   it('survives a localStorage that throws', async () => {
     const bad = { ...memoryStorage(), getItem: () => { throw new Error('blocked') }, setItem: () => { throw new Error('blocked') } }
     const store = await load(bad as Mem)
-    expect(() => store.getState().setLanguage('hi')).not.toThrow()
-    expect(store.getState().language).toBe('hi')
+    expect(() => store.getState().setLanguage('en')).not.toThrow()
+    expect(store.getState().language).toBe('en')
   })
 })
 
@@ -200,11 +200,11 @@ describe('store: existing actions keep their old behaviour', () => {
   it('resetProgress clears progress and Happy but keeps the persona and settings', async () => {
     const store = await load(mem)
     store.getState().setPersona('college')
-    store.getState().setLanguage('te')
+    store.getState().setLanguage('en')
     store.getState().devForceComplete('plan', 1)
     store.getState().devSetHappy(20)
     store.getState().resetProgress()
-    expect(store.getState()).toMatchObject({ persona: 'college', language: 'te', startAmount: 4000, goalAmount: 30000, savedAmount: 4000, completedPillars: [], happy: 70 })
+    expect(store.getState()).toMatchObject({ persona: 'college', language: 'en', startAmount: 4000, goalAmount: 30000, savedAmount: 4000, completedPillars: [], happy: 70 })
   })
   it('setStorySeen, setCelebrated and setLite still work', async () => {
     const store = await load(mem)

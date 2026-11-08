@@ -7,10 +7,10 @@ text = md_path.read_text(encoding='utf-8')
 title = re.search(r'(?m)^# (.+)$', text).group(1)
 body = markdown.markdown(text, extensions=['tables', 'fenced_code', 'sane_lists'])
 css = """
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
 @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
 * { box-sizing: border-box; }
-body { font-family: 'Noto Sans','Noto Sans Devanagari','Noto Sans Telugu',system-ui,sans-serif; font-size: 10.2pt; line-height: 1.5; color: #2b2724; }
+body { font-family: 'Noto Sans',system-ui,sans-serif; font-size: 10.2pt; line-height: 1.5; color: #2b2724; }
 h1 { font-size: 24pt; line-height: 1.15; margin: 0 0 6pt; font-weight: 600; }
 h2 { font-size: 17pt; margin: 22pt 0 6pt; font-weight: 600; border-bottom: 1px solid #d8d2c6; padding-bottom: 3pt; page-break-after: avoid; }
 h3 { font-size: 12.5pt; margin: 14pt 0 4pt; font-weight: 600; page-break-after: avoid; }

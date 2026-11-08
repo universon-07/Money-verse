@@ -1,187 +1,187 @@
 {
   "lights": {
-    "title": "ఆరోగ్య పరీక్ష",
-    "tapHint": "అర్థం చూడటానికి ఒక పరీక్షను నొక్కండి.",
-    "grey": "ఇంకా తనిఖీ చేయలేదు",
+    "title": "Health check",
+    "tapHint": "Tap a check to see what it means.",
+    "grey": "Not checked yet",
     "state": {
-      "G": "బలంగా ఉంది",
-      "A": "జాగ్రత్త",
-      "R": "బలహీనం",
-      "X": "జవాబు లేదు"
+      "G": "Strong",
+      "A": "Caution",
+      "R": "Weak",
+      "X": "No answer"
     },
     "cash": {
-      "name": "బ్యాంకులో డబ్బు",
-      "ask": "డబ్బు త్వరగా అయిపోతుందా?",
-      "explain": "నగదు అయిపోయే ముందు కంపెనీ ఎన్ని నెలలు తన బిల్లులు చెల్లించగలదు.",
-      "G": "లాభంలో ఉంది, లేదా 12 నెలలు లేదా అంతకంటే ఎక్కువ నగదు ఉంది.",
-      "A": "రన్‌వే 6 నుండి 12 నెలలు.",
-      "R": "రన్‌వే 6 నెలల కంటే తక్కువ.",
-      "deflect": "“మేము వృద్ధిపై దృష్టి పెట్టాం.”"
+      "name": "Bank balance",
+      "ask": "Will the money run out soon?",
+      "explain": "How many months the company can pay its bills before its cash runs out.",
+      "G": "Profitable, or 12 months or more of cash.",
+      "A": "Runway of 6 to 12 months.",
+      "R": "Runway under 6 months.",
+      "deflect": "“We are focused on growth.”"
     },
     "customers": {
-      "name": "కస్టమర్లు",
-      "ask": "కస్టమర్లు మళ్లీ వస్తున్నారా?",
-      "explain": "వెళ్లేవారి కంటే చెల్లించే కొత్త కస్టమర్లు ఎక్కువగా వస్తున్నారా, చాలామంది కొనసాగుతున్నారా?",
-      "G": "వెళ్లేవారి కంటే వచ్చేవారు ఎక్కువ, 75% లేదా ఎక్కువ మంది కొనసాగుతున్నారు.",
-      "A": "కస్టమర్లు దాదాపు స్థిరం, 60 నుండి 75% కొనసాగుతున్నారు.",
-      "R": "గెలిచే వారి కంటే ఎక్కువ మందిని కోల్పోతోంది, లేదా సైన్-అప్‌లలో కొద్దిమందే చెల్లిస్తున్నారు.",
-      "deflect": "“ప్రజలు మమ్మల్ని ప్రేమిస్తారు.”"
+      "name": "Customers",
+      "ask": "Do customers keep coming back?",
+      "explain": "Are more paying customers arriving than leaving, and do most of them stay?",
+      "G": "More customers arriving than leaving, and 75% or more stay.",
+      "A": "Customers about steady, 60 to 75% stay.",
+      "R": "Losing more customers than it wins, or few sign-ups pay.",
+      "deflect": "“People love us.”"
     },
     "debt": {
-      "name": "అప్పులు",
-      "ask": "దీనికి చాలా అప్పు ఉందా?",
-      "explain": "దాని లాభం, అది బాకీ ఉన్న దానిపై వడ్డీని సులభంగా కట్టగలదా?",
-      "G": "అప్పు లేదు, లేదా లాభం వడ్డీని 3 రెట్లు లేదా ఎక్కువ కట్టగలదు.",
-      "A": "లాభం వడ్డీని 1.5 నుండి 3 రెట్లు కట్టగలదు.",
-      "R": "వడ్డీ కట్టడం కష్టం, లేదా మార్జిన్ తగ్గుతూ అప్పు పెరుగుతోంది.",
-      "deflect": "“మేము వృద్ధిలో పెట్టుబడి పెడుతున్నాం.”"
+      "name": "Loans",
+      "ask": "Does it owe a lot of money?",
+      "explain": "Can its profit comfortably pay the interest on what it owes?",
+      "G": "No debt, or profit pays the interest 3 times or more.",
+      "A": "Profit pays the interest 1.5 to 3 times.",
+      "R": "Interest is hard to cover, or debt is growing while margin falls.",
+      "deflect": "“We are investing in growth.”"
     },
     "ceo": {
-      "name": "యజమాని షేర్లు",
-      "ask": "యజమాని తన షేర్లు అమ్ముతున్నాడా?",
-      "explain": "కంపెనీని నడిపేవారు ఇటీవల తమ సొంత షేర్లు అమ్ముతున్నారా?",
-      "G": "గత 3 త్రైమాసికాలలో షేర్ల అమ్మకాలు లేవు.",
-      "A": "గత 3 త్రైమాసికాలలో ఒక అమ్మకం.",
-      "R": "గత 3 త్రైమాసికాలలో 2 లేదా అంతకంటే ఎక్కువ అమ్మకాలు.",
-      "deflect": "“అది వ్యక్తిగతం.”"
+      "name": "Boss’s shares",
+      "ask": "Is the boss selling their shares?",
+      "explain": "Have the people running the company been selling their own shares lately?",
+      "G": "No share sales in the last 3 quarters.",
+      "A": "One sale in the last 3 quarters.",
+      "R": "Sales in 2 or more of the last 3 quarters.",
+      "deflect": "“That is private.”"
     },
     "detail": {
-      "cashProfit": "ఈ త్రైమాసికం లాభంలో ఉంది.",
-      "cashRunway": "రన్‌వే: సుమారు {{n}} నెలలు.",
-      "customers": "{{pct}}% కస్టమర్లు కొనసాగుతున్నారు. ఈ త్రైమాసికపు నికర మార్పు: {{net}}.",
-      "debtNone": "అప్పు లేదు.",
-      "debtCover": "లాభం వడ్డీని {{x}} రెట్లు కవర్ చేస్తుంది.",
-      "ceoNone": "గత 3 త్రైమాసికాలలో షేర్ల అమ్మకాలు లేవు.",
-      "ceoSales": "గత 3 త్రైమాసికాలలో {{n}} షేర్ల అమ్మకాలు."
+      "cashProfit": "Profitable this quarter.",
+      "cashRunway": "Runway: about {{n}} months.",
+      "customers": "{{pct}}% of customers stay. Net change this quarter: {{net}}.",
+      "debtNone": "No debt.",
+      "debtCover": "Profit covers interest {{x}} times.",
+      "ceoNone": "No share sales in the last 3 quarters.",
+      "ceoSales": "{{n}} share sales in the last 3 quarters."
     },
-    "chartTitle": "గత ఆరు త్రైమాసికాలు"
+    "chartTitle": "Last six quarters"
   },
   "pitch": {
-    "askLeft": "2 ప్రశ్నలలో {{n}} మిగిలాయి.",
-    "askNone": "మీరు మీ 2 ప్రశ్నలు ఉపయోగించారు.",
-    "bid": "పెట్టుబడి పెట్టండి",
-    "pass": "ఇది వదిలేయండి",
-    "tip": "ప్రతి ప్రతిపాదనలో రెండు ప్రశ్నలు అడగవచ్చు. అడగడానికి ఖర్చు లేదు, ప్రతి జవాబు నిజమైన సంఖ్యలను చూపిస్తుంది. అడగకుండా కూడా పెట్టుబడి పెట్టవచ్చు, కానీ అప్పుడు మీరు ఊహిస్తున్నారు.",
-    "whyPass": "ఎందుకు వదిలేస్తున్నారు?",
-    "ask": "వ్యవస్థాపకుడిని అడగండి",
-    "more": "మరిన్ని సంఖ్యలు"
+    "askLeft": "{{n}} of 2 questions left.",
+    "askNone": "You have used your 2 questions.",
+    "bid": "Invest",
+    "pass": "Pass on this one",
+    "tip": "You get two questions per pitch. Asking costs nothing and every answer shows real numbers. You can also invest without asking, but then you are guessing.",
+    "whyPass": "Why pass?",
+    "ask": "Ask the founder",
+    "more": "More numbers"
   },
   "trade": {
-    "invest": "{{name}}లో పెట్టుబడి",
-    "buyMore": "{{name}} ఇంకా కొనండి",
-    "sell": "{{name}} అమ్మండి",
-    "amount": "మొత్తం",
-    "fee": "రుసుము (1%)",
-    "youPay": "మీరు చెల్లిస్తారు",
-    "youGet": "మీకు వస్తుంది",
-    "unitsNote": "{{price}} చొప్పున సుమారు {{n}} యూనిట్లు వస్తాయి.",
-    "sellShare": "ఎంత అమ్మాలి",
+    "invest": "Invest in {{name}}",
+    "buyMore": "Buy more of {{name}}",
+    "sell": "Sell {{name}}",
+    "amount": "Amount",
+    "fee": "Fee (1%)",
+    "youPay": "You pay",
+    "youGet": "You get",
+    "unitsNote": "Buys about {{n}} units at {{price}} each.",
+    "sellShare": "How much to sell",
     "share25": "25%",
     "share50": "50%",
     "share75": "75%",
-    "shareAll": "అంతా",
-    "youBought": "మీరు పెట్టిన మొత్తం",
-    "gainLoss": "ఈ భాగంపై లాభం లేదా నష్టం",
-    "why": "మీ కారణం",
-    "whyHint": "మీ నిజమైన ఆలోచనకు దగ్గరగా ఉన్న కారణాన్ని ఎంచుకోండి. ఇక్కడ ఏదీ సరైనదా తప్పా అని గుర్తించరు, కానీ ఇది మీ అభిప్రాయాన్ని రూపొందిస్తుంది.",
-    "confirm": "నిర్ధారించండి",
-    "cancel": "రద్దు చేయండి",
-    "notEnough": "కనీస మొత్తానికి నగదు సరిపోదు.",
-    "jailed": "భయంతో అమ్మిన తర్వాత మీరు ఈ మలుపు ఆగిపోయారు. వచ్చే మలుపు వరకు కొనలేరు.",
-    "min": "కనీసం {{min}}"
+    "shareAll": "All",
+    "youBought": "You paid in",
+    "gainLoss": "Gain or loss on this part",
+    "why": "Your reason",
+    "whyHint": "Pick the reason closest to your real thinking. Nothing is marked right or wrong here, but it shapes your feedback.",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "notEnough": "Not enough cash for the minimum.",
+    "jailed": "You sat out this turn after selling in a panic. You cannot buy until next turn.",
+    "min": "Minimum {{min}}"
   },
   "portfolio": {
-    "buyMore": "ఇంకా కొనండి",
-    "sell": "అమ్మండి"
+    "buyMore": "Buy more",
+    "sell": "Sell"
   },
   "quarterResults": {
     "ev": {
-      "raised": "కొత్త పెట్టుబడిదారుల నుండి డబ్బు సేకరించింది",
-      "downRound": "తక్కువ ధరకు కొత్త షేర్లు అమ్మింది (డౌన్-రౌండ్)",
-      "failed": "నగదు అయిపోయి మూతపడింది",
-      "restated": "తన యూజర్ సంఖ్యలను సవరించింది",
-      "layoffNews": "సిబ్బందిని తొలగించింది",
-      "rumourSpike": "ఉత్సాహపు తరంగంలో ధర ఎగిసింది"
+      "raised": "raised new money from investors",
+      "downRound": "sold new shares at a lower price (a down-round)",
+      "failed": "ran out of cash and shut down",
+      "restated": "restated its user numbers",
+      "layoffNews": "laid off staff",
+      "rumourSpike": "price jumped on a wave of excitement"
     }
   },
   "emergency": {
-    "eyebrow": "కుటుంబ అత్యవసరం",
-    "title": "ఇప్పుడే ₹25,000 చెల్లించండి",
-    "body": "ఈ త్రైమాసికం చివరికి మీ కుటుంబానికి ₹25,000 కావాలి.",
-    "have": "నగదు: {{cash}}",
-    "short": "మీకు {{x}} తక్కువ ఉంది. కింద ఏదైనా అమ్మి, తర్వాత చెల్లించండి.",
-    "ready": "మీ దగ్గర సరిపడా ఉంది.",
-    "pay": "₹25,000 చెల్లించండి",
-    "payShort": "నేను చేయగలిగినంత చెల్లిస్తాను",
-    "payShortNote": "మొత్తం కవర్ చేయలేరు. మిగిలినది రుణంగా మారుతుంది.",
-    "owed": "కుటుంబ అత్యవసరం తర్వాత మీరు {{x}} బాకీ ఉన్నారు.",
-    "repay": "{{x}} తిరిగి చెల్లించండి"
+    "eyebrow": "Family emergency",
+    "title": "Pay ₹25,000 now",
+    "body": "Your family needs ₹25,000 by the end of this quarter.",
+    "have": "Cash: {{cash}}",
+    "short": "You are {{x}} short. Sell something below, then pay.",
+    "ready": "You have enough.",
+    "pay": "Pay ₹25,000",
+    "payShort": "Pay what I can",
+    "payShortNote": "You cannot cover all of it. The rest becomes a loan.",
+    "owed": "You owe {{x}} after the family emergency.",
+    "repay": "Repay {{x}}"
   },
   "lesson": {
-    "eyebrow": "పాఠం",
-    "whatHappened": "ఏమి జరిగింది",
-    "theIdea": "ఇది ఎందుకు ముఖ్యం",
-    "term": "నిజ జీవిత పదం",
-    "rule": "సూత్రం",
-    "learnMore": "మరింత తెలుసుకోండి",
-    "hide": "దాచండి",
-    "replay": "ఈ త్రైమాసికం మళ్ళీ ఆడండి",
-    "replayUsed": "ఈ ఏడాది మళ్ళీ ఆడే అవకాశం ఉపయోగించారు.",
-    "replayHint": "ఈ త్రైమాసికం మొదటికి వెళ్లి మళ్ళీ నిర్ణయించండి. అదే మార్కెట్, అదే అదృష్టం.",
-    "continue": "కొనసాగించండి",
-    "worked": "ఉదాహరణ",
-    "checks": "పెట్టుబడిదారులు ఏమి చూస్తారు",
-    "calm": "ఇది డేటా ఏమి చూపించిందో గురించి, తప్పు చేయడం గురించి కాదు. ఏడాదికి ఒకసారి త్రైమాసికాన్ని మళ్ళీ ఆడవచ్చు."
+    "eyebrow": "Lesson",
+    "whatHappened": "What happened",
+    "theIdea": "Why it matters",
+    "term": "Real-life term",
+    "rule": "Rule of thumb",
+    "learnMore": "Learn more",
+    "hide": "Hide",
+    "replay": "Replay this quarter",
+    "replayUsed": "You have used this year's replay.",
+    "replayHint": "Go back to the start of this quarter and decide again. Same market, same luck.",
+    "continue": "Continue",
+    "worked": "Worked example",
+    "checks": "What investors check",
+    "calm": "This is about what the data showed, not about being wrong. You can replay the quarter once a year."
   },
   "yearEnd2": {
-    "compounding": "లాభంపై లాభం"
+    "compounding": "Gains earn gains"
   },
   "report": {
-    "title": "మీ విచక్షణ నివేదిక",
-    "eyebrow": "ది పెర్ల్ ఎక్స్ఛేంజ్",
-    "of100": "100 లో",
-    "passMark": "ఉత్తీర్ణత మార్కు: {{n}}",
-    "cleared": "దశ పూర్తయింది. మీ దీపం వెలిగింది.",
-    "notCleared": "ఇంకా పూర్తి కాలేదు. మళ్ళీ ఆడి మంచి ప్రశ్నలు అడగండి.",
-    "skillsTitle": "ఐదు నైపుణ్యాలు",
+    "title": "Your judgement report",
+    "eyebrow": "The Pearl Exchange",
+    "of100": "out of 100",
+    "passMark": "Pass mark: {{n}}",
+    "cleared": "Stage cleared. Your lamp is lit.",
+    "notCleared": "Not cleared yet. Replay and ask better questions.",
+    "skillsTitle": "Five skills",
     "skills": {
       "research": {
-        "name": "పరిశోధన",
-        "body": "పెట్టుబడి పెట్టే ముందు అడిగారా?"
+        "name": "Research",
+        "body": "Did you ask before you invested?"
       },
       "skepticism": {
-        "name": "సందేహ దృష్టి",
-        "body": "ప్రమాదకర కంపెనీలను సమయానికి గుర్తించారా?"
+        "name": "Skepticism",
+        "body": "Did you spot the risky companies in time?"
       },
       "spread": {
-        "name": "విస్తరణ",
-        "body": "మీ డబ్బు వేర్వేరు రంగాలలో పంచారా?"
+        "name": "Spread",
+        "body": "Was your money spread across different sectors?"
       },
       "calm": {
-        "name": "ప్రశాంతత, ఓర్పు",
-        "body": "పడిపోయే మార్కెట్లో స్థిరంగా ఉన్నారా?"
+        "name": "Calm and patience",
+        "body": "Did you stay steady in a falling market?"
       },
       "habits": {
-        "name": "డబ్బు అలవాట్లు",
-        "body": "రుసుములు, అత్యవసరాలకు నిల్వ, ఖాళీ నగదు."
+        "name": "Money habits",
+        "body": "Fees, a cushion for emergencies, idle cash."
       }
     },
-    "netWorth": "చివరి నికర విలువ",
-    "profit": "లాభం లేదా నష్టం",
-    "profitNote": "సమాచారం కోసం చూపించాం. ఇది ఫలితాన్ని నిర్ణయించదు.",
-    "luck": "మీరు ముందుండి ముగించారు, కానీ అందులో కొంత అదృష్టం ఉంది.",
-    "unlucky": "మీరు వెనుకబడి ముగించారు, కానీ మీ పద్ధతి చాలావరకు సరైనదే.",
-    "trapsTitle": "మీరు కలిసిన ప్రమాదకర కంపెనీలు",
+    "netWorth": "Net worth at the end",
+    "profit": "Profit or loss",
+    "profitNote": "Shown for information. It never decides the result.",
+    "luck": "You finished ahead, but part of that was luck.",
+    "unlucky": "You finished behind, but your method was mostly sound.",
+    "trapsTitle": "The risky companies you met",
     "trap": {
-      "avoided": "వదిలేశారు",
-      "soldEarly": "సమయానికి అమ్మారు",
-      "soldLate": "కొంచెం ఆలస్యంగా అమ్మారు",
-      "held": "కష్టకాలంలో కూడా ఉంచుకున్నారు"
+      "avoided": "Passed on it",
+      "soldEarly": "Sold in time",
+      "soldLate": "Sold a little late",
+      "held": "Held through trouble"
     },
-    "toolkit": "మీ పనిముట్ల పెట్టె",
-    "toolkitNone": "మీ పనిముట్ల పెట్టెకు పదాలు సంపాదించడానికి కొన్ని త్రైమాసికాలు ఆడండి.",
-    "again": "మళ్ళీ ఆడండి",
-    "back": "మినార్‌కు తిరిగి వెళ్ళండి",
-    "closing": "నిజమైన మార్కెట్లు ఈ ఆట కంటే కష్టమైనవి. ఇది ఏమి కొనాలో కాదు, మంచి ప్రశ్నలు ఎలా అడగాలో నేర్పుతుంది."
+    "toolkit": "Your toolkit",
+    "toolkitNone": "Play a few quarters to earn terms for your toolkit.",
+    "again": "Play again",
+    "back": "Back to MONEY VERSE",
+    "closing": "Real markets are harder than this game. This teaches how to ask good questions, not what to buy."
   }
 }

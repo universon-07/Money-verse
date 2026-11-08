@@ -9,7 +9,7 @@ Route: `/play/save` (`?demo` starts a fresh seeded month). Entry point: `PocketP
 | Folder | What lives there |
 | --- | --- |
 | `engine/` | Pure TypeScript, no React. `(run, choice) → new run`. Economy, fizz pressure, tally, archetypes, reference bots. |
-| `content/` | Numbers (`items.json`) and strings (`en.json`, `hi.json`, `te.json`). Same keys in all three, enforced by `tests/strings.test.ts`. |
+| `content/` | Numbers (`items.json`) and strings (`en.json`). English content coverage is enforced by `tests/strings.test.ts`. |
 | `state/` | `store.ts` (persisted run, key `money-mohalla-cafe-v1`), `stage.ts` (what the scene is showing right now). |
 | `ui/` | Screens only call engine functions. `Scene.tsx` is the painted café, `kit.tsx` the dialogue box, HUD, source picker and notebook. |
 | `tests/` | Engine behaviour including the five reference playstyles, and string consistency. |

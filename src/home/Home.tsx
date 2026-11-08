@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { LangSwitch } from '../components/Hud'
 import { ShareProgress } from '../ngo/ShareProgress'
 import { NewGameForm } from './NewGameForm'
 import { WelcomeScene } from './WelcomeScene'
@@ -120,7 +119,7 @@ export default function Home() {
     <div className="absolute inset-0 overflow-y-auto overflow-x-hidden">
       <WelcomeScene />
       <div className="wl-fore" style={{ paddingTop: 'max(14px, env(safe-area-inset-top))' }}>
-        <div className="absolute right-3 top-3 z-10" style={{ top: 'max(12px, env(safe-area-inset-top))' }}><LangSwitch /></div>
+        <div className="absolute right-3 top-3 z-10" style={{ top: 'max(12px, env(safe-area-inset-top))' }}></div>
         {/* the door to MONEY VERSE Insights, the dashboard for teachers and NGOs */}
         <button type="button" className="wl-ngo absolute left-3 z-10" style={{ top: 'max(12px, env(safe-area-inset-top))' }} onClick={() => nav('/ngo')} title={t('home.facilitatorSub')}>
           <img src="/art/monument.webp" alt="" aria-hidden />

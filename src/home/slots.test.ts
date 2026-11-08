@@ -28,18 +28,18 @@ describe('save slots', () => {
     expect(getActive(s)).toBe(a.id)
   })
   it('a new game starts empty, keeps only the language and is active', () => {
-    const s = fake({ 'money-mohalla-v2': game({ language: 'te', persona: 'earner' }), 'p4.v1': '{}' })
+    const s = fake({ 'money-mohalla-v2': game({ language: 'en', persona: 'earner' }), 'p4.v1': '{}' })
     const m = startNewGame(s, '  Round   two ', 5)
     expect(m.name).toBe('Round two')
     expect(s.getItem('p4.v1')).toBeNull()
-    expect(JSON.parse(s.getItem('money-mohalla-v2')!).state).toEqual({ language: 'te' })
+    expect(JSON.parse(s.getItem('money-mohalla-v2')!).state).toEqual({ language: 'en' })
     expect(getActive(s)).toBe(m.id)
   })
   it('a new game can start already in a class, with the roll number; the name stays the slot name only', () => {
-    const s = fake({ 'money-mohalla-v2': game({ language: 'hi' }) })
+    const s = fake({ 'money-mohalla-v2': game({ language: 'en' }) })
     const m = startNewGame(s, 'Ravi Kumar', 5, { classCode: 'HYD-K7Q2M', rollNo: '23' })
     const state = JSON.parse(s.getItem('money-mohalla-v2')!).state
-    expect(state).toEqual({ language: 'hi', classCode: 'HYD-K7Q2M', rollNo: '23' })
+    expect(state).toEqual({ language: 'en', classCode: 'HYD-K7Q2M', rollNo: '23' })
     expect(JSON.stringify(state)).not.toContain('Ravi')
     expect(m.name).toBe('Ravi Kumar')
   })

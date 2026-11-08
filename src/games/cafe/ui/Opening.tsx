@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { LangSwitch } from '../../../components/Hud'
 import { GOAL, INCOME } from '../engine/content'
 import { GOALS, type GoalId, type Run } from '../engine/types'
 import { useStage } from '../state/stage'
@@ -34,7 +33,7 @@ export function Entry({ onExit }: { onExit: () => void }) {
         <span className="ink-chip px-2.5 py-1">{t('entry.time')}</span>
         <span className="ink-chip px-2.5 py-1">{t('entry.note')}</span>
       </div>
-      <div className="flex justify-center"><LangSwitch /></div>
+      <div className="flex justify-center"></div>
       <p className="m-0 text-[11.5px] opacity-70">{t('entry.privacy')} {t('hud.notFinancialAdvice')}</p>
       <div className="flex justify-center gap-2">
         <Btn kind="cream" onClick={onExit}>◂ {t('hud.quit')}</Btn>

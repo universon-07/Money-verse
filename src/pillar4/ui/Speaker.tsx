@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { useHost } from '../host.tsx'
 import { useT } from './useT.ts'
 import { Icon } from './icons.tsx'
 
@@ -9,7 +8,7 @@ import { Icon } from './icons.tsx'
  */
 const synth = (): SpeechSynthesis | null => (typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null)
 
-function useVoice(code: 'te' | 'en'): SpeechSynthesisVoice | null {
+function useVoice(code: 'en'): SpeechSynthesisVoice | null {
   const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null)
   useEffect(() => {
     const s = synth()
@@ -26,9 +25,8 @@ function useVoice(code: 'te' | 'en'): SpeechSynthesisVoice | null {
 }
 
 export function Speaker({ text, className = '' }: { text: string; className?: string }) {
-  const { language } = useHost()
   const t = useT()
-  const voice = useVoice(language === 'te' ? 'te' : 'en')
+  const voice = useVoice('en')
   if (!voice || !text) return null
   const say = (e: { stopPropagation: () => void }) => {
     e.stopPropagation()

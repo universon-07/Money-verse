@@ -12,7 +12,7 @@ import { buildSummary, cleanCode, decodeSummary, encodeSummary, findCodes, parse
 
 const game = (state: object) => ({ 'money-mohalla-v2': JSON.stringify({ state, version: 2 }) })
 const played = {
-  installId: 'abc-123', classCode: 'hyd-4k7q', language: 'te', persona: 'college', liteMode: true, happy: 72.4, skills: { saving: 0.8, riskSense: 0.2 },
+  installId: 'abc-123', classCode: 'hyd-4k7q', language: 'en', persona: 'college', liteMode: true, happy: 72.4, skills: { saving: 0.8, riskSense: 0.2 },
   lifeMomentsUsed: { chai: 2 },
   pillars: { plan: { status: 'complete', bestQuality: 0.9, attempts: 2, brightness: 'bright' }, save: { status: 'in_progress', attempts: 1 } },
 }
@@ -20,7 +20,7 @@ const played = {
 describe('student summary', () => {
   it('reads a saved game without names or typed text', () => {
     const s = buildSummary({ ...game({ ...played, nickname: 'Priya' }), 'p4.v1': JSON.stringify({ state: { completed: ['C1'], progress: { C1: { wrongTotal: 3, hintUsed: true } } } }) }, 5)
-    expect(s).toMatchObject({ cohort: 'HYD-4K7Q', lang: 'te', persona: 'college', lite: true, happy: 72, breaks: 2, p4: { closed: 1, wrong: 3, hints: 1 } })
+    expect(s).toMatchObject({ cohort: 'HYD-4K7Q', lang: 'en', persona: 'college', lite: true, happy: 72, breaks: 2, p4: { closed: 1, wrong: 3, hints: 1 } })
     expect(s.places.plan).toEqual({ s: 'c', q: 0.9, a: 2, b: 'b' })
     expect(s.places.save.s).toBe('p')
     expect(JSON.stringify(s)).not.toContain('Priya')

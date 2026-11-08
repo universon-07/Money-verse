@@ -14,7 +14,6 @@ import { CaseFile, EvidenceCounter } from './Notebook.tsx'
 import { Board } from './Board.tsx'
 import { Debrief, FixQuestion } from './FixReplay.tsx'
 import { Icon } from './icons.tsx'
-import { LangToggle } from './screens.tsx'
 import { sfx } from './feedback.ts'
 
 interface Override { text: string; extra?: string | null; mood: Mood }
@@ -154,7 +153,7 @@ export default function CaseRunner({ caseId, onExit }: { caseId: string; onExit:
           <button type="button" className="p4-btn icon min-[900px]:!hidden" aria-label={t('ui.casefile')} title={t('ui.casefile')} onClick={() => { setCasefile(true); setActivity((a) => a + 1) }}><Icon name="note" size={20} /></button>
         </>
       )}
-      <LangToggle />
+      
     </div>
   )
 

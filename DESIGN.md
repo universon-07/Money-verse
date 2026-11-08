@@ -24,7 +24,7 @@
 ## Type
 
 - **Display (Latin):** Chango (titles), Bowlby One (signboards, buttons).
-- **Hindi display:** Rozha One. **Telugu display:** Noto Sans Telugu 900. **Body:** Noto Sans / Devanagari / Telugu 500-800.
+- **Body:** Noto Sans 500-800. English is the only supported language.
 - `.lang-fit` scales display text per script (hi 0.95, te 0.92). Letter-spacing is forced to normal for hi/te (tracking breaks conjuncts).
 
 ## Line, edge and shadow

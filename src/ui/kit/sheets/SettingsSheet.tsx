@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { LANGS, type Lang } from '../../../content/data'
 import { goHome } from '../../../home/Home'
 import { restartAllGames } from '../../../host/restart'
 import { useGame, useLite } from '../../../store/game'
@@ -10,8 +9,6 @@ import { Eyebrow, Sheet } from '../Sheet'
 export function SettingsSheet({ open, onClose, replay = true }: { open: boolean; onClose: () => void; replay?: boolean }) {
   const { t } = useTranslation()
   const nav = useNavigate()
-  const lang = useGame((s) => s.language)
-  const setLanguage = useGame((s) => s.setLanguage)
   const lite = useLite()
   const setLite = useGame((s) => s.setLite)
   const classCode = useGame((s) => s.classCode)
@@ -23,15 +20,6 @@ export function SettingsSheet({ open, onClose, replay = true }: { open: boolean;
   const done = () => { setAsk(false); onClose() }
   return (
     <Sheet open={open} onClose={done} title={t('kit.settings.title')}>
-      <div>
-        <Eyebrow>{t('hud.language')}</Eyebrow>
-        <div className="mk-seg" role="radiogroup" aria-label={t('hud.language')}>
-          {LANGS.map((l: Lang) => (
-            <button key={l} type="button" role="radio" aria-checked={lang === l} onClick={() => setLanguage(l)}>{t(`lang.${l}`)}</button>
-          ))}
-        </div>
-      </div>
-
       <div className="mk-card mk-row">
         <div className="min-w-0 flex-1">
           <div className="text-[15px] font-extrabold">{t('kit.settings.light')}</div>

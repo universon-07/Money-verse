@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Navigate } from 'react-router-dom'
 import { useOnboarding } from '../../features/onboarding/hooks'
 import { useGame } from '../../store/game'
-import { LANGS, PERSONAS, FESTIVALS, type Lang, type PersonaId, type Avatar } from '../../content/data'
+import { PERSONAS, FESTIVALS, type PersonaId, type Avatar } from '../../content/data'
 
 /**
  * Plain wireframe onboarding. 
@@ -14,8 +14,6 @@ export function OnboardingScreen() {
     stepIndex, totalSteps, currentStep, next, back, skip, canNext, choices
   } = useOnboarding()
   const storySeen = useGame((s) => s.storySeen)
-  const setLanguage = useGame((s) => s.setLanguage)
-  const currentLang = useGame((s) => s.language)
 
   // If already done onboarding, navigating here will just redirect to / or /hub later (home for now)
   if (storySeen) {
@@ -37,21 +35,6 @@ export function OnboardingScreen() {
         <main style={{ flex: 1, display: 'grid', gap: 16, alignContent: 'center' }}>
           <h1 data-testid={`onboarding-title-${currentStep.kind}`}>{t(currentStep.copyKey)}</h1>
           {currentStep.subKey && <p>{t(currentStep.subKey)}</p>}
-
-          {currentStep.kind === 'welcome' && (
-            <div style={{ display: 'flex', gap: 8 }}>
-              {(LANGS as Lang[]).map(l => (
-                <button
-                  key={l}
-                  onClick={() => setLanguage(l)}
-                  className={`ink-btn ${currentLang === l ? 'pink' : 'cream'}`}
-                  data-testid={`onboarding-lang-${l}`}
-                >
-                  {l.toUpperCase()}
-                </button>
-              ))}
-            </div>
-          )}
 
           {currentStep.choice === 'persona' && (
             <div style={{ display: 'grid', gap: 8 }}>

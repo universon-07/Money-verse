@@ -8,7 +8,7 @@ Feedback: the front-view street hub was too busy and too funny, and used the wro
 - **Interaction:** tap a place, the token walks the cream path (stepped ~8fps, about 1s), a paper card opens with Enter. Hover/focus shows a ring and label only. Plain cross-fade between screens. Pannable and zoomable (drag, pinch, wheel, +/-).
 - **Progress:** flag markers go white to antique gold with a tick; gate opens when all four are done; a few marigold petals drift; one "Goal reached" card.
 - **HUD:** goal pill top-left; persona avatar and gear (language, lite mode, replay story) top-right.
-- **Look:** paper texture plus ~5% grain, muted palette, thin 1.5px ink, DM Serif Display titles (Rozha One for Hindi, Noto Sans Telugu 800 for Telugu).
+- **Look:** paper texture plus ~5% grain, muted palette, thin 1.5px ink, DM Serif Display titles.
 - **Story:** cover with a Start button, then 4 calm beats (island pull-in, persona, flower stall, fee letter), skippable, replayable.
 - **Placeholders:** the walking token still uses the old chibi sprites and persona portraits (`public/art/chibi`, `faces`) until new character art arrives; prompts are in `ART_PROMPTS.md`.
 
@@ -31,7 +31,7 @@ Made without asking, so the build kept moving. Change any of them freely.
   fallback: `npm create vite` (React 19 + TS) + Tailwind v4 + the listed libraries.
 - **EasyStar.js** (MIT) for A* walking; no game engine. Grain technique follows the "film grain" approach from the Cuphead-grain write-up
   (small noise canvas, stepped), done with pre-rendered tiles for mobile speed.
-- Fonts are self-hosted with Fontsource so the game works offline and Hindi/Telugu glyphs never fall back to system fonts.
+- Fonts are self-hosted with Fontsource so the game works offline and English typography stays consistent.
 - Camera follows the hero with a short establishing shot of the Charminar on load. No tilt parallax yet (see next steps); the overhead layer
   (wires, lights) and the world move together, which gives depth by overlap.
 - Persona selection sets `startAmount`, `goalAmount`, `savedAmount`. Each completed pillar adds one quarter of (goal - start).
@@ -50,7 +50,7 @@ Made without asking, so the build kept moving. Change any of them freely.
 
 ## Not done yet
 Audio (out of scope), virtual joystick (tap/drag steering is the touch control), device-tilt parallax, the four real mini-games,
-rewind (stub button), skill tracker UI (state exists), personas as separate characters, native-speaker review of Hindi/Telugu.
+rewind (stub button), skill tracker UI (state exists), personas as separate characters, English copy review.
 
 ## Deal Board (pillar 3) engine: deviations from the spec
 Source: `Deal Board build spec.pdf`, Lite mode first. Engine lives in `src/games/dealboard/engine/`; all tunables are in `TUNING`
@@ -114,15 +114,8 @@ with hover stats, and stop starting and ending a quarter every two seconds."
   engine's inputs (market, sector, company events, profit, customers, runway, CEO, "excitement not earnings").
 - Founder-question scoring is unchanged: research is still judged by lights asked before buying.
 
-## Deal Board in Telugu
-- A language picker (English | తెలుగు) sits on the Deal Board start screen. It sets the hub language, so the whole app follows. Hindi
-  is not translated for this game yet and shows English.
-- Telugu text lives in `src/games/dealboard/content/te/` (core, play, learn, lessons) and mirrors the English files key for key.
-  `tests/telugu.test.ts` fails if a key is missing, a `{{placeholder}}` differs, English is left in a Telugu string, a real brand
-  appears, or a rupee sign is doubled in front of a money placeholder.
-- Company names, CEO and the short sector names stay in Latin script (fictional brand names); everything else is Telugu.
-- **Needs a native-speaker review** before real use, especially the finance terms (చక్రవడ్డీ, ద్రవ్యత, వైవిధ్యీకరణ, రన్‌వే) and the
-  long "Learn more" explanations.
+## English-only language support
+All game text is shipped in English. Language selectors and translation bundles are removed.
 
 ## Deal Board v3: learning-first redesign (after player feedback)
 Feedback: news and rumours feel unnecessary; track every decision in the judgement report with expandable right/wrong pointers and

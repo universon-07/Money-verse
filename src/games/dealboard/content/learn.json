@@ -1,222 +1,222 @@
 {
   "meet": {
-    "title": "కంపెనీలను కలవండి",
-    "intro": "నాలుగు కల్పిత కంపెనీలు మీకు తమ ప్రతిపాదనలు చెబుతాయి. ఏ కథలు నిలబడతాయి?",
-    "headline": "వారు చెప్పేది",
-    "tipsTitle": "ఇది ఎలా పనిచేస్తుంది",
+    "title": "Meet the companies",
+    "intro": "Four made-up companies will pitch you. Which stories hold up?",
+    "headline": "They say",
+    "tipsTitle": "How this works",
     "tips": [
-      "శీర్షిక ఆకట్టుకోవడానికి ఎంచుకుంటారు. నగదు, కస్టమర్లు, అప్పు అసలు ఏమి జరుగుతోందో చూపిస్తాయి.",
-      "ప్రతి త్రైమాసికం ఒక కంపెనీ ప్రతిపాదన చెబుతుంది. నిజమైన సంఖ్యలు చూడటానికి రెండు ప్రశ్నలు అడగండి.",
-      "ఏ కంపెనీనైనా అధ్యయనం చేయడానికి బోర్డ్‌పై నొక్కండి. ప్రతి నిర్ణయం తర్వాత మీ విచక్షణ స్కోరు నవీకరిస్తుంది."
+      "A headline is chosen to impress. Cash, customers and debt show what is really going on.",
+      "Each quarter one company pitches. Ask two questions to see its real numbers.",
+      "Tap any company on the board to study it. Your Judgement score updates after every decision."
     ],
-    "start": "ఆట మొదలుపెట్టండి",
-    "eyebrow": "మొదటి త్రైమాసికానికి ముందు"
+    "start": "Start playing",
+    "eyebrow": "Before the first quarter"
   },
   "claims": {
-    "dailyBasket": "18,000 మంది కస్టమర్లు, ప్రతి 100 మందిలో 88 మంది కొనసాగుతారు.",
-    "payEasy": "4,00,000 యూజర్లు, ప్రతి త్రైమాసికం 25% వృద్ధి!",
-    "solarGrid": "ఎండాకాలంలో ఆదాయం 25% పెరుగుతుంది.",
-    "medLink": "ఈ ఏడాది ఐదు కొత్త క్లినిక్‌లు. త్రైమాసికానికి ఆదాయం 12% పెరుగుదల.",
-    "steelWorks": "యాభై ఏళ్ల ఉక్కు, ఇప్పుడు షేరు కేవలం ₹40.",
-    "quickRide": "ప్రతి నెలా రికార్డు యూజర్లు: 2,50,000 దాటి పెరుగుతూనే ఉన్నారు."
+    "dailyBasket": "18,000 customers, and 88 in every 100 stay.",
+    "payEasy": "4,00,000 users and growing 25% every quarter!",
+    "solarGrid": "Revenue jumps 25% in the sunny season.",
+    "medLink": "Five new clinics this year. Revenue up 12% a quarter.",
+    "steelWorks": "Fifty years of steel, now just ₹40 a share.",
+    "quickRide": "Record users every month: 2,50,000 and climbing."
   },
-  "boardHint": "అధ్యయనం చేయడానికి ఒక కంపెనీ మూలను నొక్కండి.",
+  "boardHint": "Tap a company corner to study it.",
   "why": {
-    "title": "ఎందుకు",
+    "title": "Why",
     "market": {
-      "fell": "మొత్తం మార్కెట్ {{x}}% పడిపోయింది.",
-      "rose": "మొత్తం మార్కెట్ {{x}}% పెరిగింది."
+      "fell": "The whole market fell {{x}}%.",
+      "rose": "The whole market rose {{x}}%."
     },
     "sector": {
-      "up": "మంచి వార్తలతో {{sector}} కంపెనీలు పుంజుకున్నాయి.",
-      "down": "చెడ్డ వార్తలతో {{sector}} కంపెనీలు పడిపోయాయి."
+      "up": "{{sector}} companies rallied on good news.",
+      "down": "{{sector}} companies fell on bad news."
     },
     "event": {
-      "raised": "నగదు తగ్గిపోతుండటంతో డబ్బు సేకరించింది.",
-      "downRound": "చాలా తక్కువ ధరకు కొత్త షేర్లు అమ్మింది (డౌన్-రౌండ్): ఇబ్బందికి సంకేతం.",
-      "failed": "నగదు అయిపోయి మూతపడింది.",
-      "restated": "తన యూజర్ సంఖ్యలను తగ్గించింది: వారు నిజమైన కస్టమర్లు కాదు.",
-      "layoffNews": "సిబ్బందిని తొలగించింది, వ్యాపారం మందగిస్తోందనే ముందస్తు సంకేతం."
+      "raised": "It raised money because its cash was running low.",
+      "downRound": "It sold new shares at a much lower price (a down-round): a sign of trouble.",
+      "failed": "It ran out of cash and shut down.",
+      "restated": "It cut its user numbers: they were not real customers.",
+      "layoffNews": "It laid off staff, an early sign that business is slowing."
     },
-    "profitUp": "లాభం ₹{{a}} లక్షల నుండి ₹{{b}} లక్షలకు పెరిగింది.",
-    "profitDown": "లాభం ₹{{a}} లక్షల నుండి ₹{{b}} లక్షలకు తగ్గింది.",
-    "lossGrew": "నష్టం ₹{{a}} లక్షల నుండి ₹{{b}} లక్షలకు పెరిగింది.",
-    "lossShrank": "నష్టం ₹{{a}} లక్షల నుండి ₹{{b}} లక్షలకు తగ్గింది.",
-    "excitement": "సంఖ్యలు దిగజారినా ధర పెరిగింది: ఇది ఉత్సాహం, ఆదాయం కాదు.",
-    "customersLeaving": "చేరినవారి ({{a}}) కంటే ఎక్కువ మంది ({{b}}) వెళ్ళిపోయారు.",
-    "runwayShort": "ఈ వేగంతో దాని నగదు ఇంకా సుమారు {{n}} నెలలే సరిపోతుంది.",
-    "ceoSold": "ఈ త్రైమాసికం CEO షేర్లు అమ్మారు.",
-    "steady": "పెద్ద మార్పేమీ లేదు. చిన్న కదలికలు సహజం."
+    "profitUp": "Profit rose from ₹{{a}} lakh to ₹{{b}} lakh.",
+    "profitDown": "Profit fell from ₹{{a}} lakh to ₹{{b}} lakh.",
+    "lossGrew": "The loss grew from ₹{{a}} lakh to ₹{{b}} lakh.",
+    "lossShrank": "The loss shrank from ₹{{a}} lakh to ₹{{b}} lakh.",
+    "excitement": "The price rose though the numbers got worse: excitement, not earnings.",
+    "customersLeaving": "More customers left ({{b}}) than joined ({{a}}).",
+    "runwayShort": "At this pace its cash lasts only about {{n}} more months.",
+    "ceoSold": "The CEO sold shares this quarter.",
+    "steady": "Nothing big changed. Small moves are normal noise."
   },
   "stats": {
     "tags": {
-      "L": "ముందస్తు హెచ్చరిక",
-      "G": "గతాన్ని చూపుతుంది",
-      "V": "సులభంగా పెంచవచ్చు"
+      "L": "Early warning",
+      "G": "Looks back",
+      "V": "Easy to inflate"
     },
-    "tagLegend": "ముందస్తు హెచ్చరిక సంఖ్యలు ఫలితాల కంటే ముందే కదులుతాయి. గతాన్ని చూపేవి ఇప్పటికే జరిగినదాన్ని చెబుతాయి. సులభంగా పెంచగలిగేవి బాగా కనిపిస్తాయి కానీ తక్కువ చెబుతాయి.",
+    "tagLegend": "Early warning numbers move before the results do. Looks-back numbers report what already happened. Easy-to-inflate numbers look good and tell you little.",
     "groups": {
-      "price": "ధర",
-      "money": "డబ్బు",
-      "customers": "కస్టమర్లు",
-      "people": "ప్రజలు"
+      "price": "Price",
+      "money": "Money",
+      "customers": "Customers",
+      "people": "People"
     },
-    "locked": "ఇంకా అడగలేదు. దీన్ని చూడటానికి ప్రతిపాదనలో వ్యవస్థాపకుడిని అడగండి.",
-    "noProfit": "ఇంకా లాభం లేదు",
-    "profitable": "లాభంలో ఉంది",
-    "lakh": "₹{{v}} లక్షలు",
-    "lakhQ": "త్రైమాసికానికి ₹{{v}} లక్షలు",
-    "months": "{{n}} నెలలు",
-    "years": "{{n}} సంవత్సరాలు",
+    "locked": "Not asked yet. Ask the founder at a pitch to see this.",
+    "noProfit": "no profit yet",
+    "profitable": "Profitable",
+    "lakh": "₹{{v}} lakh",
+    "lakhQ": "₹{{v}} lakh a quarter",
+    "months": "{{n}} months",
+    "years": "{{n}} years",
     "price": {
-      "name": "షేరు ధర",
-      "explain": "ఇప్పుడు ఒక షేరు ఖరీదు. ధరలు కంపెనీ కారణాలతో పాటు మార్కెట్ కారణాలతో కూడా కదులుతాయి."
+      "name": "Share price",
+      "explain": "What one share costs now. Prices move for market reasons as well as company reasons."
     },
     "valuation": {
-      "name": "ధరలో ఉన్న లాభపు సంవత్సరాలు",
-      "explain": "మొత్తం ధర నేటి లాభంలో ఎన్ని సంవత్సరాలకు సమానం. తక్కువగా ఉంటే బేరం కావచ్చు లేదా కుంచించుకుపోతున్న వ్యాపారం కావచ్చు."
+      "name": "Years of profit in the price",
+      "explain": "How many years of today's profit the whole price equals. Low can mean a bargain or a shrinking business."
     },
     "revenue": {
-      "name": "ఆదాయం",
-      "explain": "కంపెనీకి వచ్చే డబ్బు. ఇది వేగాన్ని చూపుతుంది, కంపెనీ నిలబడగలదా అని కాదు."
+      "name": "Revenue",
+      "explain": "Money the company takes in. It shows speed, not whether the company can survive."
     },
     "profit": {
-      "name": "లాభం లేదా నష్టం",
-      "explain": "అన్ని ఖర్చుల తర్వాత మిగిలేది. గీత పైన లాభం, కింద నష్టం."
+      "name": "Profit or loss",
+      "explain": "What is left after every cost. Above the line is profit, below it is a loss."
     },
     "runway": {
-      "name": "నగదు రన్‌వే",
-      "explain": "నగదు అయిపోయే ముందు కంపెనీ ఎన్ని నెలలు తన బిల్లులు చెల్లించగలదు."
+      "name": "Cash runway",
+      "explain": "How many months the company can pay its bills before the cash runs out."
     },
     "debt": {
-      "name": "అప్పు",
-      "explain": "అది బాకీ ఉన్న మొత్తం. వడ్డీ కవరేజ్ (లాభాన్ని వడ్డీతో భాగిస్తే) 3 లేదా ఎక్కువ ఉంటే సౌకర్యం; 1కి దగ్గరగా ఉంటే ప్రమాదం.",
-      "cover": "{{debt}}, వడ్డీ కవరేజ్ {{x}} రెట్లు"
+      "name": "Debt",
+      "explain": "What it owes. Interest cover (profit divided by interest) of 3 or more is comfortable; near 1 is dangerous.",
+      "cover": "{{debt}}, interest cover {{x}} times"
     },
     "customers": {
-      "name": "చెల్లించే కస్టమర్లు",
-      "explain": "సైన్ అప్ చేసిన అందరితో పోలిస్తే చెల్లించే కస్టమర్లు. పెద్ద తేడా ఉంటే శీర్షికలోని సంఖ్య పెంచి చూపినట్టే.",
-      "value": "{{users}} మంది సైన్ అప్ చేస్తే {{paying}} మంది చెల్లిస్తున్నారు ({{pct}}%)"
+      "name": "Paying customers",
+      "explain": "Paying customers against everyone who signed up. A big gap means the headline number is inflated.",
+      "value": "{{paying}} pay out of {{users}} signed up ({{pct}}%)"
     },
     "retention": {
-      "name": "కొనసాగే కస్టమర్లు",
-      "explain": "100 మంది కస్టమర్లలో వచ్చే త్రైమాసికం ఎంతమంది ఇంకా ఉన్నారు. ఎక్కువ ఉంటే వృద్ధి చౌకగా, స్థిరంగా ఉంటుంది."
+      "name": "Customers who stay",
+      "explain": "Out of 100 customers, how many are still there next quarter. High means growth is cheaper and steadier."
     },
     "net": {
-      "name": "నికర కొత్త కస్టమర్లు",
-      "explain": "కొత్త కస్టమర్లు మైనస్ కోల్పోయిన కస్టమర్లు. వృద్ధి అంటే రెండూ."
+      "name": "Net new customers",
+      "explain": "New customers minus lost customers. Growth is both."
     },
     "people": {
-      "name": "ఉద్యోగులు",
-      "explain": "సిబ్బంది సంఖ్య. తొలగింపులు లాభం తగ్గడానికి చాలా ముందే వచ్చే ముందస్తు హెచ్చరిక.",
-      "value": "{{n}} సిబ్బంది",
-      "layoffs": "{{n}} సిబ్బంది, {{l}} మందిని తొలగించారు"
+      "name": "Employees",
+      "explain": "Headcount. Layoffs are an early warning, long before profit drops.",
+      "value": "{{n}} staff",
+      "layoffs": "{{n}} staff, {{l}} laid off"
     },
     "ceo": {
-      "name": "CEO షేర్ల లావాదేవీలు",
-      "explain": "CEO షేర్లు అమ్మారా లేదా కొన్నారా? అంతర్గత వ్యక్తులకు కంపెనీ గురించి బాగా తెలుసు.",
-      "none": "లావాదేవీలు లేవు",
-      "sold": "గత 3 త్రైమాసికాలలో {{n}} సార్లు షేర్లు అమ్మారు",
-      "bought": "షేర్లు కొన్నారు"
+      "name": "CEO share trades",
+      "explain": "Did the CEO sell or buy shares? Insiders know the company best.",
+      "none": "No trades",
+      "sold": "Sold shares {{n}} of the last 3 quarters",
+      "bought": "Bought shares"
     }
   },
   "dossier": {
-    "unmet": "ఇంకా కలవలేదు. రాబోయే త్రైమాసికంలో ప్రతిపాదన చెబుతుంది.",
-    "passed": "మీరు దీన్ని వదిలేశారు. మీరు అడిగిన సంఖ్యలు మాత్రమే కనిపిస్తాయి.",
-    "own": "మీ దగ్గర {{v}} ఉంది",
-    "news": "వార్తల్లో",
-    "noNews": "ఈ కంపెనీ గురించి ఇంకా వార్తలు లేవు.",
-    "close": "మూసివేయండి",
-    "claims": "వారు చెప్పేది",
-    "legend": "ట్యాగ్‌లను ఎలా చదవాలి"
+    "unmet": "Not met yet. It pitches in a coming quarter.",
+    "passed": "You passed on it. You only see the numbers you asked for.",
+    "own": "You own {{v}}",
+    "news": "In the news",
+    "noNews": "No news about this company yet.",
+    "close": "Close",
+    "claims": "What they say",
+    "legend": "How to read the tags"
   },
   "hover": {
-    "click": "అధ్యయనం లేదా వ్యాపారం కోసం నొక్కండి",
-    "tap": "అధ్యయనం లేదా వ్యాపారం కోసం తాకండి"
+    "click": "Click to study or trade",
+    "tap": "Tap to study or trade"
   },
   "pitch2": {
-    "dodged": "వారు ప్రశ్నను తప్పించుకున్నారు: హెచ్చరిక సంకేతం.",
-    "claim": "వారు చెప్పేది"
+    "dodged": "They dodged the question: a warning sign.",
+    "claim": "They say"
   },
   "tileLot": "{{name}}: {{state}}",
   "lotState": {
-    "own": "మీది",
-    "met": "ప్రతిపాదన విన్నారు",
-    "unmet": "ఇంకా కలవలేదు",
-    "pitching": "ప్రతిపాదన"
+    "own": "you own it",
+    "met": "pitched",
+    "unmet": "not met yet",
+    "pitching": "Pitching"
   },
   "what": {
-    "dailyBasket": "మీ ఇంటి వద్దకే సరుకులు తెస్తుంది.",
-    "payEasy": "డబ్బు పంపే ఫోన్ యాప్.",
-    "solarGrid": "ఇంటి పైకప్పులపై సోలార్ ప్యానెల్స్ పెడుతుంది.",
-    "medLink": "వాడలలో ఆరోగ్య క్లినిక్‌లు నడుపుతుంది.",
-    "steelWorks": "భవనాలు, వంతెనల కోసం ఉక్కు తయారు చేస్తుంది.",
-    "quickRide": "క్యాబ్ బుకింగ్ యాప్."
+    "dailyBasket": "Delivers groceries to your door.",
+    "payEasy": "A phone app for sending money.",
+    "solarGrid": "Puts solar panels on rooftops.",
+    "medLink": "Runs neighbourhood health clinics.",
+    "steelWorks": "Makes steel for buildings and bridges.",
+    "quickRide": "A cab-booking app."
   },
   "founders": {
     "dailyBasket": {
-      "name": "మోహన్ రావు",
-      "role": "మాజీ సూపర్‌మార్కెట్ మేనేజర్",
+      "name": "Mohan Rao",
+      "role": "Ex-supermarket manager",
       "age": "52",
-      "j0": "1998–2012 · మూడు సూపర్‌మార్కెట్లు నిర్వహించారు",
-      "j1": "2012–2018 · కిరాణా చైన్ సరఫరాలు చూశారు",
-      "j2": "2018–ఇప్పటివరకు · డైలీ బాస్కెట్ మొదలుపెట్టారు",
-      "notice": "ఇరవై ఏళ్లు కిరాణాలో. ఆయనకు ఈ వ్యాపారం తెలుసు.",
+      "j0": "1998–2012 · Managed three supermarkets",
+      "j1": "2012–2018 · Ran supplies for a grocery chain",
+      "j2": "2018–now · Started Daily Basket",
+      "notice": "Twenty years in groceries. He knows this business.",
       "yrs": "26",
       "starts": "1"
     },
     "payEasy": {
-      "name": "కబీర్ సేథీ",
-      "role": "యాప్ వ్యవస్థాపకుడు",
+      "name": "Kabir Sethi",
+      "role": "App founder",
       "age": "29",
-      "j0": "2017 · యాప్‌లు చేయడానికి కాలేజీ వదిలారు",
-      "j1": "2019 · మొదటి యాప్ ఏడాదికే మూతపడింది",
-      "j2": "2021 · పెద్ద పెట్టుబడిదారు డబ్బుతో పే-ఈజీ మొదలుపెట్టారు",
-      "notice": "లాభాల చరిత్ర లేదు, పెద్ద వాగ్దానాలు మాత్రమే.",
+      "j0": "2017 · Left college to build apps",
+      "j1": "2019 · First app shut down after a year",
+      "j2": "2021 · Launched PayEasy with big investor money",
+      "notice": "No profit history yet, only big promises.",
       "yrs": "7",
       "starts": "2"
     },
     "solarGrid": {
-      "name": "అనిల్ వర్మ",
-      "role": "ఇంజనీర్",
+      "name": "Anil Varma",
+      "role": "Engineer",
       "age": "47",
-      "j0": "2003–2011 · పవర్ ప్లాంట్ ఇంజనీర్",
-      "j1": "2011–2018 · విద్యుత్ సంస్థ కోసం సోలార్ ఫార్మ్‌లు కట్టారు",
-      "j2": "2018–ఇప్పటివరకు · సోలార్‌గ్రిడ్ మొదలుపెట్టారు",
-      "notice": "నిజమైన సోలార్ అనుభవం, కానీ అమ్మకాలు కాలాలతో మారతాయి.",
+      "j0": "2003–2011 · Power plant engineer",
+      "j1": "2011–2018 · Built solar farms for a utility",
+      "j2": "2018–now · Started SolarGrid",
+      "notice": "Real solar experience, but sales swing with the seasons.",
       "yrs": "21",
       "starts": "1"
     },
     "medLink": {
-      "name": "డా. ఫరా సిద్దిఖీ",
-      "role": "క్లినిక్‌లు కట్టే వ్యక్తి",
+      "name": "Dr. Farah Siddiqui",
+      "role": "Clinic builder",
       "age": "41",
-      "j0": "2008–2014 · నగర ఆసుపత్రిలో డాక్టర్",
-      "j1": "2014 · బ్యాంకు రుణంతో మొదటి క్లినిక్ తెరిచారు",
-      "j2": "2016–ఇప్పటివరకు · కొత్త క్లినిక్‌లు తెరుస్తూనే ఉన్నారు",
-      "notice": "ప్రతి కొత్త క్లినిక్ అప్పు డబ్బుతో కట్టినదే.",
+      "j0": "2008–2014 · Doctor at a city hospital",
+      "j1": "2014 · Opened her first clinic with a bank loan",
+      "j2": "2016–now · Keeps opening new clinics",
+      "notice": "Every new clinic is built on borrowed money.",
       "yrs": "16",
       "starts": "1"
     },
     "steelWorks": {
-      "name": "ఆర్. కృష్ణన్",
-      "role": "మూడో తరం యజమాని",
+      "name": "R. Krishnan",
+      "role": "Third-generation owner",
       "age": "63",
-      "j0": "1985 · తండ్రి ఉక్కు మిల్లులో చేరారు",
-      "j1": "2000 · యజమాని అయ్యారు",
-      "j2": "2015–ఇప్పటివరకు · కస్టమర్లు కొత్త మిల్లులకు వెళ్లిపోతున్నారు",
-      "notice": "గతం గురించి గర్వం, కానీ ప్రపంచం ముందుకు వెళ్లింది.",
+      "j0": "1985 · Joined his father’s steel mill",
+      "j1": "2000 · Took over as owner",
+      "j2": "2015–now · Customers keep leaving for newer mills",
+      "notice": "Proud of the past, but the world moved on.",
       "yrs": "39",
       "starts": "1"
     },
     "quickRide": {
-      "name": "జోయా మాలిక్",
-      "role": "షోమ్యాన్",
+      "name": "Zoya Malik",
+      "role": "Showman",
       "age": "34",
-      "j0": "2013 · ఫుడ్ డెలివరీ యాప్ మొదలుపెట్టారు",
-      "j1": "2016 · షేర్లు అమ్మి వదిలేశారు",
-      "j2": "2019 · క్విక్‌రైడ్ మొదలుపెట్టి మళ్లీ షేర్లు అమ్మారు",
-      "notice": "షేర్లు అమ్మి ముందుకు సాగే అలవాటు ఉంది.",
+      "j0": "2013 · Started a food delivery app",
+      "j1": "2016 · Sold her shares and left",
+      "j2": "2019 · Launched QuickRide and sold shares again",
+      "notice": "Has a habit of selling shares and moving on.",
       "yrs": "11",
       "starts": "3"
     }

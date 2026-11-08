@@ -27,7 +27,7 @@ export interface DeskView {
   notShared: { roll: string; name: string }[]
 }
 
-const LANG: Record<string, string> = { en: 'English', hi: 'Hindi', te: 'Telugu' }
+const LANG: Record<string, string> = { en: 'English' }
 const PERSONA: Record<string, string> = { school: 'School student', college: 'College student', earner: 'Earning youth' }
 const SHORT = { building: 'Building', getting: 'Getting there', strong: 'Strong' } as const
 const PLACE_STATE = { n: 'Not started', p: 'In progress', c: 'Cleared' }
@@ -116,12 +116,11 @@ export function ReportCard({ d, ins }: { d: DeskView; ins: StudentInsight }) {
 /** the class report for the NGO or funder: one or two printed pages */
 export function ClassReport({ d }: { d: DeskView }) {
   const { v, cohort } = d
-  const langs = v.languages.filter((l) => !l.hidden && l.n > 0).length
   const measures: [string, string][] = [
     ['Simple', `${pct(v.n ? v.active / v.n : null)} of students started a place on their own.`],
     ['Relatable', `${v.funnel.reduce((a, f) => a + f.cleared, 0)} everyday-money places cleared across ${v.n} students.`],
     ['Persona-led', v.personas.every((p) => p.hidden || p.n === 0) ? 'Too few students per group to show a split.' : v.personas.filter((p) => !p.hidden && p.n > 0).map((p) => `${p.n} ${PERSONA[p.key].toLowerCase()}s`).join(', ') + '.'],
-    ['Language-ready', `${langs} of 3 languages (English, Hindi, Telugu) in use.`],
+    ['Language-ready', 'English is used throughout the game.'],
     ['Game-based', 'Understanding is measured from choices made in the games, not from a quiz.'],
     ['Intuitive', `${pct(v.liteShare)} play on Lite mode for older phones.`],
     ['NGO-integrated', `${v.n} students shared progress; class codes, report cards and lesson plans used.`],

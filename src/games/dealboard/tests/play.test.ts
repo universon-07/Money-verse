@@ -9,7 +9,6 @@ import { COMPANY, COMPANY_IDS } from '../engine/companies'
 import type { CompanyId, LightKey } from '../engine/types'
 import type { ReasonOption } from '../engine/reasons'
 import enJudgement from '../content/judgement.json'
-import teJudgement from '../content/te/judgement.json'
 
 const DATA: ReasonOption = { id: 'ev.cashProfit', key: 'ev.cashProfit', kind: 'evidence', params: {} }
 const HYPE: ReasonOption = { id: 'fe.hype0', key: 'fe.hype0', kind: 'feeling', params: {} }
@@ -465,8 +464,8 @@ describe('why a price moved', () => {
   })
 })
 
-describe('every pointer the review can give has text in both languages', () => {
-  test('keys seen over many different playstyles all exist in English and Telugu', () => {
+describe('every pointer the review can give has text in English', () => {
+  test('keys seen over many different playstyles all exist in English', () => {
     const keys = new Set<string>()
     const unfilled: string[] = []
     const styles: Policy[] = [investEvery(20000, 0), investEvery(10000, 1), investEvery(15000, 2), careful, (r, m) => ({ type: 'pass', companyId: pitchFor(r, m)! })]
@@ -483,15 +482,13 @@ describe('every pointer the review can give has text in both languages', () => {
     expect(keys.size).toBeGreaterThan(15)
     for (const k of keys) {
       expect((enJudgement.review as Record<string, string>)[k], 'en ' + k).toBeTruthy()
-      expect((teJudgement.review as Record<string, string>)[k], 'te ' + k).toBeTruthy()
     }
   })
 })
 
 describe('lesson cards fill every placeholder', () => {
-  test('across many playstyles, each lesson card has a value for every {{placeholder}} in both languages', async () => {
+  test('across many playstyles, each lesson card has a value for every {{placeholder}} in English', async () => {
     const en = (await import('../content/lessons.json')).default as unknown as { lite: Record<string, Record<string, string>>; earned: Record<string, Record<string, string>> }
-    const te = (await import('../content/te/lessons.json')).default as unknown as typeof en
     const bad: string[] = []
     const seen = new Set<number>()
     const styles: Policy[] = [investEvery(20000, 0), investEvery(10000, 1), careful, (r, m) => ({ type: 'pass', companyId: pitchFor(r, m)! })]
@@ -505,7 +502,7 @@ describe('lesson cards fill every placeholder', () => {
             const l = run.lesson
             seen.add(l.id)
             const have = new Set([...Object.keys(l.params), ...(l.params.companyId ? ['company'] : []), ...(l.params.reasonKey ? ['reason'] : [])])
-            const set = l.id >= 100 ? [en.earned[String(l.id)], te.earned[String(l.id)]] : [en.lite[String(l.id)], te.lite[String(l.id)]]
+            const set = l.id >= 100 ? [en.earned[String(l.id)]] : [en.lite[String(l.id)]]
             for (const texts of set) for (const key of ['did', 'didB']) for (const hole of (texts[key] ?? '').matchAll(/\{\{\s*(\w+)\s*\}\}/g)) {
               if (key === 'didB' && l.variant !== 'b') continue
               if (key === 'did' && l.variant === 'b' && texts.didB) continue

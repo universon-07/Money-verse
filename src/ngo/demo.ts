@@ -47,7 +47,7 @@ export function demoStudents(now = Date.now()): StudentSummary[] {
       // most students give a roll number; a few forget (the desk shows them by student code)
       roll: i % 11 === 10 ? null : String(i + 1).padStart(4, '0'),
       at: now - Math.floor(r() * 5 * 86400000),
-      lang: r() < 0.45 ? 'te' : r() < 0.64 ? 'hi' : 'en',
+      lang: 'en',
       persona: r() < 0.4 ? 'school' : r() < 0.78 ? 'college' : 'earner',
       lite: r() < 0.38,
       places,

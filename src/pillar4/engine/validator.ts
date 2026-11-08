@@ -5,7 +5,7 @@ import { explainKeyOf, indexCase, leadNudgeKey, leadQKey, zoneExplainKey, zoneTe
 export interface Issue { level: 'error' | 'warn'; caseId: string; msg: string }
 export type Strings = Record<string, string>
 
-/** every string key a case needs (used for the validator and for the Telugu template) */
+/** every string key a case needs (used for English content validation) */
 export function requiredKeys(def: CaseDef): string[] {
   const idx = indexCase(def)
   const keys = new Set<string>([`${def.id}.title`, `${def.id}.brief`, `${def.id}.closing`, `${def.id}.debrief.mechanism`, `${def.id}.debrief.c1`, `${def.id}.debrief.c2`, `${def.id}.debrief.c3`, def.fix.qKey])
@@ -22,7 +22,7 @@ export function requiredKeys(def: CaseDef): string[] {
   return [...keys]
 }
 
-export function validateCase(def: CaseDef, en: Strings, te: Strings, opts: { strictTe?: boolean } = {}): Issue[] {
+export function validateCase(def: CaseDef, en: Strings): Issue[] {
   const out: Issue[] = []
   const err = (msg: string) => out.push({ level: 'error', caseId: def.id, msg })
   const warn = (msg: string) => out.push({ level: 'warn', caseId: def.id, msg })
@@ -109,7 +109,6 @@ export function validateCase(def: CaseDef, en: Strings, te: Strings, opts: { str
   // strings
   for (const k of requiredKeys(def)) {
     if (!(k in en) || !en[k]) err(`missing English string ${k}`)
-    else if (!(k in te) || !te[k]) (opts.strictTe ? err : warn)(`missing Telugu string ${k}`)
   }
   for (const c of def.clues) {
     const ex = en[explainKeyOf(c)]

@@ -1,7 +1,5 @@
 @import "@fontsource/chango/400.css";
 @import "@fontsource/bowlby-one/400.css";
-@import "@fontsource/noto-sans-devanagari/900.css";
-@import "@fontsource/noto-sans-telugu/900.css";
 /* Deal Board: a felt card table drawn in the hub's inked, flat-shadow style (DESIGN.md). */
 .db-root {
   --felt: #1f4d3a;
@@ -196,11 +194,9 @@ html[data-lite="true"] .db-flash { animation: none; }
 @media (prefers-reduced-motion: reduce) { .db-flash { animation: none; } }
 
 /* pin the game's own type, whatever the surrounding theme does */
-.db-root { font-family: "Noto Sans", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif; }
-.db-root .font-display { font-family: "Chango", "Rozha One", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif; }
-.db-root .font-sign { font-family: "Bowlby One", "Rozha One", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif; }
-html[lang="hi"] .db-root .font-display, html[lang="hi"] .db-root .font-sign { font-family: "Rozha One", "Noto Sans Devanagari", sans-serif; font-weight: 400; }
-html[lang="te"] .db-root .font-display, html[lang="te"] .db-root .font-sign { font-family: "Noto Sans Telugu", sans-serif; font-weight: 900; }
+.db-root { font-family: "Noto Sans", system-ui, sans-serif; }
+.db-root .font-display { font-family: "Chango", system-ui, sans-serif; }
+.db-root .font-sign { font-family: "Bowlby One", system-ui, sans-serif; }
 
 /* the token hops each time it lands on the next tile */
 .db-hop { display: block; width: 100%; height: 100%; transform-origin: 50% 100%; animation: db-hop .17s steps(4) 1; }
@@ -224,15 +220,13 @@ html[data-lite="true"] .db-hop { animation: none; }
 /* ---- Deal Board keeps its own chunky inked look, whatever the hub's theme is ---- */
 .db-root {
   --color-ink: #2b1a17; --ink: #2b1a17; --color-jasmine: #fff3d6; --color-mustard: #e8b04a; --color-pink: #e5457a; --color-sky: #5bb5d6; --color-gold: #d9a520;
-  --font-display: "Chango", "Rozha One", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif;
-  --font-sign: "Bowlby One", "Rozha One", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif;
-  font-family: "Noto Sans", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif; font-weight: 500; color: #2b1a17;
+  --font-display: "Chango", system-ui, sans-serif;
+  --font-sign: "Bowlby One", system-ui, sans-serif;
+  font-family: "Noto Sans", system-ui, sans-serif; font-weight: 500; color: #2b1a17;
   touch-action: manipulation;
 }
 .db-root .font-display { font-family: var(--font-display); }
 .db-root .font-sign { font-family: var(--font-sign); }
-html[lang="hi"] .db-root .font-display, html[lang="hi"] .db-root .font-sign { font-family: "Rozha One", "Noto Sans Devanagari", sans-serif; font-weight: 400; }
-html[lang="te"] .db-root .font-display, html[lang="te"] .db-root .font-sign { font-family: "Noto Sans Telugu", sans-serif; font-weight: 900; line-height: 1.25; }
 .db-root .lang-fit:not(.label) { zoom: 1; font-size: calc(1em * var(--lang-scale)); }
 .db-root .bg-jasmine { background-color: #fff3d6; }
 .db-root .text-jasmine { color: #fff3d6; }

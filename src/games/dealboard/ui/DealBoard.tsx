@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TitleCard } from './TitleCard'
-import { useGame, useLite } from '../../../store/game'
+import { useLite } from '../../../store/game'
 import { RING_SIZE, TURNS, quarterTile } from '../engine/board'
 import { invested, marketFor, netWorth, pitchFor, type RunState } from '../engine/run'
 import { computeScore, liveScore, type Score } from '../engine/scoring'
@@ -58,29 +58,6 @@ function BackButton({ onExit, compact }: { onExit: () => void; compact?: boolean
   )
 }
 
-/** Language choice at the start. The game ships in English and Telugu; any other hub language shows English. */
-function LangPick() {
-  const lang = useGame((s) => s.language)
-  const setLanguage = useGame((s) => s.setLanguage)
-  const current = lang === 'te' || lang === 'hi' ? lang : 'en'
-  return (
-    <div className="ink-chip flex items-center gap-1 p-1" role="group" aria-label="Language / भाषा / భాష">
-      {([['en', 'English'], ['hi', 'हिन्दी'], ['te', 'తెలుగు']] as const).map(([code, label]) => (
-        <button
-          key={code}
-          type="button"
-          aria-pressed={current === code}
-          onClick={() => setLanguage(code)}
-          className="h-11 min-w-16 rounded-lg px-2.5 text-[15px] font-extrabold"
-          style={{ background: current === code ? '#E5457A' : 'transparent', color: current === code ? '#FFF3D6' : '#2B1A17', border: current === code ? '2.5px solid #2B1A17' : '2.5px solid transparent', fontFamily: code !== 'en' ? 'var(--font-body)' : undefined }}
-        >
-          {label}
-        </button>
-      ))}
-    </div>
-  )
-}
-
 function Intro({ onStart, onExit }: { onStart: () => void; onExit: () => void }) {
   const { t } = useTranslation('dealboard')
   const steps = t('intro', { returnObjects: true }) as string[]
@@ -88,7 +65,7 @@ function Intro({ onStart, onExit }: { onStart: () => void; onExit: () => void })
     <div className="db-roomy mx-auto my-auto flex w-full max-w-[560px] flex-col gap-4 px-4 pb-6 pt-3">
       <div className="flex items-start justify-between gap-2">
         <BackButton onExit={onExit} />
-        <LangPick />
+        
       </div>
       <TitleCard eyebrow={t('eyebrow')} title={t('title')}>
         <p className="m-0">{t('tagline')}</p>

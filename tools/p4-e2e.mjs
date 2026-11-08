@@ -1,7 +1,7 @@
 // Pillar 4 end-to-end: plays Tutorial, Cases 1-3, a Mystery variant and the Master Board through the real UI,
 // perfectly, then checks the 530-diamond total and that the hub's fourth lamp lit.
 //   npm run dev (port 5173)  then:  node --experimental-strip-types --no-warnings tools/p4-e2e.mjs
-//   env: URL (default http://localhost:5173), SHOT_DIR (save screenshots), LANGUAGE (en|te), BROWSER (msedge|chrome|chromium)
+//   env: URL (default http://localhost:5173), SHOT_DIR (save screenshots), BROWSER (msedge|chrome|chromium)
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -10,7 +10,7 @@ import { indexCase, locate, normalizeCase } from '../src/pillar4/engine/case.ts'
 
 const base = process.env.URL ?? 'http://localhost:5173'
 const shotDir = process.env.SHOT_DIR
-const lang = process.env.LANGUAGE ?? 'en'
+const lang = 'en'
 const dir = path.join(path.dirname(fileURLToPath(import.meta.url)), '../src/pillar4/content')
 const load = (id) => normalizeCase(JSON.parse(fs.readFileSync(path.join(dir, 'cases', `${id}.json`), 'utf8')))
 const en = Object.assign({}, ...fs.readdirSync(path.join(dir, 'strings/en')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, 'strings/en', f), 'utf8'))))

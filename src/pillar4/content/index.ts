@@ -16,4 +16,3 @@ const load = (mods: Record<string, Record<string, string>>) => {
   return out
 }
 export const EN = load(import.meta.glob<Record<string, string>>('./strings/en/*.json', { eager: true, import: 'default' }))
-export const TE = load(import.meta.glob<Record<string, string>>('./strings/te/*.json', { eager: true, import: 'default' }))

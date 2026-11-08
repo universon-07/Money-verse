@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react'
 
-export type Lang = 'en' | 'te' | 'hi'
+export type Lang = 'en'
 
 /**
  * Everything Pillar 4 needs from whatever app mounts it. This is the whole integration surface:

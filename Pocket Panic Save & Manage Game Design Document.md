@@ -288,7 +288,7 @@ The top of the screen holds the goal (a card pinned to Chacha's cork wish board)
 | He always | Says what usually happens, then lets the player see their own numbers. |
 | Catchphrase | "Chai first. Panic later." |
 
-**Voice rules:** short sentences, dry, warm, one proverb-like line per moment at most, 18 words maximum on screen. Hindi and Telugu versions keep the same length and the same dryness.
+**Voice rules:** short sentences, dry, warm, one proverb-like line per moment at most, 18 words maximum on screen. English copy keeps the same length and the same dryness.
 
 ### Supporting cast
 
@@ -313,7 +313,7 @@ An earlier draft gave Chacha a Book that lent up to ₹50 at no cost. It was rem
 
 ## 5. Screens, HUD and UI text
 
-**The game is nineteen screens, one HUD and three kinds of input: drag a coin, tap a button, or leave something to cool.** Every string below is final English and goes into `en.json`; Hindi and Telugu follow in section 16.
+**The game is nineteen screens, one HUD and three kinds of input: drag a coin, tap a button, or leave something to cool.** Every string below is final English and goes into `en.json`; English wording is reviewed in section 16.
 
 ### Screen list
 
@@ -1409,7 +1409,7 @@ One page, filterable by cohort code, language and persona. Until real data arriv
 | Rain grey-blue | `#8FA7B3` | Cloud, rain, window |
 | Ink | `#3A2A24` | Outlines, handwriting |
 
-- **Type:** a vintage display serif for title cards, a clean sans (Noto Sans, with Devanagari and Telugu) for body text, and a handwriting face for Chacha's margin notes. Kalam covers Latin and Devanagari; pick a Telugu handwriting font from Google Fonts and check every glyph renders.
+- **Type:** a vintage display serif for title cards, Noto Sans for English body text, and a handwriting face for margin notes.
 
 ### Boss presentation
 
@@ -1481,29 +1481,29 @@ Off by default, so the game works silently in a classroom. If time allows, five 
 
 ## 16. Languages, access, guardrails and the facilitator guide
 
-**The game ships in English, Hindi and Telugu from one set of string keys, works without audio, and follows a short list of rules that keep it honest, kind and safe.**
+**The game ships in English from one set of string keys, works without audio, and follows a short list of rules that keep it honest, kind and safe.**
 
 ### Language
 
 Every string in sections 5 to 12 is a key in `en.json`, `hi.json` and `te.json`. No text is baked into any image. The strings below are **drafts written by Claude and must be reviewed by native speakers** before use; list anything uncertain in `TRANSLATION_REVIEW.md`.
 
-| English | Hindi (draft) | Telugu (draft) |
+| English |
 | --- | --- | --- |
-| Take a seat | बैठिए | కూర్చోండి |
-| One month. ₹600. One table. Let's see where it goes. | एक महीना। ₹600। एक मेज़। देखते हैं पैसा कहाँ जाता है। | ఒక నెల. ₹600. ఒక బల్ల. డబ్బు ఎటు వెళ్తుందో చూద్దాం. |
-| Chai first. Panic later. | पहले चाय, घबराहट बाद में। | ముందు చాయ్. కంగారు తర్వాత. |
-| Little things have long bills. | छोटी चीज़ों के बिल लंबे होते हैं। | చిన్న ఖర్చులకు పొడవైన బిల్లులు ఉంటాయి. |
-| Let it cool | ठंडा होने दें | చల్లారనివ్వండి |
-| Instant is always priced instant. | जल्दी की कीमत हमेशा ज़्यादा होती है। | తక్షణం అంటే ఎప్పుడూ ఎక్కువ ధరే. |
-| I lend only what I can afford to forget. You should, too. | मैं उतना ही उधार देता हूँ जितना भूल सकूँ। आप भी ऐसा ही कीजिए। | మర్చిపోగలిగినంతే అప్పు ఇస్తాను. మీరు కూడా అలాగే చేయండి. |
-| Goal reached. Here is how you did it. | लक्ष्य पूरा हुआ। देखिए, कैसे हुआ। | లక్ష్యం చేరుకున్నారు. ఎలా చేశారో చూద్దాం. |
-| Where should this ₹{x} come from? | यह ₹{x} कहाँ से आना चाहिए? | ఈ ₹{x} ఎక్కడినుండి రావాలి? |
-| Bills do not ask. They arrive. | बिल पूछकर नहीं आते। बस आ जाते हैं। | బిల్లులు అడిగి రావు. అలా వచ్చేస్తాయి. |
-| Big Night | बड़ी रात | పెద్ద రాత్రి |
-| MONTH SURVIVED | महीना पार | నెల దాటాం |
-| Same table. New month. Change one thing and we go again. | वही मेज़, नया महीना। एक चीज़ बदलिए और फिर से शुरू करें। | అదే బల్ల. కొత్త నెల. ఒక్క విషయం మార్చండి, మళ్లీ మొదలుపెడదాం. |
+| Take a seat |
+| One month. ₹600. One table. Let's see where it goes. |
+| Chai first. Panic later. |
+| Little things have long bills. |
+| Let it cool |
+| Instant is always priced instant. |
+| I lend only what I can afford to forget. You should, too. |
+| Goal reached. Here is how you did it. |
+| Where should this ₹{x} come from? |
+| Bills do not ask. They arrive. |
+| Big Night |
+| MONTH SURVIVED |
+| Same table. New month. Change one thing and we go again. |
 
-**Localisation rules:** keep ₹ and Western numerals everywhere. Chacha addresses the player respectfully ("आप" in Hindi, the polite form in Telugu). His lines stay short and dry in every language. A line that is much longer in translation is rewritten, not squeezed.
+**Language rule:** ship English text, using ₹ and Western numerals. Keep on-screen sentences short and clear.
 
 ### Accessibility
 
@@ -1575,7 +1575,7 @@ Every string in sections 5 to 12 is a key in `en.json`, `hi.json` and `te.json`.
 | Round 6 | Headline, the six-number report, the money-manager reading, three recap cards, Chacha's chit | Full Tally with callbacks, the wall |
 | Replay | One-change chips, Month 2 with a different surprise, Then and Now | Difficulty ladder and teach-back |
 | Dashboard | Sample data, clearly labelled, with observed behaviour panels | Live data |
-| Languages | English complete; Hindi and Telugu for the title cards, bills, Chacha's lines | All three complete |
+| Languages | English complete | English complete |
 
 ### How to use this doc with Claude Code
 
@@ -1695,7 +1695,7 @@ Times assume about 5 hours of build. Each step ends with something you can see a
 | 4 | 2:30 to 3:30 | Phases 3 and 4: Big Night, Teja, Bill N3, **the rain finale in four beats**, pay panel, Quick Cash and fine print | A full run reaches the end of Round 5 with every source working. Spend the extra time here. |
 | 5 | 3:30 to 4:15 | Round 6: settle, headline, six-number report, margin notes, money-manager reading, three recap cards, chit | The Tally shows correct, personal numbers for the five reference playstyles |
 | 6 | 4:15 to 4:45 | Replay: one-change chips, Month 2 variation (carry-over fizz), Then and Now, evidence checks | Two runs in a row produce a Then and Now screen |
-| 7 | 4:45 to 5:30 | Swap in the painted backdrop and characters, Hindi and Telugu strings, phone portrait layout, analytics events, QA pass | Plays on a phone in all three languages |
+| 7 | 4:45 to 5:30 | Swap in the painted backdrop and characters, English strings, phone portrait layout, analytics events, QA pass | Plays on a phone in English |
 
 ### Cut list (cut from the top first)
 
@@ -1743,7 +1743,7 @@ Times assume about 5 hours of build. Each step ends with something you can see a
 | 4 | The medical surprise (bank item 5) | Keep out of Month 1. Test it first. |
 | 5 | Goal items (earphones, trip, controller) | Replace any that do not fit your students; keep the price the same |
 | 6 | Café name "Meherban" | Check for clashes with real cafés; rename if needed |
-| 7 | Who reviews Hindi and Telugu | A native speaker for each language, before any public demo |
+| 7 | Who reviews English copy | An English copy reviewer, before any public demo |
 
 Audio is off by default; add the five effects only if time allows. The nine concepts come from your source brief as you summarised it. I have not read the original, so check the wording against it.
 
@@ -1754,7 +1754,7 @@ Audio is off by default; add the five effects only if time allows. The nine conc
 - Because bottle values are hidden, a very careful player could still try to guess the fizz. It is a consequence system, not a score, and staying in is free, so the cost of "optimising" it is one extra yes.
 - Behaviour in the game is evidence, not proof. A student who never uses the saucer may simply not want the items.
 - The dashboard shows sample data until real play exists.
-- Translations are drafts.
+- English copy should be reviewed before release.
 
 ### Test with 5 to 10 students before the pitch
 

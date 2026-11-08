@@ -2,7 +2,7 @@ import { C } from '../art/palette'
 
 export type PillarId = 'plan' | 'save' | 'invest' | 'safe'
 export type PersonaId = 'school' | 'college' | 'earner'
-export type Lang = 'en' | 'hi' | 'te'
+export type Lang = 'en'
 export type Avatar = 'male' | 'female'
 export type Festival = 'diwali' | 'eid' | 'bonalu' | 'sankranti' | 'christmas'
 export type ShieldPiece = 'protect' | 'verify' | 'pause'
@@ -32,7 +32,7 @@ export const PERSONAS: Record<PersonaId, { start: number; goal: number; face: st
 export const SKILLS = ['planning', 'prioritising', 'saving', 'riskSense', 'patience', 'scamSense'] as const
 export type Skill = (typeof SKILLS)[number]
 
-export const LANGS: Lang[] = ['en', 'hi', 'te']
+export const LANGS: Lang[] = ['en']
 
-export const inr = (n: number, lang: Lang = 'en') =>
-  '₹' + Math.round(n).toLocaleString(lang === 'en' ? 'en-IN' : lang === 'hi' ? 'hi-IN' : 'te-IN')
+export const inr = (n: number, _lang: Lang = 'en') =>
+  '₹' + Math.round(n).toLocaleString('en-IN')

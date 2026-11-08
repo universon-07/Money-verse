@@ -1,15 +1,8 @@
 @import "tailwindcss";
 @import "@fontsource/dm-serif-display/400.css";
-@import "@fontsource/rozha-one/400.css";
 @import "@fontsource/noto-sans/500.css";
 @import "@fontsource/noto-sans/700.css";
 @import "@fontsource/noto-sans/800.css";
-@import "@fontsource/noto-sans-devanagari/500.css";
-@import "@fontsource/noto-sans-devanagari/700.css";
-@import "@fontsource/noto-sans-devanagari/800.css";
-@import "@fontsource/noto-sans-telugu/500.css";
-@import "@fontsource/noto-sans-telugu/700.css";
-@import "@fontsource/noto-sans-telugu/800.css";
 
 /* ---- Design tokens (see DESIGN.md): muted, never neon ---- */
 @theme {
@@ -25,22 +18,17 @@
   --color-coral: #D9573F;
   --color-gold: #D9A520;
   --color-ink: #3a2a24;
-  --font-display: "DM Serif Display", "Rozha One", "Noto Sans Devanagari", "Noto Sans Telugu", Georgia, serif;
-  --font-body: "Noto Sans", "Noto Sans Devanagari", "Noto Sans Telugu", system-ui, sans-serif;
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "Noto Sans", system-ui, sans-serif;
 }
 
 :root { color-scheme: light; --ink: #3a2a24; --lang-scale: 1; }
-html[lang="hi"] { --lang-scale: .95; }
-html[lang="te"] { --lang-scale: .92; }
 html, body, #root { height: 100%; margin: 0; background: #92C9D3; }
 body {
   font-family: var(--font-body); font-weight: 500; color: var(--ink);
   overflow: hidden; overscroll-behavior: none; -webkit-tap-highlight-color: transparent;
   user-select: none; -webkit-user-select: none;
 }
-html[lang="hi"] .font-display { font-family: "Rozha One", "Noto Sans Devanagari", serif; }
-html[lang="te"] .font-display { font-family: "Noto Sans Telugu", sans-serif; font-weight: 800; line-height: 1.3; }
-html[lang="hi"] *, html[lang="te"] * { letter-spacing: normal !important; }
 .lang-fit { zoom: var(--lang-scale); }
 
 /* ---- calm paper UI: thin ink outline, small radius, soft flat shadow ---- */

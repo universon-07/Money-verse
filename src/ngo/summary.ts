@@ -19,7 +19,7 @@ export interface StudentSummary {
   /** the student's school roll number as 4 digits, or null. Only the teacher's own device can turn it into a name. */
   roll: string | null
   at: number
-  lang: 'en' | 'hi' | 'te'
+  lang: 'en'
   persona: 'school' | 'college' | 'earner' | null
   lite: boolean
   places: Record<PillarId, { s: PlaceState; q: number; a: number; b: Glow }>
@@ -98,7 +98,7 @@ export function buildSummary(data: Record<string, string>, now = Date.now(), cod
     cohort: cleanCode(codeOverride !== undefined ? codeOverride : st.classCode),
     roll: cleanRoll(rollOverride !== undefined ? rollOverride : st.rollNo),
     at: now,
-    lang: st.language === 'hi' || st.language === 'te' ? st.language : 'en',
+    lang: 'en',
     persona: st.persona === 'school' || st.persona === 'college' || st.persona === 'earner' ? st.persona : null,
     lite: st.liteMode === true,
     places,
@@ -129,7 +129,7 @@ export function parseSummary(v: unknown): StudentSummary | null {
     cohort: cleanCode(o.cohort),
     roll: cleanRoll(o.roll),
     at: typeof o.at === 'number' && Number.isFinite(o.at) ? o.at : 0,
-    lang: o.lang === 'hi' || o.lang === 'te' ? o.lang : 'en',
+    lang: 'en',
     persona: o.persona === 'school' || o.persona === 'college' || o.persona === 'earner' ? o.persona : null,
     lite: o.lite === true,
     places,

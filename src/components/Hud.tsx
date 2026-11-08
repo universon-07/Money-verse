@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { LANGS, inr, type Lang } from '../content/data'
+import { inr } from '../content/data'
 import { useGame, useLite } from '../store/game'
 import { goHome } from '../home/Home'
 import { useHappyView } from '../features/happy/hooks'
@@ -53,29 +53,7 @@ export function PersonaChip() {
   )
 }
 
-export function LangSwitch() {
-  const lang = useGame((s) => s.language)
-  const setLanguage = useGame((s) => s.setLanguage)
-  const { t } = useTranslation()
-  return (
-    <div className="ink-chip inline-flex items-center p-0.5" role="group" aria-label={t('hud.language')}>
-      {LANGS.map((l: Lang) => (
-        <button
-          key={l}
-          type="button"
-          onClick={() => setLanguage(l)}
-          aria-pressed={lang === l}
-          className="h-10 min-w-11 rounded-full px-2.5 text-[14px] font-bold"
-          style={{ background: lang === l ? '#3A2A24' : 'transparent', color: lang === l ? '#FBF0D2' : '#3A2A24', border: 0, cursor: 'pointer' }}
-        >
-          {t(`lang.${l}`)}
-        </button>
-      ))}
-    </div>
-  )
-}
-
-/** The only other persistent control: a gear holding language, lite mode and replay story. */
+/** The only other persistent control: a gear holding lite mode and replay story. */
 export function GearMenu({ replay = true }: { replay?: boolean }) {
   const { t } = useTranslation()
   const nav = useNavigate()
@@ -107,8 +85,7 @@ export function GearMenu({ replay = true }: { replay?: boolean }) {
       </button>
       {open && (
         <div className="paper rise absolute right-0 top-[52px] z-50 w-[250px] p-3" role="menu">
-          <div className="mb-2 text-[11px] font-bold uppercase tracking-[.18em] opacity-60">{t('hud.language')}</div>
-          <LangSwitch />
+          
           <button type="button" role="menuitemcheckbox" aria-checked={lite} className="ink-btn cream mt-3 flex w-full items-center justify-between" onClick={() => setLite(!lite)}>
             <span>{t('hud.lite')}</span>
             <span>{lite ? '●' : '○'}</span>

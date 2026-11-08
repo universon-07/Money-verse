@@ -104,7 +104,7 @@ export const useGame = create<GameState>()(
       const base = normalizePersisted({}, newInstallId)
       return {
         ...withDerived(base),
-        setLanguage: (language) => patch({ language }),
+        setLanguage: () => patch({ language: 'en' }),
         setPersona: (persona) => {
           const p = PERSONAS[persona]
           patch({ persona, celebrated: false, ...freshProgress(p.start, p.goal) })

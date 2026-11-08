@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useHost, type Lang } from '../host.tsx'
+import { useHost } from '../host.tsx'
 import { CASES, JOURNEY, MYSTERY_IDS } from '../content/index.ts'
 import { firstTryClues, TITLE_ORDER } from '../engine/progress.ts'
 import { indexCase } from '../engine/case.ts'
@@ -30,22 +30,6 @@ export function PointsChip() {
   return <div className="p4-chip is-accent" aria-label={`${t('ui.points')}: ${d}`}><Icon name="star" size={14} /> {d}</div>
 }
 
-/** compact English / Telugu switch, always visible; the host owns the language state */
-export function LangToggle() {
-  const { language, setLanguage } = useHost()
-  const opts: { l: Lang; label: string }[] = [{ l: 'en', label: 'EN' }, { l: 'te', label: 'తె' }]
-  return (
-    <div className="flex overflow-hidden rounded-lg" style={{ border: '1px solid var(--p4-line)' }} role="group" aria-label="Language">
-      {opts.map((o) => (
-        <button key={o.l} type="button" aria-pressed={language === o.l || (o.l === 'en' && language === 'hi')} className="min-h-[40px] min-w-[44px] px-2 text-[13.5px] font-bold" onClick={() => setLanguage(o.l)}
-          style={{ background: language === o.l || (o.l === 'en' && language === 'hi') ? 'var(--p4-accent)' : 'var(--p4-surface2)', color: language === o.l || (o.l === 'en' && language === 'hi') ? 'var(--p4-accent-ink)' : 'inherit', border: 0 }}>
-          {o.label}
-        </button>
-      ))}
-    </div>
-  )
-}
-
 const STORY_BEATS = ['b1', 'b2', 'b3', 'b4'] as const
 
 /** the opening: Raju Bhai from the phone kiosk tells the story in a few quick beats (first run only) */
@@ -55,7 +39,7 @@ function Backstory({ onDone, onBack }: { onDone: () => void; onBack: () => void 
   const [i, setI] = useState(0)
   const last = i === STORY_BEATS.length - 1
   return (
-    <Page onBack={onBack} title={t('ui.subtitle')} right={<LangToggle />}>
+    <Page onBack={onBack} title={t('ui.subtitle')} right={undefined}>
       <div className="flex min-h-[70vh] flex-col items-center justify-center gap-4 text-center">
         <img src="/art/npc-kiosk-phone.webp" alt="" draggable={false} className={`h-[34vh] max-h-[280px] object-contain ${reduce ? '' : 'idle'}`} style={{ filter: 'drop-shadow(0 6px 8px rgba(58,42,36,.3))' }} />
         <div className="p4-chip is-accent">{t('ui.story.name')} · {t('ui.story.role')}</div>
@@ -82,7 +66,7 @@ export function Intro({ onStart, onBack }: { onStart: () => void; onBack: () => 
   const [told, setTold] = useState(false)
   if (!told) return <Backstory onDone={() => setTold(true)} onBack={onBack} />
   return (
-    <Page onBack={onBack} title={t('ui.subtitle')} right={<LangToggle />}>
+    <Page onBack={onBack} title={t('ui.subtitle')} right={undefined}>
       <div className="flex flex-col gap-5">
         <div>
           <div className="p4-eyebrow">{t('ui.intro.eyebrow')}</div>
@@ -135,7 +119,7 @@ export function CaseMap({ onOpen, onNav, onHub }: MapProps) {
     },
   ]
   return (
-    <Page onBack={onHub} title={t('ui.title')} right={<><PointsChip /><LangToggle /></>}>
+    <Page onBack={onHub} title={t('ui.title')} right={<><PointsChip /></>}>
       <div className="p4-panel flex items-center gap-4">
         {avatarSrc && <img src={avatarSrc} alt="" className="h-14 w-14 shrink-0 rounded-full object-cover object-top" style={{ border: '1.5px solid var(--p4-ink)' }} onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }} draggable={false} />}
         <div className="min-w-0 flex-1">
@@ -207,7 +191,7 @@ export function Settings({ onBack }: { onBack: () => void }) {
   return (
     <Page onBack={onBack} title={t('ui.settings.title')}>
       <div className="flex flex-col gap-4">
-        <div className="flex items-center justify-between gap-3"><span className="text-[15px] font-semibold">{t('ui.settings.language')}</span><LangToggle /></div>
+        <div className="flex items-center justify-between gap-3"><span className="text-[15px] font-semibold">{t('ui.settings.language')}</span></div>
         <Toggle label={t('ui.settings.reduce')} on={reduce} onClick={() => s.setSettings({ reduceMotion: !reduce })} />
         <Toggle label={t('ui.settings.sound')} on={s.settings.sound} onClick={() => s.setSettings({ sound: !s.settings.sound })} />
         <div>

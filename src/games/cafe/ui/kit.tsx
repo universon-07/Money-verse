@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import { LangSwitch } from '../../../components/Hud'
 import { GOAL, quickRepay } from '../engine/content'
 import { paid, paymentError, paymentTotal, startingPayment } from '../engine/economy'
 import { cloudStage, dayOf, phaseOf, type Step } from '../engine/flow'
@@ -351,7 +350,7 @@ export function PauseOverlay({ onExit }: { onExit: () => void }) {
     <div className="cafe-sheet" role="dialog" aria-label={t('hud.pauseTitle')}>
       <div className="paper w-[min(92vw,360px)] p-4 text-center">
         <div className="font-display text-[24px]">{t('hud.pauseTitle')}</div>
-        <div className="my-3 flex justify-center"><LangSwitch /></div>
+        <div className="my-3 flex justify-center"></div>
         <label className="mb-3 flex items-center justify-center gap-2 text-[14px] font-bold">
           <input type="checkbox" checked={slow} onChange={(e) => setSlow(e.target.checked)} /> {t('hud.slow')}
         </label>

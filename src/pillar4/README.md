@@ -32,7 +32,7 @@ npm run build && npm run preview && node tools/p4-offline.mjs         # offline 
 
 ```
 engine/    pure logic: case indexing, report resolution, hints, scoring, board, fix, validator (no React)
-content/   cases/*.json (data model, spec 11.3), strings/en/*.json, strings/te/*.json
+content/   cases/*.json (data model, spec 11.3), strings/en/*.json
 ui/        phone, report sheet, notebook, Chacha, board, fix, replay, master board, playbook, screens
 store.ts   zustand state, persisted on the device under `p4.v1`; analytics events are queued only when a class code is set
 hub/       adapter for the hub contract (spec 4.4)
@@ -42,8 +42,7 @@ offline.ts registers public/sw.js (production only)
 ## Adding a case or a language
 
 * A case is `content/cases/<id>.json` plus `content/strings/en/<id>.json`. Single-zone items use shorthand (`role`, `explainKey`, `linkKey` on the item; the zone id equals the item id). Run `npm run p4:validate`.
-* Telugu: fill `content/strings/te/*.json` (any file name, flat `key: text`). `node --experimental-strip-types tools/p4-validate.mjs --emit-te` writes `te/_template.json` with every missing key. Until a key is translated the English text is shown. `--strict-te` turns missing Telugu into errors.
 
 ## Still to verify before release (spec Appendix D)
 
-Helpline 1930 and the reporting portal wording, the "real police do not arrest over video call" wording, any pitch statistic, Telugu translations and font licence.
+Helpline 1930 and the reporting portal wording, the "real police do not arrest over video call" wording, any pitch statistic, font licence.

@@ -1,7 +1,6 @@
 import './i18n'
 import '../../components/gameMotion.css'
 import { useCallback } from 'react'
-import { LangSwitch } from '../../components/Hud'
 import { Bunting, Rooftops } from '../../components/Scenery'
 import { usePayRun, useSeason } from './state/store'
 import { DayCard, ResultPanel } from './ui/Day'
@@ -53,7 +52,7 @@ export default function PayRun({ onGoalReached, onExit }: PayRunProps) {
             <button type="button" className="ink-chip grid h-12 w-12 shrink-0 place-items-center text-[18px]" aria-label={t('exit')} title={t('exit')} onClick={onExit}>◀</button>
             <span className="font-sign lang-fit min-w-0 flex-1 text-[15px]">{t('title')}{goal ? ` · ${t('week', { n: script.week })}` : ''}</span>
             {goal && <button type="button" className="ink-chip grid h-12 w-12 shrink-0 place-items-center text-[18px]" aria-label={t('start.again')} title={t('start.again')} onClick={() => { if (window.confirm(t('start.confirm'))) restart() }}>↺</button>}
-            <LangSwitch />
+            
           </div>
           <Bunting />
         </header>

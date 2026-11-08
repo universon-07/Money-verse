@@ -5,7 +5,7 @@ import { usePillar4 } from './store.ts'
 import { useCompletionSync } from './hub/adapter.ts'
 import { useT } from './ui/useT.ts'
 import { useReduceMotion } from './ui/feedback.ts'
-import { CaseMap, Intro, LangToggle, Page, Playbook, Settings } from './ui/screens.tsx'
+import { CaseMap, Intro, Page, Playbook, Settings } from './ui/screens.tsx'
 import { Icon } from './ui/icons.tsx'
 import CaseRunner from './ui/CaseRunner.tsx'
 import MasterBoard from './ui/Master.tsx'
@@ -54,7 +54,7 @@ function Screens() {
       break
     case 'master':
       screen = (
-        <Page onBack={toMap} title={t('ui.map.master')} right={<LangToggle />}>
+        <Page onBack={toMap} title={t('ui.map.master')} right={undefined}>
           <MasterBoard onDone={() => { usePillar4.getState().finishMaster(); setView('playbook') }} />
         </Page>
       )

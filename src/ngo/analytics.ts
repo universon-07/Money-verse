@@ -88,7 +88,7 @@ export function aggregate(list: StudentSummary[]): CohortView {
     lastSeen: list.length ? Math.max(...list.map((s) => s.at)) : null,
     funnel,
     skills,
-    languages: split(list, (s) => s.lang, ['en', 'hi', 'te']),
+    languages: split(list, (s) => s.lang, ['en']),
     personas: split(list, (s) => s.persona, ['school', 'college', 'earner']),
     liteShare: share(list.filter((s) => s.lite).length, n),
     happy: {

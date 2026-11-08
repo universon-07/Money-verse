@@ -59,10 +59,9 @@ for (const [w, h, tag] of [[390, 844, 'phone'], [1440, 900, 'desk']]) {
   await page.evaluate(() => document.querySelector("button[aria-label='College gate']").click())
   await page.waitForTimeout(7000)
   ;(await page.getByText(/opens when all four/).count()) ? ok(`${tag}: gate locked until all four`) : fail(`${tag}: gate lock message`)
-  // gear menu: language + lite
+  // gear menu: English-only UI and lite mode
   await page.getByRole('button', { name: 'Settings' }).click()
-  await page.getByRole('button', { name: 'తె' }).click()
-  ;(await page.evaluate(() => document.documentElement.lang)) === 'te' ? ok(`${tag}: language -> te`) : fail(`${tag}: lang`)
+  ;(await page.evaluate(() => document.documentElement.lang)) === 'en' ? ok(`${tag}: English language`) : fail(`${tag}: lang`)
   await page.getByRole('menuitemcheckbox').click()
   ;(await page.evaluate(() => document.documentElement.dataset.lite)) === 'true' ? ok(`${tag}: lite mode on`) : fail(`${tag}: lite`)
   await page.screenshot({ path: `${OUT}/e2e-${tag}.png` })

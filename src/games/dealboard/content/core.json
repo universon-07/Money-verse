@@ -1,75 +1,75 @@
 {
-  "title": "డీల్ బోర్డ్",
-  "eyebrow": "ది పెర్ల్ ఎక్స్ఛేంజ్",
-  "tagline": "కల్పిత కంపెనీలలో పెట్టుబడి పెట్టండి. సంకేతాలను చదవడం నేర్చుకోండి.",
+  "title": "Deal Board",
+  "eyebrow": "The Pearl Exchange",
+  "tagline": "Back made-up companies. Learn to read the signals.",
   "intro": [
-    "₹1,00,000 ఆట డబ్బు. 8 త్రైమాసికాలు.",
-    "ప్రతి త్రైమాసికం ఒక కంపెనీ ప్రతిపాదన చెబుతుంది. అడగండి, తర్వాత పెట్టుబడి పెట్టండి లేదా వదిలేయండి.",
-    "మీ లాభాన్ని కాదు, మీ విచక్షణను అంచనా వేస్తారు."
+    "₹1,00,000 of play money. 8 quarters.",
+    "Each quarter one company pitches. Ask, then invest or pass.",
+    "You are scored on judgement, not profit."
   ],
-  "start": "కొత్త ఆట మొదలుపెట్టండి",
-  "guardrail": "కల్పిత సంఖ్యలతో అనుకరణ. నిజ జీవితం వేరుగా ఉంటుంది.",
-  "quarter": "త్రైమాసికం {{n}} / 8",
-  "quarterShort": "త్రై{{n}}",
-  "cash": "నగదు",
-  "invested": "పెట్టుబడి",
-  "netWorth": "నికర విలువ",
-  "back": "మినార్",
-  "perShare": "షేరు ఒక్కింటికి {{price}}",
-  "dragNote": "ఖాళీ నగదు {{x}} కోల్పోయింది.",
+  "start": "Start a new game",
+  "guardrail": "Simulation with made-up numbers. Real life is different.",
+  "quarter": "Quarter {{n}} of 8",
+  "quarterShort": "Q{{n}}",
+  "cash": "Cash",
+  "invested": "Invested",
+  "netWorth": "Net worth",
+  "back": "MONEY VERSE",
+  "perShare": "{{price}} a share",
+  "dragNote": "Idle cash lost {{x}}.",
   "news": {
-    "slowdown": "అన్నీ పడిపోయాయి: విస్తృత మందగమనం.",
-    "shaky": "మార్కెట్లు ఇంకా అస్థిరంగా ఉన్నాయి.",
-    "optimism": "మార్కెట్లు కోలుకుంటున్నాయి.",
-    "sectorRally": "{{sector}} కంపెనీలు పుంజుకున్నాయి."
+    "slowdown": "Everything fell: a broad slowdown.",
+    "shaky": "Markets are still shaky.",
+    "optimism": "Markets are recovering.",
+    "sectorRally": "{{sector}} companies rallied."
   },
   "sectors": {
-    "food": "ఆహారం & రిటైల్",
-    "fintech": "ఫిన్‌టెక్",
-    "energy": "ఇంధనం",
-    "health": "ఆరోగ్యం",
-    "industrial": "పరిశ్రమలు",
-    "mobility": "రవాణా"
+    "food": "Food and retail",
+    "fintech": "Fintech",
+    "energy": "Energy",
+    "health": "Healthcare",
+    "industrial": "Industrial",
+    "mobility": "Mobility"
   },
   "companies": {
     "dailyBasket": {
       "name": "Daily Basket",
-      "slogan": "ప్రతి ఉదయం మీ ఇంటి ముందుకు సరుకులు.",
-      "founder": "మోహన్ రావు, ప్రశాంతమైన మాజీ సూపర్‌మార్కెట్ మేనేజర్"
+      "slogan": "Groceries at your door, every morning.",
+      "founder": "Mohan Rao, a calm ex-supermarket manager"
     },
     "payEasy": {
       "name": "PayEasy",
-      "slogan": "అందరూ డౌన్‌లోడ్ చేస్తున్న చెల్లింపుల యాప్.",
-      "founder": "కబీర్ సేథి, చాలా ఆత్మవిశ్వాసం ఉన్న యాప్ వ్యవస్థాపకుడు"
+      "slogan": "The payments app everyone is downloading.",
+      "founder": "Kabir Sethi, a very confident app founder"
     },
     "solarGrid": {
       "name": "SolarGrid",
-      "slogan": "ప్రతి పైకప్పుకు శుభ్రమైన విద్యుత్.",
-      "founder": "అనిల్ వర్మ, ఓపికైన ఇంజినీర్"
+      "slogan": "Clean power for every rooftop.",
+      "founder": "Anil Varma, a patient engineer"
     },
     "medLink": {
       "name": "MedLink Clinics",
-      "slogan": "ప్రతి వాడలో క్లినిక్.",
-      "founder": "డాక్టర్ ఫరా సిద్దిఖీ, ఆశయం ఉన్న క్లినిక్ నిర్మాత"
+      "slogan": "Clinics in every neighbourhood.",
+      "founder": "Dr. Farah Siddiqui, an ambitious clinic builder"
     },
     "steelWorks": {
       "name": "SteelWorks",
-      "slogan": "యాభై ఏళ్ల ఉక్కు. ఇప్పుడు బేరం ధరకు.",
-      "founder": "ఆర్. కృష్ణన్, మూడో తరం యజమాని"
+      "slogan": "Fifty years of steel. Now at a bargain.",
+      "founder": "R. Krishnan, a third-generation owner"
     },
     "quickRide": {
       "name": "QuickRide",
-      "slogan": "ప్రతి నెలా రికార్డు యూజర్లు.",
-      "founder": "జోయా మాలిక్, సొగసైన ప్రదర్శనకారిణి"
+      "slogan": "Record users, every single month.",
+      "founder": "Zoya Malik, a smooth showman"
     }
   },
   "yearEnd": {
-    "title": "{{n}}వ సంవత్సర సమీక్ష",
-    "body": "నికర విలువ {{nw}} · నగదు {{cash}} · పెట్టుబడి {{inv}}",
-    "continue": "{{n}}వ సంవత్సరంలోకి",
-    "finish": "ఫలితం చూడండి"
+    "title": "Year {{n}} review",
+    "body": "Net worth {{nw}} · Cash {{cash}} · Invested {{inv}}",
+    "continue": "Into year {{n}}",
+    "finish": "See the result"
   },
   "info": {
-    "label": "మరింత సమాచారం"
+    "label": "More info"
   }
 }

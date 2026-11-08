@@ -1,244 +1,244 @@
 {
   "lite": {
     "1": {
-      "title": "వృద్ధి అంటే ఆరోగ్యం కాదు",
-      "term": "బర్న్ రేట్, రన్‌వే",
-      "did": "{{company}} వేగంగా పెరుగుతోంది, కానీ త్రైమాసికానికి ₹{{y}} లక్షలు నష్టపోతోంది. నగదు {{z}} నెలలు మాత్రమే సరిపోతుంది.",
-      "idea": "ఒక కంపెనీ తన నగదు మొత్తాన్ని వృద్ధికే ఖర్చు చేసి ఇబ్బంది పడవచ్చు. రన్‌వే అంటే ఇంకా ఎన్ని నెలల నగదు మిగిలి ఉంది.",
-      "rule": "ఆదాయం వేగాన్ని చూపుతుంది; నగదు ప్రయాణం ఎంతకాలం సాగగలదో చూపుతుంది."
+      "title": "Growth is not health",
+      "term": "Burn rate, runway",
+      "did": "{{company}} was growing fast and losing ₹{{y}} lakh a quarter. Cash would last {{z}} months.",
+      "idea": "A company can grow itself out of cash. Runway is how many months of cash are left.",
+      "rule": "Revenue shows speed; cash shows how long the journey can last."
     },
     "2": {
-      "title": "డౌన్‌లోడ్‌లు కస్టమర్లు కాదు",
-      "term": "వానిటీ మెట్రిక్స్, చర్న్, నిలుపుదల",
-      "did": "{{n}} మంది సైన్ అప్ చేశారు, {{m}} మంది మాత్రమే చెల్లిస్తున్నారు. {{a}} మంది చేరారు, {{b}} మంది వెళ్ళిపోయారు.",
-      "idea": "సైన్-అప్‌లను లెక్కించడం సులభం. వ్యాపారం నిలబడేది చెల్లించి కొనసాగే కస్టమర్ల మీద.",
-      "rule": "చెల్లించి కొనసాగేవారిని లెక్కించండి."
+      "title": "Downloads are not customers",
+      "term": "Vanity metrics, churn, retention",
+      "did": "{{n}} signed up and {{m}} pay. {{a}} joined and {{b}} left.",
+      "idea": "Sign-ups are cheap to count. Paying customers who stay are what a business lives on.",
+      "rule": "Count the people who pay and stay."
     },
     "3": {
-      "title": "లోపలివారు ఏమి చేస్తారో గమనించండి",
-      "term": "అంతర్గత వ్యక్తుల అమ్మకాలు",
-      "did": "{{company}} CEO గత మూడు త్రైమాసికాలలో {{quarters}} షేర్లు అమ్మారు, అదే సమయంలో వార్తలు 'రికార్డు వృద్ధి' అన్నాయి.",
-      "idea": "నాయకులకు తమ కంపెనీ బాగా తెలుసు. నిరంతరం అమ్మడం హెచ్చరిక; సొంత డబ్బుతో కొనడం ప్రోత్సాహకరం.",
-      "rule": "లోపలివారు ఏమి చెబుతారో కాదు, ఏమి చేస్తారో గమనించండి."
+      "title": "Watch what insiders do",
+      "term": "Insider selling",
+      "did": "The CEO of {{company}} sold shares in {{quarters}} quarters while the news said 'record growth'.",
+      "idea": "Leaders know their company best. Steady selling is a warning; buying with their own money is encouraging.",
+      "rule": "Watch what insiders do, not only what they say."
     },
     "4": {
-      "title": "అప్పుతో వృద్ధి",
-      "term": "లెవరేజ్, వడ్డీ కవరేజ్",
-      "did": "మీరు {{r_x}} అప్పు తీసుకున్నారు, {{company}} {{y}}% పడిపోయినప్పుడు {{r_i}} వడ్డీ చెల్లించారు.",
-      "didB": "{{company}} సంపాదనతో పోలిస్తే చాలా బాకీ ఉంది. వడ్డీ మంచి త్రైమాసికాల్లో, చెడ్డ త్రైమాసికాల్లో కూడా కట్టాలి.",
-      "idea": "అప్పు లాభనష్టాలను పెద్దవి చేస్తుంది, వడ్డీ మంచి త్రైమాసికాల్లో, చెడ్డ త్రైమాసికాల్లో కూడా కట్టాలి.",
-      "rule": "అప్పు అంటే వ్యాపారం బాగున్నా లేకున్నా చెల్లిస్తామనే వాగ్దానం."
+      "title": "Borrowed growth",
+      "term": "Leverage, interest cover",
+      "did": "You borrowed {{r_x}} and paid {{r_i}} interest while {{company}} fell {{y}}%.",
+      "didB": "{{company}} owes a lot compared with what it earns. Interest is due in good quarters and bad.",
+      "idea": "Debt magnifies gains and losses, and interest is due in good quarters and bad.",
+      "rule": "Debt is a promise to pay, whether business is good or not."
     },
     "5": {
-      "title": "పుకార్లు, “హామీ”",
-      "term": "ధృవీకరించని వార్తలు, సమాచార నాణ్యత",
-      "did": "{{company}}లో మీరు “{{reason}}” కారణంగా పెట్టుబడి పెట్టారు. హడావుడి, చిట్కాలు ఆధారాలు కావు.",
-      "idea": "ధృవీకరించలేని వార్త కేవలం పుకారు, ఏ రాబడికీ ఎవరూ హామీ ఇవ్వలేరు.",
-      "rule": "ఎవరైనా రాబడికి హామీ ఇస్తే, దూరంగా వెళ్ళిపోండి."
+      "title": "Rumours and “guaranteed”",
+      "term": "Unverified news, information quality",
+      "did": "You invested in {{company}} because of “{{reason}}”. Hype and tips are not evidence.",
+      "idea": "News you cannot check is only a rumour, and nobody can guarantee a return.",
+      "rule": "If someone guarantees a return, walk away."
     },
     "6": {
-      "title": "అన్ని గుడ్లు ఒకే బుట్టలో వద్దు",
-      "term": "వైవిధ్యీకరణ, రంగ ప్రమాదం",
-      "did": "మీ పెట్టుబడిలో {{x}}% {{sector}}లో ఉంది. దాని చెడ్డ త్రైమాసికం మీకు {{r_loss}} నష్టం తెచ్చింది.",
-      "didB": "మీ పెట్టుబడిలో {{x}}% {{sector}}లో ఉంది. అక్కడ 30% పతనం మీకు {{r_loss}} నష్టం తెస్తుంది.",
-      "idea": "ఒకే రంగంలోని కంపెనీలు తరచుగా కలిసి పడతాయి.",
-      "rule": "వేర్వేరు పేర్లలో కాదు, వేర్వేరు ప్రమాదాలలో పంచండి."
+      "title": "Too many eggs in one basket",
+      "term": "Diversification, sector risk",
+      "did": "{{x}}% of your invested money sat in {{sector}}. Its bad quarter cost {{r_loss}}.",
+      "didB": "{{x}}% of your invested money sat in {{sector}}. A 30% fall there would cost {{r_loss}}.",
+      "idea": "Companies in the same sector often fall together.",
+      "rule": "Spread across different risks, not just different names."
     },
     "7": {
-      "title": "ధర పడటం అంటే వ్యాపారం పడటం కాదు",
-      "term": "అస్థిరత, మార్కెట్ ప్రమాదం",
-      "did": "మీరు పతనంలో అంతా అమ్మేశారు, ఒక మలుపు ఆగిపోయారు. తర్వాత కోలుకోవడం మీ చేయి దాటిపోయింది.",
-      "idea": "మార్కెట్ కారణాల వల్ల కూడా ధరలు పడతాయి. ధర కాదు, వ్యాపారం మారిందా అని అడగండి.",
-      "rule": "ధర పడటం అంటే వ్యాపారం పడటం కాదు."
+      "title": "A falling price is not a falling business",
+      "term": "Volatility, market risk",
+      "did": "You sold everything in the dip and sat out a turn. The rebound passed you by.",
+      "idea": "Prices fall for market reasons too. Ask whether the business changed, not just the price.",
+      "rule": "A falling price is not a falling business."
     },
     "8": {
-      "title": "ఖాళీ డబ్బు విలువ కోల్పోతుంది",
-      "term": "ద్రవ్యోల్బణం, అవకాశ వ్యయం",
-      "did": "మీ నగదు {{n}} మలుపులు ఖాళీగా ఉండి, ధరల పెరుగుదల వల్ల {{r_c}} కోల్పోయింది.",
-      "idea": "కాలంతో ధరలు పెరుగుతాయి, కాబట్టి ఖాళీ నగదు ప్రతి ఏడాదీ కొంచెం తక్కువ కొంటుంది. వేచి ఉండటానికి ఖర్చు ఉంది.",
-      "rule": "ప్రతి రూపాయికి ఒక పని, ఒక గడువు ఇవ్వండి."
+      "title": "Idle money loses value",
+      "term": "Inflation, opportunity cost",
+      "did": "Your cash sat idle for {{n}} turns and lost {{r_c}} to rising prices.",
+      "idea": "Prices rise over time, so idle cash buys a little less each year. Waiting has a cost.",
+      "rule": "Give each rupee a job and a timeline."
     },
     "9": {
-      "title": "త్వరలో అవసరమయ్యే డబ్బు",
-      "term": "ద్రవ్యత, అత్యవసర నిధి",
-      "did": "₹25,000 అత్యవసరం వల్ల మీరు {{company}}ను మీరు చెల్లించిన దానికంటే {{x}}% తక్కువకు అమ్మాల్సి వచ్చింది.",
-      "didB": "₹25,000 అత్యవసరం వల్ల ధరలు తక్కువగా ఉన్నప్పుడు మీరు {{company}}ను అమ్మాల్సి వచ్చింది.",
-      "idea": "త్వరలో అవసరమయ్యే డబ్బు ప్రమాదకర పెట్టుబడులలో ఉండకూడదు. అమ్మకుండానే అందుకోగల నిల్వ ఉంచుకోండి.",
-      "rule": "త్వరలో అవసరమయ్యే డబ్బు సురక్షితమైన చోట ఉండాలి."
+      "title": "Money you'll need soon",
+      "term": "Liquidity, emergency fund",
+      "did": "A ₹25,000 emergency forced you to sell {{company}} at {{x}}% below what you paid.",
+      "didB": "A ₹25,000 emergency forced you to sell {{company}} while prices were down.",
+      "idea": "Money you need soon should not sit in risky bets. Keep a cushion you can reach without selling.",
+      "rule": "Money you need soon belongs somewhere safe."
     },
     "10": {
-      "title": "ప్రతి లావాదేవీకి ఖర్చు ఉంది",
-      "term": "రుసుములు, అతి వ్యాపారం",
-      "did": "{{n}} లావాదేవీలకు మీరు రుసుములలో {{r_f}} చెల్లించారు, ఇది మీ మొదటి డబ్బులో {{g}}%.",
-      "idea": "రుసుములు చిన్నవిగా కనిపిస్తాయి కానీ కలిసి పెద్దవవుతాయి, తరచుగా వ్యాపారం చేస్తే భావోద్వేగంతో నిర్ణయాలు తీసుకునే అవకాశం పెరుగుతుంది.",
-      "rule": "తక్కువ, మంచి నిర్ణయాలు తీసుకోండి."
+      "title": "Every trade has a cost",
+      "term": "Fees, overtrading",
+      "did": "{{n}} trades cost you {{r_f}} in fees, {{g}}% of your starting money.",
+      "idea": "Fees look small but add up, and frequent trading tempts you to act on feelings.",
+      "rule": "Make fewer, better decisions."
     },
     "11": {
-      "title": "భారీ పని చేసేది కాలం",
-      "term": "చక్రవడ్డీ",
-      "did": "మీ లాభాలు లాభాలను సంపాదించాయి: మీరు పెట్టిన {{r_a}} ఇప్పుడు {{r_b}} విలువ.",
-      "didB": "₹10,000 ఏటా 10% పెరిగితే 10 ఏళ్ళలో సుమారు ₹25,900 అవుతుందని ఊహించండి.",
-      "idea": "చక్రవడ్డీ అంటే వృద్ధిపై వృద్ధి, కాలంతో అది వేగం పుంజుకుంటుంది.",
-      "rule": "భారీ పని చేసేది కాలం. చెడ్డ డేటాపై అమ్మండి, చిన్న లాభంపై కాదు."
+      "title": "Time does the heavy lifting",
+      "term": "Compounding",
+      "did": "Your gains earned gains: {{r_a}} put in is now worth {{r_b}}.",
+      "didB": "Imagine ₹10,000 growing 10% a year: it becomes about ₹25,900 after 10 years.",
+      "idea": "Compounding is growth on growth, and it speeds up with time.",
+      "rule": "Time does the heavy lifting. Sell on bad data, not on a small gain."
     }
   },
   "earned": {
     "101": {
-      "did": "మీరు {{company}}ను {{r_p}} వద్ద అమ్మారు. రెండు త్రైమాసికాల తర్వాత అది {{y}}% తక్కువగా ఉంది.",
-      "idea": "ధర పడకముందే మీరు సంకేతాలను చదివారు. ఈ ఆట అంచనా వేసే నైపుణ్యం ఇదే.",
-      "rule": "చెడ్డ డేటాపై అమ్మండి, చిన్న లాభంపై కాదు."
+      "did": "You sold {{company}} at {{r_p}}. Two quarters later it was {{y}}% lower.",
+      "idea": "You read the signals before the price fell. That is the skill this game scores.",
+      "rule": "Sell on bad data, not on a small gain."
     },
     "102": {
-      "did": "మీరు {{company}}ను వదిలేశారు. రెండు త్రైమాసికాల తర్వాత దాని ధర {{y}}% తక్కువగా ఉంది.",
-      "idea": "పెట్టుబడికి ముందు ప్రశ్నలు అడగడం, జవాబులు బలహీనంగా ఉన్నప్పుడు వెళ్ళిపోవడం ఫలితం ఇచ్చింది.",
-      "rule": "తక్కువ ధర లేదా పెద్ద కథ ఒక ప్రశ్న, జవాబు కాదు."
+      "did": "You passed on {{company}}. Two quarters later its price was {{y}}% lower.",
+      "idea": "Asking questions before you invest, and walking away when the answers were weak, paid off.",
+      "rule": "A low price or a big story is a question, not an answer."
     },
-    "title": "మీరు సంపాదించుకున్నారు"
+    "title": "Earned it"
   },
   "appendix": {
     "1": {
-      "title": "వృద్ధి అంటే ఆరోగ్యం కాదు",
-      "terms": "బర్న్ రేట్, రన్‌వే, నగదు ప్రవాహం",
-      "idea": "ఆదాయం అంటే కంపెనీకి వచ్చే డబ్బు. కంపెనీ నడవగలదా అనే విషయం దానికి తెలియదు. వ్యాపారాన్ని బ్రతికించేది నగదు, అంటే దాని దగ్గర నిజంగా ఉన్న డబ్బు. సంపాదించిన దానికంటే ఎక్కువ ఖర్చు పెట్టే కంపెనీ నగదును కాల్చేస్తోంది, ఎంత వేగంగా కాల్చుతోందో అదే బర్న్ రేట్. దాని దగ్గర ఉన్న నగదును నెలవారీ బర్న్‌తో భాగిస్తే రన్‌వే వస్తుంది: డబ్బు అయిపోయే ముందు ఎన్ని నెలలు. రన్‌వే ముగిసినప్పుడు కంపెనీకి మూడు దారులు ఉంటాయి: అప్పు చేయడం, నగదు సేకరించడానికి కొత్త షేర్లు అమ్మడం, లేదా మూసివేయడం. అప్పుకు వడ్డీ ఖర్చు, కొత్త షేర్లు ప్రతి యజమాని వాటాను చిన్నదిగా చేస్తాయి. నగదు కాల్చి సాధించే వేగవంతమైన వృద్ధి అంటే రన్‌వే ముగిసేలోపు కంపెనీ లాభంలోకి వస్తుందనే పందెం.",
-      "example": "ఒక కంపెనీకి బ్యాంకులో ₹30 లక్షలు ఉన్నాయి, నెలకు ₹3 లక్షలు నష్టపోతోంది. రన్‌వే: 30 ÷ 3 = 10 నెలలు. ఇప్పుడు కస్టమర్లను గెలవడానికి ఎక్కువ ఖర్చు పెడుతోంది, నష్టం నెలకు ₹5 లక్షలకు పెరిగింది. బ్యాంకు నుండి ఇంకా ఒక్క రూపాయి కూడా ఎక్కువ ఖర్చు చేయకముందే రన్‌వే 6 నెలలకు పడిపోయింది. ఆదాయం రెట్టింపు కావచ్చు, రన్‌వే సగమవుతుంది.",
+      "title": "Growth is not health",
+      "terms": "Burn rate, runway, cash flow",
+      "idea": "Revenue is the money a company takes in. It says nothing about whether the company can keep going. What keeps a business alive is cash, the money it actually has. A company that spends more than it earns is burning cash, and how fast it burns is its burn rate. Divide the cash it has by its monthly burn and you get its runway: the number of months before the money runs out. When the runway ends the company has three options: borrow, sell new shares to raise cash, or close. Borrowing costs interest, and new shares make every existing owner's slice smaller. Fast growth paid for by burning cash is a bet that the company will turn profitable before the runway ends.",
+      "example": "A company has ₹30 lakh in the bank and loses ₹3 lakh a month. Runway: 30 ÷ 3 = 10 months. Now it spends more to win customers and its loss grows to ₹5 lakh a month. Runway drops to 6 months, though it has not yet spent a rupee more from the bank. Revenue can double while the runway halves.",
       "checks": [
-        "కంపెనీ ప్రతి త్రైమాసికం నష్టపోతోందా, ఆ నష్టం తగ్గుతోందా?",
-        "ప్రస్తుత బర్న్ వద్ద ఎన్ని నెలల నగదు మిగిలి ఉంది?",
-        "నగదు అయిపోయేలోపు లాభంలోకి ఎలా వస్తుందో కంపెనీ వివరిస్తోందా?"
+        "Is the company losing money each quarter, and is the loss shrinking?",
+        "How many months of cash are left at the current burn?",
+        "Does the company explain how it reaches profit before the cash runs out?"
       ],
-      "rule": "ఆదాయం వేగాన్ని చూపుతుంది. నగదు ప్రయాణం ఎంతకాలం సాగగలదో చూపుతుంది."
+      "rule": "Revenue shows speed. Cash shows how long the journey can last."
     },
     "2": {
-      "title": "డౌన్‌లోడ్‌లు కస్టమర్లు కాదు",
-      "terms": "వృద్ధి నాణ్యత, వానిటీ మెట్రిక్స్",
-      "idea": "కొన్ని సంఖ్యలను పెంచడం సులభం: డౌన్‌లోడ్‌లు, సైన్-అప్‌లు, ఫాలోయర్లు, “యూజర్లు”. కంపెనీ ఉచిత ట్రయల్స్ ఇచ్చినా, ప్రకటనలు కొన్నా ఒక్క రూపాయి సంపాదించకుండానే సైన్-అప్‌లు ఎగిసిపడతాయి. ఇవి చూడటానికి ఆకట్టుకుంటాయి కానీ వ్యాపారం గురించి తక్కువ చెబుతాయి కాబట్టి వీటిని వానిటీ మెట్రిక్స్ అంటారు. ముఖ్యమైన సంఖ్యలు డబ్బుగా మారేవి: చెల్లించే కస్టమర్లు, ఒక్కొక్కరు ఎంత చెల్లిస్తారు, ఎంతమంది చెల్లిస్తూనే ఉంటారు. సైన్-అప్‌లు, చెల్లించే కస్టమర్ల మధ్య ఉన్న తేడా వృద్ధిలో ఎంత నిజమో చూపిస్తుంది. సైన్-అప్‌లు త్రైమాసికానికి 40% పెరుగుతూ చెల్లించే కస్టమర్లు స్థిరంగా ఉంటే, ఆ కంపెనీ ఆదాయాన్ని కాదు, శ్రద్ధను సేకరిస్తోంది. ఏ సంఖ్యలు బాగా కనిపిస్తాయో కంపెనీలకు తెలుసు, కాబట్టి ప్రతిపాదనలో శీర్షిక సంఖ్య తరచుగా అత్యంత ఉపయోగకరమైనది కాదు, అత్యంత ఆకర్షణీయమైనది.",
-      "example": "యాప్ A కి 4,00,000 సైన్-అప్‌లు, 12,000 చెల్లించే కస్టమర్లు ఉన్నారు. యాప్ B కి 20,000 సైన్-అప్‌లు, 18,000 చెల్లించే కస్టమర్లు ఉన్నారు. యాప్ A ఇరవై రెట్లు పెద్దదిగా వినిపిస్తుంది. కానీ దాని సైన్-అప్‌లలో 3% మాత్రమే చెల్లిస్తారు, యాప్ B లో 90%. ప్రతి చెల్లించే కస్టమర్ నెలకు ₹500 ఇస్తే, యాప్ B పరిమాణంలో ఇరవయ్యో వంతు అయినా ₹90 లక్షలు సంపాదిస్తుంది, యాప్ A ₹60 లక్షలు.",
+      "title": "Downloads are not customers",
+      "terms": "Quality of growth, vanity metrics",
+      "idea": "Some numbers are easy to inflate: downloads, sign-ups, followers, “users”. A company can offer free trials or buy ads and watch sign-ups explode without earning a rupee. These are called vanity metrics because they look impressive and tell you little about the business. The numbers that matter turn into money: paying customers, how much each one pays, and how many keep paying. The gap between sign-ups and paying customers shows how much of the growth is real. A company whose sign-ups grow 40% a quarter while its paying customers stay flat is collecting attention, not income. Companies know which numbers look best, so the headline figure in a pitch is often the most flattering one, not the most useful.",
+      "example": "App A has 4,00,000 sign-ups and 12,000 paying customers. App B has 20,000 sign-ups and 18,000 paying customers. App A sounds twenty times bigger. But only 3% of its sign-ups pay, against 90% for App B. If each paying customer brings ₹500 a month, App B earns ₹90 lakh and App A ₹60 lakh, even though App B is a twentieth of its size.",
       "checks": [
-        "సైన్ అప్ చేసిన మొత్తం మందితో పోలిస్తే ఎంతమంది చెల్లిస్తున్నారు?",
-        "చెల్లించే కస్టమర్లు సైన్-అప్‌ల అంత వేగంగా పెరుగుతున్నారా?",
-        "సగటు చెల్లించే కస్టమర్ ఎంత తెస్తున్నారు?"
+        "How many customers pay, compared with the total who signed up?",
+        "Do paying customers grow as fast as sign-ups?",
+        "How much does the average paying customer bring in?"
       ],
-      "rule": "దారిన పోయేవారిని కాదు, చెల్లించేవారిని లెక్కించండి."
+      "rule": "Count the people who pay, not the people who pass by."
     },
     "3": {
-      "title": "లీకయ్యే బకెట్",
-      "terms": "చర్న్, నిలుపుదల, నికర కస్టమర్ వృద్ధి",
-      "idea": "కంపెనీ కస్టమర్ బేస్ ఒక బకెట్ లాంటిది: కుళాయి నుండి నీళ్లు నింపుతుంటే రంధ్రాల నుండి కారిపోతుంటాయి. కొత్త కస్టమర్లు కుళాయి; వెళ్ళిపోయే కస్టమర్లు లీకులు. ఒక కాలంలో నుండి మరొక కాలానికి కొనసాగేవారి వాటా నిలుపుదల, వెళ్ళేవారి వాటా చర్న్. లీకు పెద్దదైతే అదే పరిమాణంలో ఉండటానికే కంపెనీ కుళాయిని మరింత గట్టిగా తిప్పాలి, కస్టమర్లను గెలవడం ఖరీదైనది: ప్రకటనలు, డిస్కౌంట్లు, సేల్స్ సిబ్బంది. అధిక నిలుపుదల ఉన్న వ్యాపారాలు చౌకగా పెరుగుతాయి, ఎందుకంటే వారు నిలబెట్టుకునే ప్రతి కస్టమర్‌ను మళ్ళీ గెలవాల్సిన అవసరం లేదు. వారి ఆదాయం కూడా స్థిరంగా ఉంటుంది, దీనివల్ల అర్థం చేసుకోవడం సులభం, పెట్టుబడిదారులను ఆశ్చర్యపరిచే అవకాశం తక్కువ.",
-      "example": "కంపెనీ X కి 10,000 కస్టమర్లు ఉన్నారు, త్రైమాసికానికి 2,000 మందిని గెలుస్తుంది, కానీ ప్రతి త్రైమాసికం 45% (4,500) మందిని కోల్పోతుంది. అది 7,500 వద్ద ముగుస్తుంది: బిజీగా కనిపిస్తూనే కుంచించుకుపోతుంది. కంపెనీ Y కేవలం 1,200 మందిని గెలుస్తుంది కానీ 10% (1,000) కోల్పోతుంది. అది 10,200 వద్ద ముగుస్తుంది, దాని మార్కెటింగ్ ఖర్చు మూడో వంతు తక్కువ.",
+      "title": "The leaky bucket",
+      "terms": "Churn, retention, net customer growth",
+      "idea": "A company's customer base is like a bucket filled from a tap while water leaks out of holes. New customers are the tap; customers who leave are the leaks. The share who stay from one period to the next is retention, and the share who go is churn. If the leak is large, the company must run the tap harder just to stay the same size, and winning customers is expensive: advertising, discounts, sales staff. High-retention businesses grow more cheaply because every customer they keep is one they do not have to win again. Their income also tends to be steadier, which makes them easier to understand and less likely to surprise investors.",
+      "example": "Company X has 10,000 customers and wins 2,000 a quarter, but loses 45% of its customers each quarter (4,500). It ends at 7,500: it shrinks while looking busy. Company Y wins only 1,200 but loses 10% (1,000). It ends at 10,200, and its marketing bill is a third lower.",
       "checks": [
-        "నిలుపుదల స్థిరంగా ఉందా, తగ్గుతోందా?",
-        "ప్రతి త్రైమాసికం కొత్త కస్టమర్లు కోల్పోయినవారి కంటే ఎక్కువగా ఉన్నారా?",
-        "ఒక కస్టమర్‌ను గెలవడానికి ఎంత ఖర్చవుతుంది, ఆ కస్టమర్ కాలక్రమేణా ఎంత చెల్లిస్తాడు?"
+        "Is retention steady or falling?",
+        "Are new customers larger than lost customers, quarter after quarter?",
+        "What does it cost to win a customer, compared with what that customer pays over time?"
       ],
-      "rule": "వృద్ధి అంటే కొత్త కస్టమర్లు మైనస్ కోల్పోయినవారు, కొత్త కస్టమర్లు మాత్రమే కాదు."
+      "rule": "Growth is new customers minus lost customers, not new customers alone."
     },
     "5": {
-      "title": "అప్పుతో వృద్ధి",
-      "terms": "లెవరేజ్, వడ్డీ కవరేజ్",
-      "idea": "అప్పు వల్ల కంపెనీ తన సొంత సంపాదన అనుమతించే దానికంటే వేగంగా పెరగవచ్చు, రెండో దుకాణం తెరవడానికి అప్పు తీసుకునే దుకాణదారుడిలా. కొత్త దుకాణం వడ్డీ కంటే ఎక్కువ సంపాదిస్తే అప్పు సహాయపడుతుంది. లేకపోతే నష్టం చేస్తుంది. ముఖ్య సమస్య ఏమిటంటే వడ్డీ ఒక స్థిరమైన బిల్లు. మంచి త్రైమాసికాల్లో, చెడ్డ త్రైమాసికాల్లో కూడా అది చెల్లించాలి, కంపెనీ చెల్లించలేకపోతే రుణదాతలు నియంత్రణ తీసుకోవచ్చు. ఇలా అప్పును ఉపయోగించడాన్ని లెవరేజ్ అంటారు: ఇది మంచి సమయాల్లో లాభాలను, చెడ్డ సమయాల్లో నష్టాలను పెద్దవిగా చేస్తుంది. ఉపయోగపడే పరీక్ష వడ్డీ కవరేజ్: వడ్డీకి ముందు లాభం వడ్డీ బిల్లును ఎన్ని రెట్లు కట్టగలదు. 3 లేదా అంతకంటే ఎక్కువ కవరేజ్ సౌకర్యంగా ఉంటుంది. 1కి దగ్గరగా ఉంటే ఒక బలహీనమైన త్రైమాసికం లాభాన్ని తుడిచిపెట్టగలదు. లాభం కంటే వేగంగా పెరిగే అప్పు హెచ్చరిక సంకేతం.",
-      "example": "వడ్డీకి ముందు లాభం త్రైమాసికానికి ₹9 లక్షలు, వడ్డీ ₹3 లక్షలు, కాబట్టి కవరేజ్ 3. అప్పు రెండు త్రైమాసికాలు 20% చొప్పున పెరుగుతుంది; వడ్డీ సుమారు ₹4.3 లక్షలకు, కవరేజ్ సుమారు 2.1కి తగ్గుతుంది. తర్వాత ఒక బలహీనమైన త్రైమాసికం వడ్డీకి ముందు లాభాన్ని ₹4 లక్షలకు తగ్గిస్తుంది. కవరేజ్ ఇప్పుడు 1 కంటే తక్కువ, కంపెనీ నష్టపోతుంది.",
+      "title": "Borrowed growth",
+      "terms": "Leverage, interest cover",
+      "idea": "Borrowing lets a company grow faster than its own earnings allow, like a shopkeeper taking a loan to open a second shop. If the new shop earns more than the interest, the loan helps. If not, it hurts. The key problem is that interest is a fixed bill. It must be paid in good quarters and bad ones, and if the company cannot pay, lenders can take control. Using debt this way is called leverage: it magnifies gains in good times and losses in bad times. A useful check is interest cover, which is how many times profit before interest can pay the interest bill. Cover of 3 or more is comfortable. Cover near 1 means one weak quarter can wipe out the profit. Debt that grows faster than profit is the warning sign.",
+      "example": "Profit before interest is ₹9 lakh a quarter and interest is ₹3 lakh, so cover is 3. Debt grows 20% a quarter for two quarters; interest rises to about ₹4.3 lakh and cover falls to about 2.1. Then one weak quarter cuts profit before interest to ₹4 lakh. Cover is now under 1, and the company makes a loss.",
       "checks": [
-        "గత ఏడాది అప్పు పెరిగిందా, తగ్గిందా?",
-        "లాభం వడ్డీని కనీసం మూడు రెట్లు కట్టగలదా?",
-        "చెడ్డ త్రైమాసికాన్ని తట్టుకుని అప్పును మోయడానికి ఆదాయం తగినంత స్థిరంగా ఉందా?"
+        "Has debt gone up or down over the last year?",
+        "Can profit pay the interest at least three times over?",
+        "Is the income steady enough to carry the debt through a bad quarter?"
       ],
-      "rule": "అప్పు అంటే వ్యాపారం బాగున్నా లేకున్నా, ఒక తేదీకి చెల్లిస్తామనే వాగ్దానం."
+      "rule": "Debt is a promise to pay on a date, whether business is good or not."
     },
     "7": {
-      "title": "లోపలివారు ఏమి చేస్తారో గమనించండి",
-      "terms": "అంతర్గత వ్యక్తుల అమ్మకాలు, ఆసక్తుల సమన్వయం",
-      "idea": "లోపలివారు అంటే CEO, డైరెక్టర్లు వంటి కంపెనీని నడిపేవారు. బయటి పెట్టుబడిదారుల కంటే వారికి దాని గురించి ఎక్కువ తెలుసు. లోపలివారు తమ సొంత డబ్బుతో షేర్లు కొంటే, ధర పెరుగుతుందని వారు ఆశిస్తున్నారని అర్థం. వారు అమ్మితే కారణం హానికరం కానిది కావచ్చు: ఇల్లు కొనడం, పన్నులు కట్టడం, తమ ప్రమాదాన్ని పంచుకోవడం. కానీ భారీగా, పదేపదే అమ్మే తీరు, ముఖ్యంగా కంపెనీ తాను ఎంత బాగుందో అందరికీ చెబుతున్నప్పుడు, ఇంకా జాగ్రత్తగా చూడమనే హెచ్చరిక. సొంత డబ్బుతో చేసే పనులు పత్రికా ప్రకటనలోని మాటల కంటే ఎక్కువ సమాచారం ఇస్తాయి. కాబట్టి నాయకులు ఏమి చెబుతున్నారో, ఏమి చేస్తున్నారో పోల్చండి.",
-      "example": "1,00,000 షేర్లు ఉన్న CEO ఏడాదిలో ఒకసారి 5,000 అమ్మితే, అది బహుశా సాధారణ విషయం. “రికార్డు వృద్ధి” అని వర్ణిస్తూ వరుసగా మూడు త్రైమాసికాలు 30,000 అమ్మే CEO, కంపెనీ నగదు, కస్టమర్లు, అప్పును తనిఖీ చేయమనే సంకేతం.",
+      "title": "Watch what insiders do",
+      "terms": "Insider selling, alignment",
+      "idea": "Insiders are the people who run a company, such as the CEO and directors. They know more about it than outside investors do. When insiders buy shares with their own money, it suggests they expect the price to rise. When they sell, the reason may be harmless: paying for a home, covering taxes, spreading their own risk. But a pattern of heavy, repeated selling, especially while the company tells everyone how well it is doing, is a warning to look harder. Actions with your own money carry more information than words in a press release. So compare what leaders say with what they do.",
+      "example": "A CEO who owns 1,00,000 shares and sells 5,000 once in a year is probably doing something ordinary. A CEO who sells 30,000 across three quarters in a row while describing “record growth” is a signal to check the company's cash, customers and debt.",
       "checks": [
-        "ఇది ఒకే అమ్మకమా లేక అనేక త్రైమాసికాలుగా సాగే తీరా?",
-        "లోపలివారి వాటాలో ఎంత శాతం అమ్ముతున్నారు?",
-        "నగదు, కస్టమర్ల వంటి ఇతర సంకేతాలు ఏకీభవిస్తున్నాయా, విభేదిస్తున్నాయా?"
+        "Is this one sale or a pattern across quarters?",
+        "What share of the insider's holding is being sold?",
+        "Do other signals, like cash and customers, agree or disagree?"
       ],
-      "rule": "లోపలివారు చెప్పేది వినండి, కానీ వారు తమ సొంత డబ్బుతో ఏమి చేస్తారో గమనించండి."
+      "rule": "Listen to what insiders say, but watch what they do with their own money."
     },
     "10": {
-      "title": "భారీ పని చేసేది కాలం",
-      "terms": "చక్రవడ్డీ, ఉంచుకునే కాలం, లావాదేవీ ఖర్చులు",
-      "idea": "చక్రవడ్డీ అంటే మీ లాభాలు తమ సొంత లాభాలను సంపాదించడం. ఒక పెట్టుబడి ఏడాదికి 10% పెరిగితే, వచ్చే ఏడాది 10% పెద్ద మొత్తానికి వర్తిస్తుంది. ప్రభావం మొదట చిన్నగా ఉండి తర్వాత వేగం పుంజుకుంటుంది, అందుకే దాదాపు దేనికంటే ఎక్కువ పని చేసేది కాలమే. మంచి వ్యాపారాన్ని ముందే అమ్మేస్తే ఈ తర్వాతి వృద్ధిని వదులుకుంటారు, బయటకు వెళ్ళేటప్పుడు, మళ్ళీ పెట్టుబడి పెట్టేటప్పుడు రుసుములు కూడా పడతాయి. దీని అర్థం ఎప్పుడూ అమ్మకూడదని కాదు. డేటాలో కారణం ఉంటేనే అమ్మండి: వ్యాపారం బలహీనపడింది, లేదా మీకు డబ్బు అవసరం. చిన్న లాభం స్వయంగా కారణం కాదు, ధర కొద్దిగా కదలడం కూడా కాదు.",
-      "example": "₹50,000 ఏటా 10% పెరిగితే 10 ఏళ్ళ తర్వాత సుమారు ₹1,29,700 అవుతుంది, ₹79,700 లాభం. 20 ఏళ్ళ తర్వాత సుమారు ₹3,36,400. రెండో పదేళ్ళు అదే రేటుతో మొదటి పదేళ్ళ కంటే రెండు రెట్లకు పైగా, సుమారు ₹2,06,700 చేర్చాయి.",
+      "title": "Time does the heavy lifting",
+      "terms": "Compounding, holding period, transaction costs",
+      "idea": "Compounding means your gains earn gains of their own. If an investment grows 10% in a year, next year's 10% applies to the larger amount. The effect is small at first and then speeds up, which is why time does more work than almost anything else. Selling a sound business early gives up this later growth, and costs fees on the way out and again when you reinvest. This does not mean never sell. It means sell for a reason in the data: the business weakened, or you need the money. A small gain is not a reason by itself, and neither is a price that moved a little.",
+      "example": "₹50,000 growing 10% a year becomes about ₹1,29,700 after 10 years, a gain of ₹79,700. After 20 years it is about ₹3,36,400. The second ten years added about ₹2,06,700, more than twice what the first ten added, at the same rate.",
       "checks": [
-        "వ్యాపారంలో ఏదైనా దిగజారిందా, లేక ధర మాత్రమేనా?",
-        "నేను డేటా వల్ల అమ్ముతున్నానా, లేక అసౌకర్యంగా అనిపించి అమ్ముతున్నానా?",
-        "ఈ అమ్మకానికి, తర్వాతి కొనుగోలుకు రుసుములలో ఎంత ఖర్చవుతుంది?"
+        "Has anything about the business worsened, or only the price?",
+        "Am I selling because of data, or because I feel uneasy?",
+        "What will this sale and the next purchase cost in fees?"
       ],
-      "rule": "చెడ్డ డేటాపై అమ్మండి, చిన్న లాభంపై కాదు."
+      "rule": "Sell on bad data, not on a small gain."
     },
     "11": {
-      "title": "ధర పడటం అంటే వ్యాపారం పడటం కాదు",
-      "terms": "అస్థిరత, మార్కెట్ ప్రమాదం వర్సెస్ కంపెనీ ప్రమాదం",
-      "idea": "ధరలు రెండు రకాల కారణాల వల్ల కదులుతాయి. కొన్ని కంపెనీ గురించి: కస్టమర్లను కోల్పోవడం, పెరిగే అప్పు, తగ్గే లాభం. ఇతరాలు మొత్తం మార్కెట్ గురించి: భయం, వార్తలు, మందగమనం. విస్తృత పతనంలో బలమైన కంపెనీలు కూడా పడతాయి, ఎందుకంటే చాలామంది పెట్టుబడిదారులు ఒకేసారి అంతా అమ్ముతారు. విశ్వాసం తిరిగి వచ్చినప్పుడు చాలా కంపెనీలు కోలుకుంటాయి, కానీ అన్నీ కావు, ఏ షెడ్యూల్ ప్రకారం కావు. అస్థిరత అంటే ధరలు ఎంత, ఎంత వేగంగా కదులుతాయి అనేది; అది సహజం, పెరగగలిగేదాన్ని సొంతం చేసుకోవడంలో భాగం. రెండు రకాల కారణాలను వేరు చేయడమే నైపుణ్యం. వ్యాపార డేటా మారకపోతే, పతనం ఎక్కువగా శబ్దమే. డేటా దిగజారుతుంటే, పతనం మీకు నిజమైనది ఏదో చెబుతూ ఉండవచ్చు.",
-      "example": "మీ కంపెనీ ధర ఒక త్రైమాసికంలో ₹100 నుండి ₹80కి, అంటే 20% పడుతుంది. దాని లాభం మారలేదు, కస్టమర్లు 1% పెరిగారు, అప్పు కంటే ఎక్కువ నగదు ఉంది. అది తర్వాత ₹100కి తిరిగి వస్తే, ₹80 నుండి అది 25% లాభం. ₹80 వద్ద అమ్మితే, వ్యాపారం నిజానికి సంపాదించని నష్టాన్ని మీరు ఖాయం చేసుకుంటారు.",
+      "title": "A falling price is not a falling business",
+      "terms": "Volatility, market risk versus company risk",
+      "idea": "Prices move for two kinds of reasons. Some are about the company: lost customers, rising debt, falling profit. Others are about the whole market: fear, news, a slowdown. In a broad fall even strong companies drop, because many investors sell everything at once. Many recover when confidence returns, though not all and not on any schedule. Volatility is how much and how fast prices move; it is normal, and it is part of owning something that can grow. The skill is telling the two kinds of reasons apart. If the business data is unchanged, the fall is mostly noise. If the data is getting worse, the fall may be telling you something real.",
+      "example": "Your company's price falls 20% in a quarter, from ₹100 to ₹80. Its profit is unchanged, customers are up 1%, and it holds more cash than debt. If it later returns to ₹100, that is a 25% gain from ₹80. Selling at ₹80 locks in a loss the business never actually earned.",
       "checks": [
-        "కస్టమర్లు, మార్జిన్ లేదా నగదు మారాయా, లేక ధర మాత్రమేనా?",
-        "ఇదే సమయంలో ఇలాంటి కంపెనీలు ఎలా కదిలాయి?",
-        "ఈ డబ్బు నాకు త్వరలో అవసరమా? (“త్వరలో అవసరమయ్యే డబ్బు” చూడండి.)"
+        "Did customers, margin or cash change, or only the price?",
+        "How did similar companies move at the same time?",
+        "Do I need this money soon? (See “Money you'll need soon”.)"
       ],
-      "rule": "ధర మారిందా కాదు, వ్యాపారం మారిందా అని అడగండి."
+      "rule": "Ask whether the business changed, not just whether the price did."
     },
     "14": {
-      "title": "పుకార్లు, “హామీ”",
-      "terms": "సమాచార నాణ్యత, ధృవీకరించని వార్తలు, పెట్టుబడి మోసం",
-      "idea": "నమ్మదగిన సమాచారాన్ని తనిఖీ చేయవచ్చు: నివేదించిన సంఖ్యలు, అధికారిక దాఖలాలు, అనేక నమ్మదగిన మూలాల నుండి వార్తలు, లేదా కంపెనీ సంఖ్యలతో ఇచ్చే జవాబులు. పుకార్లు, స్నేహితుల చిట్కాలు, అపరిచితుల పోస్టులను తనిఖీ చేయలేరు, వాటిని ప్రచారం చేసేవారికి మీరు నమ్మితే తరచుగా లాభం ఉంటుంది. ధరను పెంచి లోపలివారు ఎక్కువ ధరకు అమ్ముకోవడం పాత ఎత్తుగడ. హామీ ఇచ్చిన రాబడులు అన్నిటికంటే స్పష్టమైన ఎర్ర జెండా: ప్రతి నిజమైన పెట్టుబడిలోనూ డబ్బు పోవచ్చు, దాన్ని ఒప్పుకోని వారు తప్పుగా అయినా ఉండాలి లేదా అబద్ధం చెబుతూ ఉండాలి. ఇది నేరుగా మోసాల పట్ల అవగాహనకు అనుసంధానమవుతుంది, ఎందుకంటే తొందర, గోప్యత, ప్రత్యేక ప్రవేశం అనే అవే ఎత్తుగడలు పెట్టుబడి మోసాలలో కనిపిస్తాయి.",
-      "example": "ఒక సందేశం ఇలా చెబుతుంది: “ఈ వారం ₹10,000 పెట్టండి. మూడు నెలల్లో ₹20,000 హామీ. కేవలం 20 స్థానాలు మిగిలాయి.” మూడు నెలల్లో రెట్టింపు, నాలుగుసార్లు పునరావృతమైతే, ₹10,000 ఏడాదిలో ₹1,60,000 అవుతుంది. ఏ నిజమైన వ్యాపారమూ దాన్ని వాగ్దానం చేయలేదు. “20 స్థానాలు మిగిలాయి” అనే వాక్యం మీరు తనిఖీ చేయకముందే నిర్ణయించేలా చేయడానికే ఉంది.",
+      "title": "Rumours and “guaranteed”",
+      "terms": "Information quality, unverified news, investment fraud",
+      "idea": "Reliable information can be checked: reported numbers, official filings, news from several trusted sources, or answers a company gives you with figures. Rumours, tips from friends and posts from strangers cannot be checked, and the person passing them on often gains if you believe them. Pushing up a price so insiders can sell at a high is an old trick. A promise of guaranteed returns is the clearest red flag of all: every real investment can lose money, and anyone who will not admit that is either mistaken or dishonest. This connects directly to scam awareness, because the same tactics of urgency, secrecy and special access appear in investment frauds.",
+      "example": "A message says: “Put in ₹10,000 this week. Guaranteed ₹20,000 in three months. Only 20 places left.” Doubling in three months, repeated four times, would turn ₹10,000 into ₹1,60,000 in a year. No real business can promise that. The “20 places left” line is there to make you decide before you check.",
       "checks": [
-        "ఇది నాకు ఎవరు చెబుతున్నారు, నేను నమ్మితే వారికి ఏమి లాభం?",
-        "కంపెనీ సొంత సంఖ్యల నుండి ఈ మాటను నిర్ధారించుకోగలనా?",
-        "త్వరగా చేయమనే లేదా రహస్యంగా ఉంచమనే ఒత్తిడి ఉందా?"
+        "Who is telling me this, and what do they gain if I believe it?",
+        "Can I confirm the claim from the company's own numbers?",
+        "Is there pressure to act fast or to keep it secret?"
       ],
-      "rule": "ఎవరైనా రాబడికి హామీ ఇస్తే, దూరంగా వెళ్ళిపోండి."
+      "rule": "If someone guarantees a return, walk away."
     },
     "16": {
-      "title": "అన్ని గుడ్లు ఒకే బుట్టలో వద్దు",
-      "terms": "వైవిధ్యీకరణ, రంగ ప్రమాదం, సహసంబంధం",
-      "idea": "వైవిధ్యీకరణ అంటే మీ డబ్బును వేర్వేరు వాటిలో పంచడం, తద్వారా ఏ ఒక్క సమస్య మిమ్మల్ని ముంచదు. కీలక పదం వేర్వేరు. ఒకే రంగంలోని కంపెనీలు ఆ రంగానికి చెడ్డ వార్త వచ్చినప్పుడు తరచుగా కలిసి పడతాయి, కాబట్టి వాటిలో అనేకం సొంతం చేసుకోవడం అనేక చిన్న పందాల కంటే ఒక పెద్ద పందానికి దగ్గరగా ఉంటుంది. సంబంధం లేని రంగాలలోని కంపెనీలు వేర్వేరు ప్రమాదాలను ఎదుర్కొంటాయి, కాబట్టి ఒకదానికి చెడ్డ కాలం తరచుగా మరొక చోట స్థిరమైనదానితో సమతుల్యమవుతుంది. వైవిధ్యీకరణ ప్రమాదాన్ని తొలగించదు, లాభానికి హామీ ఇవ్వదు. ఒక ఆశ్చర్యం మీ మొత్తం ఫలితాన్ని నిర్ణయించే అవకాశాన్ని తగ్గిస్తుంది, ప్రయాణాన్ని సాధారణంగా సున్నితం చేస్తుంది. దానికి ఒక ధర కూడా ఉంది: అన్నిటినీ ఒకే ఉత్తమ ప్రదర్శకుడిపై పెట్టే అవకాశాన్ని వదులుకుంటారు.",
-      "example": "పోర్ట్‌ఫోలియో A ఒక రంగంలో ₹90,000, ఇతర చోట్ల ₹10,000 ఉంచింది. ఆ రంగం 30% పడుతుంది: నష్టం ₹27,000, అంటే మొత్తంలో 27%. పోర్ట్‌ఫోలియో B సంబంధం లేని మూడు రంగాలలో ఒక్కొక్కదానిలో ₹30,000 ఉంచింది. అదే రంగం 30% పడుతుంది: నష్టం ₹9,000, అంటే 9%. అదే దెబ్బ, నష్టం మూడో వంతు.",
+      "title": "Too many eggs in one basket",
+      "terms": "Diversification, sector risk, correlation",
+      "idea": "Diversification means spreading your money across different things so that no single problem can sink you. The key word is different. Companies in the same sector often fall together when that sector gets bad news, so owning several of them is closer to one big bet than to several small ones. Companies in unrelated sectors face different risks, so a bad stretch for one is often balanced by a steadier one elsewhere. Diversification does not remove risk and it does not guarantee a profit. It lowers the chance that one surprise decides your whole result, and it usually smooths the ride. It also has a price: you give up the chance of putting everything on the single best performer.",
+      "example": "Portfolio A holds ₹90,000 in one sector and ₹10,000 elsewhere. That sector falls 30%: the loss is ₹27,000, or 27% of the total. Portfolio B holds ₹30,000 in each of three unrelated sectors. The same sector falls 30%: the loss is ₹9,000, or 9%. Same shock, one third of the damage.",
       "checks": [
-        "నా వాటాలు నిజంగా ఎన్ని వేర్వేరు రంగాలను కవర్ చేస్తున్నాయి?",
-        "నా వాటాలన్నీ ఒకే చెడ్డ వార్తకు స్పందిస్తాయా?",
-        "ఏదైనా ఒక వాటా నా ఫలితాన్ని నిర్ణయించేంత పెద్దదా?"
+        "How many truly different sectors do my holdings cover?",
+        "Would my holdings react to the same bad news?",
+        "Is any one holding big enough to decide my result?"
       ],
-      "rule": "వేర్వేరు పేర్లలో కాదు, వేర్వేరు ప్రమాదాలలో పంచండి."
+      "rule": "Spread across different risks, not just different names."
     },
     "20": {
-      "title": "ప్రతి లావాదేవీకి ఖర్చు ఉంది",
-      "terms": "లావాదేవీ ఖర్చులు, అతి వ్యాపారం",
-      "idea": "ప్రతి కొనుగోలుకు, అమ్మకానికి ఖర్చు ఉంది: రుసుములు, కొనే, అమ్మే ధరల మధ్య తేడా. ఖర్చులు చిన్నవిగా కనిపిస్తాయి, కానీ ప్రతిసారీ మీ డబ్బు నుండే వెళ్తాయి, రాబడులు మీకు కలిసినట్టే అవి మీకు వ్యతిరేకంగా కలుస్తాయి. తరచుగా వ్యాపారం చేస్తే సమాచారంతో కాకుండా భావాలతో పనిచేసే అవకాశం కూడా పెరుగుతుంది: భయపెట్టే శీర్షిక, ఒక చిట్కా, ఒక చెడ్డ రోజు. నిజమైన పెట్టుబడిదారులపై అధ్యయనాలు అత్యంత ఎక్కువగా వ్యాపారం చేసేవారు ఎక్కువగా ఖర్చులు, తప్పు సమయం వల్ల అధ్వాన్నంగా చేస్తారని కనుగొన్నాయి. దీని అర్థం ఎప్పుడూ వ్యాపారం చేయకూడదని కాదు. ప్రతి లావాదేవీకి ఒక నెల క్రితం మీకు లేని డేటా ఆధారంగా, ఒకే వాక్యంలో రాయగల కారణం ఉండాలి.",
-      "example": "ప్రతి కొనుగోలు, అమ్మకానికి 1% రుసుముతో, ఒక రౌండ్ ట్రిప్‌కు సుమారు 2% ఖర్చవుతుంది. ఏడాదిలో 10 రౌండ్ ట్రిప్‌లు చేస్తే, ఏమీ సంపాదించకముందే రుసుములను కవర్ చేయడానికి సుమారు 20% లాభాలు కావాలి. ఒకసారి కొని ఉంచుకుంటే 2% ఒక్కసారే ఖర్చవుతుంది.",
+      "title": "Every trade has a cost",
+      "terms": "Transaction costs, overtrading",
+      "idea": "Every purchase and sale has a cost: fees, and the gap between buying and selling prices. The costs look small, but they come out of your money every time, and they compound against you just as returns compound for you. Frequent trading also makes it more likely that you act on feelings rather than information: a scary headline, a tip, a bad day. Studies of real investors have found that those who trade most often tend to do worse, largely because of costs and poor timing. This does not mean never trade. It means each trade should have a reason you could write in one sentence, based on data you did not have a month ago.",
+      "example": "With a 1% fee on each buy and each sale, one round trip costs about 2%. If you make 10 round trips in a year, you need roughly 20% of gains just to cover the fees before earning anything. Buying once and holding costs 2% once.",
       "checks": [
-        "ఈ లావాదేవీకి దారి తీసిన కొత్త డేటా ఏమిటి?",
-        "ఈ లావాదేవీ నాకు మొత్తం ఎంత ఖర్చు అవుతుంది?",
-        "ఒకే వాక్యంలో నా కారణం చెప్పాల్సి వస్తే కూడా నేను దీన్ని చేస్తానా?"
+        "What new data led to this trade?",
+        "What will this trade cost me in total?",
+        "Would I still make it if I had to explain my reason in one sentence?"
       ],
-      "rule": "తక్కువ, మంచి నిర్ణయాలు తీసుకోండి."
+      "rule": "Make fewer, better decisions."
     },
     "21": {
-      "title": "ఖాళీ డబ్బు విలువ కోల్పోతుంది",
-      "terms": "ద్రవ్యోల్బణం, అవకాశ వ్యయం",
-      "idea": "ద్రవ్యోల్బణం అంటే కాలంతో ధరలు పెరుగుతాయి, కాబట్టి ప్రతి రూపాయి ప్రతి ఏడాదీ కొంచెం తక్కువ కొంటుంది. ఖాళీగా ఉన్న డబ్బు సంఖ్యను నిలుపుకుంటుంది కానీ కొనుగోలు శక్తిని కోల్పోతుంది. నగదుకు ఒక ముఖ్యమైన పని ఉంది: అది త్వరలో అవసరమయ్యే వాటికి చెల్లిస్తుంది, చెడ్డ సమయంలో పెట్టుబడులను అమ్మాల్సిన పరిస్థితి నుండి కాపాడుతుంది. కానీ దాని కంటే చాలా ఎక్కువ, ఏళ్ల తరబడి ఉంచుకుంటే, దానికీ ఖర్చు ఉంది: ఆ డబ్బు మరెక్కడైనా సంపాదించగలిగేదాన్ని వదులుకుంటారు. దీన్ని అవకాశ వ్యయం అంటారు. లక్ష్యం అన్నీ పెట్టుబడిగా పెట్టడం కాదు. మీ డబ్బులోని ప్రతి భాగానికి ఒక పని, ఒక గడువు ఇవ్వడం: త్వరలో అవసరమయ్యే వాటికి నగదు, వేచి ఉండగలిగే వాటికి పెట్టుబడులు.",
-      "example": "ధరలు ఏటా 5% పెరుగుతుంటే ₹1,00,000 నగదు ఒక ఏడాది తర్వాత నేటి ₹95,000 కొనేదాన్ని కొంటుంది, ఐదేళ్ళ తర్వాత నేటి ₹78,000 కొనేదాన్ని సుమారుగా కొంటుంది. సంఖ్య అదే ఉంటుంది, కానీ దాని కొనుగోలు శక్తి ఐదో వంతుకు పైగా తగ్గుతుంది.",
+      "title": "Idle money loses value",
+      "terms": "Inflation, opportunity cost",
+      "idea": "Inflation means prices rise over time, so each rupee buys a little less each year. Money sitting idle keeps its number but loses buying power. Cash has an important job: it pays for what you need soon and it protects you from having to sell investments at a bad time. But holding far more than that, for years, has a cost too: you give up what the money might have earned elsewhere. This is called opportunity cost. The aim is not to invest everything. It is to give each part of your money a job and a timeline: cash for what you need soon, and investments for what can wait.",
+      "example": "₹1,00,000 in cash with prices rising 5% a year buys what ₹95,000 buys today after one year, and about what ₹78,000 buys today after five years. The number stays the same, but its buying power shrinks by more than a fifth.",
       "checks": [
-        "ఈ డబ్బు దేనికోసం, నాకు ఇది ఎప్పుడు అవసరం?",
-        "అత్యవసరాల కోసం నిజంగా నాకు ఎంత నగదు కావాలి?",
-        "మిగిలినది ఒక కారణం కోసం వేచి ఉందా, లేక ధైర్యం లేక వేచి ఉందా?"
+        "What is this money for, and when will I need it?",
+        "How much cash do I truly need for emergencies?",
+        "Is the rest waiting for a reason, or just for courage?"
       ],
-      "rule": "వేచి ఉండటం ఖర్చుతో కూడిన ఎంపిక."
+      "rule": "Waiting is a choice with a cost."
     },
     "22": {
-      "title": "త్వరలో అవసరమయ్యే డబ్బు",
-      "terms": "ద్రవ్యత, అత్యవసర నిధి, కాల పరిధి",
-      "idea": "ద్రవ్యత అంటే ఏదైనా విలువ కోల్పోకుండా ఎంత త్వరగా, చౌకగా నగదుగా మార్చవచ్చు అనేది. పెట్టుబడుల ధరలు పైకీ కిందికీ కదులుతాయి, కాబట్టి ఒక నిర్దిష్ట తేదీకి మీకు డబ్బు అవసరమైతే, చెడ్డ సమయంలో అమ్మాల్సి రావచ్చు. అందుకే ఒకటి రెండేళ్ళలో మీకు అవసరమయ్యే డబ్బు ప్రమాదకర పెట్టుబడులలో ఉండకూడదు. అత్యవసర నిధి అంటే సురక్షితమైన, సులభంగా అందుకోగల రూపంలో ఉంచిన నిల్వ, అనేక నెలల ఖర్చులకు సరిపోయేంత పెద్దది. అది మీకు ఎంత రక్షణ ఇస్తుందో మీ పెట్టుబడులకు కూడా అంతే రక్షణ ఇస్తుంది: నిల్వ ఉంటే, మార్కెట్ పతనం మీరు అమ్మాల్సిన పరిస్థితి కాదు, వేచి చూడగలిగే విషయం అవుతుంది. ప్రతి డబ్బు కుప్పను దాని గడువుకు సరిపోల్చడమే ఆలోచన: దగ్గరి అవసరాలు సురక్షిత చోట్ల, దీర్ఘకాలిక లక్ష్యాలు ఊగిసలాటలను తట్టుకోగల పెట్టుబడులలో.",
-      "example": "మీకు ₹25,000 కావాలి, మీ దగ్గర ₹10,000 నగదు, ₹100కి కొన్న, ఇప్పుడు ₹70 ఉన్న కంపెనీ షేర్లు ఉన్నాయి. తక్కువ ధరకు ₹15,000 విలువ అమ్ముతారు, 30% నష్టాన్ని ఖాయం చేసుకుంటారు. ₹25,000 నిల్వ ఉంటే అసలు అమ్మాల్సిన అవసరమే ఉండేది కాదు, ధర తర్వాత ₹100కి తిరిగి వస్తే మొత్తం కోలుకోవడాన్ని మీరే ఉంచుకునేవారు.",
+      "title": "Money you'll need soon",
+      "terms": "Liquidity, emergency fund, time horizon",
+      "idea": "Liquidity is how quickly and cheaply you can turn something into cash without losing value. The prices of investments go up and down, so if you need money on a particular date, you may be forced to sell at a bad moment. That is why money you will need within a year or two should not sit in risky investments. An emergency fund is a cushion kept in a safe, easy-to-reach form, big enough to cover several months of expenses. It protects your investments as much as it protects you: with a cushion, a market fall is something you can wait out instead of something you are forced to sell into. The idea is to match each pot of money to its timeline, with near-term needs in safe places and long-term goals in investments that can ride out the swings.",
+      "example": "You need ₹25,000 and hold ₹10,000 in cash plus a company you bought at ₹100 that is now at ₹70. You sell ₹15,000 worth at the low price, locking in a 30% loss. With a ₹25,000 cushion you would not have sold at all, and if the price later returned to ₹100 you would have kept the whole recovery.",
       "checks": [
-        "ఈ డబ్బు నాకు ఎప్పుడు అవసరం?",
-        "వచ్చే నెల నాకు ఇది అవసరమైతే నేను ఏమి చేస్తాను?",
-        "అమ్మకంపై ఆధారపడని నిల్వ నా దగ్గర ఉందా?"
+        "When will I need this money?",
+        "What would I do if I needed it next month?",
+        "Do I have a cushion that does not depend on selling?"
       ],
-      "rule": "త్వరలో అవసరమయ్యే డబ్బు సురక్షితమైన చోట ఉండాలి."
+      "rule": "Money you need soon belongs somewhere safe."
     }
   }
 }

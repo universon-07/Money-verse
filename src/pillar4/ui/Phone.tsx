@@ -4,17 +4,15 @@ import { TABS_OF_APP, THREAD_TABS, isChild, tabOf, zoneTextKey, type CaseIndex, 
 import type { T } from './useT.ts'
 import { APP_STYLE, AppIcon, Icon, type IconName } from './icons.tsx'
 import { Speaker } from './Speaker.tsx'
-import { useHost } from '../host.tsx'
 
 /** the device clock: the real current time and date, refreshed every few seconds (story timestamps stay fictional) */
 function useClock() {
-  const { language } = useHost()
   const [now, setNow] = useState(() => new Date())
   useEffect(() => {
     const id = window.setInterval(() => setNow(new Date()), 5000)
     return () => window.clearInterval(id)
   }, [])
-  const loc = language === 'te' ? 'te-IN' : 'en-IN'
+  const loc = 'en-IN'
   const time = now.toLocaleTimeString(loc, { hour: 'numeric', minute: '2-digit', hour12: false })
   const date = now.toLocaleDateString(loc, { weekday: 'long', day: 'numeric', month: 'long' })
   return { time, date }

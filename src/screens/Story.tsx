@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next'
 import { animate, useMotionValue } from 'framer-motion'
 import { FESTIVALS, PERSONAS, PILLARS, inr, type PersonaId } from '../content/data'
 import { useGame } from '../store/game'
-import { LangSwitch } from '../components/Hud'
 import { MoneyverseBar } from '../ui/kit/MoneyverseBar'
 import { useManifest } from '../art/ArtSlot'
 import { stepped } from '../lib/stepped'
@@ -297,7 +296,7 @@ export default function Story() {
       {step >= 5 ? (
         <MoneyverseBar replay={false} hideProfile />
       ) : (
-        <div className="st-top"><LangSwitch /></div>
+        <div className="st-top"></div>
       )}
 
       <div className="st-nav">

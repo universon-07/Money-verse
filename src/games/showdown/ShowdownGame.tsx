@@ -1,5 +1,4 @@
 import './i18n'
-import { LangSwitch } from '../../components/Hud'
 import { Bunting, Rooftops } from '../../components/Scenery'
 import type { GameResult } from '../../lib/gameResult'
 import { useEffect } from 'react'
@@ -64,7 +63,7 @@ export default function ShowdownGame({ cohortCode = 'local', onComplete, onExit,
             <div className="flex items-center gap-1.5 px-2 pb-1" style={{ paddingTop: 'max(6px, env(safe-area-inset-top))' }}>
               {!embedded && <button type="button" className="ink-chip grid h-12 w-12 shrink-0 place-items-center text-[18px]" aria-label={t('exit')} title={t('exit')} onClick={onExit}>◀</button>}
               <span className="font-sign lang-fit min-w-0 flex-1 text-[15px]">{t('title')}</span>
-              <LangSwitch />
+              
             </div>
             <Bunting />
           </header>

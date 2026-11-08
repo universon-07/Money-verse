@@ -8,7 +8,7 @@
   --p4-ink: #3a2a24; --p4-line: rgba(58, 42, 36, .55); --p4-text: #3a2a24; --p4-muted: #7a6658;
   --p4-accent: #d8683a; --p4-accent-ink: #fbf6ea; --p4-danger: #c4452f; --p4-warn: #a8740c; --p4-ok: #3f7f44; --p4-info: #3b7a91;
   --p4-display: var(--font-display, "DM Serif Display", Georgia, serif);
-  font-family: var(--font-body, "Noto Sans"), "Noto Sans Telugu", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-body, "Noto Sans"), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 16px; line-height: 1.5; color: var(--p4-text); background: var(--p4-bg);
   -webkit-tap-highlight-color: transparent; user-select: none;
 }
@@ -20,12 +20,9 @@
 
 /* ---- type and surfaces ---- */
 .p4-eyebrow { font-size: 11.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--p4-danger); }
-html[lang="te"] .p4-eyebrow, html[lang="hi"] .p4-eyebrow { letter-spacing: normal; }
 .p4-h1, .p4-h2 { font-family: var(--p4-display); font-weight: 400; margin: 0; }
 .p4-h1 { font-size: 26px; line-height: 1.15; }
 .p4-h2 { font-size: 19px; line-height: 1.25; }
-html[lang="te"] .p4-h1, html[lang="te"] .p4-h2 { font-family: "Noto Sans Telugu", sans-serif; font-weight: 800; line-height: 1.35; }
-html[lang="hi"] .p4-h1, html[lang="hi"] .p4-h2 { font-family: "Rozha One", "Noto Sans Devanagari", serif; }
 .p4-muted { color: var(--p4-muted); }
 .p4-panel { background: var(--p4-surface); border: 1.5px solid var(--p4-ink); border-radius: 8px; padding: 14px; box-shadow: 0 2px 0 rgba(58,42,36,.35), 0 8px 18px rgba(58,42,36,.14); }
 .p4-panel.is-raised { background: #fff7e0; }

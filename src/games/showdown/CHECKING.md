@@ -55,7 +55,6 @@ Use your browser's phone view (width 360 to 390) for the real test.
 - Week 3: with low cash, "Give Sunny cash" is disabled ("Not enough cash").
 - Give Sunny cash with a healthy plan: Festival notice shows **UNRECORDED** and you lose the Clean books star.
 - Reload the page at any screen: it must come back to the same screen.
-- Switch EN / हि / తె: every screen is translated (`content/hi.json`, `content/te.json`). They are first drafts. **A Hindi and a Telugu speaker must proofread them before the demo** (tone for Grade 11–12, and the money words). `npm test` checks that no key or `{{placeholder}}` is missing.
 
 ## 3. After the last step
 
