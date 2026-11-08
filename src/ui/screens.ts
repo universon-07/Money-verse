@@ -15,8 +15,8 @@ export const SCREENS: ScreenRoute[] = [
   { path: '/play/:pillar', Component: lazy(() => import('./wire/GameHostScreen')) },
   // how am I doing: goal meter, a card per pillar, the Happy Index and its explanation
   { path: '/progress', Component: lazy(() => import('./wire/ProgressScreen')) },
-  // the facilitator desk for NGOs and teachers (reads only progress that students share)
-  { path: '/ngo', Component: lazy(() => import('../ngo/NgoScreen')) },
+  // the teacher desk (reads only progress that students share)
+  { path: '/teacher', Component: lazy(() => import('../teacher/TeacherScreen')) },
   // developer index of every wireframe (only reachable with ?dev=1)
   { path: '/wire', Component: lazy(() => import('./wire/WireIndex')) },
   // onboarding flow

@@ -14,7 +14,7 @@ export interface Profile {
   level: Level
   nickname: string
   installId: string
-  /** present only if an NGO session is active; analytics are queued only then */
+  /** present only if an teacher session is active; analytics are queued only then */
   classCode: string | null
   introSeen: boolean
 }

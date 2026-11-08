@@ -4,12 +4,11 @@ import { Brand, C } from './ui'
 
 type View = 'in' | 'up' | 'forgot'
 
-/** facilitator sign-in. Only teachers and NGO staff sign in; students never do. */
+/** teacher sign-in. Only teachers sign in; students never do. */
 export function Auth({ onDemo, onBack }: { onDemo: () => void; onBack: () => void }) {
   const [view, setView] = useState<View>('in')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [org, setOrg] = useState('')
   const [agree, setAgree] = useState(false)
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
@@ -20,7 +19,7 @@ export function Auth({ onDemo, onBack }: { onDemo: () => void; onBack: () => voi
     try {
       if (view === 'in') await cloud.signIn(email.trim(), password)
       else if (view === 'up') {
-        const r = await cloud.signUp(email.trim(), password, org)
+        const r = await cloud.signUp(email.trim(), password)
         if (r.needsConfirm) { setNote('Check your email to confirm your account, then sign in.'); setView('in') }
       } else {
         await cloud.resetPassword(email.trim())
@@ -33,22 +32,17 @@ export function Auth({ onDemo, onBack }: { onDemo: () => void; onBack: () => voi
     setBusy(false)
   }
 
-  const valid = /\S+@\S+\.\S+/.test(email) && (view === 'forgot' || password.length >= 8) && (view !== 'up' || (org.trim().length > 1 && agree))
+  const valid = /\S+@\S+\.\S+/.test(email) && (view === 'forgot' || password.length >= 8) && (view !== 'up' || agree)
 
   return (
     <div className="mi absolute inset-0 overflow-y-auto">
       <div className="mx-auto grid min-h-full w-full max-w-[420px] content-center gap-5 px-4 py-10">
         <Brand />
         <div className="mi-card p-6">
-          <h1 className="text-[22px] font-bold">{view === 'in' ? 'Sign in' : view === 'up' ? 'Create a facilitator account' : 'Reset your password'}</h1>
-          <p className="mi-muted m-0 mt-1 text-[13.5px] leading-snug">{view === 'up' ? 'For teachers and NGO staff running MONEY VERSE with a class. Students never need an account.' : 'See your classes, who needs help, and what to teach next.'}</p>
+          <h1 className="text-[22px] font-bold">{view === 'in' ? 'Sign in' : view === 'up' ? 'Create a teacher account' : 'Reset your password'}</h1>
+          <p className="mi-muted m-0 mt-1 text-[13.5px] leading-snug">{view === 'up' ? 'For teachers running MONEY VERSE with a class. Students never need an account.' : 'See your classes, who needs help, and what to teach next.'}</p>
           <form className="mt-5 grid gap-3" onSubmit={(e) => { e.preventDefault(); if (valid) void submit() }}>
-            {view === 'up' && (
-              <label className="grid gap-1 text-[13px] font-semibold">Organisation or school
-                <input className="mi-input" value={org} onChange={(e) => setOrg(e.target.value)} maxLength={60} autoComplete="organization" placeholder="e.g. Teach for Hyderabad, Amberpet centre" />
-              </label>
-            )}
-            <label className="grid gap-1 text-[13px] font-semibold">Work email
+            <label className="grid gap-1 text-[13px] font-semibold">Email
               <input className="mi-input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" required />
             </label>
             {view !== 'forgot' && (

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cleanRoll, rollInput } from '../lib/roll'
-import { cloudOn, lookupClass } from '../ngo/studentShare'
-import { cleanCode } from '../ngo/summary'
+import { cloudOn, lookupClass } from '../teacher/studentShare'
+import { cleanCode } from '../teacher/summary'
 import { NAME_MAX } from './slots'
 
 type Check = { state: 'idle' | 'checking' | 'none' | 'offline' } | { state: 'found'; name: string }

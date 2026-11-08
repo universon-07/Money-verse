@@ -113,7 +113,7 @@ export function ReportCard({ d, ins }: { d: DeskView; ins: StudentInsight }) {
   )
 }
 
-/** the class report for the NGO or funder: one or two printed pages */
+/** the class report for the teacher: one or two printed pages */
 export function ClassReport({ d }: { d: DeskView }) {
   const { v, cohort } = d
   const measures: [string, string][] = [
@@ -123,7 +123,7 @@ export function ClassReport({ d }: { d: DeskView }) {
     ['Language-ready', 'English is used throughout the game.'],
     ['Game-based', 'Understanding is measured from choices made in the games, not from a quiz.'],
     ['Intuitive', `${pct(v.liteShare)} play on Lite mode for older phones.`],
-    ['NGO-integrated', `${v.n} students shared progress; class codes, report cards and lesson plans used.`],
+    ['Classroom-integrated', `${v.n} students shared progress; class codes, report cards and lesson plans used.`],
     ['Privacy-conscious', `No student accounts, names, phone numbers or emails. Groups under ${K_MIN} students are never broken down.`],
   ]
   return (

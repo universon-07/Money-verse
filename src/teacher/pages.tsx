@@ -7,7 +7,7 @@ import { DECKS, deckFor } from './decks'
 import { LESSONS, PLACE_NAME, GAME_NAME, SKILL_NAME, SKILL_PLACE } from './lessons'
 import { downloadPptx, Presenter, PrintDeck, SlideView } from './Slides'
 import { ReportCard, StatusChips, Understanding, type DeskView } from './reports'
-import { labelKey, useNgo, type Cohort } from './store'
+import { labelKey, useTeacher, type Cohort } from './store'
 import { C, Card, Chip, Drawer, Flag, Icon, ICONS, LevelBar, Legend, Stat, day, pct, usePrint } from './ui'
 import { PILLAR_IDS } from '../content/data'
 
@@ -176,7 +176,7 @@ const SortBtn = ({ on, onClick, children }: { on: boolean; onClick: () => void; 
 )
 
 export function StudentDrawer({ d, ins, onClose }: { d: DeskView; ins: StudentInsight; onClose: () => void }) {
-  const { labels, setLabel, deleteStudent } = useNgo()
+  const { labels, setLabel, deleteStudent } = useTeacher()
   const key = labelKey(d.cohort.id, ins.s.id)
   const [name, setName] = useState(labels[key] ?? '')
   const [confirm, setConfirm] = useState(false)

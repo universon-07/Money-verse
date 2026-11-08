@@ -3,7 +3,7 @@ import items from '../content/items.json'
 import rules from '../content/rules.json'
 import type { Cat, Contract, FutureDef, ItemDef } from './types'
 
-/** Content is data: an NGO edits the JSON files, not this code. */
+/** Content is data: an teacher edits the JSON files, not this code. */
 export const ITEMS = items as ItemDef[]
 export const FUTURES = futures as FutureDef[]
 export const RULES = rules as typeof rules & { extendVendors: string[] }

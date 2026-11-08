@@ -1,4 +1,4 @@
-/** downloads made on the facilitator's device; nothing is sent anywhere */
+/** downloads made on the teacher's device; nothing is sent anywhere */
 
 export function downloadText(name: string, text: string, type = 'text/plain') {
   const a = document.createElement('a')

@@ -4,7 +4,7 @@ import { LESSONS, MISTAKES, SKILL_NAME, SKILL_PLACE } from './lessons'
 import type { StudentSummary } from './summary'
 
 /**
- * What a facilitator acts on: how well each student understands the ideas, who needs help and why, where the class should
+ * What a teacher acts on: how well each student understands the ideas, who needs help and why, where the class should
  * focus next, and how understanding moves week by week. Everything here is computed from the anonymous summaries.
  */
 

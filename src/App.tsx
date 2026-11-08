@@ -15,8 +15,8 @@ export default function App() {
   // the home screen comes first in every new tab; picking or starting a game sets this and reloads into it
   const entered = hasEntered()
   useAutosave(entered)
-  // the facilitator desk needs no game; everything else starts at the home screen
-  if (!entered && !loc.pathname.startsWith('/ngo')) return <div className="fixed inset-0 overflow-hidden bg-water"><Home /></div>
+  // the teacher desk needs no game; everything else starts at the home screen
+  if (!entered && loc.pathname !== '/teacher') return <div className="fixed inset-0 overflow-hidden bg-water"><Home /></div>
   return (
     <>
       <div className="fixed inset-0 overflow-hidden bg-water">

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
-import { ShareProgress } from '../ngo/ShareProgress'
+import { ShareProgress } from '../teacher/ShareProgress'
 import { NewGameForm } from './NewGameForm'
 import { WelcomeScene } from './WelcomeScene'
 import { NAME_MAX, adoptLiveIfNeeded, deleteSlot, getActive, listSlots, loadSlot, renameSlot, saveSlot, startNewGame, type SlotMeta } from './slots'
@@ -120,10 +120,10 @@ export default function Home() {
       <WelcomeScene />
       <div className="wl-fore" style={{ paddingTop: 'max(14px, env(safe-area-inset-top))' }}>
         <div className="absolute right-3 top-3 z-10" style={{ top: 'max(12px, env(safe-area-inset-top))' }}></div>
-        {/* the door to MONEY VERSE Insights, the dashboard for teachers and NGOs */}
-        <button type="button" className="wl-ngo absolute left-3 z-10" style={{ top: 'max(12px, env(safe-area-inset-top))' }} onClick={() => nav('/ngo')} title={t('home.facilitatorSub')}>
+        {/* the door to MONEY VERSE Insights, the dashboard for teachers */}
+        <button type="button" className="wl-teacher absolute left-3 z-10" style={{ top: 'max(12px, env(safe-area-inset-top))' }} onClick={() => nav('/teacher')} title={t('home.teacherPortalHint')}>
           <img src="/art/monument.webp" alt="" aria-hidden />
-          <span>{t('home.facilitator')}</span>
+          <span>{t('home.teacherPortal')}</span>
         </button>
         <div className="wl-head">
           <h1 className="wl-title" aria-label={t('home.title')}>{letters.map((ch, n) => <span key={n} aria-hidden className={ch === ' ' ? 'wl-title-break' : undefined} style={{ ['--i' as string]: n }}>{ch}</span>)}</h1>

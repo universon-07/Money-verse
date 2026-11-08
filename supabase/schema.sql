@@ -155,9 +155,6 @@ REVOKE ALL ON FUNCTION public.submit_progress(TEXT, JSONB) FROM PUBLIC, anon, au
 GRANT EXECUTE ON FUNCTION public.class_name(TEXT) TO anon, authenticated;
 GRANT EXECUTE ON FUNCTION public.submit_progress(TEXT, JSONB) TO anon, authenticated;
 
--- Remove old organization metadata if the predecessor UI created any.
-UPDATE auth.users SET raw_user_meta_data = raw_user_meta_data - 'org'
-WHERE raw_user_meta_data ? 'org';
 
 COMMIT;
 

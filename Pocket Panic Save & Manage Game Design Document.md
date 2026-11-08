@@ -906,7 +906,7 @@ Lending comes only from Spend, never from Save or Emergency.
 
 `bignight_triggered`, `bignight_choice`, `bignight_source`, `bignight_refused_items` (the items it was built from), `fizz_fun_at_pop`, `teja_choice`, `lent_amount`, `gift_amount`, `spend_before_teja`, `bill_n3_source`, and later `lent_out_when_rain_hit`.
 
-### Teaching note for facilitators
+### Teaching note for teachers
 
 The game never says whether lending or refusing, going or staying in, is better. It shows the trade-off. In the Tally, Chacha's rule for lending is stated once, as something he does: "I lend only what I can afford to forget."
 
@@ -1316,9 +1316,9 @@ The design intent: lent money returns on a schedule you do not control.
 
 The headline learning measure per player is the **number of these nine that flip from no in Month 1 to yes in Month 2**, read alongside the Then and Now screen. A flip is a prompt to look at what changed, not a certificate.
 
-## 14. Assessment, data and the NGO dashboard
+## 14. Assessment, data and the teacher dashboard
 
-**The game logs only choices, never identities, and turns them into nine observed-behaviour checks, four skill levels and a cohort view the NGO can read at a glance.** There is no quiz. The evidence is what the player did, run by run. It is behaviour, not mastery, and every panel says so.
+**The game logs only choices, never identities, and turns them into nine observed-behaviour checks, four skill levels and a cohort view the teacher can read at a glance.** There is no quiz. The evidence is what the player did, run by run. It is behaviour, not mastery, and every panel says so.
 
 ### Privacy rules
 
@@ -1372,7 +1372,7 @@ This pillar contributes to four of the six skills. Levels are based on how many 
 
 The other two skills (risk and diversification, spotting scams) come from the other pillars.
 
-### The NGO dashboard for this pillar
+### The teacher dashboard for this pillar
 
 One page, filterable by cohort code, language and persona. Until real data arrives, every panel shows **clearly labelled sample data**.
 
@@ -1385,7 +1385,7 @@ One page, filterable by cohort code, language and persona. Until real data arriv
 | Common patterns | What do students do most? | Share with Emergency at ₹0 at payday; share who underestimated small spends; share who used Quick Cash; share who opened the fine print first; split of Teja choices |
 | Hard moments | Where do students get stuck or drop out? | Drop-off by round, average time per round |
 | Skills | How are the four skills distributed? | Counts at Starting, Growing and Confident |
-| Facilitator prompts | What should the class discuss tomorrow? | The two weakest concepts, each with a three question discussion guide (section 16) |
+| Teacher prompts | What should the class discuss tomorrow? | The two weakest concepts, each with a three question discussion guide (section 16) |
 
 ## 15. Look, motion, sound and the island
 
@@ -1479,7 +1479,7 @@ Off by default, so the game works silently in a classroom. If time allows, five 
 - Leaving the café returns to the island with the café flag turned gold after any completed run, and a small steam wisp above the roof.
 - My Notebook is reachable from the island's menu, not only from the café.
 
-## 16. Languages, access, guardrails and the facilitator guide
+## 16. Languages, access, guardrails and the teacher guide
 
 **The game ships in English from one set of string keys, works without audio, and follows a short list of rules that keep it honest, kind and safe.**
 
@@ -1534,7 +1534,7 @@ Every string in sections 5 to 12 is a key in `en.json`, `hi.json` and `te.json`.
 - **Observed behaviour is not a verdict.** The dashboard never labels a student; it reports what they did and that one run is a moment.
 - **The boss never hurts anyone.** No health bars, no damage, no failure screens. Stamps, not defeats.
 
-### Facilitator guide (for a class, 13 minutes)
+### Teacher guide (for a class, 13 minutes)
 
 1. Everyone plays one month (6 minutes).
 2. Pick two concepts from the dashboard's weakest list and use the questions below (5 minutes).
@@ -1738,7 +1738,7 @@ Times assume about 5 hours of build. Each step ends with something you can see a
 | # | Decision | My recommendation |
 | --- | --- | --- |
 | 1 | Title: Pocket Panic, Café Meherban, or Chacha's Ledger | Keep "Pocket Panic" as the pillar name, with the café as the setting |
-| 2 | Money numbers (₹600 income, ₹250 goal, ₹80 of bills) | Keep. Check them against the brief and what the NGO's students actually handle. They are labelled fictional. |
+| 2 | Money numbers (₹600 income, ₹250 goal, ₹80 of bills) | Keep. Check them against the brief and what students actually handle. They are labelled fictional. |
 | 3 | The fizz mechanic: is a bottle of pressure a good way to show wants that build up? | Keep, but playtest. If students read it as "you must buy things", lower the pull values and drop the carry-over. |
 | 4 | The medical surprise (bank item 5) | Keep out of Month 1. Test it first. |
 | 5 | Goal items (earphones, trip, controller) | Replace any that do not fit your students; keep the price the same |

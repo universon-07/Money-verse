@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import { cloudEnabled } from './cloud'
 import { DEMO_CODE } from './demo'
-import { useClasses, useNgo } from './store'
+import { useClasses, useTeacher } from './store'
 import { C, Card, Icon, ICONS } from './ui'
 
-export const initials = (user: { email: string; org: string } | null) => {
-  const src = (user?.org || user?.email.split('@')[0] || '').trim()
+export const initials = (user: { email: string } | null) => {
+  const src = (user?.email.split('@')[0] || '').trim()
   const parts = src.split(/[\s._-]+/).filter(Boolean)
   return ((parts[0]?.[0] ?? '') + (parts[1]?.[0] ?? parts[0]?.[1] ?? '')).toUpperCase() || 'MI'
 }
 
 /** the round button at the top right that opens Profile */
 export function Avatar({ size = 36, onClick, active }: { size?: number; onClick?: () => void; active?: boolean }) {
-  const { user, mode } = useNgo()
+  const { user, mode } = useTeacher()
   const signedIn = mode === 'cloud' && !!user
   const face = (
     <span className="grid shrink-0 place-items-center rounded-full font-semibold text-white" style={{ width: size, height: size, fontSize: size * 0.38, background: signedIn ? 'var(--avatar)' : 'var(--avatar-off)', boxShadow: active ? `0 0 0 3px ${C.bg}, 0 0 0 5px ${C.brand}` : undefined }}>
@@ -32,7 +32,7 @@ const Row = ({ label, children }: { label: string; children: React.ReactNode }) 
 
 /** Profile: who is signed in, sync status, demo data, privacy, and the two ways out (sign out, exit to the game) */
 export function Profile({ onSignOut, onSignIn, onExit, onDemo }: { onSignOut: () => Promise<void>; onSignIn: () => void; onExit: () => void; onDemo: () => void }) {
-  const { user, mode, lastSync, loading, refresh, deleteCohort, theme, setTheme } = useNgo()
+  const { user, mode, lastSync, loading, refresh, deleteCohort, theme, setTheme } = useTeacher()
   const classes = useClasses()
   const [busy, setBusy] = useState(false)
   const signedIn = mode === 'cloud' && !!user
@@ -46,7 +46,7 @@ export function Profile({ onSignOut, onSignIn, onExit, onDemo }: { onSignOut: ()
         <div className="flex flex-wrap items-center gap-4">
           <Avatar size={64} />
           <div className="min-w-0 flex-1">
-            <div className="truncate text-[20px] font-bold">{signedIn ? user!.org || 'Facilitator' : 'Not signed in'}</div>
+            <div className="truncate text-[20px] font-bold">{signedIn ? user!.email.split('@')[0] || 'Teacher' : 'Not signed in'}</div>
             <div className="mi-muted truncate text-[14px]">{signedIn ? user!.email : cloudEnabled ? 'Exploring with demo data on this device' : 'Device-only mode: data stays in this browser'}</div>
           </div>
           <span className="mi-chip" style={{ background: signedIn ? 'var(--t-strong)' : 'var(--t-plain)', color: signedIn ? 'var(--t-strong-ink)' : 'var(--t-plain-ink)' }}>{signedIn ? 'Signed in' : 'Offline desk'}</span>

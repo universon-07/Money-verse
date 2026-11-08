@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { cloudEnabled } from './cloud'
 import { parseRoster, rosterText } from './roster'
-import { useClasses, useNgo, type Cohort } from './store'
+import { useClasses, useTeacher, type Cohort } from './store'
 import { C, Card, Chip, Icon, ICONS } from './ui'
 
 const CHECKLIST = [
@@ -16,7 +16,7 @@ const CHECKLIST = [
 /** Classes: make a class, hand out its code, bring progress in, and see what is stored where */
 export function Classes({ current, pick }: { current: Cohort | null; pick: (id: string) => void }) {
   const classes = useClasses()
-  const { mode, createCohort, renameCohort, deleteCohort, importText, checklist, tick, error } = useNgo()
+  const { mode, createCohort, renameCohort, deleteCohort, importText, checklist, tick, error } = useTeacher()
   const [name, setName] = useState('')
   const [busy, setBusy] = useState(false)
   const [renaming, setRenaming] = useState<{ id: string; name: string } | null>(null)
@@ -133,7 +133,7 @@ export function Classes({ current, pick }: { current: Cohort | null; pick: (id: 
 
 /** the class list: roll number -> name, kept on this device only, so the desk can show names without students ever sending one */
 function ClassList({ cls }: { cls: Cohort }) {
-  const { rosters, setRoster } = useNgo()
+  const { rosters, setRoster } = useTeacher()
   const roster = rosters[cls.id] ?? {}
   const count = Object.keys(roster).length
   const [editing, setEditing] = useState(count === 0)

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './ngo.css'
+import './teacher.css'
 import type { Skill } from '../content/data'
 import { PILLAR_IDS, SKILLS } from '../content/data'
 import { aggregate } from './analytics'
@@ -14,7 +14,7 @@ import { SKILL_NAME, SKILL_PLACE } from './lessons'
 import { Overview, StudentDrawer, Students, Teach, firstSkill, type Page } from './pages'
 import { ClassReport, ReportCard, type DeskView } from './reports'
 import type { Roster } from './roster'
-import { labelKey, useClasses, useNgo, type Cohort } from './store'
+import { labelKey, useClasses, useTeacher, type Cohort } from './store'
 import { Avatar, Profile } from './profile'
 import { Brand, C, Card, Icon, ICONS, Menu, PrintProvider, usePrint } from './ui'
 
@@ -65,14 +65,14 @@ function buildView(cohort: Cohort, labels: Record<string, string>, roster: Roste
 
 type Gate = 'checking' | 'signed-out' | 'ready'
 
-/** MONEY VERSE Insights: the dashboard for teachers and NGOs. Signs in when a database is connected; otherwise runs on this device. */
-export default function NgoScreen() {
+/** MONEY VERSE Insights: the dashboard for teachers. Signs in when a database is connected; otherwise runs on this device. */
+export default function TeacherScreen() {
   const nav = useNavigate()
-  const { setMode, setUser, refresh, loadDemo } = useNgo()
+  const { setMode, setUser, refresh, loadDemo } = useTeacher()
   const [gate, setGate] = useState<Gate>(cloudEnabled ? 'checking' : 'ready')
-  const theme = useNgo((s) => s.theme)
+  const theme = useTeacher((s) => s.theme)
 
-  // light / dark: follows the device unless the facilitator picks one in Profile; removed again when leaving the desk
+  // light / dark: follows the device unless the teacher picks one in Profile; removed again when leaving the desk
   useEffect(() => {
     const mq = window.matchMedia('(prefers-color-scheme: dark)')
     const apply = () => { document.documentElement.dataset.miTheme = theme === 'system' ? (mq.matches ? 'dark' : 'light') : theme }
@@ -88,12 +88,12 @@ export default function NgoScreen() {
       if (!live) return
       if (s?.user) {
         setMode('cloud')
-        setUser({ email: s.user.email ?? '', org: String(s.user.user_metadata?.org ?? '') })
+        setUser({ email: s.user.email ?? '' })
         setGate('ready')
         void refresh()
       } else {
         setUser(null)
-        setGate((g) => (g === 'ready' && useNgo.getState().mode === 'device' ? g : 'signed-out'))
+        setGate((g) => (g === 'ready' && useTeacher.getState().mode === 'device' ? g : 'signed-out'))
       }
     }
     void cloud.session().then(apply)
@@ -111,7 +111,7 @@ type View = Page | 'profile'
 function Desk({ onSignedOut }: { onSignedOut: () => void }) {
   const nav = useNavigate()
   const classes = useClasses()
-  const { mode, labels, rosters, refresh, loadDemo, setUser } = useNgo()
+  const { mode, labels, rosters, refresh, loadDemo, setUser } = useTeacher()
   const [page, setPage] = useState<View>('overview')
   const [pick, setPick] = useState<string | null>(null)
   const [student, setStudent] = useState<string | null>(null)
@@ -138,7 +138,7 @@ function Desk({ onSignedOut }: { onSignedOut: () => void }) {
     if (mode !== 'cloud') return
     return cloud.onProgress((row) => {
       void refresh()
-      const st = useNgo.getState()
+      const st = useTeacher.getState()
       const roll = (row.summary as { roll?: unknown } | null)?.roll
       const r = typeof roll === 'string' ? roll : null
       const who = (r && st.rosters[row.class_code]?.[r]) || (r ? `Roll ${r}` : 'A student')
