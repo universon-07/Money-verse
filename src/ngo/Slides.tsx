@@ -149,7 +149,7 @@ export async function downloadPptx(slides: Slide[], fileName: string, title: str
   const pptx = new PptxGenJS()
   pptx.layout = 'LAYOUT_16x9' // 10 x 5.625 in
   pptx.title = title
-  pptx.company = 'Minar'
+  pptx.company = 'MONEY VERSE'
   const F = 'Segoe UI'
   const hex = (c: string) => c.replace('#', '')
   const kicker = (sl: ReturnType<typeof pptx.addSlide>, text: string) => {

@@ -1,4 +1,4 @@
-/* The Minar welcome picture. Bright dawn, one floating island, everything gently moving. All of it is decoration. */
+/* The MONEY VERSE welcome picture. Bright dawn, one floating island, everything gently moving. All of it is decoration. */
 .wl-scene { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .wl-sky { position: absolute; inset: 0; background: linear-gradient(180deg, #7FC3D8 0%, #A9DAE0 30%, #F7E3B8 66%, #F9D6A0 100%); }
 .wl-sun { position: absolute; left: 50%; top: 14%; width: 38vmin; height: 38vmin; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, #FFF6C8 0%, #FFE08A 38%, rgba(255, 214, 120, 0) 70%); animation: wl-sunrise 3.2s ease-out both, wl-pulse 6s ease-in-out 3.2s infinite; }
@@ -103,8 +103,24 @@ html[data-lite='true'] .wl-flag .on { opacity: 1; }
 .wl-fore, .wl-fore * { pointer-events: auto; }
 .wl-head, .wl-head * { pointer-events: none; }
 @media (min-width: 900px) and (min-aspect-ratio: 5/4) { .wl-head { top: 16vh; } .wl-card { margin-top: 24vh; } }
-/* entry to Minar Insights, the teacher and NGO dashboard: a quiet pill opposite the language switch */
+/* entry to MONEY VERSE Insights, the teacher and NGO dashboard: a quiet pill opposite the language switch */
 .wl-ngo { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 14px 0 6px; border-radius: 999px; border: 1.5px solid #3A2A24; background: rgba(255, 248, 226, .92); color: #3A2A24; font-family: var(--font-body); font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 0 rgba(58, 42, 36, .35); transition: transform .15s, background .15s; pointer-events: auto; }
 .wl-ngo:hover { background: #FFF8E2; transform: translateY(-1px); }
 .wl-ngo img { width: 32px; height: 32px; object-fit: contain; }
 @media (max-width: 380px) { .wl-ngo span { max-width: 92px; line-height: 1.1; font-size: 12px; } }
+
+/* MONEY VERSE title fit */
+.wl-head .wl-title {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(28px, 8.8vw, 56px);
+  line-height: 1.05;
+}
+.wl-title .wl-title-break { flex-basis: 100%; width: 0; height: 0; }
+@media (min-width: 900px) and (min-aspect-ratio: 5/4) {
+  .wl-head .wl-title { font-size: clamp(32px, 4.8vw, 76px); }
+}
+@media (orientation: landscape) and (max-height: 520px) {
+  .wl-head .wl-title { font-size: clamp(24px, 6.5vh, 34px); }
+}

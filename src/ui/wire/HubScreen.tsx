@@ -23,7 +23,7 @@ export function HubScreen() {
     <div data-testid="hub-screen" className="absolute inset-0 overflow-y-auto bg-jasmine p-4">
       <div style={{ maxWidth: 500, margin: '0 auto' }}>
         <header style={{ marginBottom: 16 }}>
-          <h1 style={{ fontSize: 24, marginBottom: 12 }}>{t('hub.title', { defaultValue: 'Minar Hub' })}</h1>
+          <h1 style={{ fontSize: 24, marginBottom: 12 }}>{t('hub.title', { defaultValue: 'MONEY VERSE Hub' })}</h1>
           <div style={{ display: 'grid', gap: 8 }}>
             <GoalMeter />
             <HappyMeter />

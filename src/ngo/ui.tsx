@@ -117,14 +117,14 @@ export const ICONS = {
   system: <path d="M3 5h18v11H3zM8 20h8M12 16v4" />,
 }
 
-/** the Minar mark: the painted monument from the game */
+/** the MONEY VERSE mark: the painted monument from the game */
 export function Brand({ compact }: { compact?: boolean }) {
   return (
     <div className="flex items-center gap-2.5">
       <img src="/art/monument.webp" alt="" aria-hidden className="h-9 w-9 shrink-0 object-contain" draggable={false} />
       {!compact && (
         <div className="leading-tight">
-          <div className="text-[16px] font-bold" style={{ color: C.navy }}>Minar Insights</div>
+          <div className="text-[16px] font-bold" style={{ color: C.navy }}>MONEY VERSE Insights</div>
           <div className="mi-muted text-[11.5px]">For teachers and NGOs</div>
         </div>
       )}

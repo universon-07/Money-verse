@@ -89,7 +89,7 @@ function EmptyClass({ cohort, go }: { cohort: Cohort; go: (p: Page) => void }) {
     <Card title={`No progress in ${cohort.name} yet`} sub="Students join with the class code and send progress from the game.">
       <ol className="m-0 grid gap-2 pl-5 text-[14.5px] leading-snug">
         <li>Write the class code <b className="tracking-wider" style={{ color: C.navy }}>{cohort.id}</b> on the board.</li>
-        <li>Students open Minar, tap the gear, and type it under <b>Class code</b>.</li>
+        <li>Students open MONEY VERSE, tap the gear, and type it under <b>Class code</b>.</li>
         <li>After playing, they tap <b>Share progress</b> on their saved game{cloudEnabled ? ' and press Send to my teacher. It appears here on its own.' : ', then send you the code. Paste the codes in Classes.'}</li>
       </ol>
       <button type="button" className="mi-btn ghost mt-4" onClick={() => go('classes')}>Open Classes</button>
@@ -231,7 +231,7 @@ export function Teach({ d, skill, setSkill, openStudent }: { d: DeskView; skill:
 
   const plan = (
     <article className="grid gap-3 text-[14px]">
-      <div className="mi-eyebrow">Minar · 15-minute class activity · {SKILL_NAME[skill]}</div>
+      <div className="mi-eyebrow">MONEY VERSE · 15-minute class activity · {SKILL_NAME[skill]}</div>
       <h1 className="text-[22px] font-bold" style={{ color: C.navy }}>{l.title}</h1>
       <p className="mi-muted m-0">{l.minutes} minutes · no devices needed · afterwards, replay {PLACE_NAME[l.replay]} ({GAME_NAME[l.replay]})</p>
       <h3 className="text-[14px] font-semibold">Do this</h3>
@@ -288,8 +288,8 @@ export function Teach({ d, skill, setSkill, openStudent }: { d: DeskView; skill:
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             <button type="button" className="mi-btn" onClick={() => setPresenting(0)}><Icon d={ICONS.play} size={16} />Present</button>
-            <button type="button" className="mi-btn ghost" disabled={saving} onClick={async () => { setSaving(true); try { await downloadPptx(deck, `minar-${skill}-flashcards`, l.title) } finally { setSaving(false) } }}><Icon d={ICONS.download} size={16} />{saving ? 'Preparing…' : 'PowerPoint (.pptx)'}</button>
-            <button type="button" className="mi-btn ghost" onClick={() => print(<PrintDeck slides={deck} />, `minar-${skill}-flashcards`)}><Icon d={ICONS.print} size={16} />PDF handout</button>
+            <button type="button" className="mi-btn ghost" disabled={saving} onClick={async () => { setSaving(true); try { await downloadPptx(deck, `moneyverse-${skill}-flashcards`, l.title) } finally { setSaving(false) } }}><Icon d={ICONS.download} size={16} />{saving ? 'Preparing…' : 'PowerPoint (.pptx)'}</button>
+            <button type="button" className="mi-btn ghost" onClick={() => print(<PrintDeck slides={deck} />, `moneyverse-${skill}-flashcards`)}><Icon d={ICONS.print} size={16} />PDF handout</button>
           </div>
           <p className="mi-muted m-0 mt-3 text-[12px]">The PowerPoint opens in PowerPoint, Google Slides or Keynote; answers are also in the speaker notes. Made-up amounts only.</p>
         </Card>

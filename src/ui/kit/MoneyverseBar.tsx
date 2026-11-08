@@ -9,7 +9,7 @@ import { HappySheet } from './sheets/HappySheet'
 import { MoneySheet } from './sheets/MoneySheet'
 import { ProfileSheet } from './sheets/ProfileSheet'
 import { SettingsSheet } from './sheets/SettingsSheet'
-import './minar.css'
+import './moneyverse.css'
 
 type Open = null | 'profile' | 'money' | 'happy' | 'settings'
 
@@ -30,7 +30,7 @@ export function AvatarFace({ size = 38, band }: { size?: number; band?: 'glowing
  * The top bar on every shell screen: you (profile), your money, your happiness, and settings.
  * Each part is one big tap target that opens a panel explaining itself. Changes count up and show a small +/- tag.
  */
-export function MinarBar({ replay = true, hideProfile = false }: { replay?: boolean; hideProfile?: boolean }) {
+export function MoneyverseBar({ replay = true, hideProfile = false }: { replay?: boolean; hideProfile?: boolean }) {
   const { t } = useTranslation()
   const lang = useGame((s) => s.language)
   const saved = useGame((s) => s.savedAmount)
@@ -46,7 +46,7 @@ export function MinarBar({ replay = true, hideProfile = false }: { replay?: bool
   const close = () => setOpen(null)
   return (
     <>
-      <div className="mk-bar" role="toolbar" aria-label="Minar">
+      <div className="mk-bar" role="toolbar" aria-label="MONEY VERSE">
         {!hideProfile && (
           <button type="button" className="mk-pill mk-profile" aria-label={t('kit.bar.profile')} onClick={() => setOpen('profile')}>
             <AvatarFace size={42} band={happy.band} />

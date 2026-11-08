@@ -97,7 +97,7 @@ export function deckFor(skill: Skill, classSlips: string[] = []): Slide[] {
   const l = LESSONS[skill]
   const d = DECKS[skill]
   const slides: Slide[] = [
-    { kind: 'title', title: l.title, sub: `${SKILL_NAME[skill]} · a ${l.minutes}-minute class activity`, foot: 'Minar · Learn by doing: make choices, see consequences, try again.' },
+    { kind: 'title', title: l.title, sub: `${SKILL_NAME[skill]} · a ${l.minutes}-minute class activity`, foot: 'MONEY VERSE · Learn by doing: make choices, see consequences, try again.' },
     { kind: 'idea', title: 'The big idea', body: d.idea, items: d.points },
     ...d.cards.map((c, i): Slide => ({ kind: 'card', n: i + 1, of: d.cards.length, q: c.q, a: c.a })),
   ]

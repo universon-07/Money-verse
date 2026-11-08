@@ -1,7 +1,7 @@
 import { cleanRoll } from '../lib/roll'
 
 /**
- * A teacher's class list: roll number -> name. It is the only place a student's name ever appears in Minar Insights, and it
+ * A teacher's class list: roll number -> name. It is the only place a student's name ever appears in MONEY VERSE Insights, and it
  * never leaves the teacher's device (not uploaded, not in CSV exports). Students only ever send their 4-digit roll number.
  */
 export type Roster = Record<string, string>
