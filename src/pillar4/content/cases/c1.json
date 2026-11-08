@@ -1,0 +1,465 @@
+{
+  "id": "C1",
+  "kind": "case",
+  "support": "guided",
+  "victim": {
+    "name": "Anaya",
+    "age": 17
+  },
+  "apps": [
+    "chatup",
+    "instaglam",
+    "messages",
+    "phone"
+  ],
+  "items": [
+    {
+      "id": "C1-E01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-E02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-M05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "VM-DRMSCH",
+      "time": "09:10",
+      "zones": [
+        {
+          "id": "C1-M05.deadline"
+        }
+      ]
+    },
+    {
+      "id": "C1-E04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-E05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-E06",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-CH05c",
+      "app": "chatup",
+      "kind": "chat",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-BONUS2",
+      "app": "chatup",
+      "kind": "chat",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-BONUS3",
+      "app": "chatup",
+      "kind": "chat",
+      "thread": "The scholarship shortcut",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-P03",
+      "app": "phone",
+      "kind": "call",
+      "thread": "The scholarship shortcut",
+      "time": "09:10",
+      "role": "context",
+      "linkKey": "C1-personal-account"
+    },
+    {
+      "id": "C1-IG06",
+      "app": "instaglam",
+      "kind": "feed",
+      "thread": "The scholarship shortcut",
+      "time": "09:10",
+      "role": "context",
+      "linkKey": "C1-personal-account"
+    },
+    {
+      "id": "C1-P04",
+      "app": "phone",
+      "kind": "call",
+      "thread": "The scholarship shortcut",
+      "time": "09:10",
+      "role": "context",
+      "linkKey": "C1-personal-account"
+    },
+    {
+      "id": "C1-CH05p",
+      "app": "chatup",
+      "kind": "chat",
+      "thread": "The scholarship shortcut",
+      "time": "09:10",
+      "role": "context",
+      "linkKey": "C1-personal-account"
+    },
+    {
+      "id": "C1-M01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-M04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C1-M06",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "C1-P05",
+      "app": "phone",
+      "kind": "call",
+      "thread": "Personal messages",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-P04-R3",
+      "app": "phone",
+      "kind": "caption",
+      "thread": "C1-P04",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "C1-IG04a",
+      "app": "instaglam",
+      "kind": "saved",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "zones": [
+        {
+          "id": "C1-IG04a.noexam",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "id": "C1-H1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C1-H2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C1-H3",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C1-H4",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C1-CTX1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "C1-CTX2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "C1-O01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-O02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-O03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-O04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "C1-O05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    }
+  ],
+  "clues": [
+    {
+      "id": "C1-01",
+      "kind": "required",
+      "reason": "too_good",
+      "distractors": [
+        "rushing",
+        "pretend"
+      ],
+      "step": 1,
+      "targets": [
+        "C1-E01"
+      ]
+    },
+    {
+      "id": "C1-02",
+      "kind": "required",
+      "reason": "pretend",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 2,
+      "targets": [
+        "C1-E02"
+      ]
+    },
+    {
+      "id": "C1-03",
+      "kind": "required",
+      "reason": "rushing",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 3,
+      "targets": [
+        "C1-M05.deadline"
+      ]
+    },
+    {
+      "id": "C1-04",
+      "kind": "required",
+      "reason": "secret",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 4,
+      "targets": [
+        "C1-E04"
+      ]
+    },
+    {
+      "id": "C1-05",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "C1-E05"
+      ]
+    },
+    {
+      "id": "C1-06",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "C1-E06"
+      ]
+    },
+    {
+      "id": "C1-G1",
+      "kind": "gold",
+      "reason": "secret",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 4,
+      "targets": [
+        "C1-CH05c"
+      ],
+      "alsoAccepted": [
+        "rushing"
+      ]
+    },
+    {
+      "id": "C1-G2",
+      "kind": "gold",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 5,
+      "targets": [
+        "C1-BONUS2"
+      ]
+    },
+    {
+      "id": "C1-G3",
+      "kind": "gold",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 5,
+      "targets": [
+        "C1-BONUS3"
+      ]
+    },
+    {
+      "id": "C1-CONNECT",
+      "kind": "connect",
+      "step": 5,
+      "targets": [],
+      "linkKey": "C1-personal-account"
+    }
+  ],
+  "leads": [
+    {
+      "id": "C1-L1",
+      "clueId": "C1-01",
+      "glowApp": "messages",
+      "pulseTarget": "C1-E01"
+    },
+    {
+      "id": "C1-L2",
+      "clueId": "C1-02",
+      "glowApp": "messages",
+      "pulseTarget": "C1-E02"
+    },
+    {
+      "id": "C1-L3",
+      "clueId": "C1-03",
+      "glowApp": "messages",
+      "pulseTarget": "C1-M05.deadline"
+    },
+    {
+      "id": "C1-L4",
+      "clueId": "C1-04",
+      "glowApp": "messages",
+      "pulseTarget": "C1-E04"
+    },
+    {
+      "id": "C1-L5",
+      "clueId": "C1-05",
+      "glowApp": "messages",
+      "pulseTarget": "C1-E05"
+    },
+    {
+      "id": "C1-L6",
+      "clueId": "C1-06",
+      "glowApp": "messages",
+      "pulseTarget": "C1-E06"
+    }
+  ],
+  "fix": {
+    "qKey": "C1.fix.q",
+    "options": [
+      {
+        "key": "C1.fix.safe",
+        "correct": true,
+        "whyKey": "C1.fix.safe.why"
+      },
+      {
+        "key": "C1.fix.pay",
+        "correct": false,
+        "whyKey": "C1.fix.pay.why"
+      },
+      {
+        "key": "C1.fix.share",
+        "correct": false,
+        "whyKey": "C1.fix.share.why"
+      }
+    ],
+    "shield": "protect"
+  },
+  "replay": [
+    {
+      "step": 1,
+      "captionKey": "C1.replay.1"
+    },
+    {
+      "step": 2,
+      "captionKey": "C1.replay.2"
+    },
+    {
+      "step": 3,
+      "captionKey": "C1.replay.3"
+    },
+    {
+      "step": 4,
+      "captionKey": "C1.replay.4"
+    },
+    {
+      "step": 5,
+      "captionKey": "C1.replay.5"
+    }
+  ]
+}

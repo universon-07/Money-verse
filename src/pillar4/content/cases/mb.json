@@ -1,0 +1,252 @@
+{
+  "id": "MB",
+  "kind": "mystery",
+  "support": "none",
+  "victim": {
+    "name": "Sara",
+    "age": 19
+  },
+  "apps": [
+    "messages"
+  ],
+  "items": [
+    {
+      "id": "MB-E01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The parcel charge",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-E02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The parcel charge",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-E03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The parcel charge",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-E04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The parcel charge",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-E05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The parcel charge",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-H1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "MB-H2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "MB-CTX1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "MB-CTX2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "MB-O01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-O02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-O03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-O04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-O05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-O06",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "MB-GOLD",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Extra detail"
+    }
+  ],
+  "clues": [
+    {
+      "id": "MB-01",
+      "kind": "required",
+      "reason": "pretend",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 1,
+      "targets": [
+        "MB-E01"
+      ]
+    },
+    {
+      "id": "MB-02",
+      "kind": "required",
+      "reason": "threat",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 2,
+      "targets": [
+        "MB-E02"
+      ]
+    },
+    {
+      "id": "MB-03",
+      "kind": "required",
+      "reason": "rushing",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 3,
+      "targets": [
+        "MB-E03"
+      ]
+    },
+    {
+      "id": "MB-04",
+      "kind": "required",
+      "reason": "secret",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 4,
+      "targets": [
+        "MB-E04"
+      ]
+    },
+    {
+      "id": "MB-05",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "MB-E05"
+      ]
+    },
+    {
+      "id": "MB-G1",
+      "kind": "gold",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 5,
+      "targets": [
+        "MB-GOLD"
+      ]
+    }
+  ],
+  "leads": [],
+  "fix": {
+    "qKey": "MB.fix.q",
+    "options": [
+      {
+        "key": "MB.fix.safe",
+        "correct": true,
+        "whyKey": "MB.fix.safe.why"
+      },
+      {
+        "key": "MB.fix.pay",
+        "correct": false,
+        "whyKey": "MB.fix.pay.why"
+      },
+      {
+        "key": "MB.fix.share",
+        "correct": false,
+        "whyKey": "MB.fix.share.why"
+      }
+    ]
+  },
+  "replay": [
+    {
+      "step": 1,
+      "captionKey": "MB.replay.1"
+    },
+    {
+      "step": 2,
+      "captionKey": "MB.replay.2"
+    },
+    {
+      "step": 3,
+      "captionKey": "MB.replay.3"
+    },
+    {
+      "step": 4,
+      "captionKey": "MB.replay.4"
+    },
+    {
+      "step": 5,
+      "captionKey": "MB.replay.5"
+    }
+  ]
+}
