@@ -12,7 +12,7 @@ const PHOTO: Partial<Record<CompanyId, string>> = {
   payEasy: '/art/founders/payEasy.webp',
   quickRide: '/art/founders/quickRide.webp',
   medLink: '/art/founders/medLink.webp',
-  steelWorks: '/art/founders/tanuj-jain.webp',
+  steelWorks: '/art/founders/manju.webp',
 }
 
 const LOOKS: Record<CompanyId, { skin: string; hair: string; shirt: string; style: 'bun' | 'short' | 'bald' | 'long'; glasses?: boolean; beard?: boolean }> = {

@@ -1,0 +1,182 @@
+{
+  "id": "TUT",
+  "kind": "tutorial",
+  "support": "full",
+  "victim": {
+    "name": "Riya",
+    "age": 17
+  },
+  "apps": [
+    "messages"
+  ],
+  "items": [
+    {
+      "id": "TUT-E01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The refund message",
+      "time": "09:10"
+    },
+    {
+      "id": "TUT-E02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The refund message",
+      "time": "09:10"
+    },
+    {
+      "id": "TUT-E03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The refund message",
+      "time": "09:10"
+    },
+    {
+      "id": "TUT-H1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "TUT-H2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "TUT-H3",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "TUT-O01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "TUT-O02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "TUT-O03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "TUT-O04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    }
+  ],
+  "clues": [
+    {
+      "id": "TUT-01",
+      "kind": "required",
+      "reason": "pretend",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 1,
+      "targets": [
+        "TUT-E01"
+      ]
+    },
+    {
+      "id": "TUT-02",
+      "kind": "required",
+      "reason": "rushing",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 2,
+      "targets": [
+        "TUT-E02"
+      ]
+    },
+    {
+      "id": "TUT-03",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "TUT-E03"
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "id": "TUT-L1",
+      "clueId": "TUT-01",
+      "glowApp": "messages",
+      "pulseTarget": "TUT-E01"
+    },
+    {
+      "id": "TUT-L2",
+      "clueId": "TUT-02",
+      "glowApp": "messages",
+      "pulseTarget": "TUT-E02"
+    },
+    {
+      "id": "TUT-L3",
+      "clueId": "TUT-03",
+      "glowApp": "messages",
+      "pulseTarget": "TUT-E03"
+    }
+  ],
+  "fix": {
+    "qKey": "TUT.fix.q",
+    "options": [
+      {
+        "key": "TUT.fix.safe",
+        "correct": true,
+        "whyKey": "TUT.fix.safe.why"
+      },
+      {
+        "key": "TUT.fix.pay",
+        "correct": false,
+        "whyKey": "TUT.fix.pay.why"
+      },
+      {
+        "key": "TUT.fix.share",
+        "correct": false,
+        "whyKey": "TUT.fix.share.why"
+      }
+    ]
+  },
+  "replay": [
+    {
+      "step": 1,
+      "captionKey": "TUT.replay.1"
+    },
+    {
+      "step": 2,
+      "captionKey": "TUT.replay.2"
+    },
+    {
+      "step": 5,
+      "captionKey": "TUT.replay.3"
+    }
+  ]
+}

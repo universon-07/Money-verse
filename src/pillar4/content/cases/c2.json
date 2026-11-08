@@ -1,0 +1,432 @@
+{
+  "id": "C2",
+  "kind": "case",
+  "support": "half",
+  "victim": {
+    "name": "Kabir",
+    "age": 19
+  },
+  "apps": [
+    "chatup",
+    "instaglam",
+    "messages",
+    "phone"
+  ],
+  "items": [
+    {
+      "id": "C2-E01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-E02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-E03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-E04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-E05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-E06",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-BONUS1",
+      "app": "chatup",
+      "kind": "chat",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-BONUS2",
+      "app": "chatup",
+      "kind": "chat",
+      "thread": "The investment club",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-LINK1",
+      "app": "phone",
+      "kind": "call",
+      "thread": "The investment club",
+      "time": "09:10",
+      "role": "context",
+      "linkKey": "C2-personal-account"
+    },
+    {
+      "id": "C2-LINK2",
+      "app": "instaglam",
+      "kind": "feed",
+      "thread": "The investment club",
+      "time": "09:10",
+      "role": "context",
+      "linkKey": "C2-personal-account"
+    },
+    {
+      "id": "C2-H1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C2-H2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C2-H3",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C2-H4",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C2-H5",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "C2-CTX1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "C2-CTX2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "C2-O01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O06",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O07",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O08",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O09",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O10",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O11",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O12",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "C2-O13",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    }
+  ],
+  "clues": [
+    {
+      "id": "C2-01",
+      "kind": "required",
+      "reason": "too_good",
+      "distractors": [
+        "rushing",
+        "pretend"
+      ],
+      "step": 1,
+      "targets": [
+        "C2-E01"
+      ]
+    },
+    {
+      "id": "C2-02",
+      "kind": "required",
+      "reason": "pretend",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 2,
+      "targets": [
+        "C2-E02"
+      ]
+    },
+    {
+      "id": "C2-03",
+      "kind": "required",
+      "reason": "rushing",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 3,
+      "targets": [
+        "C2-E03"
+      ]
+    },
+    {
+      "id": "C2-04",
+      "kind": "required",
+      "reason": "secret",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 4,
+      "targets": [
+        "C2-E04"
+      ]
+    },
+    {
+      "id": "C2-05",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "C2-E05"
+      ]
+    },
+    {
+      "id": "C2-06",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "C2-E06"
+      ]
+    },
+    {
+      "id": "C2-G1",
+      "kind": "gold",
+      "reason": "secret",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 4,
+      "targets": [
+        "C2-BONUS1"
+      ]
+    },
+    {
+      "id": "C2-G2",
+      "kind": "gold",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 5,
+      "targets": [
+        "C2-BONUS2"
+      ]
+    },
+    {
+      "id": "C2-CONNECT",
+      "kind": "connect",
+      "step": 5,
+      "targets": [],
+      "linkKey": "C2-personal-account"
+    }
+  ],
+  "leads": [
+    {
+      "id": "C2-L1",
+      "clueId": "C2-01",
+      "glowApp": "messages",
+      "pulseTarget": "C2-E01"
+    },
+    {
+      "id": "C2-L2",
+      "clueId": "C2-02",
+      "glowApp": "messages",
+      "pulseTarget": "C2-E02"
+    },
+    {
+      "id": "C2-L3",
+      "clueId": "C2-03",
+      "glowApp": "messages",
+      "pulseTarget": "C2-E03"
+    },
+    {
+      "id": "C2-L4",
+      "clueId": "C2-04",
+      "glowApp": "messages",
+      "pulseTarget": "C2-E04"
+    },
+    {
+      "id": "C2-L5",
+      "clueId": "C2-05",
+      "glowApp": "messages",
+      "pulseTarget": "C2-E05"
+    },
+    {
+      "id": "C2-L6",
+      "clueId": "C2-06",
+      "glowApp": "messages",
+      "pulseTarget": "C2-E06"
+    }
+  ],
+  "fix": {
+    "qKey": "C2.fix.q",
+    "options": [
+      {
+        "key": "C2.fix.safe",
+        "correct": true,
+        "whyKey": "C2.fix.safe.why"
+      },
+      {
+        "key": "C2.fix.pay",
+        "correct": false,
+        "whyKey": "C2.fix.pay.why"
+      },
+      {
+        "key": "C2.fix.share",
+        "correct": false,
+        "whyKey": "C2.fix.share.why"
+      }
+    ],
+    "shield": "verify"
+  },
+  "replay": [
+    {
+      "step": 1,
+      "captionKey": "C2.replay.1"
+    },
+    {
+      "step": 2,
+      "captionKey": "C2.replay.2"
+    },
+    {
+      "step": 3,
+      "captionKey": "C2.replay.3"
+    },
+    {
+      "step": 4,
+      "captionKey": "C2.replay.4"
+    },
+    {
+      "step": 5,
+      "captionKey": "C2.replay.5"
+    }
+  ]
+}

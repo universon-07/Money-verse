@@ -1,0 +1,252 @@
+{
+  "id": "MC",
+  "kind": "mystery",
+  "support": "none",
+  "victim": {
+    "name": "Isha",
+    "age": 18
+  },
+  "apps": [
+    "messages"
+  ],
+  "items": [
+    {
+      "id": "MC-E01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "A familiar face",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-E02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "A familiar face",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-E03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "A familiar face",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-E04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "A familiar face",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-E05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "A familiar face",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-H1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "MC-H2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "herring"
+    },
+    {
+      "id": "MC-CTX1",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "MC-CTX2",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Personal messages",
+      "time": "09:10",
+      "role": "context"
+    },
+    {
+      "id": "MC-O01",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-O02",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-O03",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-O04",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Family",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-O05",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Class group",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-O06",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Friends",
+      "time": "09:10"
+    },
+    {
+      "id": "MC-GOLD",
+      "app": "messages",
+      "kind": "sms",
+      "thread": "Extra detail"
+    }
+  ],
+  "clues": [
+    {
+      "id": "MC-01",
+      "kind": "required",
+      "reason": "pretend",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 1,
+      "targets": [
+        "MC-E01"
+      ]
+    },
+    {
+      "id": "MC-02",
+      "kind": "required",
+      "reason": "threat",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 2,
+      "targets": [
+        "MC-E02"
+      ]
+    },
+    {
+      "id": "MC-03",
+      "kind": "required",
+      "reason": "rushing",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 3,
+      "targets": [
+        "MC-E03"
+      ]
+    },
+    {
+      "id": "MC-04",
+      "kind": "required",
+      "reason": "secret",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 4,
+      "targets": [
+        "MC-E04"
+      ]
+    },
+    {
+      "id": "MC-05",
+      "kind": "required",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "rushing"
+      ],
+      "step": 5,
+      "targets": [
+        "MC-E05"
+      ]
+    },
+    {
+      "id": "MC-G1",
+      "kind": "gold",
+      "reason": "grab",
+      "distractors": [
+        "too_good",
+        "pretend"
+      ],
+      "step": 5,
+      "targets": [
+        "MC-GOLD"
+      ]
+    }
+  ],
+  "leads": [],
+  "fix": {
+    "qKey": "MC.fix.q",
+    "options": [
+      {
+        "key": "MC.fix.safe",
+        "correct": true,
+        "whyKey": "MC.fix.safe.why"
+      },
+      {
+        "key": "MC.fix.pay",
+        "correct": false,
+        "whyKey": "MC.fix.pay.why"
+      },
+      {
+        "key": "MC.fix.share",
+        "correct": false,
+        "whyKey": "MC.fix.share.why"
+      }
+    ]
+  },
+  "replay": [
+    {
+      "step": 1,
+      "captionKey": "MC.replay.1"
+    },
+    {
+      "step": 2,
+      "captionKey": "MC.replay.2"
+    },
+    {
+      "step": 3,
+      "captionKey": "MC.replay.3"
+    },
+    {
+      "step": 4,
+      "captionKey": "MC.replay.4"
+    },
+    {
+      "step": 5,
+      "captionKey": "MC.replay.5"
+    }
+  ]
+}
