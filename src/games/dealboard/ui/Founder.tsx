@@ -12,6 +12,7 @@ const PHOTO: Partial<Record<CompanyId, string>> = {
   payEasy: '/art/founders/payEasy.webp',
   quickRide: '/art/founders/quickRide.webp',
   medLink: '/art/founders/medLink.webp',
+  steelWorks: '/art/founders/tanuj-jain.webp',
 }
 
 const LOOKS: Record<CompanyId, { skin: string; hair: string; shirt: string; style: 'bun' | 'short' | 'bald' | 'long'; glasses?: boolean; beard?: boolean }> = {
@@ -19,7 +20,7 @@ const LOOKS: Record<CompanyId, { skin: string; hair: string; shirt: string; styl
   payEasy: { skin: '#E0AA80', hair: '#1f1a17', shirt: '#7C5BC4', style: 'short', glasses: true },
   solarGrid: { skin: '#B97B55', hair: '#2b2623', shirt: '#E8B04A', style: 'short', beard: true },
   medLink: { skin: '#D69B72', hair: '#2b1a17', shirt: '#2F8F8F', style: 'long' },
-  steelWorks: { skin: '#C48A66', hair: '#c9c2b8', shirt: '#6D86A8', style: 'bald', beard: true },
+  steelWorks: { skin: '#C48A66', hair: '#493021', shirt: '#6D86A8', style: 'long', glasses: true },
   quickRide: { skin: '#D9A07A', hair: '#241513', shirt: '#D9573F', style: 'long', glasses: true },
 }
 
