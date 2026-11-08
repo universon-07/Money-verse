@@ -12,37 +12,37 @@
  "island-bg": {
   "w": 1344,
   "h": 1142,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Waterfall Bazaar Island Diorama.png"
+  "src": "Waterfall Bazaar Island Diorama.png"
  },
  "island-terrain": {
   "w": 1342,
   "h": 1139,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Floating Island Fantasy Game Map.png"
+  "src": "Floating Island Fantasy Game Map.png"
  },
  "monument": {
   "w": 1185,
   "h": 1184,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Ornate Sandstone Mosque Pavilion.png"
+  "src": "Ornate Sandstone Mosque Pavilion.png"
  },
  "shop-plan": {
   "w": 900,
   "h": 534,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Watercolour Bazaar of Colourful Bangles.png"
+  "src": "Watercolour Bazaar of Colourful Bangles.png"
  },
  "shop-invest": {
   "w": 900,
   "h": 740,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Isometric Jewel Bazaar Diorama.png"
+  "src": "Isometric Jewel Bazaar Diorama.png"
  },
  "shop-save": {
   "w": 900,
   "h": 597,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Mediterranean Tea Terrace Caf\u00e9.png"
+  "src": "Mediterranean Tea Terrace Caf.png"
  },
  "shop-safe": {
   "w": 900,
   "h": 900,
-  "src": "C:\\Users\\maith\\Downloads\\meg26_van\\codebase\\megathon26-sushi-aur-ek\\new_graphics\\Isometric Teal Phone Kiosk.png"
+  "src": "Isometric Teal Phone Kiosk.png"
  },
  "gate-closed": {
   "w": 800,
