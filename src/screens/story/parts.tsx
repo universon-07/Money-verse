@@ -35,7 +35,16 @@ export function Say({ line, caption, who = 'ammamma', children }: { line: string
   return (
     <div className="st-say" role="status">
       <div className="st-say-head">
-        <img className="st-say-face" src={`/art/story/face-${who}-stand.webp`} alt="" draggable={false} />
+        <img
+          className="st-say-face"
+          src="/art/npc-nani-stand.webp"
+          alt=""
+          draggable={false}
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center top',
+          }}
+        />
         <span className="st-say-name">{t(`tale.${who}`)}</span>
       </div>
       <p className="st-say-line"><Words text={line} /></p>
