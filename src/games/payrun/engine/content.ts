@@ -9,7 +9,7 @@ export type LostCard = { id: string; kind: 'lost' }
 export type WindfallCard = { id: string; kind: 'windfall'; amount: number }
 export type Card = WantCard | BillCard | FriendCard | LostCard | WindfallCard
 
-/** Content is data: an NGO edits the JSON files, not this code. */
+/** Content is data: an teacher edits the JSON files, not this code. */
 export const ECON = economy as typeof economy
 export const CARDS = cards as Card[]
 export const SCRIPT = script as { weeks: Record<string, (string | null)[]>; stillWant: Record<string, Record<string, boolean>>; unlocks: { lunch: number; save: number; waitlist: number } }

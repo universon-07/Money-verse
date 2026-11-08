@@ -2,7 +2,7 @@ import { PILLAR_IDS, SKILLS, type PillarId, type Skill } from '../content/data'
 import { cleanRoll } from '../lib/roll'
 
 /**
- * The anonymous progress summary a student can share with a facilitator. It is built from a save slot's snapshot (the game is only
+ * The anonymous progress summary a student can share with a teacher. It is built from a save slot's snapshot (the game is only
  * read, never changed) and holds no name, no alias and nothing the student typed except the class code and their school roll number.
  */
 export const CONCEPTS = ['payFirst', 'track', 'small', 'emergency', 'plan', 'wait', 'goals', 'borrow', 'lend'] as const

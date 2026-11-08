@@ -46,7 +46,7 @@ export interface GameResult {
   lessonsSeen: string[]
   joySignals: JoySignals
   rewards?: GameRewards
-  /** the game's original payload, kept for the NGO event log and debugging; never read by game logic */
+  /** the game's original payload, kept for the teacher event log and debugging; never read by game logic */
   raw: unknown
 }
 
@@ -60,7 +60,7 @@ export type GameLevel = 'beginner' | 'confident'
 export interface GameProps {
   /** stable per install and pillar; a replay gets the SAME seed so players improve choices, not luck */
   seed: string
-  /** the NGO class code, or null */
+  /** the teacher class code, or null */
   cohortCode: string | null
   lang: Lang
   /** which festival the player picked (Festival Countdown) */

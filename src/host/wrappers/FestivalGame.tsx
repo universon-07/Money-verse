@@ -5,7 +5,7 @@ import type { GameProps } from '../types'
 
 /**
  * Shell-side wrapper for Festival Showdown (the Plan & Budget game). The game keeps its own run on the device and resumes it, so no seed
- * is passed. It reports its GameResult once when the report appears (and stores it for the NGO view); leaving earlier counts as a quit.
+ * is passed. It reports its GameResult once when the report appears (and stores it for the teacher view); leaving earlier counts as a quit.
  * src/host/adapters/festival.ts reads the payload.
  */
 export default function FestivalGame({ classCode, onComplete, onExit }: GameProps) {

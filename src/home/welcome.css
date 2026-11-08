@@ -103,11 +103,11 @@ html[data-lite='true'] .wl-flag .on { opacity: 1; }
 .wl-fore, .wl-fore * { pointer-events: auto; }
 .wl-head, .wl-head * { pointer-events: none; }
 @media (min-width: 900px) and (min-aspect-ratio: 5/4) { .wl-head { top: 16vh; } .wl-card { margin-top: 24vh; } }
-/* entry to MONEY VERSE Insights, the teacher and NGO dashboard: a quiet pill opposite the language switch */
-.wl-ngo { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 14px 0 6px; border-radius: 999px; border: 1.5px solid #3A2A24; background: rgba(255, 248, 226, .92); color: #3A2A24; font-family: var(--font-body); font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 0 rgba(58, 42, 36, .35); transition: transform .15s, background .15s; pointer-events: auto; }
-.wl-ngo:hover { background: #FFF8E2; transform: translateY(-1px); }
-.wl-ngo img { width: 32px; height: 32px; object-fit: contain; }
-@media (max-width: 380px) { .wl-ngo span { max-width: 92px; line-height: 1.1; font-size: 12px; } }
+/* entry to MONEY VERSE Insights, the teacher dashboard: a quiet pill opposite the language switch */
+.wl-teacher { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 14px 0 6px; border-radius: 999px; border: 1.5px solid #3A2A24; background: rgba(255, 248, 226, .92); color: #3A2A24; font-family: var(--font-body); font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 0 rgba(58, 42, 36, .35); transition: transform .15s, background .15s; pointer-events: auto; }
+.wl-teacher:hover { background: #FFF8E2; transform: translateY(-1px); }
+.wl-teacher img { width: 32px; height: 32px; object-fit: contain; }
+@media (max-width: 380px) { .wl-teacher span { max-width: 92px; line-height: 1.1; font-size: 12px; } }
 
 /* MONEY VERSE title fit */
 .wl-head .wl-title {

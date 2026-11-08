@@ -3,7 +3,6 @@
 -- Execute once in Supabase SQL Editor, as the project's administrative SQL role.
 BEGIN;
 
--- Teacher identities are auth.users records, never organisations.
 CREATE TABLE IF NOT EXISTS public.teacher_profiles (
   id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   display_name TEXT CHECK (display_name IS NULL OR char_length(display_name) BETWEEN 1 AND 80),
@@ -43,11 +42,6 @@ INSERT INTO public.teacher_profiles(id)
 SELECT id FROM auth.users WHERE email IS NOT NULL
 ON CONFLICT (id) DO NOTHING;
 
--- Remove historical organisation metadata, if the older UI ever supplied it.
--- Do not change emails, password hashes, IDs, or unrelated user metadata.
-UPDATE auth.users
-SET raw_user_meta_data = raw_user_meta_data - 'org'
-WHERE raw_user_meta_data ? 'org';
 
 -- Only a signed-in, registered teacher may manage their own class.
 DROP POLICY IF EXISTS classes_owner_access ON public.classes;
@@ -75,4 +69,3 @@ COMMIT;
 --   public.class_name(text), public.submit_progress(text,jsonb)
 --   supabase_realtime publication for public.progress
 --   cron.job moneyverse-progress-retention (400-day retention)
--- No NGO or organisation tables are created by this migration.

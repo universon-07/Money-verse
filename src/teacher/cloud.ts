@@ -1,14 +1,7 @@
 import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js'
-import { cleanCode, parseSummary, type StudentSummary } from '../ngo/summary'
+import { cleanCode, parseSummary, type StudentSummary } from './summary'
 
-/**
- * Money-verse teacher backend adapter.
- * All requests target ONLY the Supabase project configured with VITE_SUPABASE_URL.
- * No organisation or NGO metadata is sent or stored by this module.
- *
- * The existing progress-summary helper remains in the legacy frontend folder
- * during the UI team's migration; it does not persist organisation data.
- */
+/** Teacher authentication, owned classes, and student progress APIs. */
 const PROJECT_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined
 const PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined
 export const cloudEnabled = Boolean(PROJECT_URL && PUBLISHABLE_KEY)
@@ -78,17 +71,14 @@ export const cloud = {
     fail(error)
     await authorizeRealtime(data.session).catch(() => undefined)
   },
-  async signUp(email: string, password: string, _legacyOrganisation?: string) {
-    // A third argument can still be passed by the unfinished frontend; it is ignored.
-    // Only Supabase Auth email/password fields are sent; no organisation metadata.
+  async signUp(email: string, password: string) {
     const { data, error } = await sb().auth.signUp({ email, password })
     fail(error)
     return { needsConfirm: !data.session }
   },
   async resetPassword(email: string) {
-    // /ngo is a temporary UI route until the frontend team switches to /teacher.
     const { error } = await sb().auth.resetPasswordForEmail(email, {
-      redirectTo: `${location.origin}/ngo`,
+      redirectTo: `${location.origin}/teacher`,
     })
     fail(error)
   },

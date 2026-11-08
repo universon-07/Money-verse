@@ -1,7 +1,7 @@
 import type { PillarId, Skill } from '../content/data'
 import type { Concept, StudentSummary } from './summary'
 
-/** plain-English wording the facilitator sees (the facilitator desk is English only for now) */
+/** plain-English wording the teacher sees (the teacher desk is English only for now) */
 export const PLACE_NAME: Record<PillarId, string> = { plan: 'Bangle Bazaar', save: 'Café Meherban', invest: 'The Pearl Exchange', safe: 'Helpline Kiosk' }
 export const GAME_NAME: Record<PillarId, string> = { plan: 'Festival Showdown', save: 'Pocket Panic', invest: 'Deal Board', safe: 'Case Files' }
 export const SKILL_NAME: Record<Skill, string> = {
@@ -10,7 +10,7 @@ export const SKILL_NAME: Record<Skill, string> = {
 /** which place mostly trains each skill (used to know who has had a chance to show it) */
 export const SKILL_PLACE: Record<Skill, PillarId> = { planning: 'plan', prioritising: 'plan', saving: 'save', riskSense: 'invest', patience: 'invest', scamSense: 'safe' }
 
-/** a common mistake a facilitator can act on: who it applies to, and who made it */
+/** a common mistake a teacher can act on: who it applies to, and who made it */
 export interface Mistake {
   id: string
   pillar: PillarId

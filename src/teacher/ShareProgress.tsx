@@ -13,7 +13,7 @@ const SEND_MSG: Record<SubmitResult | 'need', string> = {
   invalid: 'home.shareErrOther', class_full: 'home.shareErrOther', off: 'home.shareErrOther', need: 'home.shareNeedCode',
 }
 
-/** What a student can send to a facilitator from a saved game: an anonymous progress code, as text, a file, or the phone's share sheet. */
+/** What a student can send to a teacher from a saved game: an anonymous progress code, as text, a file, or the phone's share sheet. */
 export function ShareProgress({ slot, onClose }: { slot: SlotMeta; onClose: () => void }) {
   const { t } = useTranslation()
   const [copied, setCopied] = useState(false)

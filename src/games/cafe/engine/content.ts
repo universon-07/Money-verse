@@ -1,7 +1,7 @@
 import raw from '../content/items.json'
 import type { BillDef, BillId, BottleId, SurpriseDef, TrolleyItemDef, WindowItemDef } from './types'
 
-/** Typed view of content/items.json. An NGO edits the JSON, never this file. */
+/** Typed view of content/items.json. An teacher edits the JSON, never this file. */
 export const INCOME: number = raw.income
 export const GOAL: number = raw.goal
 export const COIN: number = raw.coin

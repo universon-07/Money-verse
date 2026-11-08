@@ -43,7 +43,7 @@ export interface Identity {
   festival: Festival
   /** random per install, created once, never linked to a person */
   installId: string
-  /** optional NGO class code */
+  /** optional teacher class code */
   classCode: string | null
   /** optional school roll number (digits only, up to 4), so a teacher can match progress to a student without a name */
   rollNo: string | null

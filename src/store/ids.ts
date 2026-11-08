@@ -1,4 +1,4 @@
-/** A random id for this install. Not linked to any person; it only lets the NGO count distinct installs. */
+/** A random id for this install. Not linked to any person; it only lets the teacher count distinct installs. */
 export function newInstallId(): string {
   const c = globalThis.crypto
   if (c && typeof c.randomUUID === 'function') return c.randomUUID()

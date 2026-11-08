@@ -1,3 +1,4 @@
+import { teacherDeskStorage } from './storage'
 import { useMemo } from 'react'
 import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
@@ -28,12 +29,12 @@ interface DeskState {
   local: Cohort[]
   /** classes loaded from the database (cloud mode only, never persisted) */
   remote: Cohort[]
-  user: { email: string; org: string } | null
+  user: { email: string } | null
   loading: boolean
   /** when the database was last read (cloud mode) */
   lastSync: number | null
   error: string
-  /** names a facilitator gives anonymous ids ("classId:studentId" -> name). Kept on this device only, never uploaded. */
+  /** names a teacher gives anonymous ids ("classId:studentId" -> name). Kept on this device only, never uploaded. */
   labels: Record<string, string>
   /** each class's list of roll number -> student name. Kept on this device only, never uploaded or exported. */
   rosters: Record<string, Record<string, string>>
@@ -91,10 +92,10 @@ function parseIncoming(text: string): { list: StudentSummary[]; found: number; b
 }
 
 /**
- * The facilitator desk state. Its persisted part lives under an "mm-slots" key so a student's save slots never capture or restore it.
+ * The teacher desk state. Its persisted part lives under an "mm-slots" key so a student's save slots never capture or restore it.
  * Only device data, name labels and the checklist are persisted; database rows are re-read on every visit.
  */
-export const useNgo = create<DeskState>()(
+export const useTeacher = create<DeskState>()(
   persist(
     (set, get) => ({
       mode: 'device',
@@ -142,7 +143,7 @@ export const useNgo = create<DeskState>()(
       createCohort: async (name) => {
         const clean = name.trim().slice(0, 40)
         if (get().mode === 'cloud') {
-          // codes are unique across every NGO; on the rare clash, try another
+          // codes are unique across every teacher; on the rare clash, try another
           for (let i = 0; i < 5; i++) {
             const id = newCode()
             try {
@@ -266,8 +267,8 @@ export const useNgo = create<DeskState>()(
       tick: (key) => set((s) => ({ checklist: { ...s.checklist, [key]: !s.checklist[key] } })),
     }),
     {
-      name: 'mm-slots-ngo-v1',
-      storage: createJSONStorage(() => localStorage),
+      name: 'mm-slots-teacher-v1',
+      storage: createJSONStorage(() => teacherDeskStorage),
       version: 2,
       partialize: (s) => ({ local: s.local, labels: s.labels, rosters: s.rosters, checklist: s.checklist, theme: s.theme }),
       // v1 kept classes under "cohorts" with no history
@@ -282,14 +283,14 @@ export const useNgo = create<DeskState>()(
 
 /** the classes the desk shows right now: the database's in cloud mode (plus the demo class if loaded), else this device's */
 export const useClasses = (): Cohort[] => {
-  const mode = useNgo((s) => s.mode)
-  const local = useNgo((s) => s.local)
-  const remote = useNgo((s) => s.remote)
+  const mode = useTeacher((s) => s.mode)
+  const local = useTeacher((s) => s.local)
+  const remote = useTeacher((s) => s.remote)
   return useMemo(() => (mode === 'cloud' ? [...remote, ...local.filter((c) => c.demo)] : local), [mode, local, remote])
 }
 
 // keep open tabs in step: when another tab saves the desk, reload it here, so a tab left open never writes its older copy over
 // newer data (a class list added in another tab, say)
 if (typeof window !== 'undefined') {
-  window.addEventListener('storage', (e) => { if (e.key === 'mm-slots-ngo-v1') void useNgo.persist.rehydrate() })
+  window.addEventListener('storage', (e) => { if (e.key === 'mm-slots-teacher-v1') void useTeacher.persist.rehydrate() })
 }

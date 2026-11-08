@@ -6,7 +6,7 @@ import { cleanRoll, rollInput } from '../lib/roll'
 import { parseRoster } from './roster'
 import { toCsvText } from './export'
 import { focusAreas, studentInsight, understanding, weeklyTrend } from './insights'
-import { labelKey, latestOf, useNgo } from './store'
+import { labelKey, latestOf, useTeacher } from './store'
 import { rowToSummary } from './cloud'
 import { buildSummary, cleanCode, decodeSummary, encodeSummary, findCodes, parseSummary } from './summary'
 
@@ -105,38 +105,38 @@ describe('cohort analytics', () => {
 
 describe('adding students to a class (device mode)', () => {
   const code = encodeSummary(buildSummary(game(played), 9))
-  const cls = (id: string) => useNgo.getState().local.find((c) => c.id === id)
+  const cls = (id: string) => useTeacher.getState().local.find((c) => c.id === id)
   it('puts students in the chosen class, even when their own code is different or missing', async () => {
-    const a = await useNgo.getState().createCohort('Class 11 B')
+    const a = await useTeacher.getState().createCohort('Class 11 B')
     expect(a).toMatch(/^HYD-[A-Z0-9]{5}$/)
     const noCode = encodeSummary({ ...buildSummary(game(played), 10), cohort: null, id: 'zzzzzz' })
-    const r = await useNgo.getState().importText(`from Priya: ${code}\n${noCode}`, a)
+    const r = await useTeacher.getState().importText(`from Priya: ${code}\n${noCode}`, a)
     expect(r).toMatchObject({ added: 2, found: 2, skipped: 0 })
     expect(Object.keys(cls(a)!.students)).toHaveLength(2)
     expect(cls(a)!.history).toHaveLength(2)
     expect(cls('UNASSIGNED')).toBeUndefined()
   })
   it('does not double count, keeps newer updates as history, and reports text with no codes', async () => {
-    const a = await useNgo.getState().createCohort('Class 12')
-    await useNgo.getState().importText(code, a)
-    expect(await useNgo.getState().importText(code, a)).toMatchObject({ added: 0, skipped: 1 })
+    const a = await useTeacher.getState().createCohort('Class 12')
+    await useTeacher.getState().importText(code, a)
+    expect(await useTeacher.getState().importText(code, a)).toMatchObject({ added: 0, skipped: 1 })
     const later = encodeSummary({ ...buildSummary(game(played), 99) })
-    expect(await useNgo.getState().importText(later, a)).toMatchObject({ updated: 1 })
+    expect(await useTeacher.getState().importText(later, a)).toMatchObject({ updated: 1 })
     expect(cls(a)!.history).toHaveLength(2)
-    expect(await useNgo.getState().importText('hello', a)).toMatchObject({ found: 0, added: 0 })
+    expect(await useTeacher.getState().importText('hello', a)).toMatchObject({ found: 0, added: 0 })
   })
   it('sorts by each student own class code when no class is chosen', async () => {
-    await useNgo.getState().importText(code, null)
+    await useTeacher.getState().importText(code, null)
     expect(cls('HYD-4K7Q')).toBeDefined()
   })
   it('keeps names on this device only and drops them with the student', async () => {
-    const a = await useNgo.getState().createCohort('Names')
-    await useNgo.getState().importText(code, a)
+    const a = await useTeacher.getState().createCohort('Names')
+    await useTeacher.getState().importText(code, a)
     const id = Object.keys(cls(a)!.students)[0]
-    useNgo.getState().setLabel(a, id, '  Ravi   K ')
-    expect(useNgo.getState().labels[labelKey(a, id)]).toBe('Ravi K')
-    await useNgo.getState().deleteStudent(a, id)
-    expect(useNgo.getState().labels[labelKey(a, id)]).toBeUndefined()
+    useTeacher.getState().setLabel(a, id, '  Ravi   K ')
+    expect(useTeacher.getState().labels[labelKey(a, id)]).toBe('Ravi K')
+    await useTeacher.getState().deleteStudent(a, id)
+    expect(useTeacher.getState().labels[labelKey(a, id)]).toBeUndefined()
     expect(cls(a)!.history).toHaveLength(0)
   })
 })
@@ -181,20 +181,20 @@ describe('insights for teaching', () => {
 
 describe('student to teacher, end to end (device mode)', () => {
   it('a student who types the class code loosely lands in the teacher class, and an update replaces the old one', async () => {
-    const code = await useNgo.getState().createCohort('Class 11 C, Amberpet')
+    const code = await useTeacher.getState().createCohort('Class 11 C, Amberpet')
     const loose = code.toLowerCase().replace('-', ' ')
     // the student's saved game, as the phone keeps it
     const save = (happy: number) => game({ ...played, installId: 'phone-of-student-a', classCode: loose, happy })
     const first = encodeSummary(buildSummary(save(40), 1_000))
-    const report = await useNgo.getState().importText(`Sir my code: ${first}`, null) // teacher lets codes sort themselves
+    const report = await useTeacher.getState().importText(`Sir my code: ${first}`, null) // teacher lets codes sort themselves
     expect(report).toMatchObject({ added: 1 })
-    const cls = useNgo.getState().local.find((c) => c.id === code)!
+    const cls = useTeacher.getState().local.find((c) => c.id === code)!
     const [only] = Object.values(cls.students)
     expect(only.cohort).toBe(code)
     // a week later the same student shares again: same student code, newer progress
     const again = encodeSummary(buildSummary(save(80), 2_000))
-    expect(await useNgo.getState().importText(again, null)).toMatchObject({ updated: 1 })
-    const after = useNgo.getState().local.find((c) => c.id === code)!
+    expect(await useTeacher.getState().importText(again, null)).toMatchObject({ updated: 1 })
+    const after = useTeacher.getState().local.find((c) => c.id === code)!
     expect(Object.keys(after.students)).toEqual([only.id])
     expect(after.students[only.id].happy).toBe(80)
     expect(after.history.map((h) => h.happy)).toEqual([40, 80])
@@ -259,21 +259,21 @@ describe('class list (on the teacher device)', () => {
     expect(r.repeated).toEqual(['0007'])
   })
   it('is never part of what is stored as progress or exported', async () => {
-    const id = await useNgo.getState().createCohort('Roster class')
-    useNgo.getState().setRoster(id, { '0023': 'Ravi Kumar' })
-    await useNgo.getState().importText(encodeSummary(buildSummary(game({ ...played, installId: 'r1', rollNo: '23' }), 9)), id)
-    const cls = useNgo.getState().local.find((c) => c.id === id)!
+    const id = await useTeacher.getState().createCohort('Roster class')
+    useTeacher.getState().setRoster(id, { '0023': 'Ravi Kumar' })
+    await useTeacher.getState().importText(encodeSummary(buildSummary(game({ ...played, installId: 'r1', rollNo: '23' }), 9)), id)
+    const cls = useTeacher.getState().local.find((c) => c.id === id)!
     expect(JSON.stringify(cls)).not.toContain('Ravi')
     expect(toCsv(Object.values(cls.students))).not.toContain('Ravi')
     expect(Object.values(cls.students)[0].roll).toBe('0023')
     // the class list goes when the class goes
-    await useNgo.getState().deleteCohort(id)
-    expect(useNgo.getState().rosters[id]).toBeUndefined()
+    await useTeacher.getState().deleteCohort(id)
+    expect(useTeacher.getState().rosters[id]).toBeUndefined()
   })
   it('the demo class comes with a made-up class list that matches most students', () => {
-    useNgo.getState().loadDemo()
-    const roster = useNgo.getState().rosters[DEMO_CODE]
-    const students = Object.values(useNgo.getState().local.find((c) => c.id === DEMO_CODE)!.students)
+    useTeacher.getState().loadDemo()
+    const roster = useTeacher.getState().rosters[DEMO_CODE]
+    const students = Object.values(useTeacher.getState().local.find((c) => c.id === DEMO_CODE)!.students)
     const named = students.filter((s) => s.roll && roster[s.roll])
     expect(named.length).toBeGreaterThan(40)
     expect(Object.values(roster).every((n) => n.endsWith('(made-up)'))).toBe(true)

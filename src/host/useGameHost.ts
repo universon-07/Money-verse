@@ -1,4 +1,4 @@
-import { autoShareAfterGame } from '../ngo/studentShare'
+import { autoShareAfterGame } from '../teacher/studentShare'
 import { restartGame } from './restart'
 import { lazy, useCallback, useEffect, useMemo, useReducer, useRef, type ComponentType } from 'react'
 import { HOST_DEFAULTS } from './config'

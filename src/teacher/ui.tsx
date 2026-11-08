@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom'
 import type { Level } from './insights'
 import type { Glow } from './summary'
 
-/** theme colours as CSS variables (light and dark are defined in ngo.css); PNG export resolves them to real colours */
+/** theme colours as CSS variables (light and dark are defined in teacher.css); PNG export resolves them to real colours */
 export const C = {
   ink: 'var(--ink)', muted: 'var(--muted)', line: 'var(--line)', track: 'var(--track)', brand: 'var(--brand)', navy: 'var(--navy)', tan: 'var(--tan)',
   building: 'var(--building)', getting: 'var(--getting)', strong: 'var(--strong)', card: 'var(--card)', bg: 'var(--bg)', soft: 'var(--soft)',
@@ -125,7 +125,7 @@ export function Brand({ compact }: { compact?: boolean }) {
       {!compact && (
         <div className="leading-tight">
           <div className="text-[16px] font-bold" style={{ color: C.navy }}>MONEY VERSE Insights</div>
-          <div className="mi-muted text-[11.5px]">For teachers and NGOs</div>
+          <div className="mi-muted text-[11.5px]">For teachers</div>
         </div>
       )}
     </div>

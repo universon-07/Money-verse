@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cleanRoll } from '../../../lib/roll'
-import { cloudOn, lookupClass, readShareStatus, SHARE_EVENT, shareNow, writeShareStatus, type ShareStatus } from '../../../ngo/studentShare'
-import { cleanCode } from '../../../ngo/summary'
+import { cloudOn, lookupClass, readShareStatus, SHARE_EVENT, shareNow, writeShareStatus, type ShareStatus } from '../../../teacher/studentShare'
+import { cleanCode } from '../../../teacher/summary'
 import { useGame } from '../../../store/game'
 import { Eyebrow } from '../Sheet'
 
